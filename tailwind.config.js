@@ -17,6 +17,8 @@ module.exports = {
       backgroundImage: {
         "hero-gradient":
           "linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%)",
+        "work-card-gradient":
+          "background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -24,6 +26,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        dark: "#1C1917",
+        border: "#EBEAEA",
+        red: "#971512",
+        surface: "#FAF9F5",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

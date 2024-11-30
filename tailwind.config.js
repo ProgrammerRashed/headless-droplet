@@ -28,12 +28,15 @@ module.exports = {
       colors: {
         dark: "#1C1917",
         "dark-light": "#5B0D0B",
+        "dark-dark": "#151312",
         gray: "#EBEAEA",
         "gray-dark": "#2E2926",
         "gray-light": "#5B5755",
         red: "#971512",
+        "red-dark": "#76100E",
         green: "#39B295",
         "green-dark": "#2D8B74",
+        "green-light": "#236C5A",
         surface: "#FAF9F5",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -75,6 +78,28 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
+      },
+      keyframes: {
+        "accordion-down": {
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
+        },
+        "accordion-up": {
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },

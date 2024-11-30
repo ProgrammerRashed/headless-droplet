@@ -4,7 +4,7 @@ function DirectorsSaySection() {
   return (
     <section className="bg-surface py-[50px] md:py-20">
       <div className="container">
-        <div className="flex w-full flex-col items-center gap-[30px] md:flex-row md:gap-12">
+        <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-12 xl:items-start">
           <Image
             src="/directors-say/directors-avatar.png"
             width={260}
@@ -12,7 +12,7 @@ function DirectorsSaySection() {
             alt="Directors image"
             className="h-[200px] w-[200px] object-cover md:h-[260px] md:w-[260px]"
           />
-          <div className="flex w-full flex-col">
+          <div className="flex w-full max-w-[812px] flex-col">
             <svg
               className="mb-5 h-8 w-8 object-contain md:h-12 md:w-12"
               width={49}
@@ -49,7 +49,7 @@ function DirectorsSaySection() {
                 </clipPath>
               </defs>
             </svg>
-            <p className="max-w-[812px] pb-[30px] text-lg font-normal italic leading-[28px] text-dark lg:text-[22px] lg:leading-[32px]">
+            <p className="pb-[30px] text-lg font-normal italic leading-[28px] text-dark lg:text-[22px] lg:leading-[32px]">
               Our Foundation is accelerating support for first-mile
               entrepreneurial networks, helping under-served, pre-commercial
               smallholders fully engage in market systems. We are placing a
@@ -62,7 +62,7 @@ function DirectorsSaySection() {
               <h6 className="text-xl font-semibold leading-[32px] text-dark lg:text-2xl lg:leading-[36px]">
                 Simon Winter
               </h6>
-              <p className="text-gray-light text-sm font-normal leading-[22px]">
+              <p className="text-sm font-normal leading-[22px] text-gray-light">
                 Executive Director
               </p>
             </div>

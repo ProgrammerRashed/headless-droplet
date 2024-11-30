@@ -6,7 +6,7 @@ import VideoSlider from "./VideoSlider";
 
 function VideosSection() {
   return (
-    <section className="my-[50px] md:pb-[100px] md:pt-[86px]">
+    <section className="my-[50px] md:py-[100px]">
       <div className="container">
         <SectionHeading className="text-center">
           How Sustainable Farming Transforms

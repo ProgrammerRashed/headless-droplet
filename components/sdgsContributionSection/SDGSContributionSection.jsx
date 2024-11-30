@@ -4,7 +4,7 @@ import SDGSCard from "./SDGSCard";
 
 function SDGSContributionSection() {
   return (
-    <section className="bg-surface py-[50px]">
+    <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container lg:px-[95px]">
         <SectionHeading className="text-center normal-case">
           Our contribution to the SDGs

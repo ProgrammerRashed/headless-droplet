@@ -11,7 +11,7 @@ function VideoPlayer() {
   };
 
   return (
-    <div className="aspect-[330/186] w-full flex-grow overflow-hidden rounded-[8px] md:aspect-auto md:h-[482px] lg:h-auto">
+    <div className="aspect-[330/186] w-full flex-grow overflow-hidden rounded-[8px] shadow-xl transition-all duration-300 hover:shadow-2xl md:aspect-auto md:h-[482px] lg:h-auto">
       {isPlaying ? (
         <video
           className="block h-full border-none object-cover"
@@ -39,7 +39,7 @@ function VideoPlayer() {
               Developing young people's potential in agriculture
             </p>
           </div>
-          <div className="absolute z-10 flex h-12 w-12 items-center justify-center rounded-full p-3 backdrop-blur-md md:h-[76px] md:w-[76px]">
+          <div className="absolute z-10 flex h-12 w-12 items-center justify-center rounded-full p-3 shadow-sm backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:shadow-md md:h-[76px] md:w-[76px]">
             <svg
               className="h-3 w-3"
               xmlns="http://www.w3.org/2000/svg"

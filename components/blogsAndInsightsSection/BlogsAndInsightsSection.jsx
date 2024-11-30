@@ -16,7 +16,7 @@ function BlogsAndInsightsSection() {
   const swiperRef = useRef(null);
 
   return (
-    <section className="bg-surface py-[50px]">
+    <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
         <div className="flex flex-row items-center justify-between gap-5">
           <SectionHeading className="w-1/2 sm:w-auto">
@@ -25,7 +25,7 @@ function BlogsAndInsightsSection() {
           <PrimaryButton>View All</PrimaryButton>
         </div>
       </div>
-      <div className="container">
+      <div className="slider-container">
         <div className="relative mt-10">
           <SlidersButton
             onPrev={() => swiperRef.current?.slidePrev()}
@@ -46,7 +46,7 @@ function BlogsAndInsightsSection() {
                 spaceBetween: 30,
               },
             }}
-            slidesPerView={1.12}
+            slidesPerView={1.13}
             navigation={false}
             spaceBetween={20}
             speed={600}

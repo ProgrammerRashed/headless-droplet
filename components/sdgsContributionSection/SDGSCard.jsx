@@ -9,10 +9,10 @@ function SDGSCard() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="group relative flex flex-col items-center overflow-hidden rounded-[4px] text-white shadow-lg transition-all duration-500 hover:shadow-xl md:cursor-pointer md:rounded-[8px]">
+    <div className="group relative flex min-h-[211px] flex-col items-center overflow-hidden rounded-[4px] text-white shadow-lg transition-all duration-500 hover:shadow-xl md:min-h-[278px] md:cursor-pointer md:rounded-[8px]">
       <div
         className={cn(
-          "z-10 flex min-h-[192px] w-full flex-col items-center p-[10px] transition-all duration-500 md:min-h-[254px] md:p-5 md:group-hover:items-start md:group-hover:bg-[#FE4C5C]/90",
+          "z-10 flex min-h-full w-full flex-col items-center p-[10px] transition-all duration-500 md:p-5 md:group-hover:items-start md:group-hover:bg-[#FE4C5C]/90",
           `${isClicked ? "bg-[#FE4C5C]/90" : "bg-[#FE4C5C]"}`,
         )}
       >
@@ -56,7 +56,7 @@ function SDGSCard() {
         <p className="mb-1 text-lg font-medium uppercase leading-[24px] transition-all duration-500 md:text-[32px] md:leading-[42px] md:group-hover:hidden">
           01
         </p>
-        <p className="mb-[18px] text-xs font-semibold uppercase leading-[18px] tracking-[0.48px] transition-all duration-500 md:mb-[35px] md:text-lg md:leading-[28px] md:tracking-[0.72px] md:group-hover:mb-[5px] md:group-hover:text-left">
+        <p className="mb-1 min-h-[54px] text-center text-xs font-semibold uppercase leading-[18px] tracking-[0.48px] transition-all duration-500 md:min-h-min md:text-lg md:leading-[28px] md:tracking-[0.72px] md:group-hover:mb-[5px] md:group-hover:text-left">
           No proverty
         </p>
         <Image

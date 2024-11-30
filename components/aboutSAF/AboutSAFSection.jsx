@@ -4,7 +4,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 
 function AboutSAFSection() {
   return (
-    <section className="mb-[40px] mt-[50px] md:mb-[96px] md:mt-[110px]">
+    <section className="my-10 md:my-[100px]">
       <div className="container">
         <SectionHeading className="mb-5 border-b border-gray pb-6 md:mb-[30px]">
           About SAF

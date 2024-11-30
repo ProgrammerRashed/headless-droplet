@@ -9,7 +9,7 @@ function BlogsCard() {
           alt="Blogs thumbnail"
           width={410}
           height={240}
-          className="w-full scale-[30/24] rounded-[8px] object-cover transition-all duration-300 group-hover:scale-105"
+          className="h-[240px] w-full rounded-[8px] object-cover transition-all duration-300 group-hover:scale-105"
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">

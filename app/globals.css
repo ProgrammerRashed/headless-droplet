@@ -70,7 +70,7 @@
 /* Custom scroll bar */
 /* ------------------------------------- */
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   width: 17px;
   border-radius: 10px;
 }
@@ -108,7 +108,7 @@
 
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background-color: #ebeaea;
-}
+} */
 
 /* ------------------------------------- */
 /* Custom container */
@@ -117,6 +117,28 @@
 .container {
   @apply mx-auto max-w-[1440px] px-[15px] sm:px-[30px] md:px-[45px] lg:px-[75px];
 }
+
+.slider-container {
+  margin-left: 15px;
+  max-width: 1440px;
+
+  @media (min-width: 640px) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 45px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 auto;
+    padding: 0 75px;
+  }
+}
+
+/* ------------------------------------- */
+/* Slider button */
+/* ------------------------------------- */
 
 @media screen and (max-width: 1024px) {
   .slider-buttons {

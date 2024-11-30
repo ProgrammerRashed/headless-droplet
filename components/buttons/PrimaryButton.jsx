@@ -6,7 +6,7 @@ function PrimaryButton({ className, children }) {
     <Link
       href="/"
       className={cn(
-        "flex w-fit flex-row items-center gap-2 rounded-full border border-red px-6 py-[13px] text-sm font-semibold leading-[22px] text-red md:px-6 md:py-[15px] md:text-base md:leading-[24px]",
+        "flex w-fit flex-row items-center gap-2 rounded-full border border-red stroke-red px-6 py-[13px] text-sm font-semibold leading-[22px] text-red transition-all duration-300 hover:bg-red-dark hover:stroke-white hover:text-white md:px-6 md:py-[15px] md:text-base md:leading-[24px]",
         className,
       )}
     >
@@ -21,7 +21,7 @@ function PrimaryButton({ className, children }) {
         <g clipPath="url(#clip0_2181_7358)">
           <path
             d="M8 14L12 10L8 6"
-            stroke="#971512"
+            stroke="current"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"

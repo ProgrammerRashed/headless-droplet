@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import FooterSection from "@/components/footer/FooterSection";
 import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
+import AOSWrapper from "@/utils/AOSWrapper";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,9 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} relative font-poppins antialiased`}>
-        <HeaderSection />
-        {children}
-        <FooterSection />
+        <AOSWrapper>
+          <HeaderSection />
+          {children}
+          <FooterSection />
+        </AOSWrapper>
       </body>
     </html>
   );

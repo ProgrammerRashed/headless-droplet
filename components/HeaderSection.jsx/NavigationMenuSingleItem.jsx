@@ -18,7 +18,7 @@ function NavigationMenuSingleItem() {
       >
         About Us
       </NavigationMenuTrigger>
-      <NavigationMenuContent className="flex h-[400px] !w-[714px] flex-row justify-between bg-gray shadow-2xl backdrop-blur-md">
+      <NavigationMenuContent className="flex h-[400px] !w-[714px] flex-row justify-between bg-surface shadow-2xl backdrop-blur-md">
         <div className="flex flex-grow flex-col p-5">
           <Link
             href="/"

@@ -12,7 +12,10 @@ import VideosSection from "@/components/videosSection.jsx/VideosSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        mainTitle="Our 40 years legacy as a Swiss-based Foundation"
+        subTitle="Recent transition is from Syngenta Foundation for Sustainable Agriculture"
+      />
       <OurWorkSection />
       <AboutSAFSection />
       <MissionVissionSection />

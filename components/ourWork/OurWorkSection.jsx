@@ -8,9 +8,11 @@ function OurWorkSection() {
       <div className="relative bg-[#1A5245]/95 py-[50px] md:py-[100px]">
         <div className="container">
           <div className="w-full">
-            <SectionHeading className="text-center text-white">
-              Our work
-            </SectionHeading>
+            <div data-aos="fade-up">
+              <SectionHeading className="text-center text-white">
+                Our work
+              </SectionHeading>
+            </div>
 
             <div className="grid w-full grid-cols-1 gap-5 pt-10 sm:grid-cols-2 md:grid-cols-3 md:gap-[30px] md:pt-[50px]">
               <OurWorkCard />

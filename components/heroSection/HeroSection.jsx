@@ -1,6 +1,6 @@
-function HeroSection({ mainTitle, subTitle }) {
+function HeroSection({ sectionHeading, sectionSubHeading, bgCoverVideo }) {
   return (
-    <section className="relative flex h-[608px] items-center overflow-hidden lg:h-[795px]">
+    <section className="relative flex h-[608px] items-center overflow-hidden lg:h-[797px]">
       <video
         autoPlay
         loop
@@ -8,7 +8,7 @@ function HeroSection({ mainTitle, subTitle }) {
         playsInline
         className="absolute left-1/2 top-1/2 -z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 object-cover"
       >
-        <source src="/videos/hero-banner.mp4" type="video/mp4" />
+        <source src={bgCoverVideo} type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex items-end bg-hero-gradient pb-10 lg:pb-[134px]">
         <div className="mx-[15px] flex w-full flex-col justify-center gap-[10px] text-white sm:mx-[30px] md:mx-[45px] md:gap-5 lg:mx-[90px]">
@@ -16,13 +16,13 @@ function HeroSection({ mainTitle, subTitle }) {
             data-aos="fade-up"
             className="max-w-[470px] text-[36px] font-semibold leading-[44px] sm:max-w-[500px] md:max-w-[600px] md:text-[40px] md:leading-[52px] lg:max-w-[745px] lg:text-[70px] lg:leading-[78px]"
           >
-            {mainTitle}
+            {sectionHeading}
           </h1>
           <p
             data-aos="fade-up"
             className="max-w-[470px] text-[22px] font-medium leading-[32px] sm:max-w-[500px] md:max-w-[500px] lg:max-w-[585px]"
           >
-            {subTitle}
+            {sectionSubHeading}
           </p>
         </div>
       </div>

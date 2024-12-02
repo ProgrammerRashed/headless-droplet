@@ -2,7 +2,7 @@ import Image from "next/image";
 import SectionHeading from "../sectionHeader/SectionHeading";
 import OurWorkCard from "./OurWorkCard";
 
-function OurWorkSection() {
+function OurWorkSection({ sectionHeading, bgCoverImage, cards }) {
   return (
     <section className="relative">
       <div className="relative bg-[#1A5245]/95 py-[50px] md:py-[100px]">
@@ -10,23 +10,20 @@ function OurWorkSection() {
           <div className="w-full">
             <div data-aos="fade-up">
               <SectionHeading className="text-center text-white">
-                Our work
+                {sectionHeading}
               </SectionHeading>
             </div>
 
-            <div className="grid w-full grid-cols-1 gap-5 pt-10 sm:grid-cols-2 md:grid-cols-3 md:gap-[30px] md:pt-[50px]">
-              <OurWorkCard />
-              <OurWorkCard />
-              <OurWorkCard />
-              <OurWorkCard />
-              <OurWorkCard />
-              <OurWorkCard />
+            <div className="grid w-full grid-cols-1 gap-5 pt-10 sm:grid-cols-2 xl:grid-cols-3 xl:pt-[50px]">
+              {cards.map((card) => (
+                <OurWorkCard key={card.id} card={card} />
+              ))}
             </div>
           </div>
         </div>
       </div>
       <Image
-        src="/our-work/bacground-cover.jpg"
+        src={bgCoverImage}
         width={1440}
         height={1098}
         alt="Our work cover"

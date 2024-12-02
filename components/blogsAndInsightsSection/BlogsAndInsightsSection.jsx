@@ -12,17 +12,21 @@ import BlogsCard from "./BlogsCard";
 import { useRef } from "react";
 import SlidersButton from "../buttons/SlidersButton";
 
-function BlogsAndInsightsSection() {
+function BlogsAndInsightsSection({ sectionHeading, btnDetails, blogs }) {
   const swiperRef = useRef(null);
 
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
-        <div className="flex flex-row items-center justify-between gap-5">
-          <SectionHeading className="w-1/2 sm:w-auto">
-            Blogs & Insights
-          </SectionHeading>
-          <PrimaryButton>View All</PrimaryButton>
+        <div className="flex w-full flex-row items-center justify-between">
+          <div data-aos="fade-up">
+            <SectionHeading>{sectionHeading}</SectionHeading>
+          </div>
+          <div data-aos="fade-up" className="flex w-1/2 justify-end">
+            <PrimaryButton className="capitalize">
+              {btnDetails.title}
+            </PrimaryButton>
+          </div>
         </div>
       </div>
       <div className="slider-container">
@@ -52,21 +56,11 @@ function BlogsAndInsightsSection() {
             speed={600}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            <SwiperSlide>
-              <BlogsCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <BlogsCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <BlogsCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <BlogsCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <BlogsCard />
-            </SwiperSlide>
+            {blogs.map((blog) => (
+              <SwiperSlide key={blog.id}>
+                <BlogsCard blog={blog} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

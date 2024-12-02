@@ -1,13 +1,16 @@
 import Image from "next/image";
 
-function VideoListCard() {
+function VideoListCard({ video, onSelectedVideo }) {
   return (
-    <div className="mb-[10px] cursor-pointer border-gray pb-[10px] last-of-type:mb-0 last-of-type:border-none lg:border-b">
+    <div
+      onClick={() => onSelectedVideo(video)}
+      className="mb-[10px] cursor-pointer border-gray pb-[10px] last-of-type:mb-0 last-of-type:border-none lg:border-b"
+    >
       <div className="flex flex-row items-center gap-5 rounded-[4px] border-2 border-transparent p-2 transition-all duration-300 hover:border-dark-light hover:bg-surface">
         <div className="relative md:h-[80px] md:min-w-[120px] lg:h-[99px] lg:min-w-[160px]">
           <Image
-            src="/videos/farming-transform/thumbnails/video-thumbnail-1.png"
-            alt="Video thumnail"
+            src={video.videoThumbNail}
+            alt={video.videoTitle}
             width={160}
             height={99}
             className="relative h-full w-full rounded-[4px] object-cover"
@@ -31,7 +34,7 @@ function VideoListCard() {
           </div>
         </div>
         <p className="line-clamp-2 font-medium text-dark md:text-lg md:leading-normal lg:text-[22px] lg:leading-[32px]">
-          Successful introduction of certified sesame varieties
+          {video.videoTitle}
         </p>
       </div>
     </div>

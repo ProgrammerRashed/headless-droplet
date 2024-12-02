@@ -1,10 +1,13 @@
 import Image from "next/image";
 
-function OurPartnersCard() {
+function OurPartnersCard({ partner }) {
   return (
-    <div className="group flex h-[62px] w-full items-center justify-center rounded-[6px] border border-gray px-[18px] py-[10px] shadow-sm transition-all duration-300 hover:shadow-md sm:h-[108px] sm:px-8 sm:py-[22px]">
+    <div
+      data-aos="fade-up"
+      className="group flex h-[62px] w-full items-center justify-center rounded-[6px] border border-gray px-[18px] py-[10px] transition-all duration-300 hover:shadow-sm sm:h-[108px] sm:px-8 sm:py-[22px]"
+    >
       <Image
-        src="/our-pertners/swiss-agency.png"
+        src={partner.logoLink}
         alt="Partners logo"
         width={197}
         height={65}

@@ -3,6 +3,7 @@ import "./globals.css";
 import FooterSection from "@/components/footer/FooterSection";
 import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
 import AOSWrapper from "@/utils/AOSWrapper";
+import { ReactLenis } from "@/utils/lenis";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,13 +19,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} relative font-poppins antialiased`}>
-        <AOSWrapper>
-          <HeaderSection />
-          {children}
-          <FooterSection />
-        </AOSWrapper>
-      </body>
+      <ReactLenis root>
+        <body
+          className={`${poppins.variable} relative font-poppins antialiased`}
+        >
+          <AOSWrapper>
+            <HeaderSection />
+            {children}
+            <FooterSection />
+          </AOSWrapper>
+        </body>
+      </ReactLenis>
     </html>
   );
 }

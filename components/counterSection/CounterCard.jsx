@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
 
-function CounterCard() {
+function CounterCard({ counter }) {
   const [isInView, setIsInView] = useState(false);
   const countUpRef = useRef(null);
 
@@ -29,15 +29,22 @@ function CounterCard() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div data-aos="fade-up" className="flex flex-col gap-2">
       <div className="flex items-center gap-4">
-        <div className="h-[50px] w-2 rounded-l-full bg-green sm:h-[70px]"></div>
+        <div className="h-[50px] w-1.5 rounded-l-full bg-green sm:h-[70px]"></div>
         <h4
           ref={countUpRef}
           className="scroll-smooth text-[38px] font-semibold leading-[50px] text-dark sm:text-[58px] sm:leading-[70px] md:text-[48px] md:leading-normal lg:text-[58px] xl:leading-[70px]"
         >
           {isInView && (
-            <CountUp end={100} duration={3} separator=" " suffix="M">
+            <CountUp
+              end={counter.counterNumber}
+              duration={4}
+              decimals={1}
+              decimal="."
+              separator=" "
+              suffix={counter.suffix}
+            >
               {({ countUpRef, start }) => (
                 <div>
                   <span ref={countUpRef} />
@@ -48,7 +55,7 @@ function CounterCard() {
         </h4>
       </div>
       <p className="text-base font-normal leading-[26px] text-gray-dark">
-        Smallholders supported (Up from 2.7 M in 2022)
+        {counter.counterDetails}
       </p>
     </div>
   );

@@ -1,18 +1,22 @@
 import Image from "next/image";
 
-function DirectorsSaySection() {
+function DirectorsSaySection({ directorDetails }) {
   return (
     <section className="bg-surface py-[50px] md:py-20">
       <div className="container">
         <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-12 xl:items-start">
           <Image
-            src="/directors-say/directors-avatar.png"
+            data-aos="fade-up"
+            src={directorDetails.directorImage}
             width={260}
             height={260}
-            alt="Directors image"
+            alt={directorDetails.directorName}
             className="h-[200px] w-[200px] object-cover md:h-[260px] md:w-[260px]"
           />
-          <div className="flex w-full max-w-[812px] flex-col">
+          <div
+            data-aos="fade-up"
+            className="flex w-full max-w-[812px] flex-col"
+          >
             <svg
               className="mb-5 h-8 w-8 object-contain md:h-12 md:w-12"
               width={49}
@@ -50,20 +54,14 @@ function DirectorsSaySection() {
               </defs>
             </svg>
             <p className="pb-[30px] text-lg font-normal italic leading-[28px] text-dark lg:text-[22px] lg:leading-[32px]">
-              Our Foundation is accelerating support for first-mile
-              entrepreneurial networks, helping under-served, pre-commercial
-              smallholders fully engage in market systems. We are placing a
-              stronger emphasis on empowering women as both entrepreneurs and
-              farmers. Looking ahead, we aim to expand the range of
-              climate-smart innovations that enhance smallholders'
-              diversification, productivity, and resilience.
+              {directorDetails.directorQuote}
             </p>
             <div className="flex flex-col gap-0.5">
               <h6 className="text-xl font-semibold leading-[32px] text-dark lg:text-2xl lg:leading-[36px]">
-                Simon Winter
+                {directorDetails.directorName}
               </h6>
               <p className="text-sm font-normal leading-[22px] text-gray-light">
-                Executive Director
+                {directorDetails.directorRole}
               </p>
             </div>
           </div>

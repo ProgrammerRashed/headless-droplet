@@ -4,7 +4,7 @@ import { useState } from "react";
 import SectionHeading from "../sectionHeader/SectionHeading";
 
 import VideoList from "./VideoList";
-import VideoPlayer from "./VideoPlayer";
+import VideoPlayer from "../shared/VideoPlayer";
 import VideoSlider from "./VideoSlider";
 
 function VideosSection({ sectionHeading, videos }) {

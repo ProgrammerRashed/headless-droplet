@@ -170,3 +170,26 @@ html.lenis body {
     @apply hidden;
   }
 }
+
+@media (min-width: 1024px) {
+  .value-card--details,
+  .value-card--icon {
+    transition:
+      visibility 0s 1s,
+      opacity 1s ease-in-out;
+  }
+
+  .value-card:hover .value-card--details,
+  .value-card:hover .value-card--icon {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

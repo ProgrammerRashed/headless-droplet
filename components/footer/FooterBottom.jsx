@@ -1,16 +1,19 @@
 import Link from "next/link";
 
-function FooterBottom() {
+function FooterBottom({ footerBottom }) {
   return (
     <div className="mt-5 flex flex-col gap-3 text-sm font-normal leading-[22px] text-white md:my-6 md:mt-6 md:flex-row md:items-center md:justify-between">
-      <p>© 2024 Sustainable Agriculture Foundation</p>
+      <p>{footerBottom.copyRightText}</p>
       <div className="flex flex-row gap-5 text-white/80 md:gap-6">
-        <Link href="/" className="hover:underline">
-          Privacy Notice
-        </Link>
-        <Link href="/" className="hover:underline">
-          Terms of Use
-        </Link>
+        {footerBottom.navigations.map((navItem) => (
+          <Link
+            href={navItem.link}
+            key={navItem.id}
+            className="hover:underline"
+          >
+            {navItem.title}
+          </Link>
+        ))}
       </div>
     </div>
   );

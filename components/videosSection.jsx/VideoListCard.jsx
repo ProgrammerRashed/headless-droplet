@@ -17,7 +17,6 @@ function VideoListCard({ video, onSelectedVideo }) {
           />
           <div className="absolute left-1/2 top-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full p-[14px] shadow-sm backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:shadow-md">
             <svg
-              className="h-3 w-3"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -27,7 +26,7 @@ function VideoListCard({ video, onSelectedVideo }) {
               strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-play"
+              className="feather feather-play h-3 w-3"
             >
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>

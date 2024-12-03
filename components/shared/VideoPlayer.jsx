@@ -46,7 +46,6 @@ function VideoPlayer({ video }) {
           </div>
           <div className="absolute z-10 flex h-12 w-12 items-center justify-center rounded-full p-3 shadow-sm backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:shadow-md md:h-[76px] md:w-[76px]">
             <svg
-              className="h-3 w-3"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -56,7 +55,7 @@ function VideoPlayer({ video }) {
               strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-play"
+              className="feather feather-play h-3 w-3"
             >
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>

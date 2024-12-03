@@ -17,13 +17,15 @@ function CounterCard({ counter }) {
         threshold: 0.5,
       },
     );
-    if (countUpRef.current) {
-      observer.observe(countUpRef.current);
+
+    const currentRef = countUpRef.current; // Capture the current ref value
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (countUpRef.current) {
-        observer.unobserve(countUpRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef); // Use the captured ref value
       }
     };
   }, []);

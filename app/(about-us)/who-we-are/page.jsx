@@ -7,7 +7,10 @@ import OurValuesSection from "@/components/whoWeArePage/ourValuesSection/OurValu
 function whoWeArePage() {
   return (
     <>
-      <SecondaryBanner sectionHeading="Who we are" />
+      <SecondaryBanner
+        sectionHeading="Who we are"
+        bannerCover="/hero-banners/who-we-are.jpg"
+      />
       <AboutUsSection
         title="SFSA is a leading science-based agtech company. We help millions of farmers around the world to grow safe and nutritious food, while taking care of the planet."
         description="The Sustainable Agriculture Foundation (SAF), formerly known as the Syngenta Foundation for Sustainable Agriculture (SFSA), boasts a remarkable 40-year legacy as a Swiss-based not-for-profit organization. SAF delivers demand-led innovations in agriculture, ensuring sustainable market access. It spearheaded groundbreaking projects across agriculture, climate change, risk mitigation, carbon offset, nutrition, and rural economic development. These initiatives have positively impacted over millions of smallholder farmers through strategic collaborations with local, regional, and international partners."

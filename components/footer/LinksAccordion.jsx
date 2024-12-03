@@ -13,7 +13,7 @@ function LinksAccordion({ navigation }) {
       className="border-b border-white/10 py-0"
     >
       <AccordionTrigger
-        className="py-[15px] text-lg font-medium leading-[28px] text-white"
+        className="py-[15px] text-lg font-medium leading-[28px] text-white hover:no-underline"
         iconClassName="bg-white/5 h-9 w-9 text-white p-2 rounded-full hover:bg-white/10"
       >
         {navigation.groupName}

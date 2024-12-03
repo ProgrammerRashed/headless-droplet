@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 import BreadCrumb from "../shared/BreadCrumb";
 
-function SecondaryBanner({ sectionHeading }) {
+function SecondaryBanner({ sectionHeading, bannerCover }) {
   return (
     <section className="relative h-[254px] w-full md:h-[441px]">
-      <div className="bg-green-900/90 z-0 flex h-full w-full pt-[68px] xl:pt-[141px]">
+      <div className="z-0 flex h-full w-full bg-green-900/90 pt-[68px] xl:pt-[141px]">
         <div className="relative flex h-[186px] flex-grow flex-col items-center justify-center md:h-[300px]">
           <div
             data-aos="fade-right"
@@ -25,10 +25,10 @@ function SecondaryBanner({ sectionHeading }) {
         </div>
       </div>
       <Image
-        src="/hero-banners/who-we-are.jpg"
+        src={bannerCover}
         width={1440}
         height={441}
-        alt="Who we are section banner"
+        alt="Primary banner"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
     </section>

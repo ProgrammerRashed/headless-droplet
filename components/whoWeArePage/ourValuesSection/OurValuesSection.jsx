@@ -6,13 +6,13 @@ function OurValuesSection({ sectionHeading, sectionSubHeading, values }) {
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
         <div data-aos="fade-up">
-          <SectionHeading className="text-blue mb-5 capitalize">
+          <SectionHeading className="mb-5 capitalize">
             {sectionHeading}
           </SectionHeading>
         </div>
         <p
           data-aos="fade-up"
-          className="text-gray-600 max-w-[740px] text-base font-normal leading-[26px]"
+          className="max-w-[740px] text-base font-normal leading-[26px] text-gray-600"
         >
           {sectionSubHeading}
         </p>

@@ -12,7 +12,7 @@ function FooterLinks({ navigations }) {
           <LinksAccordion key={navigation.id} navigation={navigation} />
         ))}
       </Accordion>
-      <div className="mb-[60px] hidden gap-[100px] gap-y-[70px] md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="mb-[60px] hidden gap-[60px] gap-y-10 md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {navigations.map((navigation) => (
           <FooterLinkGroup key={navigation.id} navigation={navigation} />
         ))}

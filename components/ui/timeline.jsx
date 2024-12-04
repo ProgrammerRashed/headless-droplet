@@ -1,5 +1,6 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }) => {
@@ -23,20 +24,20 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full" ref={containerRef}>
+    <div data-aos="fade-up" className="w-full" ref={containerRef}>
       <div ref={ref} className="relative mx-auto mt-[30px] md:mt-[100px]">
         {data.map((item, index) => (
           <div
-            key={index}
-            className="flex justify-start pt-16 first-of-type:pt-0 lg:mt-20"
+            key={item.id}
+            className="mt-16 flex justify-start first-of-type:pt-0 lg:mt-20"
           >
-            <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-fit">
+            <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row xl:max-w-fit">
               <div className="absolute left-0 flex h-6 w-6 items-center justify-center rounded-full bg-surface">
                 <div className="bg-green-600 h-4 w-4 rounded-full" />
               </div>
 
               <h3 className="ml-24 hidden text-2xl font-semibold leading-[36px] text-gray-800 md:block">
-                {item.title}
+                {item.timeLine}
               </h3>
             </div>
 
@@ -44,7 +45,23 @@ export const Timeline = ({ data }) => {
               <h3 className="mb-[15px] block text-left text-base font-medium leading-[26px] text-gray-800 md:hidden md:text-lg md:leading-[38px]">
                 {item.title}
               </h3>
-              {item.content}
+              <div className="flex flex-col pr-[10px] xl:flex-row xl:items-start xl:gap-[60px]">
+                <div className="flex flex-col">
+                  <h4 className="mb-[15px] text-[22px] font-semibold leading-[28px] text-gray-800">
+                    {item.title}
+                  </h4>
+                  <p className="mb-[30px] text-sm font-normal leading-[22px] text-gray-600 md:text-base md:leading-[26px]">
+                    {item.description}
+                  </p>
+                </div>
+                <Image
+                  src={item.imageLink}
+                  width={435}
+                  height={400}
+                  alt=""
+                  className="aspect-[280/257] w-full rounded-[8px] object-cover xl:aspect-[435/400] xl:max-w-[435px]"
+                />
+              </div>
             </div>
           </div>
         ))}

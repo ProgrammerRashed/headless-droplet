@@ -157,7 +157,7 @@ export default function RootLayout({ children }) {
             />
             {children}
             <FooterSection
-              footerLogo="/public/Logo-footer.png"
+              footerLogo="/Logo-footer.png"
               footerDonation={{
                 label: "You Can Help—Contribute Today!",
                 btnDetails: {

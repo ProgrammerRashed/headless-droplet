@@ -11,7 +11,7 @@ function DirectorsSaySection({ directorDetails }) {
             width={260}
             height={260}
             alt={directorDetails.directorName}
-            className="h-[200px] w-[200px] rounded-full object-cover md:h-[260px] md:w-[260px]"
+            className="aspect-square h-[200px] w-[200px] rounded-full object-cover xl:h-[260px] xl:w-[260px]"
           />
           <div
             data-aos="fade-up"

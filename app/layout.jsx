@@ -40,12 +40,12 @@ export default function RootLayout({ children }) {
                     {
                       id: crypto.randomUUID(),
                       title: "Our leadership",
-                      link: "/",
+                      link: "/our-leadership",
                     },
                     {
                       id: crypto.randomUUID(),
                       title: "Our history",
-                      link: "/",
+                      link: "/our-history",
                     },
                   ],
                 },
@@ -178,12 +178,12 @@ export default function RootLayout({ children }) {
                     {
                       id: crypto.randomUUID(),
                       title: "Our leadership",
-                      link: "/",
+                      link: "/our-leadership",
                     },
                     {
                       id: crypto.randomUUID(),
                       title: "Our history",
-                      link: "/",
+                      link: "/our-history",
                     },
                   ],
                 },

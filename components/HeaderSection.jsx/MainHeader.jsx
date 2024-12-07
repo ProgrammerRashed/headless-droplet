@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PrimaryButton from "../buttons/PrimaryButton";
 import MainNavigationLinks from "./MainNavigationLinks";
+import Link from "next/link";
 
 function MainHeader({
   navigations,
@@ -11,13 +12,15 @@ function MainHeader({
 }) {
   return (
     <div className="flex items-center justify-between gap-[20px] py-[10px] xl:py-0">
-      <Image
-        src={logoLink}
-        width={253}
-        height={55}
-        alt="SAF logo"
-        className="h-auto w-[147px] object-contain xl:w-[253px]"
-      />
+      <Link href="/">
+        <Image
+          src={logoLink}
+          width={253}
+          height={55}
+          alt="SAF logo"
+          className="h-auto w-[147px] object-contain xl:w-[253px]"
+        />
+      </Link>
       <div className="flex items-center justify-between gap-4 xl:gap-12">
         <MainNavigationLinks navigations={navigations} />
         <PrimaryButton className="hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3 xl:flex">

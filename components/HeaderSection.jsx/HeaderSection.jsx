@@ -5,7 +5,7 @@ import MainHeader from "./MainHeader";
 import { useEffect, useState } from "react";
 import MobileNavLinks from "./MobileNavLinks";
 
-function HeaderSection() {
+function HeaderSection({ navigations, buttonDetails, logoLink }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -55,8 +55,16 @@ function HeaderSection() {
         <MainHeader
           isMobileNavOpen={isMobileNavOpen}
           handleMobileNav={handleMobileNav}
+          navigations={navigations}
+          buttonDetails={buttonDetails}
+          logoLink={logoLink}
         />
-        {isMobileNavOpen && <MobileNavLinks />}
+        {isMobileNavOpen && (
+          <MobileNavLinks
+            navigations={navigations}
+            buttonDetails={buttonDetails}
+          />
+        )}
       </div>
     </header>
   );

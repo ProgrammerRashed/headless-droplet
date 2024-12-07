@@ -33,7 +33,7 @@ export const Timeline = ({ data }) => {
           >
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row xl:max-w-fit">
               <div className="absolute left-0 flex h-6 w-6 items-center justify-center rounded-full bg-surface">
-                <div className="bg-green-600 h-4 w-4 rounded-full" />
+                <div className="h-4 w-4 rounded-full bg-green-600" />
               </div>
 
               <h3 className="ml-24 hidden text-2xl font-semibold leading-[36px] text-gray-800 md:block">
@@ -45,7 +45,7 @@ export const Timeline = ({ data }) => {
               <h3 className="mb-[15px] block text-left text-base font-medium leading-[26px] text-gray-800 md:hidden md:text-lg md:leading-[38px]">
                 {item.title}
               </h3>
-              <div className="flex flex-col pr-[10px] xl:flex-row xl:items-start xl:gap-[60px]">
+              <div className="flex flex-col pr-[10px] xl:flex-row xl:items-start xl:justify-between xl:gap-[60px] xl:pr-0">
                 <div className="flex flex-col">
                   <h4 className="mb-[15px] text-[22px] font-semibold leading-[28px] text-gray-800">
                     {item.title}
@@ -76,7 +76,7 @@ export const Timeline = ({ data }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="from-green-600 absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-[0%] via-green-400 via-[10%] to-transparent"
+            className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-green-600 from-[0%] via-green-400 via-[10%] to-transparent"
           />
         </div>
       </div>

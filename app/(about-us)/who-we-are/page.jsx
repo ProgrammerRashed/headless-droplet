@@ -12,8 +12,8 @@ function whoWeArePage() {
         bannerCover="/hero-banners/who-we-are.jpg"
       />
       <AboutUsSection
-        title="SFSA is a leading science-based agtech company. We help millions of farmers around the world to grow safe and nutritious food, while taking care of the planet."
-        description="The Sustainable Agriculture Foundation (SAF), formerly known as the Syngenta Foundation for Sustainable Agriculture (SFSA), boasts a remarkable 40-year legacy as a Swiss-based not-for-profit organization. SAF delivers demand-led innovations in agriculture, ensuring sustainable market access. It spearheaded groundbreaking projects across agriculture, climate change, risk mitigation, carbon offset, nutrition, and rural economic development. These initiatives have positively impacted over millions of smallholder farmers through strategic collaborations with local, regional, and international partners."
+        title="The Sustainable Agriculture Foundation (SAF), formerly SFSA, builds on a 40-year legacy of transforming smallholder agriculture in Asia and Africa, focusing on climate-smart innovations, market access, and sustainable practices."
+        description="The Sustainable Agriculture Foundation (SAF) transforms smallholder agriculture in Asia and Africa by improving farmer incomes, food security, and climate resilience. Building on the legacy of the Syngenta Foundation, SAF fosters innovation, empowers agri-entrepreneurs, and bridges gaps in research, technology, and market access. Through partnerships, SAF promotes inclusive growth and sustainable practices, creating thriving communities where agriculture, people, and nature coexist."
         videoDetails={{
           videoLink: "/videos/hero-banner.mp4",
           videoThumbNail: "/video-thumbnails/happy-farmer.jpg",
@@ -26,13 +26,13 @@ function whoWeArePage() {
             bannerImg: "/mission-vision/who-we-are/vision.png",
             title: "Our Vision",
             subTitle:
-              "A world in which smallholders, communities, and nature thrive together",
+              "A world where smallholders, communities, and nature thrive together",
           },
           visionDetails: {
             bannerImg: "/mission-vision/who-we-are/mission.png",
             title: "Our Mission",
             subTitle:
-              "Scaling up collective action on markets and innovations so that farming can better serve smallholder families, rural communities, and nature",
+              "Scaling up collective action on markets and innovations so that farming can better serve smallholder families, rural communities, and nature.",
           },
         }}
       />
@@ -43,50 +43,44 @@ function whoWeArePage() {
           {
             id: crypto.randomUUID(),
             title: "Passion",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heaĒ of all we do.",
+            details: "Committed to achieving sustainable impact.",
             iconLink: "/our-values/passion.svg",
           },
           {
             id: crypto.randomUUID(),
             title: "Innovation",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heaĒ of all we do.",
+            details: "Driving solutions for long-term prosperity.",
             iconLink: "/our-values/innovation.svg",
           },
           {
             id: crypto.randomUUID(),
             title: "Integrity",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heaĒ of all we do.",
+            details: "Ethical, unbiased, and community-focused operations.",
             iconLink: "/our-values/integrity.svg",
           },
           {
             id: crypto.randomUUID(),
             title: "Respect and Growth for All",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heaĒ of all we do.",
+            details: "Embracing inclusivity, diversity, and empowerment.",
             iconLink: "/our-values/growth.svg",
           },
           {
             id: crypto.randomUUID(),
             title: "Collaborative Spirit",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heaĒ of all we do.",
+            details: "Building partnerships with trust and transparency.",
             iconLink: "/our-values/collaborative.svg",
           },
           {
             id: crypto.randomUUID(),
             title: "Reliability",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heaĒ of all we do.",
+            details: "Delivering commitments and creating lasting value.",
             iconLink: "/our-values/reliability.svg",
           },
         ]}
       />
       <OurStrategySection
         sectionTitle="Our Strategy"
-        sectionDetails="Lorem ipsum dolor sit amet consectetur. Turpis malesuada tincidunt fames bibendum id vitae. Pretium laoreet arcu urna mattis mattis lectus massa viverra ut. Vitae in sed arcu augue porta viverra tristique eu. Porta in arcu neque metus sem sed. Pulvinar vulputate tortor et et porttitor at cras. Arcu in parturient a integer nulla. Eget maecenas mi pretium posuere proin ut massa morbi amet. Netus tellus aliquet id eleifend. Fermentum enim quis cursus lacus."
+        sectionDetails="SAF’s strategy centers on enhancing productivity and market access for “pre-commercial” smallholder farmers, primarily in semi-arid areas with agricultural growth potential. Key focuses include advancing scientific knowledge, providing quality inputs, and establishing market linkages. Major factors shaping SAF’s work include rapid urbanization, rising food demand, climate change, and the role of innovative technologies in sustainable agriculture. Strategic updates emphasize climate adaptation, empowering women, introducing scalable innovations, and fostering multi-stakeholder partnerships. By 2025, SAF aims to improve income by at least 20% for five million smallholder families, advance gender equality, support youth involvement, enhance nutrition and food security, and build resilience against climate change."
         bannerImg="/our-strategy/our-strategy.png"
         downloadFile={{
           fileName: "Guiding Principles (PDF 3.39 MB)",

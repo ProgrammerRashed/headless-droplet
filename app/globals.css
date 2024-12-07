@@ -193,3 +193,28 @@ html.lenis body {
     opacity: 1;
   }
 }
+
+@media (min-width: 768px) {
+  .contribution-card--title,
+  .contribution-card--icon,
+  .contribution-card--details {
+    transition:
+      visibility 0s 0.7s,
+      opacity 0.7s ease-in-out;
+  }
+
+  .contribution-card:hover .contribution-card--title,
+  .contribution-card:hover .contribution-card--details,
+  .contribution-card:hover .contribution-card--icon {
+    animation: fadeIn 0.7s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

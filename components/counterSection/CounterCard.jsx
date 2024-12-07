@@ -14,7 +14,7 @@ function CounterCard({ counter }) {
         }
       },
       {
-        threshold: 0.5,
+        threshold: 0.1,
       },
     );
 
@@ -42,7 +42,7 @@ function CounterCard({ counter }) {
             <CountUp
               end={counter.counterNumber}
               duration={4}
-              decimals={1}
+              decimals={counter.decimal}
               decimal="."
               separator=" "
               suffix={counter.suffix}

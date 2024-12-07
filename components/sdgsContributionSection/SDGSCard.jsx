@@ -10,7 +10,7 @@ function SDGSCard({ card }) {
   return (
     <div
       data-aos="fade-up"
-      className="group relative flex min-h-[193px] flex-col items-center overflow-hidden rounded-[4px] text-white shadow-lg transition-all duration-500 hover:shadow-xl md:min-h-[250px] md:cursor-pointer md:rounded-[8px]"
+      className="contribution-card group relative flex min-h-[193px] flex-col items-center overflow-hidden rounded-[4px] text-white shadow-lg transition-all duration-500 hover:shadow-xl md:min-h-[250px] md:cursor-pointer md:rounded-[8px]"
     >
       <div
         className={cn(
@@ -60,7 +60,7 @@ function SDGSCard({ card }) {
           {card.serial}
         </p>
         <p
-          className={`mb-1 text-center text-xs font-semibold uppercase leading-[18px] tracking-[4%] transition-all duration-500 md:h-[56px] md:text-lg md:leading-[28px] md:tracking-[0.72px] md:group-hover:mb-[5px] md:group-hover:h-auto md:group-hover:text-left ${isClicked ? "h-auto" : "h-[36px]"}`}
+          className={`contribution-card--title mb-1 text-center text-xs font-semibold uppercase leading-[18px] tracking-[4%] transition-all duration-500 md:h-[56px] md:text-lg md:leading-[28px] md:tracking-[0.72px] md:group-hover:mb-[5px] md:group-hover:h-auto md:group-hover:text-left ${isClicked ? "h-auto" : "h-[36px]"}`}
         >
           {card.title}
         </p>
@@ -70,13 +70,13 @@ function SDGSCard({ card }) {
           width={100}
           height={100}
           className={cn(
-            "mb-5 h-[62px] w-[62px] object-contain transition-all duration-500 md:mb-1 md:h-[100px] md:w-[100px] md:group-hover:hidden",
+            "contribution-card--icon mb-5 h-[62px] w-[62px] object-contain transition-all duration-500 md:mb-1 md:h-[100px] md:w-[100px] md:group-hover:hidden",
             `${isClicked ? "hidden" : "flex"}`,
           )}
         />
         <p
           className={cn(
-            "text-center text-[10px] font-normal leading-[15px] transition-all duration-500 md:text-left md:group-hover:flex md:group-hover:text-sm md:group-hover:leading-[22px]",
+            "contribution-card--details text-center text-[10px] font-normal leading-[15px] transition-all duration-500 md:text-left md:group-hover:flex md:group-hover:text-sm md:group-hover:leading-[22px]",
             `${isClicked ? "flex" : "hidden"}`,
           )}
         >

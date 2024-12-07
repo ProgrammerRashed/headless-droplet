@@ -10,7 +10,11 @@ function HeaderTopSearch() {
   return (
     <>
       {isSearchOpen ? (
-        <div className="flex flex-row items-center justify-end gap-3 rounded-full bg-surface px-4">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="flex flex-row items-center justify-end gap-3 rounded-full bg-surface px-4"
+        >
           <svg
             width={18}
             height={18}

@@ -37,7 +37,9 @@ function VideoPlayer({ video }) {
             alt="Farming transforms video thumbnail"
             className="absolute inset-0 h-full w-full rounded-[8px] object-cover"
           />
-          <div className="absolute inset-0 flex w-full items-end bg-gradient-to-b from-black/10 to-black/70">
+          <div
+            className={`absolute inset-0 flex w-full items-end ${video?.videoTitle ? "bg-gradient-to-b from-black/10 to-black/70" : ""}`}
+          >
             {video?.videoTitle && (
               <p className="m-[15px] line-clamp-1 w-full text-xl font-bold leading-[32px] text-white md:mx-10 md:my-[30px] md:line-clamp-2 md:max-w-[600px] md:text-[32px] md:leading-[42px]">
                 {video?.videoTitle}
@@ -55,7 +57,7 @@ function VideoPlayer({ video }) {
               strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-play h-3 w-3"
+              className="feather feather-play h-8 w-8"
             >
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>

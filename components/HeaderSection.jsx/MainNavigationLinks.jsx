@@ -5,15 +5,16 @@ import {
 
 import NavigationMenuSingleItem from "./NavigationMenuSingleItem";
 
-function MainNavigationLinks() {
+function MainNavigationLinks({ navigations }) {
   return (
     <NavigationMenu className="hidden items-center justify-end xl:flex">
       <NavigationMenuList>
-        <NavigationMenuSingleItem />
-        <NavigationMenuSingleItem />
-        <NavigationMenuSingleItem />
-        <NavigationMenuSingleItem />
-        <NavigationMenuSingleItem />
+        {navigations.map((navigation) => (
+          <NavigationMenuSingleItem
+            key={navigation.id}
+            navigation={navigation}
+          />
+        ))}
       </NavigationMenuList>
     </NavigationMenu>
   );

@@ -117,6 +117,7 @@ export default function HomePage() {
             counterNumber: 3.1,
             suffix: "M",
             counterDetails: "Smallholders supported (Up from 2.7 M in 2022)",
+            decimal: 1,
           },
           {
             id: crypto.randomUUID(),
@@ -124,6 +125,7 @@ export default function HomePage() {
             suffix: "%",
             counterDetails:
               "of supported farmers are women (Up from 29% in 2022)",
+            decimal: 0,
           },
           {
             id: crypto.randomUUID(),
@@ -131,19 +133,21 @@ export default function HomePage() {
             suffix: "%",
             counterDetails:
               "of farmers reporting at least 20% increased revenues",
+            decimal: 0,
           },
           {
             id: crypto.randomUUID(),
             counterNumber: "57",
             suffix: "%",
             counterDetails: "of entrepreneurs are women (Up from 36% in 2022)",
+            decimal: 0,
           },
         ]}
       />
       <DirectorsSaySection
         directorDetails={{
           directorName: "Simon Winter",
-          directorRole: "Executive Director",
+          directorRole: "Executive Director - SAF HQ",
           directorImage: "/directors-say/directors-avatar.png",
           directorQuote:
             "Our Foundation is accelerating support for first-mile entrepreneurial networks, helping under-served, pre-commercial smallholders fully engage in market systems. We are placing a stronger emphasis on empowering women as both entrepreneurs and farmers. Looking ahead, we aim to expand the range of climate-smart innovations that enhance smallholders diversification, productivity, and resilience",
@@ -157,28 +161,29 @@ export default function HomePage() {
             videoLink: "/videos/hero-banner.mp4",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
-            videoTitle: "Developing young people's potential in agriculture",
+            videoTitle: "Bangladesh: An Experience of Crop Insurance",
           },
           {
             id: crypto.randomUUID(),
             videoLink: "/videos/hero-banner.mp4",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-2.png",
-            videoTitle: "Ddeveloping young people's potential in agriculture",
+            videoTitle: "Successful introduction of certified sesame varieties",
           },
           {
             id: crypto.randomUUID(),
             videoLink: "/videos/hero-banner.mp4",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-3.png",
-            videoTitle: "Dddeveloping young people's potential in agriculture",
+            videoTitle:
+              "Sustainable partnership for the development of the corn industry",
           },
           {
             id: crypto.randomUUID(),
             videoLink: "/videos/hero-banner.mp4",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
-            videoTitle: "Ddddeveloping young people's potential in agriculture",
+            videoTitle: "Agriservices: eHub platform presentation",
           },
         ]}
       />
@@ -292,51 +297,51 @@ export default function HomePage() {
         partners={[
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/swiss-agency.png",
+            logoLink: "/our-pertners/image1.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/brac.png",
+            logoLink: "/our-pertners/image2.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/business-finance.png",
+            logoLink: "/our-pertners/image3.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/cabi.png",
+            logoLink: "/our-pertners/image4.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/cimmyt.jpg",
+            logoLink: "/our-pertners/image5.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/cocacola.png",
+            logoLink: "/our-pertners/image6.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/green-delta.png",
+            logoLink: "/our-pertners/image7.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/guk.png",
+            logoLink: "/our-pertners/image6.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/insuresilience.png",
+            logoLink: "/our-pertners/image9.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/world-bank.png",
+            logoLink: "/our-pertners/image10.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/swiss-capacity.png",
+            logoLink: "/our-pertners/image11.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/syngenta.png",
+            logoLink: "/our-pertners/image12.png",
           },
         ]}
         buttonDetails={{
@@ -395,7 +400,6 @@ export default function HomePage() {
           },
         ]}
       />
-
     </>
   );
 }

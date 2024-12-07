@@ -22,7 +22,7 @@ function DirectorsDetailsSection({ imageLink, directorName, role, about }) {
             <h4 className="mb-0.5 text-xl font-semibold leading-[32px] text-gray-800 md:text-2xl md:leading-[36px]">
               {directorName}
             </h4>
-            <p className="text-gray-400 mb-5 text-sm font-normal leading-[22px]">
+            <p className="mb-5 text-sm font-normal leading-[22px] text-gray-400">
               {role}
             </p>
             <p className="text-base font-normal leading-[26px] text-gray-600">

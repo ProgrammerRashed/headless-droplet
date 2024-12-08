@@ -16,15 +16,16 @@ function VideoPlayer({ video }) {
       className="aspect-[85/50] w-full flex-grow overflow-hidden rounded-[8px] shadow-xl transition-all duration-300 hover:shadow-2xl"
     >
       {isPlaying ? (
-        <video
+        <iframe
           className="block h-full border-none object-cover"
           width="100%"
           height="100%"
           src={video?.videoLink}
           title={video?.videoTitle}
-          controls={true}
-          autoPlay
-        ></video>
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       ) : (
         <div
           className="relative flex h-full w-full cursor-pointer items-center justify-center overflow-hidden rounded-[8px] border-none bg-black"

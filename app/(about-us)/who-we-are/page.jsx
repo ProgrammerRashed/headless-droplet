@@ -20,7 +20,7 @@ function whoWeArePage() {
         }}
       />
       <OurMissionVisionSection
-        sectionTitle="Our Mission & Vission"
+        sectionTitle="Our Mission & Vision"
         missionAndVision={{
           missionDetails: {
             bannerImg: "/mission-vision/who-we-are/vision.png",

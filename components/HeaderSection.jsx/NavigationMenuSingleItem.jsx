@@ -33,7 +33,7 @@ function NavigationMenuSingleItem({ navigation }) {
         </div>
         <div className="h-full w-auto overflow-hidden border-l border-gray-dark/10 p-5">
           <Image
-            src="/blogs-and-insights/1.png"
+            src={navigation.bannerImage}
             width={374}
             height={360}
             alt="About us"

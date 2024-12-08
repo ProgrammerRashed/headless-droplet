@@ -2,6 +2,7 @@ import AboutSAFSection from "@/components/aboutSAF/AboutSAFSection";
 import BlogsAndInsightsSection from "@/components/blogsAndInsightsSection/BlogsAndInsightsSection";
 import CounterSection from "@/components/counterSection/CounterSection";
 import DirectorsSaySection from "@/components/directorSay/DirectorsSaySection";
+import GlobalPresence from "@/components/globalPresence/GlobalPresence";
 import HeroSection from "@/components/heroSection/HeroSection";
 import MissionVissionSection from "@/components/missionVission/MissionVissionSection";
 import OurPartnersSections from "@/components/ourPartnersSection/OurPartnersSections";
@@ -17,6 +18,7 @@ export default function HomePage() {
         sectionSubHeading="Recent transition is from Syngenta Foundation for Sustainable Agriculture"
         bgCoverVideo="/videos/hero-banner.mp4"
       />
+      <GlobalPresence />
       <OurWorkSection
         sectionHeading="Our work"
         bgCoverImage="/our-work/bacground-cover.jpg"
@@ -26,7 +28,7 @@ export default function HomePage() {
             heading: "Climate SMART Agriculture",
             bgImage: "/our-work/our-work-1.jpeg",
             details:
-              "Together, we innovate for a sustainable future where smallholders thrive, add few more words.",
+              "Climate change is humanity’s biggest challenge; agriculture is particularly affected, given its dependency on weather and functioning ecosystems.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -35,9 +37,9 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             heading: "Agri Entrepreneurship",
-            bgImage: "/our-work/our-work-2.jpeg",
+            bgImage: "/our-work/our-work-2.png",
             details:
-              "Together, we innovate for a sustainable future where smallholders thrive, add few more words.",
+              "Smallholders with small pieces of land and poor agronomic knowledge have been continuing traditional agriculture by heredity.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -46,9 +48,9 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             heading: "Insurance & Risk Mitigation",
-            bgImage: "/our-work/our-work-3.jpeg",
+            bgImage: "/our-work/our-work-3.png",
             details:
-              "Together, we innovate for a sustainable future where smallholders thrive, add few more words.",
+              "Agricultural production and food security have made impressive progress in South and South-East Asia over recent decades.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -59,7 +61,7 @@ export default function HomePage() {
             heading: "Food & Nutrition",
             bgImage: "/our-work/our-work-4.png",
             details:
-              "Together, we innovate for a sustainable future where smallholders thrive, add few more words.",
+              "SAF adopts a holistic food systems approach to address urban food security, nutrition, and sustainable agriculture, focusing on two secondary cities each in Bangladesh, Kenya, and Rwanda.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -70,7 +72,7 @@ export default function HomePage() {
             heading: "Carbon Credit",
             bgImage: "/our-work/our-work-5.png",
             details:
-              "Together, we innovate for a sustainable future where smallholders thrive, add few more words.",
+              "We have carbon credit programs in Africa and Asia. Man-made greenhouse gas emissions stimulate climate change.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -81,7 +83,7 @@ export default function HomePage() {
             heading: "Seed Systems",
             bgImage: "/our-work/our-work-6.jpeg",
             details:
-              "Together, we innovate for a sustainable future where smallholders thrive, add few more words.",
+              "Smallholders have limited access to quality seeds of improved varieties. Seed is the cornerstone of any productivity gains at the farm gate.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -158,21 +160,24 @@ export default function HomePage() {
         videos={[
           {
             id: crypto.randomUUID(),
-            videoLink: "/videos/hero-banner.mp4",
+            videoLink:
+              "https://www.youtube.com/embed/f3H1KPn9v_0?autoplay=1&controls=1",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
             videoTitle: "Bangladesh: An Experience of Crop Insurance",
           },
           {
             id: crypto.randomUUID(),
-            videoLink: "/videos/hero-banner.mp4",
+            videoLink:
+              "https://www.youtube.com/embed/EeVX0HChQio?autoplay=1&controls=1",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-2.png",
-            videoTitle: "Successful introduction of certified sesame varieties",
+            videoTitle: "Bangladesh: The Magic Wand - (2022)",
           },
           {
             id: crypto.randomUUID(),
-            videoLink: "/videos/hero-banner.mp4",
+            videoLink:
+              "https://www.youtube.com/embed/gdAPojrDkMc?autoplay=1&controls=1",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-3.png",
             videoTitle:
@@ -180,10 +185,20 @@ export default function HomePage() {
           },
           {
             id: crypto.randomUUID(),
-            videoLink: "/videos/hero-banner.mp4",
+            videoLink:
+              "https://www.youtube.com/embed/zadfriobBUg?autoplay=1&controls=1",
             videoThumbNail:
               "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
             videoTitle: "Agriservices: eHub platform presentation",
+          },
+          {
+            id: crypto.randomUUID(),
+            videoLink:
+              "https://www.youtube.com/embed/x8Iv_G0spwA?autoplay=1&controls=1",
+            videoThumbNail:
+              "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
+            videoTitle:
+              "Women's Diverse Education in Agriculture Diversity & Inclusion SFSA Bangladesh",
           },
         ]}
       />
@@ -358,45 +373,32 @@ export default function HomePage() {
         blogs={[
           {
             id: crypto.randomUUID(),
-            title: "The Future of Food: Agribusiness and Agroecology",
+            title:
+              "Shifting focus to Climate-Smart Agriculture: The Importance of Stakeholder Engagement",
             category: "Insurance",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/1.png",
+            coverImage: "/blogs-and-insights/blog-1.png",
           },
           {
             id: crypto.randomUUID(),
-            title: "Magic Herbs to not miss in Your Garden| Medicinal plants",
+            title: "Nutrition in City Ecosystems (NICE)",
             category: "Entrepreneurship",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/2.jpg",
+            coverImage: "/blogs-and-insights/blog-2.png",
           },
           {
             id: crypto.randomUUID(),
-            title: "Medicinal Uses Of Cleome Gynandra Plant",
+            title: "Rural Entrepreneurship and Youth Empowerment",
             category: "Insurance",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/3.jpg",
+            coverImage: "/blogs-and-insights/blog-3.png",
           },
           {
             id: crypto.randomUUID(),
-            title: "The Future of Food: Agribusiness and Agroecology",
+            title: "Agriservices Centres",
             category: "Insurance",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/1.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Magic Herbs to not miss in Your Garden| Medicinal plants",
-            category: "Entrepreneurship",
-            publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/2.jpg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Medicinal Uses Of Cleome Gynandra Plant",
-            category: "Insurance",
-            publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/3.jpg",
+            coverImage: "/blogs-and-insights/blog-4.png",
           },
         ]}
       />

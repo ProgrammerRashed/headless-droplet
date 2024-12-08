@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
                 {
                   id: crypto.randomUUID(),
                   groupName: "About Us",
+                  bannerImage: "/nav-images/nav-1.jpg",
                   childNavigations: [
                     {
                       id: crypto.randomUUID(),
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
                 {
                   id: crypto.randomUUID(),
                   groupName: "Our Work",
+                  bannerImage: "/nav-images/nav-2.jpg",
                   childNavigations: [
                     {
                       id: crypto.randomUUID(),
@@ -73,6 +75,7 @@ export default function RootLayout({ children }) {
                 {
                   id: crypto.randomUUID(),
                   groupName: "Global Presence",
+                  bannerImage: "/nav-images/nav-3.jpg",
                   childNavigations: [
                     {
                       id: crypto.randomUUID(),
@@ -99,6 +102,7 @@ export default function RootLayout({ children }) {
                 {
                   id: crypto.randomUUID(),
                   groupName: "Our Impact",
+                  bannerImage: "/nav-images/nav-4.jpg",
                   childNavigations: [
                     {
                       id: crypto.randomUUID(),
@@ -130,6 +134,7 @@ export default function RootLayout({ children }) {
                 {
                   id: crypto.randomUUID(),
                   groupName: "Get Involved",
+                  bannerImage: "/nav-images/nav-5.jpg",
                   childNavigations: [
                     {
                       id: crypto.randomUUID(),

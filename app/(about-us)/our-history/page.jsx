@@ -35,84 +35,86 @@ function OurHistoryPage() {
         ]}
       />
       <TimelineSection
-        sectionHeading="Download our last annual report"
+        sectionHeading="Timeline"
         cards={[
           {
             id: crypto.randomUUID(),
             timeLine: "2024",
-            title: "Title Here",
+            title: "Establishment of Legacy Organizations",
             description:
-              "New legacy organizations are created in Bangladesh, India, Kenya (Sustainable Agriculture Foundation) as well as in Mali, Nigeria and Senegal",
+              "Created Sustainable Agriculture Foundations International Association as a legacy with country chapters in Bangladesh, India, Kenya, and local independent entities in Mali, Nigeria, and Senegal to carry forward the mission of sustainable agricultural development.",
             imageLink: "/timeline/timeline-1.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "2022",
-            title: "Title Here",
+            title: "Transition of Financial Support",
             description:
-              "The Syngenta Group Board decides to phase out its financial support of the Foundation",
+              "The Syngenta Group Board decides to phase out its financial support, setting the stage for independent growth.",
             imageLink: "/timeline/timeline-2.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "2019",
-            title: "Title Here",
+            title: "Creation of AEGF",
             description:
-              "Syngenta Foundation India co-created AEGF to scale up its agri-entrepreneur program.",
+              "The Agri-Entrepreneur Growth Foundation (AEGF) is co-created in India to amplify the agri-entrepreneurship movement.",
             imageLink: "/timeline/timeline-3.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "2017",
-            title: "Title Here",
-            description: "SFSA spins out its Farmforce tool.",
+            title: "Spin-off of Farmforce",
+            description:
+              "The innovative Farmforce tool is a spin-off designed to streamline agricultural value chains and improve traceability.",
             imageLink: "/timeline/timeline-1.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "2014",
-            title: "Title Here",
+            title: "Launch of ACRE Africa",
             description:
-              "SFSA co-created ACRE Africa Ltd to scale up its Kilimo Salama insurance program.",
+              "SFSA co-creates ACRE Africa Ltd, scaling its Kilimo Salama agricultural insurance program for smallholder farmers.",
             imageLink: "/timeline/timeline-1.jpg",
           },
           {
             id: crypto.randomUUID(),
-            timeLine: "2008",
-            title: "Title Here",
+            timeLine: "2008-9",
+            title: "Policy and R&D Integration",
             description:
-              "Policy and R&D become integral parts of the SFSA program.",
+              "Policy integration and research & development become central to SFSA’s strategic approach, enhancing innovation and influence.",
             imageLink: "/timeline/timeline-2.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "2005",
-            title: "Title Here",
+            title: "Global Expansion Begins",
             description:
-              "Work begins in India, followed by Kenya (2009), Indonesia (2010, independent as YASI from 2020), Bangladesh (2011), Senegal (2014), Nigeria and China (both 2018).",
+              "The Foundation starts operations in India and later expands to Kenya, Indonesia, Bangladesh, Senegal, Nigeria, and China to address local agricultural challenges.",
             imageLink: "/timeline/timeline-3.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "2001",
-            title: "Title Here",
+            title: "Formation of SFSA",
             description:
-              "After the company merger to create Syngenta, the Syngenta Foundation for Sustainable Agriculture (SFSA) takes forward the agricultural projects, with Klaus Leisinger as acting Director. ",
+              "With the creation of Syngenta, the Syngenta Foundation for Sustainable Agriculture (SFSA) emerges to focus on sustainable agriculture, led by Klaus Leisinger.",
             imageLink: "/timeline/timeline-1.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "1996",
-            title: "Title Here",
+            title: "Rebranding to Novartis Foundation",
             description:
-              "The Foundation adopts the name of the newly merged company Novartis and operated as The Novartis Foundation.",
+              "Following the merger forming Novartis, the Foundation is rebranded as The Novartis Foundation, expanding its reach and impact.",
             imageLink: "/timeline/timeline-3.jpg",
           },
           {
             id: crypto.randomUUID(),
             timeLine: "1981",
-            title: "Title Here",
-            description: "The Ciba-Geigy Foundation starts work in Mali.",
+            title: "Foundation Begins in Mali",
+            description:
+              "The Ciba-Geigy Foundation initiates its first development efforts in Mali, focusing on community-driven agricultural projects.",
             imageLink: "/timeline/timeline-1.jpg",
           },
         ]}

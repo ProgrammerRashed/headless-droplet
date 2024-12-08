@@ -18,20 +18,20 @@ function CounterCard({ counter }) {
       },
     );
 
-    const currentRef = countUpRef.current; // Capture the current ref value
+    const currentRef = countUpRef.current;
     if (currentRef) {
       observer.observe(currentRef);
     }
 
     return () => {
       if (currentRef) {
-        observer.unobserve(currentRef); // Use the captured ref value
+        observer.unobserve(currentRef);
       }
     };
   }, []);
 
   return (
-    <div data-aos="fade-up" className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2">
       <div className="flex items-center gap-4">
         <div className="h-[50px] w-1.5 rounded-l-full bg-green sm:h-[70px]"></div>
         <h4

@@ -3,14 +3,20 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-function BreadCrumb() {
+function BreadCrumb({ colorScheme }) {
   const pathname = usePathname();
   const pathSegments = pathname.split("/").filter(Boolean);
 
   return (
     <nav>
-      <ol className="flex flex-row gap-1.5 text-xs font-normal capitalize leading-[28px] text-white md:text-sm md:leading-[22px]">
+      <ol
+        className={cn(
+          "flex flex-row gap-1.5 text-xs font-normal capitalize leading-[28px] md:text-sm md:leading-[22px]",
+          `${colorScheme === "dark" ? "text-gray-800" : "text-white"}`,
+        )}
+      >
         <li className="flex items-center gap-1.5 transition-all duration-300 hover:underline">
           <Link href="/">Home</Link>
           <ChevronRight size="16" />
@@ -23,7 +29,10 @@ function BreadCrumb() {
           return (
             <li
               key={href}
-              className={`flex items-center gap-1.5 transition-all duration-300 ${isLast ? "text-white/80" : "text-inherit hover:underline"}`}
+              className={cn(
+                "flex items-center gap-1.5 transition-all duration-300",
+                `${isLast ? (colorScheme === "dark" ? "text-gray-400" : "text-white/80") : "text-inherit hover:underline"}`,
+              )}
             >
               {!isLast ? (
                 <>

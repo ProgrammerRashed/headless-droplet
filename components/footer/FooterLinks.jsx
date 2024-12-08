@@ -4,7 +4,7 @@ import LinksAccordion from "./LinksAccordion";
 import FooterSocialLinks from "./FooterSocialLinks";
 import FooterLinkGroup from "./FooterLinkGroup";
 
-function FooterLinks({ navigations }) {
+function FooterLinks({ navigations, socialLinks }) {
   return (
     <div className="mt-[30px] w-full md:mt-10">
       <Accordion type="single" collapsible className="w-full md:hidden">
@@ -19,7 +19,7 @@ function FooterLinks({ navigations }) {
       </div>
       <div className="hidden flex-row items-center justify-end gap-2 border-b border-white/10 pb-6 text-sm font-normal leading-[22px] tracking-[3%] text-white md:flex">
         <p>Follow Us</p>
-        <FooterSocialLinks />
+        <FooterSocialLinks socialLinks={socialLinks} />
       </div>
     </div>
   );

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-function HeaderTopSocial() {
+function HeaderTopSocial({ socialLinks }) {
   return (
     <div className="flex flex-row items-center justify-end gap-[6px]">
       <div className="mr-[6px] h-3 w-[1px] bg-gray"></div>
       <Link
-        href="/"
+        href={socialLinks.facebook}
+        target="_blank"
         className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
@@ -35,7 +36,8 @@ function HeaderTopSocial() {
         </svg>
       </Link>
       <Link
-        href="/"
+        href={socialLinks.linkedIn}
+        target="_blank"
         className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
@@ -64,7 +66,8 @@ function HeaderTopSocial() {
         </svg>
       </Link>
       <Link
-        href="/"
+        href={socialLinks.twitter}
+        target="_blank"
         className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
@@ -106,7 +109,8 @@ function HeaderTopSocial() {
         </svg>
       </Link>
       <Link
-        href="/"
+        href={socialLinks.youtube}
+        target="_blank"
         className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg

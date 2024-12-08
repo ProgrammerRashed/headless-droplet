@@ -5,7 +5,7 @@ import MainHeader from "./MainHeader";
 import { useEffect, useState } from "react";
 import MobileNavLinks from "./MobileNavLinks";
 
-function HeaderSection({ navigations, buttonDetails, logoLink }) {
+function HeaderSection({ navigations, buttonDetails, logoLink, socialLinks }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -51,7 +51,7 @@ function HeaderSection({ navigations, buttonDetails, logoLink }) {
       <div
         className={`container absolute !max-w-full bg-white !px-5 transition-all duration-300 sm:!px-5 md:!px-5 lg:!px-5 xl:!px-[32px] ${isHeaderVisible ? "xl:top-0 xl:opacity-100" : "xl:top-[-46px] xl:opacity-100"}`}
       >
-        <HeaderTop />
+        <HeaderTop socialLinks={socialLinks} />
         <MainHeader
           isMobileNavOpen={isMobileNavOpen}
           handleMobileNav={handleMobileNav}

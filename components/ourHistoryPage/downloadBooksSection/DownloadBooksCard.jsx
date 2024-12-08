@@ -19,6 +19,8 @@ function DownloadBooksCard({ book }) {
           {book.title}
         </h6>
         <Link
+          download={book.downloadLink}
+          target="_blank"
           className="border- flex w-full flex-row items-center gap-1 border-t border-gray-50 pt-1 text-sm font-medium leading-[22px] text-gray-800 transition-all duration-300 hover:text-green-900 md:gap-[10px] lg:pt-3 lg:text-base lg:font-semibold lg:leading-[24px]"
           href={book.downloadLink}
         >

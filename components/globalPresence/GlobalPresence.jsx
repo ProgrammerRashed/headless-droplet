@@ -13,7 +13,7 @@ function GlobalPresence() {
         <div className="mx-auto flex w-full max-w-[970px] flex-col items-center lg:flex-row lg:gap-20">
           <div className="mb-5 w-full rounded-[8px] border border-gray-50 bg-surface p-[10px] sm:mb-10 lg:mb-0 lg:max-w-[180px] lg:border-none lg:bg-transparent lg:p-0">
             <div className="flex flex-wrap items-center justify-center gap-[10px] lg:flex-col">
-              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full">
+              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full lg:justify-start">
                 <Image
                   src="/global-presence/country-flag/switzerland.png"
                   width={15}
@@ -25,7 +25,7 @@ function GlobalPresence() {
                   Switzerland (HQ)
                 </p>
               </div>
-              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full">
+              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full lg:justify-start">
                 <Image
                   src="/global-presence/country-flag/bangladesh.png"
                   width={15}
@@ -37,7 +37,7 @@ function GlobalPresence() {
                   Bangladesh
                 </p>
               </div>
-              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full">
+              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full lg:justify-start">
                 <Image
                   src="/global-presence/country-flag/india.png"
                   width={15}
@@ -49,7 +49,7 @@ function GlobalPresence() {
                   India
                 </p>
               </div>
-              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full">
+              <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full lg:justify-start">
                 <Image
                   src="/global-presence/country-flag/kenya.png"
                   width={15}

@@ -7,13 +7,18 @@ function FooterSection({
   footerDonation,
   navigations,
   footerBottom,
+  socialLinks,
 }) {
   return (
     <footer className="bg-dark-dark pb-6 pt-10 md:pb-0">
       <div className="container">
         <div className="flex w-full flex-col">
-          <FooterTop footerLogo={footerLogo} footerDonation={footerDonation} />
-          <FooterLinks navigations={navigations} />
+          <FooterTop
+            footerLogo={footerLogo}
+            footerDonation={footerDonation}
+            socialLinks={socialLinks}
+          />
+          <FooterLinks navigations={navigations} socialLinks={socialLinks} />
           <FooterBottom footerBottom={footerBottom} />
         </div>
       </div>

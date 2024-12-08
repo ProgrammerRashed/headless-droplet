@@ -15,7 +15,8 @@ function whoWeArePage() {
         title="The Sustainable Agriculture Foundation (SAF), formerly SFSA, builds on a 40-year legacy of transforming smallholder agriculture in Asia and Africa, focusing on climate-smart innovations, market access, and sustainable practices."
         description="The Sustainable Agriculture Foundation (SAF) transforms smallholder agriculture in Asia and Africa by improving farmer incomes, food security, and climate resilience. Building on the legacy of the Syngenta Foundation, SAF fosters innovation, empowers agri-entrepreneurs, and bridges gaps in research, technology, and market access. Through partnerships, SAF promotes inclusive growth and sustainable practices, creating thriving communities where agriculture, people, and nature coexist."
         videoDetails={{
-          videoLink: "/videos/hero-banner.mp4",
+          videoLink:
+            "https://www.youtube.com/embed/lxioAOhKmew?autoplay=1&controls=1",
           videoThumbNail: "/video-thumbnails/happy-farmer.jpg",
         }}
       />
@@ -83,7 +84,7 @@ function whoWeArePage() {
         sectionDetails="SAF’s strategy centers on enhancing productivity and market access for “pre-commercial” smallholder farmers, primarily in semi-arid areas with agricultural growth potential. Key focuses include advancing scientific knowledge, providing quality inputs, and establishing market linkages. Major factors shaping SAF’s work include rapid urbanization, rising food demand, climate change, and the role of innovative technologies in sustainable agriculture. Strategic updates emphasize climate adaptation, empowering women, introducing scalable innovations, and fostering multi-stakeholder partnerships. By 2025, SAF aims to improve income by at least 20% for five million smallholder families, advance gender equality, support youth involvement, enhance nutrition and food security, and build resilience against climate change."
         bannerImg="/our-strategy/our-strategy.png"
         downloadFile={{
-          fileName: "Guiding Principles (PDF 3.39 MB)",
+          fileName: "SAF's Strategy",
           link: "/",
         }}
       />

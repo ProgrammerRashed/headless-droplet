@@ -12,9 +12,8 @@ function OurHistoryPage() {
       />
       <SideBySideSection
         heading="Our History"
-        secondaryHeading="The Sustainable Agriculture Foundation (SAF) has its roots in a 40-year legacy of agricultural innovation and corporate philanthropy. Its journey began with the Ciba-Geigy Foundation in 1981, which focused on smallholder farming, starting with a groundbreaking initiative to improve millet yields in Mali. From the beginning, SAF prioritized local expertise, an approach that was revolutionary for its time.
-"
-        details="Renamed the Syngenta Foundation for Sustainable Agriculture (SFSA) in 2001, it became a global leader in supporting pre-commercial smallholders, improving farmer incomes, and enhancing food security through innovation and market access. SAF continues this legacy, empowering rural communities and addressing critical agricultural challenges in Asia and Africa."
+        secondaryHeading="The Sustainable Agriculture Foundation (SAF) has its roots in a 40-year legacy of agricultural innovation and corporate philanthropy."
+        details="Its journey began with the Ciba-Geigy Foundation in 1981, which focused on smallholder farming, starting with a groundbreaking initiative to improve millet yields in Mali. From the beginning, it prioritized local expertise, an approach that was revolutionary for its time. Renamed the Syngenta Foundation for Sustainable Agriculture (SFSA) in 2001, it became a global leader in supporting smallholders, enhancing incomes, and improving food security through innovation and market access. SAF now continues this legacy, empowering rural communities and tackling key agricultural challenges in Asia and Africa."
         bannerImg="/our-history/banner.jpg"
       />
       <DownloadBooksSection
@@ -24,13 +23,13 @@ function OurHistoryPage() {
             id: crypto.randomUUID(),
             title: "Our Legacy Book",
             image: "/books-download/book-1.png",
-            downloadLink: "/",
+            downloadLink: "/books-download/legacy-book.pdf",
           },
           {
             id: crypto.randomUUID(),
             title: "Our Legacy Book",
             image: "/books-download/book-1.png",
-            downloadLink: "/",
+            downloadLink: "/books-download/legacy-book.pdf",
           },
         ]}
       />
@@ -43,7 +42,7 @@ function OurHistoryPage() {
             title: "Establishment of Legacy Organizations",
             description:
               "Created Sustainable Agriculture Foundations International Association as a legacy with country chapters in Bangladesh, India, Kenya, and local independent entities in Mali, Nigeria, and Senegal to carry forward the mission of sustainable agricultural development.",
-            imageLink: "/timeline/timeline-1.jpg",
+            imageLink: "/timeline/2024.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -51,7 +50,7 @@ function OurHistoryPage() {
             title: "Transition of Financial Support",
             description:
               "The Syngenta Group Board decides to phase out its financial support, setting the stage for independent growth.",
-            imageLink: "/timeline/timeline-2.jpg",
+            imageLink: "/timeline/2022.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -59,7 +58,7 @@ function OurHistoryPage() {
             title: "Creation of AEGF",
             description:
               "The Agri-Entrepreneur Growth Foundation (AEGF) is co-created in India to amplify the agri-entrepreneurship movement.",
-            imageLink: "/timeline/timeline-3.jpg",
+            imageLink: "/timeline/2019.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -67,7 +66,7 @@ function OurHistoryPage() {
             title: "Spin-off of Farmforce",
             description:
               "The innovative Farmforce tool is a spin-off designed to streamline agricultural value chains and improve traceability.",
-            imageLink: "/timeline/timeline-1.jpg",
+            imageLink: "/timeline/2017.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -75,7 +74,7 @@ function OurHistoryPage() {
             title: "Launch of ACRE Africa",
             description:
               "SFSA co-creates ACRE Africa Ltd, scaling its Kilimo Salama agricultural insurance program for smallholder farmers.",
-            imageLink: "/timeline/timeline-1.jpg",
+            imageLink: "/timeline/2014.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -83,7 +82,7 @@ function OurHistoryPage() {
             title: "Policy and R&D Integration",
             description:
               "Policy integration and research & development become central to SFSA’s strategic approach, enhancing innovation and influence.",
-            imageLink: "/timeline/timeline-2.jpg",
+            imageLink: "/timeline/2008-2009.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -91,7 +90,7 @@ function OurHistoryPage() {
             title: "Global Expansion Begins",
             description:
               "The Foundation starts operations in India and later expands to Kenya, Indonesia, Bangladesh, Senegal, Nigeria, and China to address local agricultural challenges.",
-            imageLink: "/timeline/timeline-3.jpg",
+            imageLink: "/timeline/2005.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -99,7 +98,7 @@ function OurHistoryPage() {
             title: "Formation of SFSA",
             description:
               "With the creation of Syngenta, the Syngenta Foundation for Sustainable Agriculture (SFSA) emerges to focus on sustainable agriculture, led by Klaus Leisinger.",
-            imageLink: "/timeline/timeline-1.jpg",
+            imageLink: "/timeline/2001.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -107,7 +106,7 @@ function OurHistoryPage() {
             title: "Rebranding to Novartis Foundation",
             description:
               "Following the merger forming Novartis, the Foundation is rebranded as The Novartis Foundation, expanding its reach and impact.",
-            imageLink: "/timeline/timeline-3.jpg",
+            imageLink: "/timeline/1996.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -115,7 +114,7 @@ function OurHistoryPage() {
             title: "Foundation Begins in Mali",
             description:
               "The Ciba-Geigy Foundation initiates its first development efforts in Mali, focusing on community-driven agricultural projects.",
-            imageLink: "/timeline/timeline-1.jpg",
+            imageLink: "/timeline/1981.jpg",
           },
         ]}
       />

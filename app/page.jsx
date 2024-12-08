@@ -28,7 +28,7 @@ export default function HomePage() {
             heading: "Climate SMART Agriculture",
             bgImage: "/our-work/our-work-1.jpeg",
             details:
-              "Climate change is humanity’s biggest challenge; agriculture is particularly affected, given its dependency on weather and functioning ecosystems.",
+              "SAF promotes climate-smart solutions like precision agriculture, water-efficient technologies, and renewable energy to help smallholders adapt to climate change while reducing agriculture's carbon footprint.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -39,7 +39,7 @@ export default function HomePage() {
             heading: "Agri Entrepreneurship",
             bgImage: "/our-work/our-work-2.png",
             details:
-              "Smallholders with small pieces of land and poor agronomic knowledge have been continuing traditional agriculture by heredity.",
+              "Through Farmers’ Hubs, SAF connects smallholders to inputs, machinery, markets, info and advisory, improving productivity, incomes, and access to quality services.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -50,7 +50,7 @@ export default function HomePage() {
             heading: "Insurance & Risk Mitigation",
             bgImage: "/our-work/our-work-3.png",
             details:
-              "Agricultural production and food security have made impressive progress in South and South-East Asia over recent decades.",
+              "SAF facilitates the tailored agricultural insurance and its market development to protect smallholders from climate risks, enabling them to invest confidently and secure their livelihoods.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -61,7 +61,7 @@ export default function HomePage() {
             heading: "Food & Nutrition",
             bgImage: "/our-work/our-work-4.png",
             details:
-              "SAF adopts a holistic food systems approach to address urban food security, nutrition, and sustainable agriculture, focusing on two secondary cities each in Bangladesh, Kenya, and Rwanda.",
+              "SAF strengthens urban food systems by promoting agroecological practices, nutrition-sensitive value chains, and behavioral change for improved health and food security.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -72,7 +72,7 @@ export default function HomePage() {
             heading: "Carbon Credit",
             bgImage: "/our-work/our-work-5.png",
             details:
-              "We have carbon credit programs in Africa and Asia. Man-made greenhouse gas emissions stimulate climate change.",
+              "SAF helps farmers adopt sustainable practices in agroforestry and field crops, linking them to carbon credit markets to increase income and combat climate change.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -83,7 +83,7 @@ export default function HomePage() {
             heading: "Seed Systems",
             bgImage: "/our-work/our-work-6.jpeg",
             details:
-              "Smallholders have limited access to quality seeds of improved varieties. Seed is the cornerstone of any productivity gains at the farm gate.",
+              "Through the Seeds program, SAF improves smallholders’ access to high-quality seeds, enhancing productivity and food security.",
             buttonDetails: {
               title: "Learn more",
               link: "/",
@@ -209,101 +209,100 @@ export default function HomePage() {
             id: crypto.randomUUID(),
             serial: "01",
             title: "No proverty",
-            details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+            details: "Eradicate extreme poverty for all people everywhere.",
             icon: "/contributions-sdgs/no-proverty.svg",
             bgColorClass: "bg-[#FE4C5C]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/1.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "02",
             title: "zero hunger",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              "End hunger, achieve food security, improve nutrition, and promote sustainable agriculture.",
             icon: "/contributions-sdgs/zero-hunger.svg",
             bgColorClass: "bg-[#D8B060]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/2.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "03",
             title: "good health and well-being",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              "Ensure healthy lives and promote well-being for all at all ages.",
             icon: "/contributions-sdgs/good-health.svg",
             bgColorClass: "bg-[#5CAC6F]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/3.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "05",
             title: "gender equality",
-            details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+            details: "Achieve gender equality and empower all women and girls.",
             icon: "/contributions-sdgs/gender-equality.svg",
             bgColorClass: "bg-[#EF695C]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/4.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "06",
             title: "clean water and sanitation",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              " Ensure availability and sustainable management of water and sanitation for all.",
             icon: "/contributions-sdgs/clean-water.svg",
             bgColorClass: "bg-[#58C0DD]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/5.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "08",
             title: "decent work and economic growth",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              "Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.",
             icon: "/contributions-sdgs/economic-growth.svg",
             bgColorClass: "bg-[#BC4762]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/6.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "12",
             title: "responsible consumption and production",
-            details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+            details: "Ensure sustainable consumption and production patterns.",
             icon: "/contributions-sdgs/responsible-consumption.svg",
             bgColorClass: "bg-[#D5A05D]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/7.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "13",
-            title: "gender equality",
+            title: "Climate Action",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              "Take urgent action to combat climate change and its impacts.",
+            icon: "/contributions-sdgs/partnerships.svg",
+            bgColorClass: "bg-[#495F84]",
             icon: "/contributions-sdgs/climate-action.svg",
             bgColorClass: "bg-[#6D9065]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/8.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "15",
             title: "Life On land",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              "Protect, restore, and promote sustainable use of terrestrial ecosystems, manage forests, combat desertification, halt and reverse land degradation, and halt biodiversity loss.",
             icon: "/contributions-sdgs/life-on-land.svg",
             bgColorClass: "bg-[#80C571]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/9.jpg",
           },
           {
             id: crypto.randomUUID(),
             serial: "17",
             title: "partnerships for the goals",
             details:
-              "Eliminate hunger, ensure food security, enhance nutrition, and support sustainable agriculture.",
+              "Strengthen the means of implementation and revitalize global partnerships for sustainable development.",
             icon: "/contributions-sdgs/partnerships.svg",
             bgColorClass: "bg-[#495F84]",
-            bgImg: "/contributions-sdgs/bg-zero-hunger.jpg",
+            bgImg: "/contributions-sdgs/10.jpg",
           },
         ]}
       />
@@ -312,15 +311,11 @@ export default function HomePage() {
         partners={[
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image1.png",
+            logoLink: "/our-pertners/image11.png",
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image2.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image3.png",
+            logoLink: "/our-pertners/image6.png",
           },
           {
             id: crypto.randomUUID(),
@@ -328,23 +323,7 @@ export default function HomePage() {
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image5.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image6.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image7.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image6.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image9.png",
+            logoLink: "/our-pertners/image1.png",
           },
           {
             id: crypto.randomUUID(),
@@ -352,11 +331,32 @@ export default function HomePage() {
           },
           {
             id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image11.png",
+            logoLink: "/our-pertners/image7.png",
           },
+
           {
             id: crypto.randomUUID(),
             logoLink: "/our-pertners/image12.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            logoLink: "/our-pertners/image9.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            logoLink: "/our-pertners/image2.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            logoLink: "/our-pertners/image5.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            logoLink: "/our-pertners/image8.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            logoLink: "/our-pertners/image3.png",
           },
         ]}
         buttonDetails={{
@@ -375,28 +375,28 @@ export default function HomePage() {
             id: crypto.randomUUID(),
             title:
               "Shifting focus to Climate-Smart Agriculture: The Importance of Stakeholder Engagement",
-            category: "Insurance",
+            category: "Agriculture",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-1.png",
           },
           {
             id: crypto.randomUUID(),
             title: "Nutrition in City Ecosystems (NICE)",
-            category: "Entrepreneurship",
+            category: "Nutrition",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-2.png",
+            coverImage: "/blogs-and-insights/blog-2.jpg",
           },
           {
             id: crypto.randomUUID(),
             title: "Rural Entrepreneurship and Youth Empowerment",
-            category: "Insurance",
+            category: "Agri Entrepreneurship",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-3.png",
           },
           {
             id: crypto.randomUUID(),
             title: "Agriservices Centres",
-            category: "Insurance",
+            category: "Agri Entrepreneurship",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-4.png",
           },

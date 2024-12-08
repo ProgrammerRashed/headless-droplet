@@ -38,7 +38,7 @@ function CounterCard({ counter }) {
           ref={countUpRef}
           className="scroll-smooth text-[38px] font-semibold leading-[50px] text-dark sm:text-[58px] sm:leading-[70px] md:text-[48px] md:leading-normal lg:text-[58px] xl:leading-[70px]"
         >
-          {isInView && (
+          {/* {isInView && (
             <CountUp
               end={counter.counterNumber}
               duration={4}
@@ -53,7 +53,9 @@ function CounterCard({ counter }) {
                 </div>
               )}
             </CountUp>
-          )}
+          )} */}
+          {counter.counterNumber}
+          {counter.suffix}
         </h4>
       </div>
       <p className="text-base font-normal leading-[26px] text-gray-dark">

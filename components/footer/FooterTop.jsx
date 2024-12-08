@@ -3,7 +3,7 @@ import Link from "next/link";
 import PrimaryButton from "../buttons/PrimaryButton";
 import FooterSocialLinks from "./FooterSocialLinks";
 
-function FooterTop({ footerLogo, footerDonation }) {
+function FooterTop({ footerLogo, footerDonation, socialLinks }) {
   return (
     <div className="flex flex-col border-b border-white/10 pb-5 md:flex-row md:items-center md:justify-between md:pb-[25px]">
       <Link href="/">
@@ -16,7 +16,7 @@ function FooterTop({ footerLogo, footerDonation }) {
         />
       </Link>
       <div className="mb-[30px] md:hidden">
-        <FooterSocialLinks />
+        <FooterSocialLinks socialLinks={socialLinks} />
       </div>
       <div className="flex flex-col gap-[10px] md:items-end">
         <p className="text-base font-normal leading-[26px] tracking-[3%] text-white md:font-medium">

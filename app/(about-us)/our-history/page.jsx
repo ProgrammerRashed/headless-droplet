@@ -18,7 +18,7 @@ function OurHistoryPage() {
         bannerImg="/our-history/banner.jpg"
       />
       <DownloadBooksSection
-        sectionHeadig="Download the legacy book"
+        sectionHeadig="Download Our Materials"
         books={[
           {
             id: crypto.randomUUID(),

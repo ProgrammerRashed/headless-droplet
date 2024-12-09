@@ -10,12 +10,14 @@ function OurValuesSection({ sectionHeading, sectionSubHeading, values }) {
             {sectionHeading}
           </SectionHeading>
         </div>
-        <p
-          data-aos="fade-up"
-          className="max-w-[740px] text-base font-normal leading-[26px] text-gray-600"
-        >
-          {sectionSubHeading}
-        </p>
+        {sectionSubHeading && (
+          <p
+            data-aos="fade-up"
+            className="max-w-[740px] text-base font-normal leading-[26px] text-gray-600"
+          >
+            {sectionSubHeading}
+          </p>
+        )}
       </div>
       <div className="container">
         <div className="mt-[30px] grid w-full grid-cols-1 sm:grid-cols-2 sm:gap-4 md:mt-10 lg:grid-cols-3 xl:gap-0">

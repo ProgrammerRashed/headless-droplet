@@ -276,25 +276,24 @@ function BangladeshPage() {
         blogs={[
           {
             id: crypto.randomUUID(),
-            title:
-              "Shifting focus to Climate-Smart Agriculture: The Importance of Stakeholder Engagement",
-            category: "Agriculture",
+            title: "Agricultural Insurance Solutions Bangladesh",
+            category: "Insurance & Risk Mitigation",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-1.png",
+            coverImage: "/blogs-and-insights/blog-5.png",
           },
           {
             id: crypto.randomUUID(),
-            title: "Nutrition in City Ecosystems (NICE)",
-            category: "Nutrition",
+            title: "Shifting the Δ along the delta",
+            category: "Agri-entrepreneurship",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-2.jpg",
+            coverImage: "/blogs-and-insights/blog-6.png",
           },
           {
             id: crypto.randomUUID(),
-            title: "Rural Entrepreneurship and Youth Empowerment",
-            category: "Agri Entrepreneurship",
+            title: "Green Trajectory: Transforming Emissions into Solutions",
+            category: "Carbon Credit",
             publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-3.png",
+            coverImage: "/blogs-and-insights/blog-7.png",
           },
           {
             id: crypto.randomUUID(),

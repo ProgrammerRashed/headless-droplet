@@ -16,7 +16,7 @@ function BlogsCard({ blog }) {
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">
-        <p className="text-green-dark">{blog.category}</p>
+        <p className="line-clamp-1 text-green-dark">{blog.category}</p>
         <div className="h-[5px] w-[5px] rounded-full bg-gray"></div>
         <p className="gray-light">{blog.publishedDate}</p>
       </div>

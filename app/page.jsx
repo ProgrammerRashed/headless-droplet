@@ -171,7 +171,7 @@ export default function HomePage() {
             videoLink:
               "https://www.youtube.com/embed/EeVX0HChQio?autoplay=1&controls=1",
             videoThumbNail:
-              "/videos/farming-transform/thumbnails/video-thumbnail-2.png",
+              "/videos/farming-transform/thumbnails/video-thumbnail-2.jpg",
             videoTitle: "Bangladesh: The Magic Wand - (2022)",
           },
           {
@@ -179,7 +179,7 @@ export default function HomePage() {
             videoLink:
               "https://www.youtube.com/embed/gdAPojrDkMc?autoplay=1&controls=1",
             videoThumbNail:
-              "/videos/farming-transform/thumbnails/video-thumbnail-3.png",
+              "/videos/farming-transform/thumbnails/video-thumbnail-3.jpg",
             videoTitle:
               "Sustainable partnership for the development of the corn industry",
           },
@@ -188,7 +188,7 @@ export default function HomePage() {
             videoLink:
               "https://www.youtube.com/embed/zadfriobBUg?autoplay=1&controls=1",
             videoThumbNail:
-              "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
+              "/videos/farming-transform/thumbnails/video-thumbnail-4.jpg",
             videoTitle: "Agriservices: eHub platform presentation",
           },
           {
@@ -196,7 +196,7 @@ export default function HomePage() {
             videoLink:
               "https://www.youtube.com/embed/x8Iv_G0spwA?autoplay=1&controls=1",
             videoThumbNail:
-              "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
+              "/videos/farming-transform/thumbnails/video-thumbnail-5.jpg",
             videoTitle:
               "Women's Diverse Education in Agriculture Diversity & Inclusion SFSA Bangladesh",
           },

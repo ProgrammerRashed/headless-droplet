@@ -129,12 +129,32 @@ function BangladeshPage() {
           },
           {
             id: crypto.randomUUID(),
+            serial: "03",
+            title: "good health and well-being",
+            details:
+              "Ensure healthy lives and promote well-being for all at all ages.",
+            icon: "/contributions-sdgs/good-health.svg",
+            bgColorClass: "bg-[#5CAC6F]",
+            bgImg: "/contributions-sdgs/3.jpg",
+          },
+          {
+            id: crypto.randomUUID(),
             serial: "05",
             title: "gender equality",
             details: "Achieve gender equality and empower all women and girls.",
             icon: "/contributions-sdgs/gender-equality.svg",
             bgColorClass: "bg-[#EF695C]",
             bgImg: "/contributions-sdgs/4.jpg",
+          },
+          {
+            id: crypto.randomUUID(),
+            serial: "06",
+            title: "clean water and sanitation",
+            details:
+              " Ensure availability and sustainable management of water and sanitation for all.",
+            icon: "/contributions-sdgs/clean-water.svg",
+            bgColorClass: "bg-[#58C0DD]",
+            bgImg: "/contributions-sdgs/5.jpg",
           },
           {
             id: crypto.randomUUID(),
@@ -146,7 +166,15 @@ function BangladeshPage() {
             bgColorClass: "bg-[#BC4762]",
             bgImg: "/contributions-sdgs/6.jpg",
           },
-
+          {
+            id: crypto.randomUUID(),
+            serial: "12",
+            title: "responsible consumption and production",
+            details: "Ensure sustainable consumption and production patterns.",
+            icon: "/contributions-sdgs/responsible-consumption.svg",
+            bgColorClass: "bg-[#D5A05D]",
+            bgImg: "/contributions-sdgs/7.jpg",
+          },
           {
             id: crypto.randomUUID(),
             serial: "13",

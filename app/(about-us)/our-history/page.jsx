@@ -22,14 +22,14 @@ function OurHistoryPage() {
           {
             id: crypto.randomUUID(),
             title: "Our Legacy Book",
-            image: "/books-download/book-1.png",
+            image: "/books-download/book-2.png",
             downloadLink: "/books-download/legacy-book.pdf",
           },
           {
             id: crypto.randomUUID(),
-            title: "Our Legacy Book",
+            title: "Last Annual Report",
             image: "/books-download/book-1.png",
-            downloadLink: "/books-download/legacy-book.pdf",
+            downloadLink: "/books-download/last-annual-report.pdf",
           },
         ]}
       />

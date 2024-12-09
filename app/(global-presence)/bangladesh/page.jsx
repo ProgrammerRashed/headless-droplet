@@ -106,15 +106,6 @@ function BangladeshPage() {
         ]}
       />
       <GlobalPresence variation="local" />
-      <OurStrategySection
-        sectionTitle="Our Strategy"
-        sectionDetails="SAF’s strategy centers on enhancing productivity and market access for “pre-commercial” smallholder farmers, primarily in semi-arid areas with agricultural growth potential. Key focuses include advancing scientific knowledge, providing quality inputs, and establishing market linkages. Major factors shaping SAF’s work include rapid urbanization, rising food demand, climate change, and the role of innovative technologies in sustainable agriculture. Strategic updates emphasize climate adaptation, empowering women, introducing scalable innovations, and fostering multi-stakeholder partnerships. By 2025, SAF aims to improve income by at least 20% for five million smallholder families, advance gender equality, support youth involvement, enhance nutrition and food security, and build resilience against climate change."
-        bannerImg="/our-strategy/our-strategy.png"
-        downloadFile={{
-          fileName: "SAF's Strategy",
-          link: "/",
-        }}
-      />
       <SDGSContributionSection
         sectionHeading="Our contribution to the SDGs"
         cardDetails={[

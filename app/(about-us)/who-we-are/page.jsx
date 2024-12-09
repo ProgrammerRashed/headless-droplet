@@ -39,7 +39,7 @@ function whoWeArePage() {
       />
       <OurValuesSection
         sectionHeading="Our values"
-        sectionSubHeading="We measure our success not only by our business performance, but also by the benefits we bring to farming and the environment."
+        sectionSubHeading="We inspire sustainable growth from the ground up."
         values={[
           {
             id: crypto.randomUUID(),

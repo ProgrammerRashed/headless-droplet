@@ -179,7 +179,7 @@ export default function HomePage() {
             videoLink:
               "https://www.youtube.com/embed/gdAPojrDkMc?autoplay=1&controls=1",
             videoThumbNail:
-              "/videos/farming-transform/thumbnails/video-thumbnail-3.jpg",
+              "/videos/farming-transform/thumbnails/video-thumbnail-5.jpg",
             videoTitle:
               "Sustainable partnership for the development of the corn industry",
           },
@@ -196,7 +196,7 @@ export default function HomePage() {
             videoLink:
               "https://www.youtube.com/embed/x8Iv_G0spwA?autoplay=1&controls=1",
             videoThumbNail:
-              "/videos/farming-transform/thumbnails/video-thumbnail-5.jpg",
+              "/videos/farming-transform/thumbnails/video-thumbnail-3.jpg",
             videoTitle:
               "Women's Diverse Education in Agriculture Diversity & Inclusion SFSA Bangladesh",
           },

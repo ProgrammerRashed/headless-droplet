@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
                     {
                       id: crypto.randomUUID(),
                       title: "Bangladesh",
-                      link: "/",
+                      link: "/bangladesh",
                     },
                     {
                       id: crypto.randomUUID(),
@@ -244,7 +244,7 @@ export default function RootLayout({ children }) {
                     {
                       id: crypto.randomUUID(),
                       title: "Bangladesh",
-                      link: "/",
+                      link: "/bangladesh",
                     },
                     {
                       id: crypto.randomUUID(),

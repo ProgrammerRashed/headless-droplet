@@ -4,28 +4,38 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }) => {
-  const ref = useRef(null);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
 
+  // Update height dynamically
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height * 1.04);
+    if (containerRef.current) {
+      const updateHeight = () => {
+        const rect = containerRef.current.getBoundingClientRect();
+        setHeight(rect.height); // Store the full height
+      };
+
+      // Initialize height and observe changes
+      updateHeight();
+      const observer = new ResizeObserver(updateHeight);
+      observer.observe(containerRef.current);
+
+      return () => observer.disconnect();
     }
-  }, [ref]);
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 30%", "end 60%"],
+    offset: ["start 50%", "end 90%"],
   });
 
+  // Transformations based on updated height
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, height]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
     <div data-aos="fade-up" className="w-full" ref={containerRef}>
-      <div ref={ref} className="relative mx-auto mt-[30px] md:mt-[100px]">
+      <div className="relative mx-auto mt-[30px] md:mt-[100px]">
         {data.map((item, index) => (
           <div
             key={item.id}

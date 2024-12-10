@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-function MobileNavLinkItem({ navigation }) {
+function MobileNavLinkItem({ navigation, setIsMobileNavOpen }) {
   return (
     <AccordionItem value={navigation.id} className="border-b border-gray !py-0">
       <AccordionTrigger
@@ -18,6 +18,7 @@ function MobileNavLinkItem({ navigation }) {
         <div className="mb-[10px] flex w-full flex-col gap-3 rounded-[8px] bg-surface p-[15px] text-base font-medium leading-[22px] text-gray-dark">
           {navigation.childNavigations.map((navItem) => (
             <Link
+              onClick={() => setIsMobileNavOpen(false)}
               key={navItem.id}
               className="transition-all duration-300 hover:text-dark hover:underline"
               href={navItem.link}

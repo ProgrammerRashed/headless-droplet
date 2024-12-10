@@ -11,6 +11,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "0.5xl": "1200px",
+        "3xl": "1380px",
+      },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
       },

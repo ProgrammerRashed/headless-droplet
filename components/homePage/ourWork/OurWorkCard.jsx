@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PrimaryButton from "../buttons/PrimaryButton";
+import PrimaryButton from "../../shared/buttons/PrimaryButton";
 
 function OurWorkCard({ card }) {
   return (

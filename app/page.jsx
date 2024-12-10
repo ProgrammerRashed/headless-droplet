@@ -1,14 +1,14 @@
-import AboutSAFSection from "@/components/aboutSAF/AboutSAFSection";
-import BlogsAndInsightsSection from "@/components/blogsAndInsightsSection/BlogsAndInsightsSection";
-import CounterSection from "@/components/counterSection/CounterSection";
-import DirectorsSaySection from "@/components/directorSay/DirectorsSaySection";
-import GlobalPresence from "@/components/globalPresence/GlobalPresence";
+import AboutSAFSection from "@/components/homePage/aboutSAF/AboutSAFSection";
+import BlogsAndInsightsSection from "@/components/homePage/blogsAndInsightsSection/BlogsAndInsightsSection";
+import CounterSection from "@/components/homePage/counterSection/CounterSection";
+import DirectorsSaySection from "@/components/homePage/directorSay/DirectorsSaySection";
+import GlobalPresence from "@/components/homePage/globalPresence/GlobalPresence";
 import HeroSection from "@/components/heroSection/HeroSection";
-import MissionVissionSection from "@/components/missionVission/MissionVissionSection";
-import OurPartnersSections from "@/components/ourPartnersSection/OurPartnersSections";
-import OurWorkSection from "@/components/ourWork/OurWorkSection";
-import SDGSContributionSection from "@/components/sdgsContributionSection/SDGSContributionSection";
-import VideosSection from "@/components/videosSection.jsx/VideosSection";
+import MissionVissionSection from "@/components/homePage/missionVission/MissionVissionSection";
+import OurPartnersSections from "@/components/homePage/ourPartnersSection/OurPartnersSections";
+import OurWorkSection from "@/components/homePage/ourWork/OurWorkSection";
+import SDGSContributionSection from "@/components/homePage/sdgsContributionSection/SDGSContributionSection";
+import VideosSection from "@/components/homePage/videosSection.jsx/VideosSection";
 
 export default function HomePage() {
   return (
@@ -18,7 +18,35 @@ export default function HomePage() {
         sectionSubHeading="Recent transition is from Syngenta Foundation for Sustainable Agriculture"
         bgCoverVideo="/videos/hero-banner.mp4"
       />
-      <GlobalPresence />
+      <GlobalPresence
+        sectionHeadline="Our Global Presence"
+        countries={[
+          {
+            id: crypto.randomUUID(),
+            countryName: "Switzerland",
+            flagIcon: "/global-presence/country-flag/switzerland.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            countryName: "Bangladesh",
+            flagIcon: "/global-presence/country-flag/bangladesh.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            countryName: "India",
+            flagIcon: "/global-presence/country-flag/india.png",
+          },
+          {
+            id: crypto.randomUUID(),
+            countryName: "Kenya",
+            flagIcon: "/global-presence/country-flag/kenya.png",
+          },
+        ]}
+        labels={{
+          first: "Current Countries",
+          second: "Previously Covered Countries",
+        }}
+      />
       <OurWorkSection
         sectionHeading="Our work"
         bgCoverImage="/our-work/bacground-cover.jpg"
@@ -149,10 +177,11 @@ export default function HomePage() {
       <DirectorsSaySection
         directorDetails={{
           directorName: "Simon Winter",
-          directorRole: "Executive Director - SAF HQ",
+          directorRole:
+            "Sustainable Agriculture Foundations International Association – Executive Director",
           directorImage: "/directors-say/directors-avatar.png",
           directorQuote:
-            "Our Foundation is accelerating support for first-mile entrepreneurial networks, helping under-served, pre-commercial smallholders fully engage in market systems. We are placing a stronger emphasis on empowering women as both entrepreneurs and farmers. Looking ahead, we aim to expand the range of climate-smart innovations that enhance smallholders diversification, productivity, and resilience",
+            "Our Foundation network is accelerating support for first-mile entrepreneurs, helping under-served, pre-commercial smallholders access needed innovations and fully engage in market systems. We place a strong emphasis on empowering women as both entrepreneurs and farmers. Looking ahead, we aim to expand the range of climate-smart innovations and the scale at which they can enhance smallholders’ diversification, productivity, and resilience.",
         }}
       />
       <VideosSection

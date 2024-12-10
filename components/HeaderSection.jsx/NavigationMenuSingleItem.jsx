@@ -13,7 +13,7 @@ function NavigationMenuSingleItem({ navigation }) {
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger
-        className="rounded-0 flex items-center justify-center gap-1 !bg-transparent px-[15px] py-[33px] text-center text-base font-normal leading-[26px] text-[#0B1411] outline-transparent transition-all duration-300 hover:!bg-transparent hover:text-[#0B1411]/70"
+        className="rounded-0 3xl:px-[15px] 3xl:text-base flex items-center justify-center gap-1 rounded-none border-b-2 border-transparent !bg-transparent px-[10px] py-[31px] text-center text-sm font-normal leading-[26px] text-[#0B1411] outline-transparent transition-all duration-300 hover:!bg-transparent hover:text-[#0B1411]/70 data-[state=open]:border-red-600"
         cheveonClassName="w-5 h-5"
       >
         {navigation.groupName}

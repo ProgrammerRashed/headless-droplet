@@ -11,17 +11,17 @@ export const Timeline = ({ data }) => {
   useEffect(() => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
+      setHeight(rect.height * 1.04);
     }
   }, [ref]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 30%", "end 60%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, height]);
 
   return (
     <div data-aos="fade-up" className="w-full" ref={containerRef}>
@@ -29,7 +29,7 @@ export const Timeline = ({ data }) => {
         {data.map((item, index) => (
           <div
             key={item.id}
-            className="mt-16 flex justify-start first-of-type:pt-0 lg:mt-20"
+            className="flex justify-start pt-16 first-of-type:pt-0 lg:pt-20"
           >
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row xl:max-w-fit">
               <div className="absolute left-0 flex h-6 w-6 items-center justify-center rounded-full bg-surface">
@@ -69,7 +69,7 @@ export const Timeline = ({ data }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute left-3 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-neutral-700"
+          className="absolute left-3 top-0 -z-10 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-neutral-700"
         >
           <motion.div
             style={{

@@ -274,7 +274,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Blogs & Articles | Press | News",
+                      title: "Blogs & Articles | News",
                       link: "/",
                     },
                     {

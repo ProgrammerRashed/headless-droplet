@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionHeading from "../sectionHeader/SectionHeading";
+import SectionHeading from "../../sectionHeader/SectionHeading";
 import OurWorkCard from "./OurWorkCard";
 
 function OurWorkSection({ sectionHeading, bgCoverImage, cards }) {

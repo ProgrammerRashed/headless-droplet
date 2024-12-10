@@ -10,10 +10,6 @@ function HeaderSection({ navigations, buttonDetails, logoLink, socialLinks }) {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleMobileNav = () => {
-    setIsMobileNavOpen((prev) => !prev);
-  };
-
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
       setIsHeaderVisible(false);
@@ -54,13 +50,14 @@ function HeaderSection({ navigations, buttonDetails, logoLink, socialLinks }) {
         <HeaderTop socialLinks={socialLinks} />
         <MainHeader
           isMobileNavOpen={isMobileNavOpen}
-          handleMobileNav={handleMobileNav}
+          setIsMobileNavOpen={setIsMobileNavOpen}
           navigations={navigations}
           buttonDetails={buttonDetails}
           logoLink={logoLink}
         />
         {isMobileNavOpen && (
           <MobileNavLinks
+            setIsMobileNavOpen={setIsMobileNavOpen}
             navigations={navigations}
             buttonDetails={buttonDetails}
           />

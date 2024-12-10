@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import SectionHeading from "../sectionHeader/SectionHeading";
+import SectionHeading from "../../sectionHeader/SectionHeading";
 
 import VideoList from "./VideoList";
-import VideoPlayer from "../shared/VideoPlayer";
+import VideoPlayer from "../../shared/VideoPlayer";
 import VideoSlider from "./VideoSlider";
 
 function VideosSection({ sectionHeading, videos }) {

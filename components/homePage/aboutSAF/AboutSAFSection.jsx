@@ -1,5 +1,5 @@
-import SectionHeading from "../sectionHeader/SectionHeading";
-import PrimaryButton from "../buttons/PrimaryButton";
+import SectionHeading from "../../sectionHeader/SectionHeading";
+import PrimaryButton from "../../shared/buttons/PrimaryButton";
 
 function AboutSAFSection({ sectionHeading, sectionSubHeading, buttonDetails }) {
   return (

@@ -37,28 +37,28 @@ function LeadershipCard({ people }) {
       <DialogOverlay className="bg-gray-800/80">
         <DialogContent
           data-lenis-prevent
-          className="h-[90vh] min-w-[90vw] max-w-[90vw] rounded-[8px] p-[10px] pr-0 sm:min-w-[80vw] sm:max-w-[70vw] md:h-[80vh] xl:min-w-[90vw] xl:max-w-[90vw] xl:p-[30px] xl:pt-20 2xl:min-w-[70vw] 2xl:max-w-[70vw]"
+          className="h-[90vh] w-[90vw] overflow-hidden rounded-[8px] border-none bg-surface p-0 sm:w-[60vw] sm:min-w-[60vw] sm:max-w-[60vw] md:h-[60vh] md:w-[90vw] md:min-w-[90vw] md:max-w-[90vw] lg:h-[75vh] lg:w-[85vw] lg:min-w-[82vw] lg:max-w-[85vw]"
         >
-          <div className="flex h-full w-full flex-col gap-[30px] overflow-y-auto pr-[10px] md:flex-row md:overflow-hidden md:pr-0 xl:gap-[60px]">
-            <div className="min-h-[360px] w-full overflow-hidden rounded-[4px] shadow-sm xl:min-w-[470px] xl:max-w-[470px]">
+          <div className="flex h-full w-full flex-col overflow-hidden md:flex-row md:gap-10 md:p-[30px] md:pt-20 lg:gap-[60px]">
+            <div className="mb-5 h-[330px] w-full sm:h-[500px] md:mb-0 md:h-auto md:max-w-[470px]">
               <Image
                 src={people.imageLink}
                 alt={people.leaderName}
                 width={400}
                 height={440}
-                className="h-full w-full object-cover"
+                className="h-full w-full rounded-t-[8px] object-cover md:rounded-[8px] md:rounded-t-none"
               />
             </div>
-            <div className="scrollbar-thin flex w-full flex-col pb-5 md:overflow-y-auto md:pr-[15px]">
-              <DialogHeader className="mb-10">
-                <DialogTitle className="mb-[5px] text-start text-[28px] font-medium leading-[38px] text-gray-800">
+            <div className="scrollbar-thin flex w-full flex-col overflow-y-scroll px-[15px] pb-[30px] pt-0 text-left md:flex-grow md:px-0 md:pb-0 md:pr-4">
+              <DialogHeader className="mb-[10px] text-left lg:mb-10">
+                <DialogTitle className="gray-800 mb-0.5 text-xl font-semibold leading-[32px] lg:mb-1 lg:text-[28px] lg:leading-[38px]">
                   {people.leaderName}
                 </DialogTitle>
-                <DialogDescription className="text-gray-400 text-start text-sm font-normal leading-[22px]">
+                <DialogDescription className="text-left text-sm font-normal leading-[22px] text-gray-400">
                   {people.role}
                 </DialogDescription>
               </DialogHeader>
-              <p className="text-start text-base font-normal leading-[26px] text-gray-600">
+              <p className="text-base font-normal leading-[26px] text-gray-600">
                 {people.details}
               </p>
             </div>

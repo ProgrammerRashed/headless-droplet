@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import PrimaryButton from "../buttons/PrimaryButton";
+import PrimaryButton from "../shared/buttons/PrimaryButton";
 import FooterSocialLinks from "./FooterSocialLinks";
 
 function FooterTop({ footerLogo, footerDonation, socialLinks }) {

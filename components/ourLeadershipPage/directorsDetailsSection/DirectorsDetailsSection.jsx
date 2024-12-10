@@ -6,14 +6,14 @@ function DirectorsDetailsSection({ imageLink, directorName, role, about }) {
       <div className="container">
         <div
           data-aos="fade-up"
-          className="flex flex-col overflow-hidden rounded-[8px] bg-surface md:flex-row"
+          className="flex flex-col overflow-hidden rounded-[8px] bg-surface lg:flex-row"
         >
           <Image
             src={imageLink}
             width={560}
             height={650}
             alt="Directors image"
-            className="aspect-[330/383] w-full object-cover md:w-1/2 xl:aspect-[56/65] xl:h-[650px] xl:w-[560px]"
+            className="aspect-[330/383] w-full object-cover lg:w-1/2 xl:aspect-[56/65] xl:h-[650px] xl:w-[560px]"
           />
           <div
             data-aos="fade-up"

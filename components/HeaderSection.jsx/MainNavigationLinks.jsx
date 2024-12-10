@@ -7,7 +7,7 @@ import NavigationMenuSingleItem from "./NavigationMenuSingleItem";
 
 function MainNavigationLinks({ navigations }) {
   return (
-    <NavigationMenu className="hidden items-center justify-end xl:flex">
+    <NavigationMenu className="0.5xl:flex hidden items-center justify-end">
       <NavigationMenuList>
         {navigations.map((navigation) => (
           <NavigationMenuSingleItem

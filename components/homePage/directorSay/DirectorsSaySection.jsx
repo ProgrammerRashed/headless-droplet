@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import SectionHeading from "../sectionHeader/SectionHeading";
+import SectionHeading from "../../sectionHeader/SectionHeading";
 
 function DirectorsSaySection({ directorDetails }) {
   return (

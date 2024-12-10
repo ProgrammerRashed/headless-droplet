@@ -6,11 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import PrimaryButton from "../buttons/PrimaryButton";
-import SectionHeading from "../sectionHeader/SectionHeading";
+import PrimaryButton from "../../shared/buttons/PrimaryButton";
+import SectionHeading from "../../sectionHeader/SectionHeading";
 import BlogsCard from "./BlogsCard";
 import { useRef } from "react";
-import SlidersButton from "../buttons/SlidersButton";
+import SlidersButton from "../../shared/buttons/SlidersButton";
 
 function BlogsAndInsightsSection({ sectionHeading, btnDetails, blogs }) {
   const swiperRef = useRef(null);

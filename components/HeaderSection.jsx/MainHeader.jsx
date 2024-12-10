@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PrimaryButton from "../buttons/PrimaryButton";
+import PrimaryButton from "../shared/buttons/PrimaryButton";
 import MainNavigationLinks from "./MainNavigationLinks";
 import Link from "next/link";
 
@@ -8,27 +8,27 @@ function MainHeader({
   buttonDetails,
   logoLink,
   isMobileNavOpen,
-  handleMobileNav,
+  setIsMobileNavOpen,
 }) {
   return (
-    <div className="flex items-center justify-between gap-[20px] py-[10px] xl:py-0">
-      <Link href="/">
+    <div className="3xl:gap-5 0.5xl:py-0 flex items-center justify-between gap-3 py-[10px]">
+      <Link href="/" onClick={() => setIsMobileNavOpen(false)}>
         <Image
           src={logoLink}
           width={253}
           height={55}
           alt="SAF logo"
-          className="h-auto w-[147px] object-contain xl:w-[253px]"
+          className="0.5xl:w-[253px] h-auto w-[147px] object-contain lg:w-[200px]"
         />
       </Link>
-      <div className="flex items-center justify-between gap-4 xl:gap-12">
+      <div className="3xl:gap-[35px] flex items-center justify-between gap-4">
         <MainNavigationLinks navigations={navigations} />
-        <PrimaryButton className="hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3 xl:flex">
+        <PrimaryButton className="0.5xl:flex hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3">
           {buttonDetails.title}
         </PrimaryButton>
         <button
-          onClick={handleMobileNav}
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-green-light transition-all duration-300 hover:bg-green-dark xl:hidden"
+          onClick={() => setIsMobileNavOpen((prev) => !prev)}
+          className="0.5xl:hidden flex h-12 w-12 items-center justify-center rounded-full bg-green-light transition-all duration-300 hover:bg-green-dark"
         >
           {isMobileNavOpen ? (
             <svg

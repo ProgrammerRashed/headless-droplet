@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import VideoPlayer from "../shared/VideoPlayer";
+import VideoPlayer from "../../shared/VideoPlayer";
 
 function VideoSlider({ videos }) {
   return (

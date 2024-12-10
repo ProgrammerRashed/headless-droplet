@@ -7,7 +7,7 @@ function OurMissionVisionSection({ sectionTitle, missionAndVision }) {
     <section className="my-[50px] md:mt-[100px]">
       <div className="container">
         <div data-aos="fade-up">
-          <SectionHeading className="border-gray-50 border-b pb-5 md:pb-[30px]">
+          <SectionHeading className="border-b border-gray-50 pb-5 md:pb-[30px]">
             {sectionTitle}
           </SectionHeading>
         </div>

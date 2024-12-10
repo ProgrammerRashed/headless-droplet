@@ -1,11 +1,11 @@
-import PrimaryButton from "../buttons/PrimaryButton";
-import SectionHeading from "../sectionHeader/SectionHeading";
+import PrimaryButton from "../../shared/buttons/PrimaryButton";
+import SectionHeading from "../../sectionHeader/SectionHeading";
 import OurPartnersCard from "./OurPartnersCard";
 
 function OurPartnersSections({ sectionHeading, partners, buttonDetails }) {
   return (
     <section className="my-[50px] md:my-[100px]">
-      <div className="container">
+      <div className="container lg:px-[95px]">
         <div data-aos="fade-up">
           <SectionHeading className="text-center">
             {sectionHeading}

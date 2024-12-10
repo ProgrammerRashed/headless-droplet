@@ -1,4 +1,4 @@
-import SectionHeading from "../sectionHeader/SectionHeading";
+import SectionHeading from "../../sectionHeader/SectionHeading";
 
 import SDGSCard from "./SDGSCard";
 

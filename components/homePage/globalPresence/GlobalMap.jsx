@@ -2070,11 +2070,7 @@ function GlobalMap() {
           />
           <path d="M266 320L261.67 313.25H270.33L266 320Z" fill="white" />
         </g>
-        <g
-          className="cursor-pointer"
-          onClick={(event) => handlePopOver(event)}
-          filter="url(#filter3_d_2257_76071)"
-        >
+        <g filter="url(#filter3_d_2257_76071)">
           <rect
             x={224}
             y={230}
@@ -2096,11 +2092,7 @@ function GlobalMap() {
             fill="white"
           />
         </g>
-        <g
-          className="cursor-pointer"
-          onClick={(event) => handlePopOver(event)}
-          filter="url(#filter4_d_2257_76071)"
-        >
+        <g filter="url(#filter4_d_2257_76071)">
           <rect
             x={240}
             y={329}
@@ -2122,11 +2114,7 @@ function GlobalMap() {
             fill="white"
           />
         </g>
-        <g
-          className="cursor-pointer"
-          onClick={(event) => handlePopOver(event)}
-          filter="url(#filter5_d_2257_76071)"
-        >
+        <g filter="url(#filter5_d_2257_76071)">
           <rect
             x={213}
             y={367}
@@ -2148,11 +2136,7 @@ function GlobalMap() {
             fill="white"
           />
         </g>
-        <g
-          className="cursor-pointer"
-          onClick={(event) => handlePopOver(event)}
-          filter="url(#filter6_d_2257_76071)"
-        >
+        <g filter="url(#filter6_d_2257_76071)">
           <rect
             x={242}
             y={367}

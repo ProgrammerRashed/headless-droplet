@@ -2,7 +2,7 @@ import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 import AboutUsSection from "@/components/whoWeArePage/aboutUsSection/AboutUsSection";
 import OurMissionVisionSection from "@/components/whoWeArePage/ourMissionVisionSection/OurMissionVisionSection";
 import OurStrategySection from "@/components/whoWeArePage/ourStrategySection/OurStrategySection";
-import OurValuesSection from "@/components/whoWeArePage/ourValuesSection/OurValuesSection";
+import OurValuesSection from "@/components/shared/ourValuesSection/OurValuesSection";
 
 function whoWeArePage() {
   return (

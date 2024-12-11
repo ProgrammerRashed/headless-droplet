@@ -4,9 +4,9 @@ function VideoListCard({ video, onSelectedVideo }) {
   return (
     <div
       onClick={() => onSelectedVideo(video)}
-      className="mb-[10px] cursor-pointer border-gray pb-[10px] last-of-type:mb-0 last-of-type:border-none lg:border-b"
+      className="mb-[10px] cursor-pointer border-gray-50 pb-[10px] last-of-type:mb-0 last-of-type:border-none lg:border-b"
     >
-      <div className="flex flex-row items-center gap-5 rounded-[4px] border-2 border-transparent p-2 transition-all duration-300 hover:border-dark-light hover:bg-surface">
+      <div className="hover:border-red-800 flex flex-row items-center gap-5 rounded-[4px] border-2 border-transparent p-2 transition-all duration-300 hover:bg-surface">
         <div className="relative md:h-[80px] md:min-w-[120px] lg:h-[99px] lg:min-w-[160px]">
           <Image
             src={video.videoThumbNail}
@@ -32,7 +32,7 @@ function VideoListCard({ video, onSelectedVideo }) {
             </svg>
           </div>
         </div>
-        <p className="line-clamp-2 font-medium text-dark md:text-lg md:leading-normal lg:text-[22px] lg:leading-[32px]">
+        <p className="line-clamp-2 font-medium text-gray-800 md:text-lg md:leading-normal lg:text-[22px] lg:leading-[32px]">
           {video.videoTitle}
         </p>
       </div>

@@ -2,10 +2,17 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import SectionHeading from "../../sectionHeader/SectionHeading";
 
-function DirectorsSaySection({ directorDetails }) {
+function DirectorsSaySection({ directorDetails, sectionTitle, sectionClass }) {
   return (
-    <section className="bg-surface py-[50px] md:py-20">
+    <section className={cn("bg-surface py-[50px] md:py-20", sectionClass)}>
       <div className="container">
+        {sectionTitle && (
+          <div data-aos="fade-up">
+            <SectionHeading className="mb-[30px] sm:mb-20 lg:mb-[100px]">
+              {sectionTitle}
+            </SectionHeading>
+          </div>
+        )}
         <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-12 xl:items-start">
           <Image
             data-aos="fade-up"
@@ -55,14 +62,14 @@ function DirectorsSaySection({ directorDetails }) {
                 </clipPath>
               </defs>
             </svg>
-            <p className="pb-[30px] text-lg font-normal italic leading-[28px] text-dark lg:text-[22px] lg:leading-[32px]">
+            <p className="pb-[30px] text-lg font-normal italic leading-[28px] text-gray-800 lg:text-[22px] lg:leading-[32px]">
               {directorDetails.directorQuote}
             </p>
             <div className="flex flex-col gap-0.5">
               <h6 className="text-xl font-semibold leading-[32px] text-dark lg:text-2xl lg:leading-[36px]">
                 {directorDetails.directorName}
               </h6>
-              <p className="text-sm font-normal leading-[22px] text-gray-light">
+              <p className="text-sm font-normal leading-[22px] text-gray-400">
                 {directorDetails.directorRole}
               </p>
             </div>

@@ -1,13 +1,13 @@
 import AboutSAFSection from "@/components/homePage/aboutSAF/AboutSAFSection";
-import BlogsAndInsightsSection from "@/components/homePage/blogsAndInsightsSection/BlogsAndInsightsSection";
+import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
 import CounterSection from "@/components/homePage/counterSection/CounterSection";
-import DirectorsSaySection from "@/components/homePage/directorSay/DirectorsSaySection";
+import DirectorsSaySection from "@/components/shared/directorSay/DirectorsSaySection";
 import GlobalPresence from "@/components/homePage/globalPresence/GlobalPresence";
 import HeroSection from "@/components/heroSection/HeroSection";
 import MissionVissionSection from "@/components/homePage/missionVission/MissionVissionSection";
-import OurPartnersSections from "@/components/homePage/ourPartnersSection/OurPartnersSections";
+import OurPartnersSections from "@/components/shared/ourPartnersSection/OurPartnersSections";
 import OurWorkSection from "@/components/homePage/ourWork/OurWorkSection";
-import SDGSContributionSection from "@/components/homePage/sdgsContributionSection/SDGSContributionSection";
+import SDGSContributionSection from "@/components/shared/sdgsContributionSection/SDGSContributionSection";
 import VideosSection from "@/components/homePage/videosSection.jsx/VideosSection";
 
 export default function HomePage() {

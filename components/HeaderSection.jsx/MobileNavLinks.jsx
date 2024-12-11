@@ -7,7 +7,7 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
     <div
       data-aos="fade-right"
       data-aos-duration="500"
-      className="0.5xl:hidden fixed bottom-0 left-0 flex min-h-[calc(100vh-68px)] w-full flex-col border-t border-gray bg-white px-5 py-7"
+      className="fixed bottom-0 left-0 flex min-h-[calc(100vh-68px)] w-full flex-col border-t border-gray-50 bg-white px-5 py-7 0.5xl:hidden"
     >
       <div className="no-scrollbar h-[0px] w-full flex-grow flex-col overflow-y-auto overflow-x-hidden">
         <Accordion type="single" collapsible>
@@ -20,7 +20,7 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
           ))}
         </Accordion>
       </div>
-      <PrimaryButton className="w-full justify-center border-0 bg-green-light stroke-white text-white hover:bg-green-dark">
+      <PrimaryButton className="bg-green-800 w-full justify-center border-0 stroke-white text-white hover:bg-green-900">
         {buttonDetails.title}
       </PrimaryButton>
     </div>

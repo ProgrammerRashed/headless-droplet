@@ -6,11 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import PrimaryButton from "../../shared/buttons/PrimaryButton";
+import PrimaryButton from "../buttons/PrimaryButton";
 import SectionHeading from "../../sectionHeader/SectionHeading";
 import BlogsCard from "./BlogsCard";
 import { useRef } from "react";
-import SlidersButton from "../../shared/buttons/SlidersButton";
+import SlidersButton from "../buttons/SlidersButton";
 
 function BlogsAndInsightsSection({ sectionHeading, btnDetails, blogs }) {
   const swiperRef = useRef(null);
@@ -54,6 +54,7 @@ function BlogsAndInsightsSection({ sectionHeading, btnDetails, blogs }) {
             navigation={false}
             spaceBetween={20}
             speed={600}
+            loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {blogs.map((blog) => (

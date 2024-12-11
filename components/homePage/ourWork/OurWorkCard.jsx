@@ -5,7 +5,7 @@ function OurWorkCard({ card }) {
   return (
     <div
       data-aos="fade-up"
-      className="group relative h-[380px] cursor-pointer overflow-hidden rounded-[8px] shadow-xl shadow-dark/30 transition-all duration-300 hover:shadow-2xl sm:h-[380px]"
+      className="group relative h-[380px] cursor-pointer overflow-hidden rounded-[8px] shadow-xl shadow-gray-800/30 transition-all duration-300 hover:shadow-2xl sm:h-[380px]"
     >
       <Image
         src={card.bgImage}
@@ -22,7 +22,7 @@ function OurWorkCard({ card }) {
           <p className="mb-[24px] text-base font-normal leading-[26px]">
             {card.details}
           </p>
-          <PrimaryButton className="border-0 bg-white text-base leading-[24px]">
+          <PrimaryButton className="bg-tranparent rounded-none border-0 border-b-2 border-b-white stroke-white !px-0 !pt-0 pb-[10px] text-base font-semibold leading-[24px] text-white hover:bg-transparent">
             {card.buttonDetails.title}
           </PrimaryButton>
         </div>

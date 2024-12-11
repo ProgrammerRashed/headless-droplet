@@ -11,24 +11,24 @@ function MainHeader({
   setIsMobileNavOpen,
 }) {
   return (
-    <div className="3xl:gap-5 0.5xl:py-0 flex items-center justify-between gap-3 py-[10px]">
+    <div className="flex items-center justify-between gap-3 py-[10px] 0.5xl:py-0 3xl:gap-5">
       <Link href="/" onClick={() => setIsMobileNavOpen(false)}>
         <Image
           src={logoLink}
           width={253}
           height={55}
           alt="SAF logo"
-          className="0.5xl:w-[253px] h-auto w-[147px] object-contain lg:w-[200px]"
+          className="h-auto w-[147px] object-contain lg:w-[200px] 0.5xl:w-[253px]"
         />
       </Link>
-      <div className="3xl:gap-[35px] flex items-center justify-between gap-4">
+      <div className="flex items-center justify-between gap-4 3xl:gap-[35px]">
         <MainNavigationLinks navigations={navigations} />
-        <PrimaryButton className="0.5xl:flex hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3">
+        <PrimaryButton className="hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3 0.5xl:flex">
           {buttonDetails.title}
         </PrimaryButton>
         <button
           onClick={() => setIsMobileNavOpen((prev) => !prev)}
-          className="0.5xl:hidden flex h-12 w-12 items-center justify-center rounded-full bg-green-light transition-all duration-300 hover:bg-green-dark"
+          className="bg-green-800 flex h-12 w-12 items-center justify-center rounded-full transition-all duration-300 hover:bg-green-900 0.5xl:hidden"
         >
           {isMobileNavOpen ? (
             <svg

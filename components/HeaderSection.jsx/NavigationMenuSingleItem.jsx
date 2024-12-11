@@ -13,7 +13,7 @@ function NavigationMenuSingleItem({ navigation }) {
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger
-        className="rounded-0 3xl:px-[15px] 3xl:text-base flex items-center justify-center gap-1 rounded-none border-b-2 border-transparent !bg-transparent px-[10px] py-[31px] text-center text-sm font-normal leading-[26px] text-[#0B1411] outline-transparent transition-all duration-300 hover:!bg-transparent hover:text-[#0B1411]/70 data-[state=open]:border-red-600"
+        className="rounded-0 flex items-center justify-center gap-1 rounded-none border-b-2 border-transparent !bg-transparent px-[10px] py-[31px] text-center text-sm font-normal leading-[26px] text-[#0B1411] outline-transparent transition-all duration-300 hover:!bg-transparent hover:text-[#0B1411]/70 data-[state=open]:border-red-600 3xl:px-[15px] 3xl:text-base"
         cheveonClassName="w-5 h-5"
       >
         {navigation.groupName}
@@ -31,7 +31,7 @@ function NavigationMenuSingleItem({ navigation }) {
             </Link>
           ))}
         </div>
-        <div className="h-full w-auto overflow-hidden border-l border-gray-dark/10 p-5">
+        <div className="h-full w-auto overflow-hidden border-l border-gray-600/10 p-5">
           <Image
             src={navigation.bannerImage}
             width={374}

@@ -1,4 +1,4 @@
-import PrimaryButton from "../../shared/buttons/PrimaryButton";
+import PrimaryButton from "../buttons/PrimaryButton";
 import SectionHeading from "../../sectionHeader/SectionHeading";
 import OurPartnersCard from "./OurPartnersCard";
 

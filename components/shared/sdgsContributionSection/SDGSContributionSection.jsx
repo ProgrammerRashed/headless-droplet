@@ -1,10 +1,17 @@
+import { cn } from "@/lib/utils";
 import SectionHeading from "../../sectionHeader/SectionHeading";
 
 import SDGSCard from "./SDGSCard";
 
-function SDGSContributionSection({ sectionHeading, cardDetails }) {
+function SDGSContributionSection({
+  sectionHeading,
+  cardDetails,
+  sectionClassName,
+}) {
   return (
-    <section className="bg-surface py-[50px] md:py-[100px]">
+    <section
+      className={cn("bg-surface py-[50px] md:py-[100px]", sectionClassName)}
+    >
       <div className="container lg:px-[95px]">
         <div data-aos="fade-up">
           <SectionHeading className="text-center normal-case">

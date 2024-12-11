@@ -40,7 +40,7 @@ function HeaderTopSearch() {
           <Input
             type="text"
             placeholder="Seach Now ..."
-            className="h-auto w-[300px] border-0 py-1 text-sm text-dark shadow-none placeholder:text-dark focus-visible:ring-0"
+            className="h-auto w-[300px] border-0 py-1 text-sm text-gray-800 shadow-none placeholder:text-gray-800 focus-visible:ring-0"
           />
           <button
             onClick={() => setIsSearchOpen(false)}
@@ -52,7 +52,7 @@ function HeaderTopSearch() {
       ) : (
         <button
           onClick={() => setIsSearchOpen(true)}
-          className="flex flex-row items-center justify-end gap-[10px] text-sm font-normal leading-[22px] text-gray-light transition-all duration-300 hover:text-gray-dark"
+          className="flex flex-row items-center justify-end gap-[10px] text-sm font-normal leading-[22px] text-gray-400 transition-all duration-300 hover:text-gray-600"
         >
           <svg
             width={18}

@@ -2,9 +2,9 @@ import BreadCrumb from "../shared/BreadCrumb";
 
 function TertiaryBanner({ sectionHeading, sectionSubHeading }) {
   return (
-    <section className="relative h-[258px] w-full md:h-[441px]">
-      <div className="z-0 flex h-full w-full bg-white pt-[68px] xl:pt-[141px]">
-        <div className="relative flex h-[186px] flex-grow flex-col items-center justify-center md:h-[300px]">
+    <section className="relative h-[254px] w-full md:h-[441px]">
+      <div className="flex h-full w-full bg-white pt-[68px] xl:pt-[141px]">
+        <div className="relative flex h-[186px] flex-grow flex-col items-center justify-end pb-5 sm:justify-center sm:pb-0 md:h-[300px]">
           <div
             data-aos="fade-right"
             className="container absolute top-[10px] md:top-[15px]"
@@ -12,10 +12,10 @@ function TertiaryBanner({ sectionHeading, sectionSubHeading }) {
             <BreadCrumb colorScheme="dark" />
           </div>
 
-          <div className="container mt-[60px] md:mt-0">
+          <div className="container">
             <h1
               data-aos="fade-up"
-              className="mb-[10px] text-center text-4xl font-semibold capitalize leading-[44px] text-gray-800 md:mb-5 md:text-[70px] md:leading-[78px]"
+              className="mb-[10px] text-center text-4xl font-semibold capitalize leading-[44px] text-gray-600 md:mb-5 md:text-[70px] md:leading-[78px]"
             >
               {sectionHeading}
             </h1>

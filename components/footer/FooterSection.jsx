@@ -10,7 +10,7 @@ function FooterSection({
   socialLinks,
 }) {
   return (
-    <footer className="bg-dark-dark pb-6 pt-10 md:pb-0">
+    <footer className="bg-surface-dark pb-6 pt-10 md:pb-0">
       <div className="container">
         <div className="flex w-full flex-col">
           <FooterTop

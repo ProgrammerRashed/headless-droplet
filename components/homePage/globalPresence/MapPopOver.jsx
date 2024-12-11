@@ -8,7 +8,9 @@ function MapPopOver({ styles }) {
   return (
     <div
       style={styles}
-      className={cn("absolute w-[252px] rounded-[8px] bg-white shadow-md")}
+      className={cn(
+        "absolute w-[252px] overflow-hidden rounded-[8px] bg-white shadow-md",
+      )}
     >
       <div className="flex w-full flex-col p-[15px]">
         <Image
@@ -46,7 +48,7 @@ function MapPopOver({ styles }) {
       </div>
       <Link
         href=""
-        className="text-red- flex items-center justify-between border-t border-gray-50 px-6 py-3 text-base font-semibold leading-[24px] text-red-600 transition-all duration-300 hover:border-gray-400/50 hover:text-red-dark"
+        className="flex items-center justify-between border-t border-gray-50 px-6 py-3 text-base font-semibold leading-[24px] text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white"
       >
         <span>Learn More</span>
         <ChevronRight className="w-5" />

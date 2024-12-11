@@ -16,9 +16,9 @@ function BlogsCard({ blog }) {
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">
-        <p className="line-clamp-1 text-green-dark">{blog.category}</p>
-        <div className="h-[5px] w-[5px] rounded-full bg-gray"></div>
-        <p className="gray-light">{blog.publishedDate}</p>
+        <p className="line-clamp-1 text-green-900">{blog.category}</p>
+        <div className="h-[5px] w-[5px] rounded-full bg-gray-50"></div>
+        <p className="text-gray-400">{blog.publishedDate}</p>
       </div>
       <h4 className="line-clamp-2 text-lg font-medium leading-[28px] text-dark sm:text-[22px] sm:leading-[32px]">
         {blog.title}

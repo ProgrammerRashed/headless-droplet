@@ -4,7 +4,7 @@ import React from "react";
 function HeaderTopSocial({ socialLinks }) {
   return (
     <div className="flex flex-row items-center justify-end gap-[6px]">
-      <div className="mr-[6px] h-3 w-[1px] bg-gray"></div>
+      <div className="mr-[6px] h-3 w-[1px] bg-gray-50"></div>
       <Link
         href={socialLinks.facebook}
         target="_blank"

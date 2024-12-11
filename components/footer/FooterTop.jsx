@@ -22,7 +22,7 @@ function FooterTop({ footerLogo, footerDonation, socialLinks }) {
         <p className="text-base font-normal leading-[26px] tracking-[3%] text-white md:font-medium">
           {footerDonation.label}
         </p>
-        <PrimaryButton className="border-none bg-red stroke-white text-white hover:bg-red-dark">
+        <PrimaryButton className="hover:bg-red-900 border-none bg-red-600 stroke-white text-white">
           {footerDonation?.btnDetails?.title}
         </PrimaryButton>
       </div>

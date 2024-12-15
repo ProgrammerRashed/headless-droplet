@@ -22,7 +22,10 @@ function BlogsAndInsightsSection({ sectionHeading, btnDetails, blogs }) {
           <div data-aos="fade-up">
             <SectionHeading>{sectionHeading}</SectionHeading>
           </div>
-          <div data-aos="fade-up" className="flex w-1/2 justify-end">
+          <div
+            data-aos="fade-up"
+            className="flex w-[65%] justify-end sm:w-auto"
+          >
             <PrimaryButton className="capitalize">
               {btnDetails.title}
             </PrimaryButton>

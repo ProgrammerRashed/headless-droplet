@@ -20,7 +20,7 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
           ))}
         </Accordion>
       </div>
-      <PrimaryButton className="bg-green-800 w-full justify-center border-0 stroke-white text-white hover:bg-green-900">
+      <PrimaryButton className="mt-4 w-full justify-center border-0 bg-green-800 stroke-white text-white hover:bg-green-900">
         {buttonDetails.title}
       </PrimaryButton>
     </div>

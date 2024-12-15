@@ -7,7 +7,7 @@ import { ReactLenis } from "@/utils/lenis";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["500", "600"],
+  weight: ["400", "500", "600", "700", "900"],
   variable: "--font-poppins",
 });
 

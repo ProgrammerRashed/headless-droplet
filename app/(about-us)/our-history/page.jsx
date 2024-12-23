@@ -7,8 +7,10 @@ function OurHistoryPage() {
   return (
     <>
       <SecondaryBanner
-        sectionHeading="Our History"
-        bannerCover="/hero-banners/who-we-are.jpg"
+        data={{
+          sectionHeading: "Our History",
+          bannerCover: "/hero-banners/who-we-are.jpg",
+        }}
       />
       <SideBySideSection
         heading="Our History"

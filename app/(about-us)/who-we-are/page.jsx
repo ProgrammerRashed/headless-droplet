@@ -8,8 +8,10 @@ function whoWeArePage() {
   return (
     <>
       <SecondaryBanner
-        sectionHeading="Who we are"
-        bannerCover="/hero-banners/who-we-are.jpg"
+        data={{
+          sectionHeading: "Who we are",
+          bannerCover: "/hero-banners/who-we-are.jpg",
+        }}
       />
       <AboutUsSection
         title="The Sustainable Agriculture Foundation (SAF), formerly SFSA, builds on a 40-year legacy of transforming smallholder agriculture in Asia and Africa, focusing on climate-smart innovations, market access, and sustainable practices."

@@ -6,13 +6,15 @@ function OurLeadershipPage() {
   return (
     <>
       <SecondaryBanner
-        sectionHeading="Our Leadership"
-        bannerCover="/hero-banners/our-leadership.jpg"
+        data={{
+          sectionHeading: "Our Leadership",
+          bannerCover: "/hero-banners/our-leadership.jpg",
+        }}
       />
       <DirectorsDetailsSection
         imageLink="/directors-say/directors-avatar.png"
         directorName="Simon Winter"
-        role="Executive Director – Sustainable Agriculture Foundations International Association"
+        role="Executive Director – SAF HQ"
         about="Simon Winter has been Executive Director of the Syngenta Foundation for Sustainable Agriculture (SFSA) since 2017 and continues in this role following its rebranding as Sustainable Agriculture Foundation. Before joining SFSA, Simon served as Senior Vice President at TechnoServe, where he also led regional operations in sub-Saharan Africa. Previously, he was a management consultant with McKinsey & Company, co-leading its international development practice, and worked as an economic planner for the Botswana government.From 2015-2017, Simon was a Senior Fellow at the Harvard Kennedy School of Government (HKS), where he researched climate risks and sub-Saharan African agricultural systems. He holds advisory positions with the World Economic Forum and the Private Sector Mechanism for the Committee on World Food Security and currently chairs the board of ACRE Africa. Simon originates from the UK and holds a Ph.D. in economics from the School of Oriental and African Studies, University of London."
       />
       <LeadershipGridSection

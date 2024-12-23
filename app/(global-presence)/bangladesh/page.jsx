@@ -1,7 +1,5 @@
 import AboutCountrySection from "@/components/bangladeshPage/aboutCountrysection/AboutCountrySection";
-import TertiaryBanner from "@/components/heroSection/TertiaryBanner";
 import DirectorsSaySection from "@/components/shared/directorSay/DirectorsSaySection";
-
 import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
 import OurValuesSection from "@/components/shared/ourValuesSection/OurValuesSection";
 import SDGSContributionSection from "@/components/shared/sdgsContributionSection/SDGSContributionSection";
@@ -9,11 +7,16 @@ import OurPartnersSections from "@/components/shared/ourPartnersSection/OurPartn
 import CtaSection from "@/components/bangladeshPage/ctaSection/CtaSection";
 import LocalMapSection from "@/components/bangladeshPage/localMapSection/LocalMapSection";
 import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
+import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 
 function BangladeshPage() {
   return (
     <>
-      <TertiaryBanner sectionHeading="Bangladesh" />
+      <SecondaryBanner
+        data={{
+          sectionHeading: "Bangladesh",
+        }}
+      />
       <AboutCountrySection
         bannerImage="/about-country/bangladesh-banner.jpg"
         primaryText=" Sustainable Agriculture Foundation Bangladesh, a Non-Governmental Organization registered with Joint Stock Companies and Firms, whose mission is to scale up collective action on markets and innovations so that farming can better serve smallholder families, rural communities, and nature."
@@ -23,10 +26,9 @@ function BangladeshPage() {
         sectionClass="md:py-[100px] bg-white border-t border-gray-200"
         sectionTitle="Message from Executive Director"
         directorDetails={{
-          directorName: "Simon Winter",
-          directorRole:
-            "Executive Director – Sustainable Agriculture Foundations International Association",
-          directorImage: "/directors-say/directors-avatar.png",
+          directorName: "Md. Farhad Zamil",
+          directorRole: "Executive Director - SAF Bangladesh",
+          directorImage: "/our-leaders/leader-3.png",
           directorQuote:
             "Our mission is to empower smallholder farmers with innovative tools, technologies, and climate-smart practices to enhance their livelihoods and promote sustainable agriculture. We are committed to creating value through market development, capacity building, and agri-digitalization, addressing the critical challenges faced by farmers in a changing climate. Together with our partners, we strive to transform agriculture into a driver of prosperity for smallholder families, rural communities, and nature.",
         }}
@@ -55,7 +57,79 @@ function BangladeshPage() {
         sectionTitle="SFSA Bangladesh Working Area"
         mapImage="/global-presence/bg-map.png"
       />
-      <ProjectSection />
+      <ProjectSection
+        data={{
+          SectionTitle: "Project and Programs",
+          viewAllBtnDetails: {
+            title: "View All Project and Program",
+            link: "",
+          },
+          projects: [
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
+              donor:
+                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
+              tenure: "16 September 2018 - 15 September 2022",
+              details:
+                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+              imageLink: "/projects-programs/project-1.png",
+              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+            },
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
+              donor:
+                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
+              tenure: "16 September 2018 - 15 September 2022",
+              details:
+                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+              imageLink: "/projects-programs/project-2.jpg",
+              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+            },
+          ],
+          duplicatedProjects: [
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
+              donor:
+                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
+              tenure: "16 September 2018 - 15 September 2022",
+              details:
+                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+              imageLink: "/projects-programs/project-1.png",
+              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+            },
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
+              donor:
+                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
+              tenure: "16 September 2018 - 15 September 2022",
+              details:
+                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+              imageLink: "/projects-programs/project-2.jpg",
+              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+            },
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
+              donor:
+                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
+              tenure: "16 September 2018 - 15 September 2022",
+              details:
+                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+              imageLink: "/projects-programs/project-1.png",
+              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+            },
+          ],
+        }}
+      />
       <SDGSContributionSection
         sectionClassName="bg-white border-b border-gray-50"
         sectionHeading="Our contribution to the SDGs"

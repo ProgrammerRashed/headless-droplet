@@ -53,7 +53,7 @@ export default function HomePage() {
         cards={[
           {
             id: crypto.randomUUID(),
-            heading: "Climate SMART Agriculture",
+            heading: "Climate Smart Agriculture",
             bgImage: "/our-work/our-work-1.png",
             details:
               "SAF promotes climate-smart solutions like precision agriculture, water-efficient technologies, and renewable energy to help smallholders adapt to climate change while reducing agriculture's carbon footprint.",
@@ -64,7 +64,7 @@ export default function HomePage() {
           },
           {
             id: crypto.randomUUID(),
-            heading: "Smart, Agri-Entrepreneurship",
+            heading: "Agri-Entrepreneurship",
             bgImage: "/our-work/our-work-2.png",
             details:
               "Through Farmers’ Hubs, SAF connects smallholders to inputs, machinery, markets, info and advisory, improving productivity, incomes, and access to quality services.",
@@ -418,14 +418,14 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             title: "Rural Entrepreneurship and Youth Empowerment",
-            category: "Agri - Entrepreneurship",
+            category: "Agri-Entrepreneurship",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-3.png",
           },
           {
             id: crypto.randomUUID(),
             title: "Agriservices Centres",
-            category: "Agri - Entrepreneurship",
+            category: "Agri-Entrepreneurship",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-4.png",
           },

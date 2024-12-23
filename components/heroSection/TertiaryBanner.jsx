@@ -2,8 +2,8 @@ import BreadCrumb from "../shared/BreadCrumb";
 
 function TertiaryBanner({ sectionHeading, sectionSubHeading }) {
   return (
-    <section className="relative h-[254px] w-full md:h-[441px]">
-      <div className="flex h-full w-full bg-white pt-[68px] xl:pt-[141px]">
+    <section className="relative h-[254px] w-full md:h-[350px] lg:h-[370px] 0.5xl:h-[441px]">
+      <div className="flex h-full w-full bg-white pt-[68px] 0.5xl:pt-[141px]">
         <div className="relative flex h-[186px] flex-grow flex-col items-center justify-end pb-5 sm:justify-center sm:pb-0 md:h-[300px]">
           <div
             data-aos="fade-right"
@@ -19,12 +19,14 @@ function TertiaryBanner({ sectionHeading, sectionSubHeading }) {
             >
               {sectionHeading}
             </h1>
-            <p
-              data-aos="fade-up"
-              className="text-center text-lg font-medium leading-[28px] text-gray-800 md:text-[22px] md:leading-[32px]"
-            >
-              {sectionSubHeading}
-            </p>
+            {sectionSubHeading && (
+              <p
+                data-aos="fade-up"
+                className="text-center text-lg font-medium leading-[28px] text-gray-800 md:text-[22px] md:leading-[32px]"
+              >
+                {sectionSubHeading}
+              </p>
+            )}
           </div>
         </div>
       </div>

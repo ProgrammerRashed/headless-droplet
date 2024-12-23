@@ -11,16 +11,16 @@ function OurStrategySection({
   return (
     <section className="my-[50px] md:my-[100px]">
       <div className="container">
-        <div className="flex flex-col gap-[30px] md:gap-10 lg:flex-row-reverse lg:justify-between">
+        <div className="flex flex-col gap-[30px] md:gap-10 0.5xl:flex-row-reverse 0.5xl:justify-between">
           <Image
             src={bannerImg}
             alt=""
             width={625}
             height={625}
             data-aos="fade-up"
-            className="aspect-[33/26] w-full rounded-[8px] object-cover shadow lg:aspect-square lg:w-[48%] xl:w-[48.44%]"
+            className="aspect-[33/26] w-full rounded-[8px] object-cover shadow 0.5xl:aspect-square 0.5xl:w-[48.44%]"
           />
-          <div className="flex flex-col md:justify-between lg:w-[48%] xl:w-[48.44%]">
+          <div className="flex flex-col md:justify-between 0.5xl:w-[48.44%]">
             <div className="flex flex-col">
               <div data-aos="fade-up">
                 <SectionHeading className="mb-5 capitalize">
@@ -37,7 +37,7 @@ function OurStrategySection({
             <div className="flex flex-col">
               <h4
                 data-aos="fade-up"
-                className="mb-5 text-lg font-medium leading-[28px] text-gray-800 md:text-2xl md:leading-[36px]"
+                className="mb-5 text-lg font-semibold leading-[28px] text-gray-800 md:text-2xl md:leading-[36px]"
               >
                 Downloads
               </h4>
@@ -89,7 +89,7 @@ function OurStrategySection({
                       </clipPath>
                     </defs>
                   </svg>
-                  <p className="text-base font-normal leading-[26px] text-gray-800">
+                  <p className="text-base font-normal leading-[26px] text-gray-800 lg:text-[22px] lg:font-medium lg:leading-[32px]">
                     {downloadFile.fileName}
                   </p>
                 </div>

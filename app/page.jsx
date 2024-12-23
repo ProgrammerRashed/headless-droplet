@@ -23,7 +23,7 @@ export default function HomePage() {
         countries={[
           {
             id: crypto.randomUUID(),
-            countryName: "Switzerland",
+            countryName: "Switzerland (HQ)",
             flagIcon: "/global-presence/country-flag/switzerland.png",
           },
           {
@@ -54,7 +54,7 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             heading: "Climate SMART Agriculture",
-            bgImage: "/our-work/our-work-1.jpeg",
+            bgImage: "/our-work/our-work-1.png",
             details:
               "SAF promotes climate-smart solutions like precision agriculture, water-efficient technologies, and renewable energy to help smallholders adapt to climate change while reducing agriculture's carbon footprint.",
             buttonDetails: {
@@ -64,7 +64,7 @@ export default function HomePage() {
           },
           {
             id: crypto.randomUUID(),
-            heading: "Agri Entrepreneurship",
+            heading: "Smart, Agri-Entrepreneurship",
             bgImage: "/our-work/our-work-2.png",
             details:
               "Through Farmers’ Hubs, SAF connects smallholders to inputs, machinery, markets, info and advisory, improving productivity, incomes, and access to quality services.",
@@ -109,7 +109,7 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             heading: "Seed Systems",
-            bgImage: "/our-work/our-work-6.jpeg",
+            bgImage: "/our-work/our-work-6.png",
             details:
               "Through the Seeds program, SAF improves smallholders’ access to high-quality seeds, enhancing productivity and food security.",
             buttonDetails: {
@@ -178,7 +178,7 @@ export default function HomePage() {
         directorDetails={{
           directorName: "Simon Winter",
           directorRole:
-            "Sustainable Agriculture Foundations International Association – Executive Director",
+            "Executive Director – Sustainable Agriculture Foundations International Association",
           directorImage: "/directors-say/directors-avatar.png",
           directorQuote:
             "Our Foundation network is accelerating support for first-mile entrepreneurs, helping under-served, pre-commercial smallholders access needed innovations and fully engage in market systems. We place a strong emphasis on empowering women as both entrepreneurs and farmers. Looking ahead, we aim to expand the range of climate-smart innovations and the scale at which they can enhance smallholders’ diversification, productivity, and resilience.",
@@ -418,14 +418,14 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             title: "Rural Entrepreneurship and Youth Empowerment",
-            category: "Agri Entrepreneurship",
+            category: "Agri - Entrepreneurship",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-3.png",
           },
           {
             id: crypto.randomUUID(),
             title: "Agriservices Centres",
-            category: "Agri Entrepreneurship",
+            category: "Agri - Entrepreneurship",
             publishedDate: "03 November 2024",
             coverImage: "/blogs-and-insights/blog-4.png",
           },

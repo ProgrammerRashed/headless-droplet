@@ -10,7 +10,7 @@ function MissionVissionCard({ cardDetails }) {
         <h4 className="mb-[10px] text-[22px] font-semibold capitalize leading-[28px] text-red-600 xl:text-[28px] xl:leading-[38px]">
           {cardDetails.title}
         </h4>
-        <p className="text-base font-normal leading-[26px] text-gray-600">
+        <p className="text-lg font-normal leading-[28px] text-gray-600">
           {cardDetails.details}
         </p>
       </div>

@@ -39,7 +39,7 @@ function BlogsAndInsightsSection({ sectionHeading, btnDetails, blogs }) {
             onNext={() => swiperRef.current?.slideNext()}
           />
           <Swiper
-            className="cursor-grab"
+            className="z-10 cursor-grab"
             breakpoints={{
               640: {
                 slidesPerView: 2,

@@ -13,23 +13,19 @@ import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectS
 function BangladeshPage() {
   return (
     <>
-      <TertiaryBanner
-        sectionHeading="Bangladesh"
-        sectionSubHeading="Advancing
-      Sustainable Agriculture and Innovation"
-      />
+      <TertiaryBanner sectionHeading="Bangladesh" />
       <AboutCountrySection
         bannerImage="/about-country/bangladesh-banner.jpg"
         primaryText=" Sustainable Agriculture Foundation Bangladesh, a Non-Governmental Organization registered with Joint Stock Companies and Firms, whose mission is to scale up collective action on markets and innovations so that farming can better serve smallholder families, rural communities, and nature."
         secondaryText="In Bangladesh, smallholder farmers make up the largest sector of agriculture workers. Lack of access to training in up-to-date agricultural practices and appropriate technologies means that these farmers often work at a subsistence level. Agricultural extension services are inadequate and modern machinery is often unavailable or difficult to access. An inefficient value chain and an unstructured market system hamper the efforts of farmers to get the best from their efforts. The impact of climate change, already becoming evident in the agro-ecosystem of the country, creates an additional challenge. Lower yields and poor-quality crops are the inevitable results. This, in turn, lessens the potential income for small and marginal farmers, bringing negative consequences for them and their families."
       />
       <DirectorsSaySection
-        sectionClass="md:py-[100px] bg-white"
+        sectionClass="md:py-[100px] bg-white border-t border-gray-200"
         sectionTitle="Message from Executive Director"
         directorDetails={{
           directorName: "Simon Winter",
           directorRole:
-            "Sustainable Agriculture Foundations International Association – Executive Director",
+            "Executive Director – Sustainable Agriculture Foundations International Association",
           directorImage: "/directors-say/directors-avatar.png",
           directorQuote:
             "Our mission is to empower smallholder farmers with innovative tools, technologies, and climate-smart practices to enhance their livelihoods and promote sustainable agriculture. We are committed to creating value through market development, capacity building, and agri-digitalization, addressing the critical challenges faced by farmers in a changing climate. Together with our partners, we strive to transform agriculture into a driver of prosperity for smallholder families, rural communities, and nature.",
@@ -37,36 +33,8 @@ function BangladeshPage() {
       />
       <OurValuesSection
         sectionHeading="Our Programs"
-        sectionSubHeading="We inspire sustainable growth from the ground up."
+        gridClassName="lg:!grid-cols-2 xl:gap-0"
         values={[
-          {
-            id: crypto.randomUUID(),
-            title: "Livelihoods & Economic Growth",
-            details:
-              "Enhance smallholder livelihoods by focusing on sustainable farming practices, agri-entrepreneurship, nutrition, access to markets, and improving agricultural productivity.",
-            iconLink: "/our-values/passion.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Climate Change & Risk Mitigation",
-            details:
-              "Build resilience among smallholders by promoting climate-smart agriculture, developing agricultural insurance solutions, and advancing carbon credit initiatives to support sustainable and environmentally friendly practices.",
-            iconLink: "/our-values/innovation.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Livelihoods & Economic Growth",
-            details:
-              "Enhance smallholder livelihoods by focusing on sustainable farming practices, agri-entrepreneurship, nutrition, access to markets, and improving agricultural productivity.",
-            iconLink: "/our-values/passion.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Climate Change & Risk Mitigation",
-            details:
-              "Build resilience among smallholders by promoting climate-smart agriculture, developing agricultural insurance solutions, and advancing carbon credit initiatives to support sustainable and environmentally friendly practices.",
-            iconLink: "/our-values/innovation.svg",
-          },
           {
             id: crypto.randomUUID(),
             title: "Livelihoods & Economic Growth",

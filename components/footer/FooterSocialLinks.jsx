@@ -3,14 +3,14 @@ import Link from "next/link";
 
 function FooterSocialLinks({ socialLinks }) {
   return (
-    <div className="flex items-center justify-normal gap-0.5">
+    <div className="flex items-center justify-normal gap-1">
       <Link href={socialLinks.facebook} target="_blank">
         <Image
           src="/icons/facebook.svg"
           width={38}
           height={38}
           alt="Facebook icon"
-          className="h-auto w-[38px] object-contain"
+          className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
       <Link href={socialLinks.linkedIn} target="_blank">
@@ -19,7 +19,7 @@ function FooterSocialLinks({ socialLinks }) {
           width={38}
           height={38}
           alt="Linkedin icon"
-          className="h-auto w-[38px] object-contain"
+          className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
       <Link href={socialLinks.twitter} target="_blank">
@@ -28,7 +28,7 @@ function FooterSocialLinks({ socialLinks }) {
           width={38}
           height={38}
           alt="X icon"
-          className="h-auto w-[38px] object-contain"
+          className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
       <Link href={socialLinks.youtube} target="_blank">
@@ -37,7 +37,7 @@ function FooterSocialLinks({ socialLinks }) {
           width={38}
           height={38}
           alt="Youtube icon"
-          className="h-auto w-[38px] object-contain"
+          className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
     </div>

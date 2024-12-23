@@ -5,14 +5,14 @@ function SideBySideSection({ heading, secondaryHeading, details, bannerImg }) {
   return (
     <section className="my-[50px] md:my-[100px]">
       <div className="container">
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between xl:gap-[100px]">
-          <div className="flex flex-col justify-center lg:w-[560px]">
+        <div className="flex flex-col gap-10 0.5xl:flex-row 0.5xl:items-center 0.5xl:justify-between 0.5xl:gap-[100px]">
+          <div className="flex flex-col justify-center 0.5xl:w-[560px]">
             <div data-aos="fade-up">
               <SectionHeading className="mb-5">{heading}</SectionHeading>
             </div>
             <h3
               data-aos="fade-up"
-              className="mb-5 text-xl font-semibold leading-[32px] text-gray-800 lg:mb-[30px]"
+              className="mb-5 text-xl font-semibold leading-[32px] text-gray-800 md:text-[22px] md:font-medium md:leading-[32px] lg:mb-[30px]"
             >
               {secondaryHeading}
             </h3>
@@ -29,7 +29,7 @@ function SideBySideSection({ heading, secondaryHeading, details, bannerImg }) {
             width={625}
             height={625}
             alt=""
-            className="aspect-square w-full rounded-[8px] object-cover lg:w-1/2 xl:w-[625px]"
+            className="aspect-square w-full rounded-[8px] object-cover 0.5xl:w-1/2 xl:w-[625px]"
           />
         </div>
       </div>

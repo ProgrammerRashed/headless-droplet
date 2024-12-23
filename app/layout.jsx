@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         >
           <AOSWrapper>
             <HeaderSection
-              logoLink="/saf-logo.png"
+              logoLink="/saf-logo.svg"
               buttonDetails={{ title: "Contact Us", link: "/" }}
               navigations={[
                 {
@@ -117,7 +117,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Blogs & Articles | News",
+                      title: "Blogs and article | media",
                       link: "/",
                     },
                     {
@@ -181,7 +181,7 @@ export default function RootLayout({ children }) {
                 twitter: "https://x.com/Susagfoundation?",
                 youtube: "https://www.youtube.com/@Susagfoundation",
               }}
-              footerLogo="/Logo-footer.png"
+              footerLogo="/saf-logo-footer.svg"
               footerDonation={{
                 label: "You Can Help—Contribute Today!",
                 btnDetails: {
@@ -274,7 +274,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Blogs & Articles | News",
+                      title: "Blogs and article | media",
                       link: "/",
                     },
                     {

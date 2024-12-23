@@ -13,7 +13,7 @@ function DirectorsSaySection({ directorDetails, sectionTitle, sectionClass }) {
             </SectionHeading>
           </div>
         )}
-        <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-12 xl:items-start">
+        <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-[60px] xl:items-start">
           <Image
             data-aos="fade-up"
             src={directorDetails.directorImage}
@@ -66,7 +66,7 @@ function DirectorsSaySection({ directorDetails, sectionTitle, sectionClass }) {
               {directorDetails.directorQuote}
             </p>
             <div className="flex flex-col gap-0.5">
-              <h6 className="text-xl font-semibold leading-[32px] text-dark lg:text-2xl lg:leading-[36px]">
+              <h6 className="text-xl font-semibold leading-[32px] text-gray-400 lg:text-2xl lg:leading-[36px]">
                 {directorDetails.directorName}
               </h6>
               <p className="text-sm font-normal leading-[22px] text-gray-400">

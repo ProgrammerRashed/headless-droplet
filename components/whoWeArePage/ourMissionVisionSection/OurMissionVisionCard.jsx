@@ -5,7 +5,7 @@ function OurMissionVisionCard({ card, reverse }) {
   return (
     <div
       className={cn(
-        "flex gap-5 md:w-1/2 md:gap-[30px]",
+        "flex w-full gap-5 md:w-1/2 md:gap-[30px]",
         `${reverse ? "flex-col md:flex-col-reverse" : "flex-col"}`,
       )}
     >
@@ -20,13 +20,13 @@ function OurMissionVisionCard({ card, reverse }) {
       <div className="flex w-full flex-col gap-[10px]">
         <h5
           data-aos="fade-up"
-          className="text-gray-800 text-[22px] font-semibold leading-[28px] md:text-[28px] md:leading-[38px]"
+          className="text-[22px] font-semibold leading-[28px] text-gray-800 md:text-[28px] md:leading-[38px]"
         >
           {card.title}
         </h5>
         <p
           data-aos="fade-up"
-          className="text-gray-600 text-base font-normal leading-[26px]"
+          className="text-base font-normal leading-[26px] text-gray-600"
         >
           {card.subTitle}
         </p>

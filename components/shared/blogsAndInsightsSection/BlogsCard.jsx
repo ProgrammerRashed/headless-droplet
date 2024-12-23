@@ -20,7 +20,7 @@ function BlogsCard({ blog }) {
         <div className="h-[5px] w-[5px] rounded-full bg-gray-50"></div>
         <p className="text-gray-400">{blog.publishedDate}</p>
       </div>
-      <h4 className="line-clamp-2 text-lg font-medium leading-[28px] text-dark sm:text-[22px] sm:leading-[32px]">
+      <h4 className="text-dark line-clamp-2 text-lg font-medium leading-[28px] transition-all duration-300 hover:underline sm:text-[22px] sm:leading-[32px]">
         {blog.title}
       </h4>
     </div>

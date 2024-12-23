@@ -35,29 +35,27 @@ export const Timeline = ({ data }) => {
 
   return (
     <div data-aos="fade-up" className="w-full" ref={containerRef}>
-      <div className="relative mx-auto mt-[30px] md:mt-[100px]">
+      <div className="relative mx-auto mt-[70px] md:mt-[100px]">
         {data.map((item, index) => (
           <div
             key={item.id}
             className="flex justify-start pt-16 first-of-type:pt-0 lg:pt-20"
           >
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row xl:max-w-fit">
-              <div className="absolute left-0 flex h-6 w-6 items-center justify-center rounded-full bg-surface">
-                <div className="h-4 w-4 rounded-full bg-green-600" />
-              </div>
+              <div className="absolute left-0 flex h-9 w-9 items-center justify-center rounded-full border-[6px] border-surface bg-green-600"></div>
 
               <h3 className="ml-24 hidden text-2xl font-semibold leading-[36px] text-gray-800 md:block">
                 {item.timeLine}
               </h3>
             </div>
 
-            <div className="relative w-full pl-10 lg:pl-20">
+            <div className="relative w-full pl-[54px] lg:pl-20">
               <h3 className="mb-[15px] block text-left text-base font-medium leading-[26px] text-gray-800 md:hidden md:text-lg md:leading-[38px]">
-                {item.title}
+                {item.timeLine}
               </h3>
               <div className="flex flex-col pr-[10px] xl:flex-row xl:items-start xl:justify-between xl:gap-[60px] xl:pr-0">
                 <div className="flex flex-col">
-                  <h4 className="mb-[15px] text-[22px] font-semibold leading-[28px] text-gray-800">
+                  <h4 className="mb-[15px] text-[22px] font-semibold leading-[28px] text-gray-800 lg:text-[28px] lg:leading-[38px]">
                     {item.title}
                   </h4>
                   <p className="mb-[30px] text-sm font-normal leading-[22px] text-gray-600 md:text-base md:leading-[26px]">
@@ -79,7 +77,7 @@ export const Timeline = ({ data }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute left-3 top-0 -z-10 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="absolute left-[18px] top-0 -z-10 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{

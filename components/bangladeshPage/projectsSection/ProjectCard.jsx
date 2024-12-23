@@ -11,10 +11,10 @@ function ProjectCard() {
         alt="Project Thumnail"
         className="mb-[15px] aspect-[300/207] w-full rounded-[8px] object-cover md:mb-5 md:aspect-[63/42]"
       />
-      <h3 className="mb-[10px] text-[22px] font-semibold leading-[28px] text-gray-800 md:text-[32px] md:font-bold md:leading-[42px]">
+      <h3 className="mb-[10px] text-[22px] font-semibold leading-[28px] text-gray-800 0.5xl:text-[32px] 0.5xl:font-bold 0.5xl:leading-[42px]">
         Paradigm shift in agriculture inputs – seeds to soilless
       </h3>
-      <div className="mb-[10px] flex w-full flex-col gap-2 text-base font-normal leading-[26px] text-gray-800 md:mb-[30px] md:text-[22px] md:leading-[32px]">
+      <div className="mb-[10px] flex w-full flex-col gap-2 text-base font-normal leading-[26px] text-gray-800 0.5xl:mb-[30px] 0.5xl:text-[22px] 0.5xl:leading-[32px]">
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Donor</span>
           <span>:</span>

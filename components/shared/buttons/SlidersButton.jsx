@@ -1,9 +1,12 @@
 function SlidersButton({ onPrev, onNext }) {
   return (
-    <div className="slider-buttons pointer-events-none absolute inset-0 z-10 flex items-center justify-between">
+    <div
+      data-aos="fade-up"
+      className="slider-buttons pointer-events-none absolute left-0 right-0 top-1/2 z-10 flex items-center justify-between"
+    >
       <button
         onClick={onPrev}
-        className="pointer-events-auto -ml-3 flex -translate-x-full items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white"
+        className="pointer-events-auto -ml-3 -mt-[120px] flex -translate-x-full items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white"
       >
         <svg
           className="rotate-180"
@@ -31,7 +34,7 @@ function SlidersButton({ onPrev, onNext }) {
       </button>
       <button
         onClick={onNext}
-        className="pointer-events-auto -mr-3 flex translate-x-full items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white"
+        className="pointer-events-auto -mr-3 -mt-[120px] flex translate-x-full items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white"
       >
         <svg
           width={20}

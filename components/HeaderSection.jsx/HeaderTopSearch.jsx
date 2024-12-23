@@ -39,7 +39,7 @@ function HeaderTopSearch() {
           </svg>
           <Input
             type="text"
-            placeholder="Seach Now ..."
+            placeholder="Search Now ..."
             className="h-auto w-[300px] border-0 py-1 text-sm text-gray-800 shadow-none placeholder:text-gray-800 focus-visible:ring-0"
           />
           <button

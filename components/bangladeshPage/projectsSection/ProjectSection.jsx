@@ -16,7 +16,7 @@ function ProjectSection() {
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div data-aos="fade-up" className="container">
         <SectionHeading className="text-center">
-          Project and Program
+          Project and Programs
         </SectionHeading>
       </div>
       <div className="slider-container sm:hidden">
@@ -55,12 +55,12 @@ function ProjectSection() {
         </div>
       </div>
       <div className="container">
-        <div className="mb-[30px] mt-[60px] hidden grid-cols-2 gap-5 border-b border-gray-50 pb-[60px] sm:grid md:gap-[30px]">
+        <div className="mb-[30px] mt-[60px] hidden grid-cols-2 gap-5 border-gray-50 pb-[60px] sm:grid sm:border-b md:gap-[30px]">
           <ProjectCard />
           <ProjectCard />
         </div>
         <div data-aos="fade-up">
-          <PrimaryButton className="mx-auto">
+          <PrimaryButton className="mx-auto hidden sm:flex">
             View All Project and Program
           </PrimaryButton>
         </div>

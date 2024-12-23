@@ -1,6 +1,6 @@
 function HeroSection({ sectionHeading, sectionSubHeading, bgCoverVideo }) {
   return (
-    <section className="relative flex h-[608px] items-center overflow-hidden lg:h-[797px]">
+    <section className="relative flex h-screen items-center overflow-hidden">
       <video
         autoPlay
         loop

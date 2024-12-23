@@ -12,7 +12,7 @@ function AboutSAFSection({ sectionHeading, sectionSubHeading, buttonDetails }) {
         </div>
         <p
           data-aos="fade-up"
-          className="mb-[30px] text-lg font-medium leading-[28px] text-gray-800 sm:text-justify md:mb-10 md:text-2xl md:leading-[36px]"
+          className="mb-[30px] text-lg font-medium leading-[28px] text-gray-800 sm:text-justify md:mb-10 md:text-[22px] md:leading-[32px]"
         >
           {sectionSubHeading}
         </p>

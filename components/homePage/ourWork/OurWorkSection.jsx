@@ -27,7 +27,7 @@ function OurWorkSection({ sectionHeading, bgCoverImage, cards }) {
         width={1440}
         height={1098}
         alt="Our work cover"
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-bottom"
       />
     </section>
   );

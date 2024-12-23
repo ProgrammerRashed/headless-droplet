@@ -1,7 +1,13 @@
 import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import OurValuesCard from "./OurValuesCard";
+import { cn } from "@/lib/utils";
 
-function OurValuesSection({ sectionHeading, sectionSubHeading, values }) {
+function OurValuesSection({
+  sectionHeading,
+  sectionSubHeading,
+  values,
+  gridClassName,
+}) {
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
@@ -20,7 +26,12 @@ function OurValuesSection({ sectionHeading, sectionSubHeading, values }) {
         )}
       </div>
       <div className="container">
-        <div className="mt-[30px] grid w-full grid-cols-1 sm:grid-cols-2 sm:gap-4 md:mt-10 lg:grid-cols-3 xl:gap-0">
+        <div
+          className={cn(
+            "mt-[30px] grid w-full grid-cols-1 sm:grid-cols-2 sm:gap-4 md:mt-10 lg:grid-cols-3 xl:gap-0",
+            gridClassName,
+          )}
+        >
           {values.map((value, i) => (
             <OurValuesCard index={i} key={value.id} card={value} />
           ))}

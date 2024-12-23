@@ -13,7 +13,7 @@ function NavigationMenuSingleItem({ navigation }) {
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger
-        className="rounded-0 flex items-center justify-center gap-1 rounded-none border-b-2 border-transparent !bg-transparent px-[10px] py-[31px] text-center text-sm font-normal leading-[26px] text-[#0B1411] outline-transparent transition-all duration-300 hover:!bg-transparent hover:text-[#0B1411]/70 data-[state=open]:border-red-600 3xl:px-[15px] 3xl:text-base"
+        className="rounded-0 flex items-center justify-center gap-1 rounded-none border-b-2 border-transparent !bg-transparent px-[10px] py-[31px] text-center text-sm font-normal capitalize leading-[26px] text-[#0B1411] outline-transparent transition-all duration-300 hover:!bg-transparent hover:text-[#0B1411]/70 data-[state=open]:border-red-600 3xl:px-[15px] 3xl:text-base"
         cheveonClassName="w-5 h-5"
       >
         {navigation.groupName}
@@ -24,7 +24,7 @@ function NavigationMenuSingleItem({ navigation }) {
             <Link
               key={navItem.id}
               href={navItem.link}
-              className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium leading-[26px] transition-all duration-300 hover:bg-white"
+              className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white"
             >
               <span>{navItem.title}</span>
               <ChevronRight size="18" />

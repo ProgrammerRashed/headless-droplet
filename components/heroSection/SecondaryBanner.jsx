@@ -2,7 +2,8 @@ import Image from "next/image";
 import React from "react";
 import BreadCrumb from "../shared/BreadCrumb";
 
-function SecondaryBanner({ sectionHeading, bannerCover }) {
+function SecondaryBanner({ data }) {
+  const { sectionHeading, bannerCover } = data;
   return (
     <section className="relative h-[254px] w-full md:h-[441px]">
       <div className="z-0 flex h-full w-full bg-green-900/90 pt-[68px] xl:pt-[141px]">

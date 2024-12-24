@@ -1,5 +1,5 @@
 import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
-import LeadershipGridSection from "@/components/ourLeadershipPage/leadershipGridSection/LeadershipGridSection";
+import LeadershipGridSection from "@/components/shared/leadershipGridSection/LeadershipGridSection";
 
 function LeadershipTeamPage() {
   return (

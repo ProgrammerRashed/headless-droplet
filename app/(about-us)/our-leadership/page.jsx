@@ -24,7 +24,7 @@ function OurLeadershipPage() {
             id: crypto.randomUUID(),
             leaderName: " Md. Farhad Zamil",
             role: "Executive Director - SAF Bangladesh",
-            imageLink: "/our-leaders/leader-3.png",
+            imageLink: "/our-leaders/leader-3.jpg",
             details:
               "Farhad Zamil is the founding Executive Director of Sustainable Agriculture Foundation Bangladesh (SAF Bangladesh), prior served as the inaugural Country Director of Syngenta Foundation for Sustainable Agriculture (SFSA) Bangladesh since 2011. Farhad has over 24 years of working experience with leading international development organizations like BRAC, CARE, iDE, AFE, and UN agencies like FAO and UNDP in various capacities of program leadership, development, implementation management, partnerships, and technical backstopping. He works in a wider landscape of agriculture, food and nutrition systems, agribusiness promotion, and private-sector engagement. Farhad holds a Master’s in Horticulture from the Bangladesh Agricultural University, a Master’s in Business Administration from the Southeast University, and a Postgraduate Diploma in International Relations from the University of Dhaka. He was conferred Honorary Doctorate in Business Administration by Commonwealth University in 2020 and was also awarded Food 2.0 - Outstanding Leadership Award in 2022 for his significant contribution to sustainable development and poverty reduction in developing countries like Bangladesh. Farhad likes promoting new ideas and concepts, fostering creativity and innovation to change the livelihoods of farmers, and agricultural transformation in developing countries.",
           },

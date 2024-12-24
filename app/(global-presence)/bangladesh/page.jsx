@@ -28,7 +28,7 @@ function BangladeshPage() {
         directorDetails={{
           directorName: "Md. Farhad Zamil",
           directorRole: "Executive Director - SAF Bangladesh",
-          directorImage: "/our-leaders/leader-3.png",
+          directorImage: "/our-leaders/leader-3.jpg",
           directorQuote:
             "Our mission is to empower smallholder farmers with innovative tools, technologies, and climate-smart practices to enhance their livelihoods and promote sustainable agriculture. We are committed to creating value through market development, capacity building, and agri-digitalization, addressing the critical challenges faced by farmers in a changing climate. Together with our partners, we strive to transform agriculture into a driver of prosperity for smallholder families, rural communities, and nature.",
         }}

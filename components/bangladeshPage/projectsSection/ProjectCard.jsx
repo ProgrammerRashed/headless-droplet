@@ -13,7 +13,7 @@ function ProjectCard({ project }) {
         alt="Project Thumnail"
         className="mb-[15px] aspect-[300/207] w-full rounded-[8px] object-cover md:mb-5 md:aspect-[63/42]"
       />
-      <h3 className="mb-[10px] text-[22px] font-semibold leading-[28px] text-gray-800 0.5xl:text-[32px] 0.5xl:font-bold 0.5xl:leading-[42px]">
+      <h3 className="mb-[10px] line-clamp-2 min-h-[56px] text-[22px] font-semibold leading-[28px] text-gray-800 0.5xl:min-h-[84px] 0.5xl:text-[32px] 0.5xl:font-bold 0.5xl:leading-[42px]">
         {project.title}
       </h3>
       <div className="mb-[10px] flex w-full flex-col gap-2 text-base font-normal leading-[26px] text-gray-800 0.5xl:mb-[30px] 0.5xl:text-[22px] 0.5xl:leading-[32px]">
@@ -25,10 +25,12 @@ function ProjectCard({ project }) {
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Tenure</span>
           <span>:</span>
-          <span className="font-medium">{project.tenure}</span>
+          <span className="font-medium sm:min-h-[52px] lg:min-h-fit">
+            {project.tenure}
+          </span>
         </div>
       </div>
-      <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10 md:line-clamp-4">
+      <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">
         {project.details}
       </p>
       <div data-aos="fade-up">

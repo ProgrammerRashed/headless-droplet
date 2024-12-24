@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <AOSWrapper>
             <HeaderSection
               logoLink="/saf-logo.svg"
-              buttonDetails={{ title: "Contact Us", link: "/" }}
+              buttonDetails={{ title: "Contact Us", link: "/contact-us" }}
               navigations={[
                 {
                   id: crypto.randomUUID(),
@@ -97,6 +97,11 @@ export default function RootLayout({ children }) {
                       id: crypto.randomUUID(),
                       title: "Kenya",
                       link: "/",
+                    },
+                    {
+                      id: crypto.randomUUID(),
+                      title: "Leadership Team",
+                      link: "/leadership-team",
                     },
                   ],
                 },
@@ -189,6 +194,7 @@ export default function RootLayout({ children }) {
                   link: "/",
                 },
               }}
+              buttonDetails={{ title: "Contact Us", link: "/contact-us" }}
               navigations={[
                 {
                   id: crypto.randomUUID(),
@@ -256,6 +262,11 @@ export default function RootLayout({ children }) {
                       title: "Kenya",
                       link: "/",
                     },
+                    {
+                      id: crypto.randomUUID(),
+                      title: "Leadership Team",
+                      link: "/leadership-team",
+                    },
                   ],
                 },
                 {
@@ -311,7 +322,7 @@ export default function RootLayout({ children }) {
                     {
                       id: crypto.randomUUID(),
                       title: "Contact Us",
-                      link: "/",
+                      link: "/contact-us",
                     },
                   ],
                 },

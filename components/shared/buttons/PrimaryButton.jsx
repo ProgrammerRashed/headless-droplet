@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-function PrimaryButton({ className, children }) {
+function PrimaryButton({ className, children, href = "/" }) {
   return (
     <Link
-      href="/"
+      href={href}
       className={cn(
         "flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 stroke-red-600 px-6 py-[13px] text-sm font-semibold leading-[22px] text-red-600 transition-all duration-300 hover:bg-red-900 hover:stroke-white hover:text-white md:px-6 md:py-[15px] md:text-base md:leading-[24px]",
         className,

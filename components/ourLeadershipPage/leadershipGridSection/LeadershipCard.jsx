@@ -8,27 +8,44 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
 
-function LeadershipCard({ people }) {
+function LeadershipCard({
+  cardBackgroundSection,
+  cardImageSize,
+  cardDetailsClass,
+  people,
+}) {
   return (
     <Dialog>
       <DialogTrigger>
         <div
           data-aos="fade-up"
-          className="flex flex-col overflow-hidden rounded-[8px] bg-surface"
+          className={cn(
+            "flex flex-col overflow-hidden rounded-[8px] bg-surface",
+            cardBackgroundSection,
+          )}
         >
           <Image
             src={people.imageLink}
             width={410}
             height={340}
             alt={people.leaderName}
-            className="aspect-square w-full object-cover md:aspect-[41/34]"
+            className={cn(
+              "aspect-square w-full object-cover md:aspect-[41/34]",
+              cardImageSize,
+            )}
           />
-          <div className="flex flex-col items-center justify-center px-2 py-5 text-center md:py-[30px]">
+          <div
+            className={cn(
+              "flex flex-col items-center justify-center px-2 py-5 text-center md:py-[30px]",
+              cardDetailsClass,
+            )}
+          >
             <h4 className="mb-[10px] text-[22px] font-medium leading-[32px] text-gray-800">
               {people.leaderName}
             </h4>
-            <p className="text-xs font-normal leading-[18px] text-gray-600">
+            <p className="max-w-[220px] text-xs font-normal leading-[18px] text-gray-600">
               {people.role}
             </p>
           </div>

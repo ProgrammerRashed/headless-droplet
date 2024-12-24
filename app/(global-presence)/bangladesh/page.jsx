@@ -34,7 +34,7 @@ function BangladeshPage() {
         }}
       />
       <OurValuesSection
-        sectionHeading="Our Programs"
+        sectionHeading="Our Portfolios"
         gridClassName="lg:!grid-cols-2 xl:gap-0"
         values={[
           {
@@ -54,12 +54,12 @@ function BangladeshPage() {
         ]}
       />
       <LocalMapSection
-        sectionTitle="SFSA Bangladesh Working Area"
+        sectionTitle="Working Areas"
         mapImage="/global-presence/bg-map.png"
       />
       <ProjectSection
         data={{
-          SectionTitle: "Project and Programs",
+          SectionTitle: "Projects and Programs",
           viewAllBtnDetails: {
             title: "View All Project and Program",
             link: "",
@@ -69,23 +69,20 @@ function BangladeshPage() {
               id: crypto.randomUUID(),
               title:
                 "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
-              donor:
-                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
-              tenure: "16 September 2018 - 15 September 2022",
+              donor: "Swiss Agency for Development and Cooperation",
+              tenure: "September 2018 - September 2022",
               details:
-                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+                "Surokkha focused to pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
               imageLink: "/projects-programs/project-1.png",
               pdfLink: "/projects-programs/pdfs/project-1.pdf",
             },
             {
               id: crypto.randomUUID(),
-              title:
-                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
-              donor:
-                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
-              tenure: "16 September 2018 - 15 September 2022",
+              title: "Nutrition in City Ecosystems (NICE)",
+              donor: "Swiss Agency for Development and Cooperation",
+              tenure: "August 2021 - June 2025",
               details:
-                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+                "The NICE Project facilitates locally led action for improved nutrition in low and middle income countries through agricultural, food and health sector collaborations, and public-private engagements, with strong emphasis on the role of women and youth entrepreneurs.",
               imageLink: "/projects-programs/project-2.jpg",
               pdfLink: "/projects-programs/pdfs/project-1.pdf",
             },
@@ -95,23 +92,20 @@ function BangladeshPage() {
               id: crypto.randomUUID(),
               title:
                 "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
-              donor:
-                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
-              tenure: "16 September 2018 - 15 September 2022",
+              donor: "Swiss Agency for Development and Cooperation",
+              tenure: "September 2018 - September 2022",
               details:
-                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+                "Surokkha focused to pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
               imageLink: "/projects-programs/project-1.png",
               pdfLink: "/projects-programs/pdfs/project-1.pdf",
             },
             {
               id: crypto.randomUUID(),
-              title:
-                "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
-              donor:
-                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
-              tenure: "16 September 2018 - 15 September 2022",
+              title: "Nutrition in City Ecosystems (NICE)",
+              donor: ": Swiss Agency for Development and Cooperation",
+              tenure: "August 2021 - June 2025",
               details:
-                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+                "The NICE Project facilitates locally led action for improved nutrition in low and middle income countries through agricultural, food and health sector collaborations, and public-private engagements, with strong emphasis on the role of women and youth entrepreneurs.",
               imageLink: "/projects-programs/project-2.jpg",
               pdfLink: "/projects-programs/pdfs/project-1.pdf",
             },
@@ -119,11 +113,10 @@ function BangladeshPage() {
               id: crypto.randomUUID(),
               title:
                 "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
-              donor:
-                "Swiss Agency for Development and Cooperation (SDC) and SFSA",
-              tenure: "16 September 2018 - 15 September 2022",
+              donor: "Swiss Agency for Development and Cooperation",
+              tenure: "September 2018 - September 2022",
               details:
-                "To pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
+                "Surokkha focused to pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
               imageLink: "/projects-programs/project-1.png",
               pdfLink: "/projects-programs/pdfs/project-1.pdf",
             },

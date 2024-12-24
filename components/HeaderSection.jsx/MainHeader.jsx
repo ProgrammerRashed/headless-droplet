@@ -23,12 +23,15 @@ function MainHeader({
       </Link>
       <div className="flex items-center justify-between gap-4 3xl:gap-[35px]">
         <MainNavigationLinks navigations={navigations} />
-        <PrimaryButton className="hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3 0.5xl:flex">
+        <PrimaryButton
+          href={buttonDetails.link}
+          className="hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3 0.5xl:flex"
+        >
           {buttonDetails.title}
         </PrimaryButton>
         <button
           onClick={() => setIsMobileNavOpen((prev) => !prev)}
-          className="bg-green-800 flex h-12 w-12 items-center justify-center rounded-full transition-all duration-300 hover:bg-green-900 0.5xl:hidden"
+          className="flex h-12 w-12 items-center justify-center rounded-full bg-green-800 transition-all duration-300 hover:bg-green-900 0.5xl:hidden"
         >
           {isMobileNavOpen ? (
             <svg

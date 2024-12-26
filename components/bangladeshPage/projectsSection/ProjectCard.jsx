@@ -20,14 +20,14 @@ function ProjectCard({ project }) {
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Donor</span>
           <span>:</span>
-          <span className="font-medium">{project.donor}</span>
+          <span className="line-clamp-2 min-h-[56px] font-medium md:line-clamp-2 md:min-h-[56px] 0.5xl:min-h-[64px]">
+            {project.donor}
+          </span>
         </div>
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Tenure</span>
           <span>:</span>
-          <span className="font-medium sm:min-h-[52px] lg:min-h-fit">
-            {project.tenure}
-          </span>
+          <span className="font-medium">{project.tenure}</span>
         </div>
       </div>
       <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">

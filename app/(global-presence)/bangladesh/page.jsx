@@ -70,7 +70,7 @@ function BangladeshPage() {
               title:
                 "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
               donor: "Swiss Agency for Development and Cooperation",
-              tenure: "September 2018 - September 2022",
+              tenure: "Sep 2018 - Sep 2022",
               details:
                 "Surokkha focused to pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
               imageLink: "/projects-programs/project-1.png",
@@ -80,7 +80,7 @@ function BangladeshPage() {
               id: crypto.randomUUID(),
               title: "Nutrition in City Ecosystems (NICE)",
               donor: "Swiss Agency for Development and Cooperation",
-              tenure: "August 2021 - June 2025",
+              tenure: "Aug 2021 - Jun 2025",
               details:
                 "The NICE Project facilitates locally led action for improved nutrition in low and middle income countries through agricultural, food and health sector collaborations, and public-private engagements, with strong emphasis on the role of women and youth entrepreneurs.",
               imageLink: "/projects-programs/project-2.jpg",
@@ -93,7 +93,7 @@ function BangladeshPage() {
               title:
                 "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
               donor: "Swiss Agency for Development and Cooperation",
-              tenure: "September 2018 - September 2022",
+              tenure: "Sep 2018 - Sep 2022",
               details:
                 "Surokkha focused to pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
               imageLink: "/projects-programs/project-1.png",
@@ -103,7 +103,7 @@ function BangladeshPage() {
               id: crypto.randomUUID(),
               title: "Nutrition in City Ecosystems (NICE)",
               donor: ": Swiss Agency for Development and Cooperation",
-              tenure: "August 2021 - June 2025",
+              tenure: "Aug 2021 - Jun 2025",
               details:
                 "The NICE Project facilitates locally led action for improved nutrition in low and middle income countries through agricultural, food and health sector collaborations, and public-private engagements, with strong emphasis on the role of women and youth entrepreneurs.",
               imageLink: "/projects-programs/project-2.jpg",
@@ -114,7 +114,7 @@ function BangladeshPage() {
               title:
                 "Promoting Risk Mitigation Measures for Climate Change Adaptation (Surokkha)",
               donor: "Swiss Agency for Development and Cooperation",
-              tenure: "September 2018 - September 2022",
+              tenure: "Sep 2018 - Sep 2022",
               details:
                 "Surokkha focused to pilot and test various index-based crop insurance products and distribution channels, as well as develop risk mitigation methods tailored for farmers cultivating Rice (Aman and Boro), Potato, and Maize.",
               imageLink: "/projects-programs/project-1.png",

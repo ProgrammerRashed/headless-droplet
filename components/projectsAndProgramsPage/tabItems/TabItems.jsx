@@ -48,11 +48,11 @@ function TabItems({ items }) {
   };
 
   return (
-    <Tabs defaultValue="All" className="mt-10 w-full">
+    <Tabs defaultValue="All" className="w-full">
       <TabsList
         data-aos="fade-up"
         ref={tabsListRef}
-        className="m-0 mb-[25px] flex h-auto justify-start gap-0 overflow-x-auto scroll-smooth rounded-none bg-white p-0 md:mb-[30px]"
+        className="m-0 flex h-auto justify-start gap-0 overflow-x-auto scroll-smooth rounded-none border-b border-[#1623401A] bg-white p-0"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}

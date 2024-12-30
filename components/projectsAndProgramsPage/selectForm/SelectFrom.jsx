@@ -3,7 +3,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 function SelectFrom() {
   return (
-    <form data-aos="fade-up" className="max-w-[490px]">
+    <form data-aos="fade-up" className="mt-[25px] max-w-[490px] md:mt-[30px]">
       <RadioGroup
         defaultValue="ongoing"
         className="flex w-full flex-row items-center justify-center"

@@ -1,6 +1,6 @@
 function AddressAndMap({ address }) {
   return (
-    <div className="bg-red-10">
+    <div>
       <div
         data-aos="fade-up"
         className="mb-10 flex flex-col gap-[10px] text-base font-normal leading-[26px] text-gray-600 0.5xl:mb-20"

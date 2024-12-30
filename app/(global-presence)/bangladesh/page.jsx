@@ -229,61 +229,63 @@ function BangladeshPage() {
         ]}
       />
       <OurPartnersSections
-        sectionHeading="Our Partners"
-        partners={[
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image11.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image6.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image4.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image1.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image10.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image7.png",
-          },
+        data={{
+          sectionHeading: "Our Partners",
+          partners: [
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image11.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image6.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image4.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image1.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image10.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image7.png",
+            },
 
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image12.png",
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image12.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image9.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image2.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image5.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image8.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image3.png",
+            },
+          ],
+          buttonDetails: {
+            title: "Explore all partners",
+            link: "/",
           },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image9.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image2.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image5.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image8.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            logoLink: "/our-pertners/image3.png",
-          },
-        ]}
-        buttonDetails={{
-          title: "Explore all partners",
-          link: "/",
         }}
       />
       <BlogsAndInsightsSection

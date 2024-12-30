@@ -98,11 +98,6 @@ export default function RootLayout({ children }) {
                       title: "Kenya",
                       link: "/",
                     },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Leadership Team",
-                      link: "/leadership-team",
-                    },
                   ],
                 },
                 {
@@ -261,11 +256,6 @@ export default function RootLayout({ children }) {
                       id: crypto.randomUUID(),
                       title: "Kenya",
                       link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Leadership Team",
-                      link: "/leadership-team",
                     },
                   ],
                 },

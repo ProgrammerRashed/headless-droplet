@@ -170,6 +170,25 @@ html.lenis body {
   }
 }
 
+.slider-full-container {
+  padding-left: 15px;
+
+  @media (min-width: 640px) {
+    padding-left: 30px;
+  }
+  @media (min-width: 768px) {
+    padding-left: 45px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 75px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: calc((100vw - 1300px) / 2);
+  }
+}
+
 /* ------------------------------------- */
 /* Slider button */
 /* ------------------------------------- */

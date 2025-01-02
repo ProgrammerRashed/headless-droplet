@@ -10,7 +10,37 @@ function ReportsAndPublicationsPage() {
           bannerCover: "/hero-banners/reports-and-publications.jpg",
         }}
       />
-      <FeaturedPublicationsSection />
+      <FeaturedPublicationsSection
+        data={{
+          sectionTitle: "Featured Publications",
+          featuredCards: [
+            {
+              id: crypto.randomUUID(),
+              bannerImage: "/reports-and-publications-page/feature-image-1.jpg",
+              category: "Agriculture",
+              title: "Foster science & technology in the service of humanity",
+              publishedDate: "06 September, 2024",
+              buttonDetails: { title: "Download PDF", link: "/" },
+            },
+            {
+              id: crypto.randomUUID(),
+              bannerImage: "/reports-and-publications-page/feature-image-1.jpg",
+              category: "Agriculture",
+              title: "Foster science & technology in the service of humanity",
+              publishedDate: "06 September, 2024",
+              buttonDetails: { title: "Download PDF", link: "/" },
+            },
+            {
+              id: crypto.randomUUID(),
+              bannerImage: "/reports-and-publications-page/feature-image-1.jpg",
+              category: "Agriculture",
+              title: "Foster science & technology in the service of humanity",
+              publishedDate: "06 September, 2024",
+              buttonDetails: { title: "Download PDF", link: "/" },
+            },
+          ],
+        }}
+      />
     </>
   );
 }

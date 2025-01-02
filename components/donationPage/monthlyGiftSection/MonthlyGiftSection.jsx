@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
-import MonthlyGiftCard from "./MonthlyGiftCard";
+import MonthlyGiftCard from "@/components/shared/monthlyGiftSection/MonthlyGiftCard";
 
 function MonthlyGiftSection({ data }) {
   const { sectionTitle, cardItems, buttonDetails } = data;

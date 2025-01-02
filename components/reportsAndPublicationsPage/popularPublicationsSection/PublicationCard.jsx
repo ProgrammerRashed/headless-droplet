@@ -1,7 +1,7 @@
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import Image from "next/image";
 
-function FeaturedCard({ card }) {
+function PublicationCard({ card }) {
   return (
     <div data-aos="fade-up" className="group flex flex-col bg-white">
       <div className="relative flex items-center justify-center rounded-t-[8px] bg-gray-50 p-[10px] lg:p-4">
@@ -18,17 +18,17 @@ function FeaturedCard({ card }) {
           {card.category}
         </span>
       </div>
-      <div className="flex flex-col p-5 lg:p-[30px]">
+      <div className="flex flex-col p-5 lg:p-0 lg:pt-5">
         <h3 className="mb-[10px] line-clamp-2 text-lg font-medium leading-[28px] text-gray-800 lg:text-2xl lg:font-semibold lg:leading-[36px]">
           {card.title}
         </h3>
-        <p className="mb-5 text-sm font-normal leading-[22px] lg:mb-10">
+        <p className="mb-[30px] text-sm font-normal leading-[22px] lg:mb-10">
           {card.publishedDate}
         </p>
-        <PrimaryButton className="">{card.buttonDetails.title}</PrimaryButton>
+        <PrimaryButton>{card.buttonDetails.title}</PrimaryButton>
       </div>
     </div>
   );
 }
 
-export default FeaturedCard;
+export default PublicationCard;

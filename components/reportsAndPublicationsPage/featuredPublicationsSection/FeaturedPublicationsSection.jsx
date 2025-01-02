@@ -14,7 +14,9 @@ function FeaturedPublicationsSection({ data }) {
   return (
     <section className="bg-surface py-[50px] lg:py-20">
       <div className="container">
-        <SectionHeading>Featured Publications</SectionHeading>
+        <div data-aos="fade-up">
+          <SectionHeading>Featured Publications</SectionHeading>
+        </div>
       </div>
       <div className="slider-full-container 0.5xl:hidden">
         <div className="relative mt-5 border-t border-gray-50 pt-5">

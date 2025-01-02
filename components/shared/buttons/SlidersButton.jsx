@@ -2,7 +2,7 @@ function SlidersButton({ onPrev, onNext }) {
   return (
     <div
       data-aos="fade-up"
-      className="slider-buttons pointer-events-none absolute left-0 right-0 top-1/2 z-10 flex items-center justify-between"
+      className="slider-buttons pointer-events-none absolute left-0 right-0 top-2/3 z-10 flex items-center justify-between"
     >
       <button
         onClick={onPrev}

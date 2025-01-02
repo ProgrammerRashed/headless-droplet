@@ -1,5 +1,5 @@
 import ProjectCard from "../../bangladeshPage/projectsSection/ProjectCard";
-import PaginationCustom from "../paginationCustom/PaginationCustom";
+import PaginationCustom from "../../shared/paginationCustom/PaginationCustom";
 import SelectFrom from "../selectForm/SelectFrom";
 import TabItems from "../tabItems/TabItems";
 

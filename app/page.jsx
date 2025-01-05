@@ -396,42 +396,44 @@ export default function HomePage() {
         }}
       />
       <BlogsAndInsightsSection
-        sectionHeading="Blogs & Insights"
-        btnDetails={{
-          title: "View all",
-          link: "/",
+        data={{
+          sectionHeading: "Blogs & Insights",
+          btnDetails: {
+            title: "View all",
+            link: "/",
+          },
+          blogs: [
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Shifting focus to Climate-Smart Agriculture: The Importance of Stakeholder Engagement",
+              category: "Agriculture",
+              publishedDate: "03 November 2024",
+              coverImage: "/blogs-and-insights/blog-1.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Nutrition in City Ecosystems (NICE)",
+              category: "Nutrition",
+              publishedDate: "03 November 2024",
+              coverImage: "/blogs-and-insights/blog-2.jpg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Rural Entrepreneurship and Youth Empowerment",
+              category: "Agri-Entrepreneurship",
+              publishedDate: "03 November 2024",
+              coverImage: "/blogs-and-insights/blog-3.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Agriservices Centres",
+              category: "Agri-Entrepreneurship",
+              publishedDate: "03 November 2024",
+              coverImage: "/blogs-and-insights/blog-4.png",
+            },
+          ],
         }}
-        blogs={[
-          {
-            id: crypto.randomUUID(),
-            title:
-              "Shifting focus to Climate-Smart Agriculture: The Importance of Stakeholder Engagement",
-            category: "Agriculture",
-            publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-1.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Nutrition in City Ecosystems (NICE)",
-            category: "Nutrition",
-            publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-2.jpg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Rural Entrepreneurship and Youth Empowerment",
-            category: "Agri-Entrepreneurship",
-            publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-3.png",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Agriservices Centres",
-            category: "Agri-Entrepreneurship",
-            publishedDate: "03 November 2024",
-            coverImage: "/blogs-and-insights/blog-4.png",
-          },
-        ]}
       />
     </>
   );

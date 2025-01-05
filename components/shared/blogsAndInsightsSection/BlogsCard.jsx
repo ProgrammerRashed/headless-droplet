@@ -1,6 +1,7 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-function BlogsCard({ blog }) {
+function BlogsCard({ blog, imageHeightClassName }) {
   return (
     <div
       data-aos="fade-up"
@@ -12,7 +13,10 @@ function BlogsCard({ blog }) {
           alt={blog.title}
           width={410}
           height={240}
-          className="h-[240px] w-full rounded-[8px] object-cover transition-all duration-300 group-hover:scale-105"
+          className={cn(
+            "h-[240px] w-full rounded-[8px] object-cover transition-all duration-300 group-hover:scale-105",
+            imageHeightClassName,
+          )}
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">

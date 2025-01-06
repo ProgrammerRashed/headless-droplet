@@ -1,4 +1,4 @@
-import CtaSection from "@/components/bangladeshPage/ctaSection/CtaSection";
+import CtaSection from "@/components/shared/ctaSection/CtaSection";
 import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 import OurCultureAccordionSection from "@/components/ourCulturePage/ourCultureAccordionSection/OurCultureAccordionSection";
 import OurCultureGallerySection from "@/components/ourCulturePage/ourCultureGallerySection/OurCultureGallerySection";

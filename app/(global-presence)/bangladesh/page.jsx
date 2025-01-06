@@ -4,7 +4,7 @@ import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection
 import OurValuesSection from "@/components/shared/ourValuesSection/OurValuesSection";
 import SDGSContributionSection from "@/components/shared/sdgsContributionSection/SDGSContributionSection";
 import OurPartnersSections from "@/components/shared/ourPartnersSection/OurPartnersSections";
-import CtaSection from "@/components/bangladeshPage/ctaSection/CtaSection";
+import CtaSection from "@/components/shared/ctaSection/CtaSection";
 import LocalMapSection from "@/components/bangladeshPage/localMapSection/LocalMapSection";
 import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
 import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
@@ -329,8 +329,11 @@ function BangladeshPage() {
         }}
       />
       <CtaSection
-        sectionTitle="Feel free to reach out if you need, any further information."
-        btnDetails={{ title: "Let's Get Started", link: "/" }}
+        data={{
+          sectionTitle:
+            "Feel free to reach out if you need, any further information.",
+          btnDetails: { title: "Let's Get Started", link: "/" },
+        }}
       />
     </>
   );

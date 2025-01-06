@@ -1,16 +1,22 @@
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import Image from "next/image";
 
-function CtaSection({ sectionTitle, btnDetails }) {
+function CtaSection({ data }) {
+  const { sectionTitle, details, btnDetails } = data;
   return (
     <section className="relative">
-      <div className="bg-green-800/90 relative flex flex-col items-center justify-center gap-[30px] px-[15px] py-[50px] text-center md:py-[100px]">
+      <div className="relative flex flex-col items-center justify-center gap-[30px] bg-green-800/90 px-[15px] py-[50px] text-center md:py-[100px]">
         <h2
           data-aos="fade-up"
           className="max-w-[600px] text-[26px] font-semibold leading-[34px] text-surface md:text-[32px] md:font-bold md:leading-[42px]"
         >
           {sectionTitle}
         </h2>
+        {details && (
+          <p className="-mt-[10] max-w-[768px] text-center text-base font-normal leading-[26px] text-white">
+            {details}
+          </p>
+        )}
         <div data-aos="fade-up">
           <PrimaryButton className="border-none bg-red-600 stroke-white text-white">
             {btnDetails.title}

@@ -1,11 +1,21 @@
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 function SideBySideBulletPoints({ data }) {
-  const { bannerImage, title, description, points, buttonDetails } = data;
+  const {
+    sectionClassName,
+    bannerImage,
+    title,
+    description,
+    points,
+    buttonDetails,
+  } = data;
 
   return (
-    <section className="bg-surface py-[50px] md:py-[100px]">
+    <section
+      className={cn("bg-surface py-[50px] md:py-[100px]", sectionClassName)}
+    >
       <div className="container">
         <div className="flex w-full flex-col gap-10 xl:flex-row xl:items-center xl:justify-between">
           <div data-aos="fade-up" className="flex flex-col">
@@ -22,9 +32,11 @@ function SideBySideBulletPoints({ data }) {
                 ))}
               </ul>
             )}
-            <PrimaryButton className="mt-[10px] bg-red-600 stroke-white text-white hover:bg-red-900">
-              {buttonDetails.title}
-            </PrimaryButton>
+            {buttonDetails && (
+              <PrimaryButton className="mt-[10px] bg-red-600 stroke-white text-white hover:bg-red-900">
+                {buttonDetails.title}
+              </PrimaryButton>
+            )}
           </div>
           <Image
             data-aos="fade-up"

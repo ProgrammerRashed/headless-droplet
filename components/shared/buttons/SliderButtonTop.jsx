@@ -1,11 +1,15 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
-function SliderButtonTop({ onPrev, onNext }) {
+function SliderButtonTop({ variation, onPrev, onNext }) {
   return (
     <div className="flex flex-row items-center justify-center gap-[10px]">
       <button
         onClick={() => onPrev()}
-        className="pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white"
+        className={cn(
+          "pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white",
+          `${variation === "small" ? "p-2" : "p-3"}`,
+        )}
       >
         <svg
           className="rotate-180"
@@ -33,7 +37,10 @@ function SliderButtonTop({ onPrev, onNext }) {
       </button>
       <button
         onClick={() => onNext()}
-        className="pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white"
+        className={cn(
+          "pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white",
+          `${variation === "small" ? "p-2" : "p-3"}`,
+        )}
       >
         <svg
           width={20}

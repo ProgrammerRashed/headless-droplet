@@ -2,7 +2,10 @@ import Image from "next/image";
 
 function OurCultureGalleryCard({ card }) {
   return (
-    <div className="group relative col-span-1 row-span-1 overflow-hidden rounded-[8px] [&:nth-child(2)]:0.5xl:col-span-2 [&:nth-child(3)]:sm:col-span-2 [&:nth-child(3)]:0.5xl:col-span-1 [&:nth-child(6)]:0.5xl:col-span-2">
+    <div
+      data-aos="fade-up"
+      className="group relative col-span-1 row-span-1 overflow-hidden rounded-[8px] [&:nth-child(2)]:0.5xl:col-span-2 [&:nth-child(3)]:sm:col-span-2 [&:nth-child(3)]:0.5xl:col-span-1 [&:nth-child(6)]:0.5xl:col-span-2"
+    >
       <Image
         src={card.imageUrl}
         height={417}

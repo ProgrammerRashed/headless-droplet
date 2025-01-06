@@ -13,7 +13,10 @@ function CtaSection({ data }) {
           {sectionTitle}
         </h2>
         {details && (
-          <p className="-mt-[10] max-w-[768px] text-center text-base font-normal leading-[26px] text-white">
+          <p
+            data-aos="fade-up"
+            className="-mt-[10] max-w-[768px] text-center text-base font-normal leading-[26px] text-white"
+          >
             {details}
           </p>
         )}

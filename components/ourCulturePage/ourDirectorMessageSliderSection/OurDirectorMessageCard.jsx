@@ -2,7 +2,10 @@ import Image from "next/image";
 
 function OurDirectorMessageCard({ card }) {
   return (
-    <div className="flex flex-col items-center justify-center rounded-[8px] bg-white px-10 py-[60px]">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col items-center justify-center rounded-[8px] bg-white px-10 py-[60px]"
+    >
       <svg
         className="mb-4"
         width={32}

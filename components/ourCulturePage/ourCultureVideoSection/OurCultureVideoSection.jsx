@@ -15,7 +15,7 @@ function OurCultureVideoSection({ data }) {
   };
 
   return (
-    <section>
+    <section data-aos="fade-up">
       <div className="aspect-[1440/810] w-full flex-grow overflow-hidden transition-all duration-300">
         {isPlaying ? (
           <iframe
@@ -44,7 +44,10 @@ function OurCultureVideoSection({ data }) {
               className={`absolute inset-0 flex w-full items-end ${video?.videoTitle ? "bg-gradient-to-b from-black/10 to-black/70" : ""}`}
             >
               {video?.videoTitle && (
-                <p className="w-full p-4 text-left text-base font-bold leading-normal tracking-[1%] text-white sm:p-8 sm:text-center sm:text-2xl lg:p-10 lg:text-5xl lg:font-bold lg:leading-[60px]">
+                <p
+                  data-aos="fade-up"
+                  className="w-full p-4 text-left text-base font-bold leading-normal tracking-[1%] text-white sm:p-8 sm:text-center sm:text-2xl lg:p-10 lg:text-5xl lg:font-bold lg:leading-[60px]"
+                >
                   {video?.videoTitle}
                 </p>
               )}

@@ -2,7 +2,10 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 
 function CurrentOpeningCard({ card }) {
   return (
-    <div className="flex flex-col rounded-[8px] border-gray-50 bg-white p-5 md:px-[30px] md:py-10 lg:flex-row lg:items-center lg:justify-between lg:rounded-none lg:border-y">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col rounded-[8px] border-gray-50 bg-white p-5 md:px-[30px] md:py-10 lg:flex-row lg:items-center lg:justify-between lg:rounded-none lg:border-y"
+    >
       <div className="flex flex-col">
         <h4 className="mb-[5px] max-w-md text-lg font-medium leading-[28px] text-gray-800 md:mb-[10px] md:text-[22px] md:leading-[32px] lg:max-w-[600px] xl:max-w-[700px]">
           {card.title}

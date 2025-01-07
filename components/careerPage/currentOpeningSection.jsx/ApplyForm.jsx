@@ -61,7 +61,7 @@ function ApplyForm() {
           className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
         />
       </div>
-      <div className="mt-2 md:col-span-2">
+      <div data-aos="fade-up" className="mt-2 md:col-span-2">
         <Dropzone className="group flex cursor-pointer items-center justify-center rounded-[10px] border border-dashed border-gray-50 bg-surface px-4 py-3 transition-all duration-300 hover:border-green-500" />
         <p className="mt-2 text-sm font-normal leading-[22px] text-gray-600">
           Upload file size max 5MB. Accept file (.pdf)

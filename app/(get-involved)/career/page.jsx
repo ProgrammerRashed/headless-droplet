@@ -107,6 +107,30 @@ function CareerPage() {
               deadline: "20 Aug 2025",
               buttonDetails: { title: "View Details", link: "/" },
             },
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Individual National Consultancy: Editorial Consultant Kenya",
+              location: "Dhaka",
+              deadline: "20 Aug 2025",
+              buttonDetails: { title: "View Details", link: "/" },
+            },
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Individual National Consultancy: Editorial Consultant Kenya",
+              location: "Dhaka",
+              deadline: "20 Aug 2025",
+              buttonDetails: { title: "View Details", link: "/" },
+            },
+            {
+              id: crypto.randomUUID(),
+              title:
+                "Individual National Consultancy: Editorial Consultant Kenya",
+              location: "Dhaka",
+              deadline: "20 Aug 2025",
+              buttonDetails: { title: "View Details", link: "/" },
+            },
           ],
         }}
       />

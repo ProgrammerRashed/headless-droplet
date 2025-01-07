@@ -7,10 +7,10 @@ function CurrentOpeningSection({ data }) {
   const { sectionTitle, jobs } = data;
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
-      {!jobs && jobs.length && (
+      {jobs && jobs.length ? (
         <div className="container">
           <div className="flex flex-col gap-5 md:gap-[30px] lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-[640px]">
+            <div className="max-w-[640px]" data-aos="fade-up">
               <SectionHeading>{sectionTitle}</SectionHeading>
             </div>
             <CurrentOpeningFilter />
@@ -21,18 +21,22 @@ function CurrentOpeningSection({ data }) {
             ))}
           </div>
         </div>
-      )}
-      <div className="container">
-        <div className="flex flex-col items-center justify-center">
-          <SectionHeading className="mx-auto mb-[10px] text-center md:mb-5">
-            {sectionTitle}
-          </SectionHeading>
-          <p className="text-center text-base font-normal leading-[26px] text-gray-600">
-            We currently have no job openings. Send your updated Resume.
-          </p>
+      ) : (
+        <div className="container">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col items-center justify-center"
+          >
+            <SectionHeading className="mx-auto mb-[10px] text-center md:mb-5">
+              {sectionTitle}
+            </SectionHeading>
+            <p className="text-center text-base font-normal leading-[26px] text-gray-600">
+              We currently have no job openings. Send your updated Resume.
+            </p>
+          </div>
+          <ApplyForm />
         </div>
-        <ApplyForm />
-      </div>
+      )}
     </section>
   );
 }

@@ -2,12 +2,8 @@ import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import OurValuesCard from "./OurValuesCard";
 import { cn } from "@/lib/utils";
 
-function OurValuesSection({
-  sectionHeading,
-  sectionSubHeading,
-  values,
-  gridClassName,
-}) {
+function OurValuesSection({ data }) {
+  const { sectionHeading, sectionSubHeading, values, gridClassName } = data;
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">

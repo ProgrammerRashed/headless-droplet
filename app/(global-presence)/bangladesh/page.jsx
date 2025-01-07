@@ -34,24 +34,26 @@ function BangladeshPage() {
         }}
       />
       <OurValuesSection
-        sectionHeading="Our Portfolios"
-        gridClassName="lg:!grid-cols-2 xl:gap-0"
-        values={[
-          {
-            id: crypto.randomUUID(),
-            title: "Livelihoods & Economic Growth",
-            details:
-              "Enhance smallholder livelihoods by focusing on sustainable farming practices, agri-entrepreneurship, nutrition, access to markets, and improving agricultural productivity.",
-            iconLink: "/our-values/passion.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Climate Change & Risk Mitigation",
-            details:
-              "Build resilience among smallholders by promoting climate-smart agriculture, developing agricultural insurance solutions, and advancing carbon credit initiatives to support sustainable and environmentally friendly practices.",
-            iconLink: "/our-values/innovation.svg",
-          },
-        ]}
+        data={{
+          sectionHeading: "Our Portfolios",
+          values: [
+            {
+              id: crypto.randomUUID(),
+              title: "Livelihoods & Economic Growth",
+              details:
+                "Enhance smallholder livelihoods by focusing on sustainable farming practices, agri-entrepreneurship, nutrition, access to markets, and improving agricultural productivity.",
+              iconLink: "/our-values/passion.svg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Climate Change & Risk Mitigation",
+              details:
+                "Build resilience among smallholders by promoting climate-smart agriculture, developing agricultural insurance solutions, and advancing carbon credit initiatives to support sustainable and environmentally friendly practices.",
+              iconLink: "/our-values/innovation.svg",
+            },
+          ],
+          gridClassName: "lg:!grid-cols-2 xl:gap-0",
+        }}
       />
       <LocalMapSection
         sectionTitle="Working Areas"

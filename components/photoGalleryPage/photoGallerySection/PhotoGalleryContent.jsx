@@ -51,7 +51,7 @@ function PhotoGalleryContent({ gallery }) {
                   height={750}
                   width={1290}
                   alt={image.caption}
-                  className="aspect-video w-full"
+                  className="aspect-video w-full object-cover"
                 />
                 <div className="absolute bottom-[10px] left-[10px] rounded-[80px] bg-gray-800/60 px-4 py-[7px] text-base font-normal leading-[26px] text-white md:bottom-6 md:left-6">
                   {image.caption}

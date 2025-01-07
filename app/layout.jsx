@@ -318,7 +318,6 @@ export default function RootLayout({ children }) {
                 },
               ]}
               footerBottom={{
-                copyRightText: "© 2024 Sustainable Agriculture Foundation",
                 navigations: [
                   {
                     id: crypto.randomUUID(),

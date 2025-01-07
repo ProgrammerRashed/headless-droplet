@@ -9,7 +9,8 @@ function SideBySideBulletPoints({ data }) {
     title,
     description,
     points,
-    buttonDetails,
+    buttonPrimaryDetails,
+    buttonSecondaryDetails,
   } = data;
 
   return (
@@ -32,11 +33,16 @@ function SideBySideBulletPoints({ data }) {
                 ))}
               </ul>
             )}
-            {buttonDetails && (
-              <PrimaryButton className="mt-[10px] bg-red-600 stroke-white text-white hover:bg-red-900">
-                {buttonDetails.title}
-              </PrimaryButton>
-            )}
+            <div className="mt-[10px] flex flex-col-reverse gap-5 sm:flex-row">
+              {buttonPrimaryDetails && (
+                <PrimaryButton className="bg-red-600 stroke-white text-white hover:bg-red-900">
+                  {buttonPrimaryDetails.title}
+                </PrimaryButton>
+              )}
+              {buttonSecondaryDetails && (
+                <PrimaryButton>{buttonSecondaryDetails.title}</PrimaryButton>
+              )}
+            </div>
           </div>
           <Image
             data-aos="fade-up"

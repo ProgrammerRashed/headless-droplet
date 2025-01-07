@@ -40,52 +40,55 @@ function whoWeArePage() {
         }}
       />
       <OurValuesSection
-        sectionHeading="Our values"
-        sectionSubHeading="We inspire sustainable growth from the ground up."
-        values={[
-          {
-            id: crypto.randomUUID(),
-            title: "Passion",
-            details:
-              "Drive to achieve our vision and create sustainable impact is at the heart of all we do. ",
-            iconLink: "/our-values/passion.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Innovation",
-            details:
-              "We invest in and enable innovations for long term impact, that help smallholders prosper and thrive in a sustainable and resilient way. Agility and an entrepreneurial mindset are crucial here.",
-            iconLink: "/our-values/innovation.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Integrity",
-            details:
-              "Ethics, safety and compliance are core to the way we operate. Our practices prioritize community welfare, sustainability, and unbiased decision-making in agricultural development.",
-            iconLink: "/our-values/integrity.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Respect and Growth for All",
-            details:
-              "We embrace a diverse and inclusive culture in our teams and programs that encourages opportunities for all, notably women, and respects diverse opinions and abilities.",
-            iconLink: "/our-values/growth.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Collaborative Spirit",
-            details:
-              "Our work in partnership and programs is based on trust and transparency.",
-            iconLink: "/our-values/collaborative.svg",
-          },
-          {
-            id: crypto.randomUUID(),
-            title: "Reliability",
-            details:
-              "We earn trust by delivering on our commitments and creating value for our beneficiaries.",
-            iconLink: "/our-values/reliability.svg",
-          },
-        ]}
+        data={{
+          sectionHeading: "Our values",
+          sectionSubHeading:
+            "We inspire sustainable growth from the ground up.",
+          values: [
+            {
+              id: crypto.randomUUID(),
+              title: "Passion",
+              details:
+                "Drive to achieve our vision and create sustainable impact is at the heart of all we do. ",
+              iconLink: "/our-values/passion.svg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Innovation",
+              details:
+                "We invest in and enable innovations for long term impact, that help smallholders prosper and thrive in a sustainable and resilient way. Agility and an entrepreneurial mindset are crucial here.",
+              iconLink: "/our-values/innovation.svg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Integrity",
+              details:
+                "Ethics, safety and compliance are core to the way we operate. Our practices prioritize community welfare, sustainability, and unbiased decision-making in agricultural development.",
+              iconLink: "/our-values/integrity.svg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Respect and Growth for All",
+              details:
+                "We embrace a diverse and inclusive culture in our teams and programs that encourages opportunities for all, notably women, and respects diverse opinions and abilities.",
+              iconLink: "/our-values/growth.svg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Collaborative Spirit",
+              details:
+                "Our work in partnership and programs is based on trust and transparency.",
+              iconLink: "/our-values/collaborative.svg",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Reliability",
+              details:
+                "We earn trust by delivering on our commitments and creating value for our beneficiaries.",
+              iconLink: "/our-values/reliability.svg",
+            },
+          ],
+        }}
       />
       <OurStrategySection
         sectionTitle="Our Strategy"

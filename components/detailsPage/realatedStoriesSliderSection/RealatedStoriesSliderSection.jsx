@@ -6,13 +6,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import PrimaryButton from "../buttons/PrimaryButton";
-import SectionHeading from "../../sectionHeader/SectionHeading";
-import BlogsCard from "./BlogsCard";
 import { useRef } from "react";
-import SlidersButton from "../buttons/SlidersButton";
+import SectionHeading from "@/components/sectionHeader/SectionHeading";
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import SlidersButton from "@/components/shared/buttons/SlidersButton";
+import BlogsCard from "@/components/shared/blogsAndInsightsSection/BlogsCard";
+import MonthlyGiftCard from "@/components/shared/monthlyGiftSection/MonthlyGiftCard";
 
-function BlogsAndInsightsSection({ data }) {
+function RealatedStoriesSliderSection({ data }) {
   const { sectionHeading, btnDetails, largeScreenCardView = 3, blogs } = data;
   const swiperRef = useRef(null);
 
@@ -65,12 +66,7 @@ function BlogsAndInsightsSection({ data }) {
           >
             {blogs.map((blog) => (
               <SwiperSlide key={blog.id}>
-                <BlogsCard
-                  blog={blog}
-                  imageHeightClassName={
-                    largeScreenCardView === 2 ? "lg:h-[370px]" : ""
-                  }
-                />
+                <MonthlyGiftCard key={blog.id} card={blog} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -80,4 +76,4 @@ function BlogsAndInsightsSection({ data }) {
   );
 }
 
-export default BlogsAndInsightsSection;
+export default RealatedStoriesSliderSection;

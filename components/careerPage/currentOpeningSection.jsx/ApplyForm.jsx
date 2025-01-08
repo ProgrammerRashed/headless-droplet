@@ -4,7 +4,7 @@ import Dropzone from "@/components/shared/DropZone";
 
 function ApplyForm() {
   return (
-    <form className="mx-auto mt-[40px] grid max-w-[900px] grid-cols-1 gap-5 overflow-y-hidden rounded-[8px] border border-gray-50/10 bg-white px-[15px] py-[30px] shadow-sm shadow-gray-50 md:grid-cols-2 md:p-[30px] lg:p-[60px]">
+    <form className="mx-auto mt-[40px] grid max-w-[1000px] grid-cols-1 gap-5 overflow-y-hidden rounded-[8px] border border-gray-50/10 bg-white px-[15px] py-[30px] shadow-sm shadow-gray-50 md:grid-cols-2 md:p-[30px] lg:p-[60px]">
       <div data-aos="fade-up" className="w-full flex-col gap-1">
         <Label
           htmlFor="first-name"

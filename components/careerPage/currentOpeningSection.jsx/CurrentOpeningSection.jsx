@@ -2,6 +2,7 @@ import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import CurrentOpeningFilter from "./CurrentOpeningFilter";
 import CurrentOpeningCard from "./CurrentOpeningCard";
 import ApplyForm from "./ApplyForm";
+import ApplyNowForm from "@/components/applyNowPage/applyNowSection/ApplyNowForm";
 
 function CurrentOpeningSection({ data }) {
   const { sectionTitle, jobs } = data;
@@ -23,18 +24,19 @@ function CurrentOpeningSection({ data }) {
         </div>
       ) : (
         <div className="container">
-          <div
-            data-aos="fade-up"
-            className="flex flex-col items-center justify-center"
-          >
-            <SectionHeading className="mx-auto mb-[10px] text-center md:mb-5">
-              {sectionTitle}
-            </SectionHeading>
-            <p className="text-center text-base font-normal leading-[26px] text-gray-600">
-              We currently have no job openings. Send your updated Resume.
+          <div className="mb-5 flex flex-col items-center justify-center gap-[10px] md:mb-10">
+            <div data-aos="fade-up">
+              <SectionHeading>{sectionTitle}</SectionHeading>
+            </div>
+            <p
+              data-aos="fade-up"
+              className="text-center text-base font-normal leading-[26px] text-gray-600"
+            >
+              We currently have no job openings. Didn’t find a suitable and
+              available vacancy? Send your updated Resume.
             </p>
           </div>
-          <ApplyForm />
+          <ApplyNowForm />
         </div>
       )}
     </section>

@@ -13,7 +13,7 @@ function VideoPlayer({ video }) {
   return (
     <div
       data-aos="fade-up"
-      className="aspect-[85/50] w-full flex-grow overflow-hidden rounded-[8px] shadow-xl transition-all duration-300 hover:shadow-2xl"
+      className="aspect-[85/50] w-full flex-grow overflow-hidden rounded-[8px] bg-black shadow-xl transition-all duration-300 hover:shadow-2xl"
     >
       {isPlaying ? (
         <iframe

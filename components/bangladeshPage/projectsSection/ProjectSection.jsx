@@ -9,15 +9,23 @@ import "swiper/css/navigation";
 import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import ProjectCard from "./ProjectCard";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import { cn } from "@/lib/utils";
 
 function ProjectSection({ data }) {
-  const { SectionTitle, projects, viewAllBtnDetails, duplicatedProjects } =
-    data;
+  const {
+    SectionTitle,
+    titlePositionClassName,
+    projects,
+    viewAllBtnDetails,
+    duplicatedProjects,
+  } = data;
 
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div data-aos="fade-up" className="container">
-        <SectionHeading className="text-center">{SectionTitle}</SectionHeading>
+        <SectionHeading className={cn("text-center", titlePositionClassName)}>
+          {SectionTitle}
+        </SectionHeading>
       </div>
       <div className="slider-container sm:hidden">
         <div className="relative mt-10">

@@ -6,14 +6,14 @@ import { cn } from "@/lib/utils";
 function SecondaryBanner({ data }) {
   const { sectionHeading, bannerCover } = data;
   return (
-    <section className="relative h-[254px] w-full md:h-[441px]">
+    <section className="relative h-[254px] w-full md:h-[380px] 0.5xl:h-[441px]">
       <div
         className={cn(
-          "z-0 flex h-full w-full pt-[68px] xl:pt-[141px]",
+          "z-0 flex h-full w-full pt-[68px] 0.5xl:pt-[141px]",
           `${bannerCover ? "bg-green-900/90" : ""}`,
         )}
       >
-        <div className="relative flex h-[186px] flex-grow flex-col items-center justify-center md:h-[300px]">
+        <div className="relative flex h-[186px] flex-grow flex-col items-center justify-center md:h-[312px] 0.5xl:h-[300px]">
           <div
             data-aos="fade-right"
             className="container absolute top-[10px] md:top-[15px]"
@@ -25,7 +25,7 @@ function SecondaryBanner({ data }) {
             <h1
               data-aos="fade-up"
               className={cn(
-                "text-center text-4xl font-semibold capitalize leading-[44px] md:text-[70px] md:leading-[78px]",
+                "text-center text-4xl font-semibold capitalize leading-[44px] md:text-[70px] md:leading-[90px]",
                 `${bannerCover ? "text-white" : "text-gray-600"}`,
               )}
             >

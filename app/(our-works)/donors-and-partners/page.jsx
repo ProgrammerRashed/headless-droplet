@@ -137,7 +137,7 @@ function DonorsAndPartnersPage() {
           title: "Join us as a valued partner in our mission",
           description:
             "Lorem ipsum dolor sit amet consectetur. Turpis malesuada tincidunt fames bibendum id vitae. Pretium laoreet arcu urna mattis mattis lectus massa viverra ut. Vitae in sed arcu augue porta viverra tristique eu. Porta in arcu neque metus sem sed. Pulvinar vulputate tortor et et porttitor at cras. Arcu in parturient a integer nulla. Eget maecenas mi pretium posuere proin ut massa morbi amet. Netus tellus aliquet id eleifend. Fermentum enim quis cursus lacus.",
-          buttonDetails: { title: "Join Now", link: "/" },
+          buttonPrimaryDetails: { title: "Join Now", link: "/" },
         }}
       />
     </>

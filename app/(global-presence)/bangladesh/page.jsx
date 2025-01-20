@@ -61,7 +61,7 @@ function BangladeshPage() {
       />
       <ProjectSection
         data={{
-          SectionTitle: "Projects and Programs",
+          SectionTitle: "Projects & Programs",
           viewAllBtnDetails: {
             title: "View All Project and Program",
             link: "",

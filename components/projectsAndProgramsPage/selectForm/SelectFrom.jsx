@@ -13,7 +13,7 @@ function SelectFrom() {
           className="flex w-full flex-grow items-center space-x-2 rounded-[40px] border border-gray-50 bg-white px-4 py-3 transition-all duration-300 hover:border-green-500"
         >
           <RadioGroupItem value="ongoing" id="ongoing" />
-          <p className="text-gray-800x` flex-grow text-sm font-normal leading-[22px]">
+          <p className="flex-grow text-sm font-normal leading-[22px] text-gray-800">
             Ongoing
           </p>
         </label>
@@ -22,7 +22,7 @@ function SelectFrom() {
           className="flex w-full flex-grow items-center space-x-2 rounded-[40px] border border-gray-50 bg-white px-4 py-3 transition-all duration-300 hover:border-green-500"
         >
           <RadioGroupItem value="completed" id="completed" />
-          <p className="text-gray-800x` flex-grow text-sm font-normal leading-[22px]">
+          <p className="flex-grow text-sm font-normal leading-[22px] text-gray-800">
             Completed
           </p>
         </label>

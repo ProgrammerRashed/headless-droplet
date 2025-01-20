@@ -25,7 +25,7 @@ function ImpactSliderCard({ card }) {
         </p>
         <Link
           href="/"
-          className="mt-auto flex w-fit flex-row items-center gap-2 border-b-2 border-red-500 stroke-red-500 pb-[10px] text-base font-semibold leading-[26px] text-red-500"
+          className="mt-auto flex w-fit flex-row items-center gap-2 border-b-2 border-red-600 stroke-red-600 pb-[10px] text-base font-semibold leading-[26px] text-red-600 transition-all duration-300 hover:border-red-800 hover:stroke-red-800 hover:text-red-800"
         >
           <span>{card.buttonDetails.title}</span>
           <svg

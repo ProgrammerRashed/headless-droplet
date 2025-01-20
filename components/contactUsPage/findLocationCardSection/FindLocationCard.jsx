@@ -16,11 +16,11 @@ function FindLocationCard({ country }) {
           className="aspect-[33/16] w-full object-cover transition-all duration-700 group-hover:scale-105 xl:aspect-[63/22]"
         />
       </div>
-      <div className="flex flex-col gap-[10px] p-5">
+      <div className="flex flex-col gap-[10px] p-4 md:p-5">
         <h4 className="break-words text-xl font-semibold leading-[32px] text-gray-800 md:text-2xl md:leading-[36px]">
           {country.country}
         </h4>
-        <p className="break-words text-base font-normal leading-[26px] text-gray-600">
+        <p className="break-words text-base font-normal leading-[26px] text-gray-600 md:min-h-[78px] lg:min-h-[52px]">
           {country.address}
         </p>
         <p className="break-words text-base font-normal leading-[26px] text-gray-600">

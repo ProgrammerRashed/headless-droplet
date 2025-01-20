@@ -1,5 +1,4 @@
 import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
-import JobDetailsHeroSection from "@/components/detailsPage/jobDetailsHeroSection/JobDetailsHeroSection";
 import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
 import ProjectDetailsBanner from "@/components/donationPage/projectDetailsBanner/ProjectDetailsBanner";
 

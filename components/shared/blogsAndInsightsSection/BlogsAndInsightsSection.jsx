@@ -17,7 +17,7 @@ function BlogsAndInsightsSection({ data }) {
   const swiperRef = useRef(null);
 
   return (
-    <section className="bg-surface py-[50px] md:py-[100px]">
+    <section className="bg-surface py-[50px] md:py-[80px]">
       <div className="container">
         <div className="flex w-full flex-row items-center justify-between">
           <div data-aos="fade-up">

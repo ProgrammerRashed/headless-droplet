@@ -33,7 +33,7 @@ const AccordionTrigger = React.forwardRef(
         {children}
         <ChevronDown
           className={cn(
-            "h-10 w-10 shrink-0 rounded-full bg-surface p-1 text-muted-foreground transition-transform duration-200",
+            "h-9 w-9 shrink-0 rounded-full bg-surface p-1 text-muted-foreground transition-transform duration-200",
             iconClassName,
           )}
         />

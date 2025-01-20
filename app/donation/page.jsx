@@ -42,7 +42,7 @@ function DonationPage() {
                 "Sem orci dictum interdum eget mi semper ornare pretium vitae. Blandit sed facilisi vel semper pellentesque libero ut.",
             },
           ],
-          buttonDetails: { title: "Contact Us to Donate", link: "/" },
+          buttonPrimaryDetails: { title: "Contact Us to Donate", link: "/" },
         }}
       />
       <CardSliderSection

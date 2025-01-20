@@ -26,13 +26,17 @@ function ProjectDetailsBanner({ data }) {
                 {sectionHeading}
               </h1>
               <div className="mx-auto flex flex-col items-center justify-center gap-2 text-center">
-                <p className="text-sm font-normal leading-normal text-gray-800 md:text-[22px] md:leading-[32px]">
+                <p className="text-sm font-normal leading-normal text-gray-600 md:text-[22px] md:leading-[32px]">
                   Donor:
-                  <span className="ml-[10px] font-medium">{donor}</span>
+                  <span className="ml-[10px] font-medium text-gray-800">
+                    {donor}
+                  </span>
                 </p>
-                <p className="text-sm font-normal leading-normal text-gray-800 md:text-[22px] md:leading-[32px]">
+                <p className="text-sm font-normal leading-normal text-gray-600 md:text-[22px] md:leading-[32px]">
                   Tenure:
-                  <span className="ml-[10px] font-medium">{tenure}</span>
+                  <span className="ml-[10px] font-medium text-gray-800">
+                    {tenure}
+                  </span>
                 </p>
               </div>
               <PrimaryButton className="mx-auto mt-[30px]">

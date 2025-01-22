@@ -15,7 +15,7 @@ function AnnualReportCard({ card }) {
           className="aspect-square w-[72px] object-contain transition-all duration-300 group-hover:scale-105"
         />
       </div>
-      <h4 className="text-lg font-medium leading-[28px] text-gray-800">
+      <h4 className="text-[22px] font-medium leading-[32px] text-gray-800">
         {card.title}
       </h4>
       <svg

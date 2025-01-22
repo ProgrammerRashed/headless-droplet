@@ -13,7 +13,7 @@ function MobileNavLinkItem({ navigation, setIsMobileNavOpen }) {
     >
       <AccordionTrigger
         iconClassName="h-9 w-9 bg-surface rounded-full p-1"
-        className="py-[15px] text-lg font-medium capitalize leading-[28px] tracking-[-1.5%] text-gray-800 hover:no-underline"
+        className="py-[15px] text-[22px] font-medium capitalize leading-[32px] text-gray-800 hover:no-underline"
       >
         {navigation.groupName}
       </AccordionTrigger>

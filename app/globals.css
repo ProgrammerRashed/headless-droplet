@@ -276,11 +276,16 @@ html.lenis body {
 .rich-content-container p {
   @apply my-5 text-base font-normal leading-[26px] text-gray-600;
 }
+
+.rich-content-container br {
+  @apply block h-[10px];
+}
+
 .rich-content-container img {
   @apply my-[30px] aspect-[330/182] w-full rounded-[8px] object-cover md:my-10 md:aspect-[850/470];
 }
 .rich-content-container ul {
-  @apply my-[30px] ml-[16px] flex list-disc flex-col gap-[10px];
+  @apply my-[30px] ml-6 flex list-disc flex-col gap-[10px];
 }
 .rich-content-container blockquote {
   @apply relative my-10 rounded-[8px] border-b border-green-600 bg-surface px-[15px] pb-5 pl-[67px] pt-[30px] text-base leading-[26px] text-green-800 shadow-md shadow-gray-50 before:absolute before:left-[15px] before:top-[30px] before:h-8 before:w-8 before:bg-[url('/icons/quote.svg')] before:bg-contain before:bg-no-repeat before:content-[''] md:my-[60px] md:px-5 md:pb-[30px] md:pl-[72px] md:pt-10 before:md:left-5 before:md:top-10;

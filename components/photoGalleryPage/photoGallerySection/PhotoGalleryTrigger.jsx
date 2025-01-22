@@ -3,18 +3,18 @@ import Image from "next/image";
 function PhotoGalleryTrigger({ gallery }) {
   return (
     <div className="group flex flex-col items-start gap-5">
-      <div className="relative grid h-[240px] grid-cols-2 grid-rows-2 gap-[5px] border-2">
+      <div className="relative grid h-[240px] w-full grid-cols-2 grid-rows-2 gap-[5px]">
         {gallery?.gallery?.slice(0, 3).map((image) => (
           <div
             key={image.id}
-            className="overflow-hidden rounded-[8px] first-of-type:row-span-2"
+            className="w-full overflow-hidden rounded-[8px] first-of-type:row-span-2"
           >
             <Image
               src={image.imageUrl}
               height={240}
               width={200}
               alt={image.caption}
-              className="h-full object-cover transition-all duration-300 group-hover:brightness-75"
+              className="h-full w-full object-cover transition-all duration-300 group-hover:brightness-75"
             />
           </div>
         ))}

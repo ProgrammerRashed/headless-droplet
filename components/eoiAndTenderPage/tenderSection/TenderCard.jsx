@@ -21,25 +21,35 @@ function TenderCard({ card }) {
         <span>Download Tender</span>
         <svg
           width={20}
-          height={20}
-          viewBox="0 0 20 20"
-          fill="none"
+          height={21}
+          viewBox="0 0 20 21"
+          fill="current"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clipPath="url(#clip0_2181_7358)">
-            <path
-              d="M8 14L12 10L8 6"
-              stroke="current"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_2181_7358">
-              <rect width={20} height={20} fill="white" />
-            </clipPath>
-          </defs>
+          <path
+            d="M10 15.2285V3.35352"
+            stroke="current"
+            strokeWidth="1.5"
+            strokeMiterlimit={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M6.25 11.4785L10 15.2285L13.75 11.4785"
+            stroke="current"
+            strokeWidth="1.5"
+            strokeMiterlimit={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M15 15.8535V17.1035C15 17.791 14.4375 18.3535 13.75 18.3535H6.25C5.5625 18.3535 5 17.791 5 17.1035V15.8535"
+            stroke="current"
+            strokeWidth="1.5"
+            strokeMiterlimit={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </button>
     </div>

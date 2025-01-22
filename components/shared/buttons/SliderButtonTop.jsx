@@ -7,7 +7,7 @@ function SliderButtonTop({ variation, onPrev, onNext }) {
       <button
         onClick={() => onPrev()}
         className={cn(
-          "pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white",
+          "pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:stroke-white",
           `${variation === "small" ? "p-2" : "p-3"}`,
         )}
       >
@@ -38,7 +38,7 @@ function SliderButtonTop({ variation, onPrev, onNext }) {
       <button
         onClick={() => onNext()}
         className={cn(
-          "pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:bg-red-600 hover:stroke-white",
+          "pointer-events-auto flex items-center justify-center rounded-full border border-gray-50 bg-white stroke-red-600 p-3 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:stroke-white",
           `${variation === "small" ? "p-2" : "p-3"}`,
         )}
       >

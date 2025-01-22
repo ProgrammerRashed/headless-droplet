@@ -24,22 +24,22 @@ export default function HomePage() {
           {
             id: crypto.randomUUID(),
             countryName: "Switzerland (HQ)",
-            flagIcon: "/global-presence/country-flag/switzerland.png",
+            flagIcon: "/global-presence/country-flag/switzerland.svg",
           },
           {
             id: crypto.randomUUID(),
             countryName: "Bangladesh",
-            flagIcon: "/global-presence/country-flag/bangladesh.png",
+            flagIcon: "/global-presence/country-flag/bangladesh.svg",
           },
           {
             id: crypto.randomUUID(),
             countryName: "India",
-            flagIcon: "/global-presence/country-flag/india.png",
+            flagIcon: "/global-presence/country-flag/india.svg",
           },
           {
             id: crypto.randomUUID(),
             countryName: "Kenya",
-            flagIcon: "/global-presence/country-flag/kenya.png",
+            flagIcon: "/global-presence/country-flag/kenya.svg",
           },
         ]}
         labels={{

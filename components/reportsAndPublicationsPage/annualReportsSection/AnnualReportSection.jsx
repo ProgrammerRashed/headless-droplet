@@ -6,7 +6,7 @@ import AnnualReportCard from "./AnnualReportCard";
 function AnnualReportSection({ data }) {
   const { sectionTitle, reports } = data;
   return (
-    <section className="bg-surface py-[50px]">
+    <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
         <div data-aos="fade-up">
           <SectionHeading>{sectionTitle}</SectionHeading>

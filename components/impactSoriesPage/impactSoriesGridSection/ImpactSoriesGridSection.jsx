@@ -17,7 +17,7 @@ function ImpactSoriesGridSection({ data }) {
             ]}
           />
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 0.5xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-y-[60px] 0.5xl:grid-cols-3">
           {impactCards.map((impactCard) => (
             <MonthlyGiftCard key={impactCard.id} card={impactCard} />
           ))}

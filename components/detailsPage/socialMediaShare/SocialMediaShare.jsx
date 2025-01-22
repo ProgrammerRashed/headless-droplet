@@ -19,7 +19,7 @@ function SocialMediaShare() {
         quote={"next-share is a social share buttons for your next React apps."}
         hashtag={"#nextshare"}
       >
-        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-gray-400/40 text-white transition-all duration-300 hover:bg-gray-400">
+        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] text-white transition-all duration-300 hover:bg-gray-400">
           <svg
             width={14}
             height={15}
@@ -47,7 +47,7 @@ function SocialMediaShare() {
         </div>
       </FacebookShareButton>
       <LinkedinShareButton url={"https://github.com/next-share"}>
-        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-gray-400/40 text-white transition-all duration-300 hover:bg-gray-400">
+        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] text-white transition-all duration-300 hover:bg-gray-400">
           <svg
             width={14}
             height={15}
@@ -78,7 +78,7 @@ function SocialMediaShare() {
         url={"https://github.com/next-share"}
         title={"next-share is a social share buttons for your next React apps."}
       >
-        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-gray-400/40 text-white transition-all duration-300 hover:bg-gray-400">
+        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] text-white transition-all duration-300 hover:bg-gray-400">
           <svg
             width={14}
             height={15}

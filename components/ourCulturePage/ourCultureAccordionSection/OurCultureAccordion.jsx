@@ -20,7 +20,7 @@ function OurCultureAccordion({ qsnAndAns }) {
         >
           <AccordionTrigger
             iconClassName="bg-transparent"
-            className="gap-6 py-[25px] text-[22px] text-lg font-medium leading-[32px] text-gray-800 hover:no-underline data-[state=open]:pb-[15px]"
+            className="gap-6 py-[25px] text-[22px] font-medium leading-[32px] text-gray-800 hover:no-underline data-[state=open]:pb-[15px]"
           >
             {qsnAndAnsItem.qsn}
           </AccordionTrigger>

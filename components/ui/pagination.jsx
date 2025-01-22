@@ -37,7 +37,7 @@ const PaginationLink = ({ className, isActive, size = "icon", ...props }) => (
         size,
       }),
       className,
-      "h-8 w-8 rounded-full border border-gray-50 text-sm leading-[22px] text-red-600 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white",
+      "h-8 w-8 rounded-full border border-gray-50 text-sm leading-[22px] text-gray-600 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white",
     )}
     {...props}
   />
@@ -49,12 +49,12 @@ const PaginationPrevious = ({ className, ...props }) => (
     aria-label="Go to previous page"
     size="default"
     className={cn(
-      "h-8 w-8 rounded-full border border-gray-50 text-red-600 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white",
+      "group h-8 w-8 rounded-full border border-gray-50 text-red-600 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white",
       className,
     )}
     {...props}
   >
-    <ChevronLeft className="h-4 w-4" />
+    <ChevronLeft className="h-4 w-4 text-red-600 group-hover:text-white" />
   </PaginationLink>
 );
 PaginationPrevious.displayName = "PaginationPrevious";
@@ -64,12 +64,12 @@ const PaginationNext = ({ className, ...props }) => (
     aria-label="Go to next page"
     size="default"
     className={cn(
-      "h-8 w-8 rounded-full border border-gray-50 text-red-600 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white",
+      "group h-8 w-8 rounded-full border border-gray-50 text-red-600 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white",
       className,
     )}
     {...props}
   >
-    <ChevronRight className="h-5 w-5" />
+    <ChevronRight className="h-5 w-5 text-red-600 group-hover:text-white" />
   </PaginationLink>
 );
 PaginationNext.displayName = "PaginationNext";

@@ -49,7 +49,7 @@ export const Timeline = ({ data }) => {
               </h3>
             </div>
 
-            <div className="relative w-full pl-[54px] lg:pl-20">
+            <div className="relative mt-1.5 w-full pl-[54px] md:mt-0 lg:pl-20">
               <h3 className="mb-[15px] block text-left text-base font-medium leading-[26px] text-gray-800 md:hidden md:text-lg md:leading-[38px]">
                 {item.timeLine}
               </h3>

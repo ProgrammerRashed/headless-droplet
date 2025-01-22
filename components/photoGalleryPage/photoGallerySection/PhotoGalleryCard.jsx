@@ -9,7 +9,7 @@ function PhotoGalleryCard({ gallery }) {
       <DialogTrigger>
         <PhotoGalleryTrigger gallery={gallery} />
       </DialogTrigger>
-      <DialogOverlay className="bg-gray-800">
+      <DialogOverlay className="bg-gray-800 opacity-90">
         <PhotoGalleryContent gallery={gallery} />
       </DialogOverlay>
     </Dialog>

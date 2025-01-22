@@ -5,7 +5,7 @@ import Image from "next/image";
 function DetailsBannerSection({ data }) {
   const { sectionTitle, publishedDate, category } = data;
   return (
-    <section className="mt-[78px] md:mt-[151px]">
+    <section className="mt-[78px] 0.5xl:mt-[151px]">
       <div className="container">
         <div data-aos="fade-right">
           <BreadCrumb colorScheme="dark" />
@@ -22,9 +22,9 @@ function DetailsBannerSection({ data }) {
                 data-aos="fade-up"
                 className="flex flex-row items-center gap-[10px] text-xs font-normal leading-[18px] md:text-base md:leading-[26px]"
               >
-                <p>{category}</p>
-                <div className="h-[5px] w-[5px] rounded-full bg-gray-50/60"></div>
                 <p>{publishedDate}</p>
+                <div className="h-[5px] w-[5px] rounded-full bg-gray-50/60"></div>
+                <p>{category}</p>
               </div>
             </div>
           </div>

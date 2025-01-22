@@ -15,6 +15,7 @@ function CareerPage() {
       />
       <SideBySideBulletPoints
         data={{
+          sectionClassName: "bg-white",
           bannerImage: "/career-page/why-work-at-saf.jpg",
           title: "Why Work at SAF",
           description:

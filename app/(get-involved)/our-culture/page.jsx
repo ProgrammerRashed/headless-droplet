@@ -146,6 +146,7 @@ function OurCulturePage() {
       />
       <OurCultureAccordionSection
         data={{
+          sectionClassName: "bg-surface",
           sectionTitle: "Employee Engagement and Well-being",
           imageUrl: "/our-culture-page/employee-engagement.jpg",
           qsnAndAns: [

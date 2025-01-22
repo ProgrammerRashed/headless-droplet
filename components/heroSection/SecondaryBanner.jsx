@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils";
 function SecondaryBanner({ data }) {
   const { sectionHeading, bannerCover } = data;
   return (
-    <section className="relative h-[254px] w-full md:h-[441px]">
+    <section className="relative h-[254px] w-full md:h-[368px] 0.5xl:h-[441px]">
       <div
         className={cn(
-          "z-0 flex h-full w-full pt-[68px] xl:pt-[141px]",
+          "z-0 flex h-full w-full pt-[68px] 0.5xl:pt-[141px]",
           `${bannerCover ? "bg-green-900/90" : ""}`,
         )}
       >

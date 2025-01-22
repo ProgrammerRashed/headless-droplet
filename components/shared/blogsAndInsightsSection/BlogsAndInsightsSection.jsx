@@ -36,7 +36,7 @@ function BlogsAndInsightsSection({ data }) {
         </div>
       </div>
       <div className="slider-container">
-        <div className="relative mt-10">
+        <div className="relative mt-[30px] border-t border-gray-50 pt-10">
           <SlidersButton
             onPrev={() => swiperRef.current?.slidePrev()}
             onNext={() => swiperRef.current?.slideNext()}

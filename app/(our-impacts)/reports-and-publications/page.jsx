@@ -8,7 +8,7 @@ function ReportsAndPublicationsPage() {
     <>
       <SecondaryBanner
         data={{
-          sectionHeading: "Reports And Publications",
+          sectionHeading: "Reports & Publications",
           bannerCover: "/hero-banners/reports-and-publications.jpg",
         }}
       />

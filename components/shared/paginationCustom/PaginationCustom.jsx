@@ -9,7 +9,10 @@ import {
 
 function PaginationCustom() {
   return (
-    <Pagination data-aos="fade-up" className="mt-6 md:mt-[54px]">
+    <Pagination
+      data-aos="fade-up"
+      className="mt-6 gap-[10px] font-poppins font-normal md:mt-[54px]"
+    >
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious href="#" />

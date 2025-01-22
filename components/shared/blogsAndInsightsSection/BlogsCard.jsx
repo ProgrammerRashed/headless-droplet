@@ -14,13 +14,13 @@ function BlogsCard({ blog, imageHeightClassName }) {
           width={410}
           height={240}
           className={cn(
-            "h-[240px] w-full rounded-[8px] object-cover transition-all duration-300 group-hover:scale-105",
+            "h-[175px] w-full rounded-[8px] object-cover transition-all duration-300 group-hover:scale-105 sm:h-[240px]",
             imageHeightClassName,
           )}
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">
-        <p className="line-clamp-1 text-green-900">{blog.category}</p>
+        <p className="line-clamp-2 text-green-700">{blog.category}</p>
         <div className="h-[5px] w-[5px] rounded-full bg-gray-50"></div>
         <p className="text-gray-400">{blog.publishedDate}</p>
       </div>

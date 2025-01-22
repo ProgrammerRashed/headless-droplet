@@ -34,14 +34,14 @@ function BlogsAndArticlesPage() {
             {
               id: crypto.randomUUID(),
               title: "Rural Entrepreneurship and Youth Empowerment",
-              category: "Agri-Entrepreneurship",
+              category: "Agri Entrepreneurship",
               publishedDate: "03 November 2024",
               coverImage: "/blogs-and-insights/blog-3.png",
             },
             {
               id: crypto.randomUUID(),
               title: "Agriservices Centres",
-              category: "Agri-Entrepreneurship",
+              category: "Agri Entrepreneurship",
               publishedDate: "03 November 2024",
               coverImage: "/blogs-and-insights/blog-4.png",
             },

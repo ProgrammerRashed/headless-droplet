@@ -7,7 +7,7 @@ function ApplyNowForm({ title, details, position }) {
   return (
     <div
       data-aos="fade-up"
-      className="mx-auto flex max-w-[1000px] flex-col items-center justify-center overflow-hidden rounded-[8px] border border-gray-50 bg-white p-5 shadow-sm shadow-gray-50 md:p-10"
+      className="shadow-form mx-auto flex max-w-[1000px] flex-col items-center justify-center overflow-hidden rounded-[8px] border border-gray-50 bg-white p-5 md:p-10"
     >
       <div className="flex w-full flex-col items-center justify-center">
         {title && (

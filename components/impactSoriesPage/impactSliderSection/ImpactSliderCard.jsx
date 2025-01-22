@@ -16,7 +16,7 @@ function ImpactSliderCard({ card }) {
           {card.category}
         </div>
       </div>
-      <div className="flex flex-grow flex-col p-[15px] lg:w-1/2 lg:max-w-[615px] lg:py-0">
+      <div className="flex flex-grow flex-col pt-[15px] lg:w-1/2 lg:max-w-[615px] lg:py-0">
         <h4 className="mb-[10px] text-[22px] font-semibold leading-[28px] text-gray-800 md:text-[32px] md:font-bold md:leading-[42px] lg:mb-5">
           {card.title}
         </h4>

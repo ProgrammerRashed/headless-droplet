@@ -8,29 +8,24 @@ function HeaderTopSocial({ socialLinks }) {
       <Link
         href={socialLinks.facebook}
         target="_blank"
-        className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
+        className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
-          width={38}
-          height={39}
-          viewBox="0 0 38 39"
+          width={14}
+          height={14}
+          viewBox="0 0 14 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clipPath="url(#clip0_2308_25459)">
+          <g clipPath="url(#clip0_3654_84)">
             <path
-              d="M23.1578 21.0349L23.6537 17.8019H20.5517V15.7038C20.5517 14.8193 20.985 13.9572 22.3744 13.9572H23.7847V11.2048C23.7847 11.2048 22.5048 10.9863 21.2812 10.9863C18.7264 10.9863 17.0566 12.5347 17.0566 15.3378V17.8019H14.2168V21.0349H17.0566V28.8504C17.626 28.9398 18.2097 28.9863 18.8042 28.9863C19.3987 28.9863 19.9823 28.9398 20.5517 28.8504V21.0349H23.1578Z"
+              d="M10.2315 7.81553L10.6171 5.30097H8.20452V3.66918C8.20452 2.98123 8.54153 2.31068 9.62216 2.31068H10.7191V0.169914C10.7191 0.169914 9.72358 0 8.77185 0C6.78478 0 5.48609 1.20427 5.48609 3.38447V5.30097H3.27734V7.81553H5.48609V13.8943C5.92898 13.9638 6.38291 14 6.84532 14C7.30773 14 7.76164 13.9638 8.20452 13.8943V7.81553H10.2315Z"
               fill="white"
             />
           </g>
           <defs>
-            <clipPath id="clip0_2308_25459">
-              <rect
-                width={18}
-                height={18}
-                fill="white"
-                transform="translate(10 10.9863)"
-              />
+            <clipPath id="clip0_3654_84">
+              <rect width={14} height={14} fill="white" />
             </clipPath>
           </defs>
         </svg>
@@ -38,29 +33,24 @@ function HeaderTopSocial({ socialLinks }) {
       <Link
         href={socialLinks.linkedIn}
         target="_blank"
-        className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
+        className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
-          width={38}
-          height={39}
-          viewBox="0 0 38 39"
+          width={14}
+          height={14}
+          viewBox="0 0 14 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clipPath="url(#clip0_2308_25462)">
+          <g clipPath="url(#clip0_3654_87)">
             <path
-              d="M28 21.9309V28.5851H24.1414V22.3787C24.1414 20.8176 23.5847 19.7546 22.1869 19.7546C21.1197 19.7546 20.4878 20.4703 20.2074 21.165C20.107 21.4119 20.0777 21.7593 20.0777 22.1066V28.5893H16.219C16.219 28.5893 16.2692 18.0722 16.219 16.9841H20.0777V18.6288C20.0693 18.6414 20.0609 18.654 20.0525 18.6665H20.0777V18.6288C20.5924 17.8379 21.5048 16.7121 23.5555 16.7121C26.0958 16.7079 28 18.3694 28 21.9309ZM12.1846 11.3887C10.8621 11.3887 10 12.255 10 13.3933C10 14.5066 10.837 15.398 12.1344 15.398H12.1595C13.5071 15.398 14.3441 14.5066 14.3441 13.3933C14.3148 12.255 13.5029 11.3887 12.1846 11.3887ZM10.2302 28.5893H14.0888V16.9799H10.2302V28.5893Z"
+              d="M14 8.51199V13.6875H10.9988V8.86028C10.9988 7.64614 10.5659 6.81936 9.47873 6.81936C8.64869 6.81936 8.15717 7.37597 7.93908 7.91631C7.86096 8.10836 7.83818 8.37853 7.83818 8.6487V13.6908H4.83701C4.83701 13.6908 4.87608 5.51083 4.83701 4.66451H7.83818V5.94375C7.83167 5.95351 7.82516 5.96328 7.81865 5.97304H7.83818V5.94375C8.23855 5.32854 8.94815 4.45293 10.5431 4.45293C12.5189 4.44968 14 5.74193 14 8.51199ZM1.69914 0.3125C0.670542 0.3125 0 0.986297 0 1.87167C0 2.73752 0.651011 3.43084 1.66008 3.43084H1.67961C2.72774 3.43084 3.37875 2.73752 3.37875 1.87167C3.35596 0.986297 2.72448 0.3125 1.69914 0.3125ZM0.179028 13.6908H3.18019V4.66126H0.179028V13.6908Z"
               fill="white"
             />
           </g>
           <defs>
-            <clipPath id="clip0_2308_25462">
-              <rect
-                width={18}
-                height={18}
-                fill="white"
-                transform="translate(10 10.9863)"
-              />
+            <clipPath id="clip0_3654_87">
+              <rect width={14} height={14} fill="white" />
             </clipPath>
           </defs>
         </svg>
@@ -68,42 +58,37 @@ function HeaderTopSocial({ socialLinks }) {
       <Link
         href={socialLinks.twitter}
         target="_blank"
-        className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
+        className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
-          width={38}
-          height={39}
-          viewBox="0 0 38 39"
+          width={14}
+          height={14}
+          viewBox="0 0 14 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clipPath="url(#clip0_2308_25467)">
+          <g clipPath="url(#clip0_3654_93)">
             <mask
-              id="mask0_2308_25467"
+              id="mask0_3654_93"
               style={{ maskType: "luminance" }}
               maskUnits="userSpaceOnUse"
-              x={10}
-              y={10}
-              width={18}
-              height={19}
+              x={0}
+              y={0}
+              width={14}
+              height={14}
             >
-              <path d="M28 10.9863H10V28.9863H28V10.9863Z" fill="white" />
+              <path d="M14 0H0V14H14V0Z" fill="white" />
             </mask>
-            <g mask="url(#mask0_2308_25467)">
+            <g mask="url(#mask0_3654_93)">
               <path
-                d="M20.7124 18.6042L27.4133 10.9863H25.8254L20.0071 17.6008L15.3599 10.9863H10L17.0274 20.9886L10 28.9771H11.588L17.7324 21.992L22.6401 28.9771H28L20.7121 18.6042H20.7124ZM18.5375 21.0767L17.8255 20.0807L12.1602 12.1554H14.5992L19.1712 18.5514L19.8832 19.5474L25.8262 27.8611H23.3871L18.5375 21.0771V21.0767Z"
+                d="M8.3319 5.925L13.5437 0H12.3087L7.78327 5.14459L4.16883 0H0L5.46574 7.77954L0 13.9928H1.2351L6.01406 8.55995L9.83117 13.9928H14L8.3316 5.925H8.3319ZM6.64026 7.84808L6.08647 7.07341L1.68013 0.909309H3.57717L7.13314 5.88394L7.68693 6.6586L12.3093 13.1249H10.4122L6.64026 7.84837V7.84808Z"
                 fill="white"
               />
             </g>
           </g>
           <defs>
-            <clipPath id="clip0_2308_25467">
-              <rect
-                width={18}
-                height={18}
-                fill="white"
-                transform="translate(10 10.9863)"
-              />
+            <clipPath id="clip0_3654_93">
+              <rect width={14} height={14} fill="white" />
             </clipPath>
           </defs>
         </svg>
@@ -111,17 +96,17 @@ function HeaderTopSocial({ socialLinks }) {
       <Link
         href={socialLinks.youtube}
         target="_blank"
-        className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
+        className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
         <svg
-          width={38}
-          height={39}
-          viewBox="0 0 38 39"
+          width={14}
+          height={14}
+          viewBox="0 0 14 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M27.6239 15.6531C27.417 14.8786 26.8071 14.2687 26.0326 14.0617C24.6287 13.6855 19 13.6855 19 13.6855C19 13.6855 13.3712 13.6855 11.9674 14.0617C11.193 14.2687 10.583 14.8786 10.3761 15.6531C10 17.0568 10 19.9857 10 19.9857C10 19.9857 10 22.9144 10.3761 24.318C10.583 25.0925 11.193 25.7025 11.9674 25.9095C13.3712 26.2855 19 26.2855 19 26.2855C19 26.2855 24.6287 26.2855 26.0326 25.9095C26.8071 25.7025 27.417 25.0925 27.6239 24.318C28 22.9144 28 19.9857 28 19.9857C28 19.9857 28 17.0568 27.6239 15.6531ZM17.1999 22.6857V17.2856L21.8763 19.9857L17.1999 22.6857Z"
+            d="M13.7075 3.6299C13.5465 3.02752 13.0722 2.55319 12.4698 2.39219C11.3779 2.09961 7 2.09961 7 2.09961C7 2.09961 2.62207 2.09961 1.53018 2.39219C0.92791 2.55319 0.453469 3.02752 0.292496 3.6299C0 4.72168 0 6.99969 0 6.99969C0 6.99969 0 9.27764 0.292496 10.3693C0.453469 10.9717 0.92791 11.4462 1.53018 11.6071C2.62207 11.8996 7 11.8996 7 11.8996C7 11.8996 11.3779 11.8996 12.4698 11.6071C13.0722 11.4462 13.5465 10.9717 13.7075 10.3693C14 9.27764 14 6.99969 14 6.99969C14 6.99969 14 4.72168 13.7075 3.6299ZM5.59992 9.09972V4.89964L9.23716 6.99969L5.59992 9.09972Z"
             fill="white"
           />
         </svg>

@@ -93,7 +93,7 @@ function FilterAndSearchForm() {
             type="text"
             id="search"
             placeholder="Search"
-            className="m-0 h-auto rounded-none border-0 p-0 text-sm font-normal leading-[22px] text-gray-400 shadow-none outline-none focus-visible:ring-0"
+            className="m-0 h-auto min-w-[240px] rounded-none border-0 p-0 text-sm font-normal leading-[22px] text-gray-400 shadow-none outline-none focus-visible:ring-0"
           />
           <svg
             width={18}

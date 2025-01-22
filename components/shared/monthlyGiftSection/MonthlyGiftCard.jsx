@@ -12,7 +12,7 @@ function MonthlyGiftCard({ card }) {
           height={238}
           className="aspect-[300/207] w-full object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[410/238]"
         />
-        <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] md:px-4 md:py-2 md:text-sm md:leading-[22px]">
+        <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] text-gray-800 md:px-4 md:py-2 md:text-sm md:leading-[22px]">
           {card.category}
         </div>
       </div>
@@ -25,7 +25,7 @@ function MonthlyGiftCard({ card }) {
         </p>
         <Link
           href="/"
-          className="flex w-fit flex-row items-center gap-2 border-b-2 border-red-500 stroke-red-500 pb-[10px] text-base font-semibold leading-[26px] text-red-500"
+          className="flex w-fit flex-row items-center gap-2 border-b-2 border-red-600 stroke-red-600 pb-[10px] text-base font-semibold leading-[26px] text-red-600 transition-all duration-300 hover:border-red-800 hover:stroke-red-800 hover:text-red-800"
         >
           <span>{card.buttonDetails.title}</span>
           <svg

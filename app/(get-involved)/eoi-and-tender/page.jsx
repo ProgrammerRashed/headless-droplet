@@ -79,7 +79,7 @@ function EIOAndInvolvedPage() {
               downloadPDFLink: "/",
             },
           ],
-          buttonDetails: { title: "View All", link: "/" },
+          buttonDetails: { title: "Load More", link: "/" },
         }}
       />
       <TenderSection

@@ -22,7 +22,7 @@ function LeadershipCard({
         <div
           data-aos="fade-up"
           className={cn(
-            "flex flex-col overflow-hidden rounded-[8px] bg-surface",
+            "flex flex-col overflow-hidden rounded-[4px] bg-surface",
             cardBackgroundSection,
           )}
         >
@@ -63,11 +63,11 @@ function LeadershipCard({
                 alt={people.leaderName}
                 width={400}
                 height={440}
-                className="h-full w-full rounded-t-[8px] object-cover md:rounded-[8px] md:rounded-t-none"
+                className="h-full w-full rounded-t-[8px] object-cover md:rounded-[8px]"
               />
             </div>
             <div className="scrollbar-thin flex w-full flex-col overflow-y-scroll px-[15px] pb-[30px] pt-0 text-left md:flex-grow md:px-0 md:pb-0 md:pr-4">
-              <DialogHeader className="mb-[10px] text-left lg:mb-10">
+              <DialogHeader className="mb-[10px] text-left lg:mb-5 lg:border-b lg:border-b-gray-50 lg:pb-5">
                 <DialogTitle className="gray-800 mb-0.5 text-xl font-semibold leading-[32px] lg:mb-1 lg:text-[28px] lg:leading-[38px]">
                   {people.leaderName}
                 </DialogTitle>

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 function RichContentAreaSection({ data }) {
   const { sectionClassName, shareButtons, buttonDetails, content } = data;
   return (
-    <section data-aos="fade-up" className="my-10 md:my-20">
+    <section data-aos="fade-up" className="my-10 md:my-16 0.5xl:my-20">
       <div className={cn("container", sectionClassName)}>
         <div
           className="rich-content-container"

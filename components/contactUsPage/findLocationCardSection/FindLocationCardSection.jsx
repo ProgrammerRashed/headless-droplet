@@ -4,7 +4,7 @@ import FindLocationCard from "./FindLocationCard";
 function FindLocationCardSection({ data }) {
   const { sectionHeading, countries } = data;
   return (
-    <section className="bg-surface py-[50] md:py-20">
+    <section className="bg-surface py-[50px] md:py-20">
       <div className="container">
         <div data-aos="fade-up">
           <SectionHeading>{sectionHeading}</SectionHeading>

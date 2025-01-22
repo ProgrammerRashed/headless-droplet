@@ -2,7 +2,7 @@ function SliderCard({ card }) {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col gap-5 rounded-[8px] border-b border-gray-600 bg-surface p-5 shadow-md shadow-surface md:py-10"
+      className="flex flex-col gap-5 rounded-[8px] border-b border-green-600 bg-surface p-5 shadow-md shadow-surface md:py-10 md:pb-[30px]"
     >
       <div className="flex flex-col gap-5 sm:flex-row">
         <svg

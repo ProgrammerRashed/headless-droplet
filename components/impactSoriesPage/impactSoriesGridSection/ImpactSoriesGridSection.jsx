@@ -10,6 +10,7 @@ function ImpactSoriesGridSection({ data }) {
         <div className="mb-5 md:mb-10">
           <TabItems
             items={[
+              { id: crypto.randomUUID(), country: "All" },
               { id: crypto.randomUUID(), country: "Agriculutre" },
               { id: crypto.randomUUID(), country: "Product Development" },
               { id: crypto.randomUUID(), country: "Stakeholder Coordination" },

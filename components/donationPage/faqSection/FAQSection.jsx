@@ -24,7 +24,7 @@ function FAQSection({ data }) {
         >
           {faqs.map((faq) => (
             <AccordionItem key={faq.id} value={faq.id}>
-              <AccordionTrigger className="border-gray-50 py-[25px] text-lg font-medium leading-[28px] text-gray-800 data-[state=open]:py-[15px] md:text-[22px] md:leading-[32px]">
+              <AccordionTrigger className="border-gray-50 py-[25px] text-lg font-medium leading-[28px] text-gray-800 hover:no-underline data-[state=open]:py-[15px] md:text-[22px] md:leading-[32px]">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="pb-[25px] pt-0 text-base font-normal leading-[26px] text-gray-600">

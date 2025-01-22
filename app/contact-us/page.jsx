@@ -7,7 +7,7 @@ function ContactUsPage() {
     <>
       <SecondaryBanner
         data={{
-          sectionHeading: "Who we are",
+          sectionHeading: "Contact Us",
           bannerCover: "/hero-banners/who-we-are.jpg",
         }}
       />

@@ -13,7 +13,7 @@ function SecondaryBanner({ data }) {
           `${bannerCover ? "bg-green-900/90" : ""}`,
         )}
       >
-        <div className="relative flex h-[186px] flex-grow flex-col items-center justify-center md:h-[300px]">
+        <div className="relative flex h-[186px] flex-grow flex-col items-center justify-center md:h-[312px] 0.5xl:h-[300px]">
           <div
             data-aos="fade-right"
             className="container absolute top-[10px] md:top-[15px]"
@@ -25,7 +25,7 @@ function SecondaryBanner({ data }) {
             <h1
               data-aos="fade-up"
               className={cn(
-                "text-center text-4xl font-semibold capitalize leading-[44px] md:text-[70px] md:leading-[78px]",
+                "text-center text-4xl font-semibold capitalize leading-[44px] md:text-[70px] md:leading-[90px]",
                 `${bannerCover ? "text-white" : "text-gray-600"}`,
               )}
             >

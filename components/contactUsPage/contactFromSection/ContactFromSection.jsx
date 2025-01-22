@@ -14,7 +14,7 @@ function ContactFromSection() {
   return (
     <section className="bg-white py-10 md:py-[100px]">
       <div className="container !max-w-[1168px]">
-        <form className="grid grid-cols-1 gap-5 border border-gray-50/10 px-[15px] py-[30px] shadow-sm shadow-gray-50 md:grid-cols-2 md:p-[30px] lg:p-[60px]">
+        <form className="grid grid-cols-1 gap-5 border border-gray-50/10 px-[15px] py-[30px] shadow-md shadow-gray-200 md:grid-cols-2 md:p-[30px] lg:p-[60px]">
           <div data-aos="fade-up" className="w-full flex-col gap-1">
             <Label
               htmlFor="first-name"
@@ -177,7 +177,7 @@ function ContactFromSection() {
           </div>
           <button
             data-aos="fade-up"
-            className="-mt-1 flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 bg-red-600 stroke-white px-6 py-[13px] text-sm font-semibold leading-[22px] text-white transition-all duration-300 hover:bg-red-900 md:col-span-2 md:px-6 md:py-[15px] md:text-base md:leading-[24px]"
+            className="-mt-1 flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 bg-red-600 stroke-white px-6 py-[13px] text-sm font-semibold capitalize leading-[22px] text-white transition-all duration-300 hover:bg-red-900 md:col-span-2 md:px-6 md:py-[15px] md:text-base md:leading-[24px]"
           >
             <span>Submit now</span>
             <svg

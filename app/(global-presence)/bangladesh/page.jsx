@@ -8,6 +8,7 @@ import CtaSection from "@/components/shared/ctaSection/CtaSection";
 import LocalMapSection from "@/components/bangladeshPage/localMapSection/LocalMapSection";
 import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
 import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+import OurImpactSection from "@/components/bangladeshPage/ourImpact/OurImpactSection";
 
 function BangladeshPage() {
   return (
@@ -21,6 +22,56 @@ function BangladeshPage() {
         bannerImage="/about-country/bangladesh-banner.jpg"
         primaryText=" Sustainable Agriculture Foundation Bangladesh, a Non-Governmental Organization registered with Joint Stock Companies and Firms, whose mission is to scale up collective action on markets and innovations so that farming can better serve smallholder families, rural communities, and nature."
         secondaryText="In Bangladesh, smallholder farmers make up the largest sector of agriculture workers. Lack of access to training in up-to-date agricultural practices and appropriate technologies means that these farmers often work at a subsistence level. Agricultural extension services are inadequate and modern machinery is often unavailable or difficult to access. An inefficient value chain and an unstructured market system hamper the efforts of farmers to get the best from their efforts. The impact of climate change, already becoming evident in the agro-ecosystem of the country, creates an additional challenge. Lower yields and poor-quality crops are the inevitable results. This, in turn, lessens the potential income for small and marginal farmers, bringing negative consequences for them and their families."
+      />
+      <OurImpactSection
+        data={{
+          sectionHeading: "Our Impact",
+          counters: [
+            {
+              id: crypto.randomUUID(),
+              counterNumber: 1.2,
+              suffix: "M",
+              counterDetails: "Smallholder Farmers",
+              decimal: 1,
+            },
+            {
+              id: crypto.randomUUID(),
+              counterNumber: 26,
+              suffix: "%",
+              counterDetails: "Women",
+              decimal: 0,
+            },
+            {
+              id: crypto.randomUUID(),
+              counterNumber: 812,
+              suffix: "K+",
+              counterDetails: "Smallholders resilient trough ag-insurance ",
+              decimal: 0,
+            },
+            {
+              id: crypto.randomUUID(),
+              counterNumber: 595,
+              suffix: "K+",
+              counterDetails:
+                "Smallholders better farming & yield & income increase",
+              decimal: 0,
+            },
+            {
+              id: crypto.randomUUID(),
+              counterNumber: 700,
+              suffix: "+",
+              counterDetails: "Farmers’ Hubs (FH)",
+              decimal: 0,
+            },
+            {
+              id: crypto.randomUUID(),
+              counterNumber: 18,
+              suffix: "%",
+              counterDetails: "Women",
+              decimal: 0,
+            },
+          ],
+        }}
       />
       <DirectorsSaySection
         sectionClass="md:py-[100px] bg-white border-t border-gray-200"
@@ -86,7 +137,7 @@ function BangladeshPage() {
               details:
                 "The NICE Project facilitates locally led action for improved nutrition in low and middle income countries through agricultural, food and health sector collaborations, and public-private engagements, with strong emphasis on the role of women and youth entrepreneurs.",
               imageLink: "/projects-programs/project-2.jpg",
-              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+              pdfLink: "#",
             },
           ],
           duplicatedProjects: [
@@ -109,7 +160,7 @@ function BangladeshPage() {
               details:
                 "The NICE Project facilitates locally led action for improved nutrition in low and middle income countries through agricultural, food and health sector collaborations, and public-private engagements, with strong emphasis on the role of women and youth entrepreneurs.",
               imageLink: "/projects-programs/project-2.jpg",
-              pdfLink: "/projects-programs/pdfs/project-1.pdf",
+              pdfLink: "#",
             },
             {
               id: crypto.randomUUID(),
@@ -240,32 +291,7 @@ function BangladeshPage() {
             },
             {
               id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image6.png",
-            },
-            {
-              id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image4.png",
-            },
-            {
-              id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image1.png",
-            },
-            {
-              id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image10.png",
-            },
-            {
-              id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image7.png",
-            },
-
-            {
-              id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image12.png",
-            },
-            {
-              id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image9.png",
+              logoLink: "/our-pertners/image13.png",
             },
             {
               id: crypto.randomUUID(),
@@ -273,15 +299,40 @@ function BangladeshPage() {
             },
             {
               id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image5.png",
+              logoLink: "/our-pertners/image14.png",
             },
             {
               id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image8.png",
+              logoLink: "/our-pertners/image15.png",
             },
             {
               id: crypto.randomUUID(),
-              logoLink: "/our-pertners/image3.png",
+              logoLink: "/our-pertners/image16.png",
+            },
+
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image17.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image18.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image19.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image20.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image21.png",
+            },
+            {
+              id: crypto.randomUUID(),
+              logoLink: "/our-pertners/image22.png",
             },
           ],
           buttonDetails: {

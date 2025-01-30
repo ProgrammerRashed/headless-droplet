@@ -24,17 +24,9 @@ function OurLeadershipPage() {
             id: crypto.randomUUID(),
             leaderName: " Md. Farhad Zamil",
             role: "Executive Director - SAF Bangladesh",
-            imageLink: "/our-leaders/leader-3.jpg",
+            imageLink: "/our-leaders/leader-3.png",
             details:
               "Farhad Zamil is the founding Executive Director of Sustainable Agriculture Foundation Bangladesh (SAF Bangladesh), prior served as the inaugural Country Director of Syngenta Foundation for Sustainable Agriculture (SFSA) Bangladesh since 2011. Farhad has over 24 years of working experience with leading international development organizations like BRAC, CARE, iDE, AFE, and UN agencies like FAO and UNDP in various capacities of program leadership, development, implementation management, partnerships, and technical backstopping. He works in a wider landscape of agriculture, food and nutrition systems, agribusiness promotion, and private-sector engagement. Farhad holds a Master’s in Horticulture from the Bangladesh Agricultural University, a Master’s in Business Administration from the Southeast University, and a Postgraduate Diploma in International Relations from the University of Dhaka. He was conferred Honorary Doctorate in Business Administration by Commonwealth University in 2020 and was also awarded Food 2.0 - Outstanding Leadership Award in 2022 for his significant contribution to sustainable development and poverty reduction in developing countries like Bangladesh. Farhad likes promoting new ideas and concepts, fostering creativity and innovation to change the livelihoods of farmers, and agricultural transformation in developing countries.",
-          },
-          {
-            id: crypto.randomUUID(),
-            leaderName: "Rajendra Jog",
-            role: "Executive Director - SAF India ",
-            imageLink: "/our-leaders/leader-1.png",
-            details:
-              "Rajendra was the CEO of the Agri-Entrepreneur (AE) Growth Foundation since its inception in 2019, as well as Senior Advisor to Syngenta Foundation India (SFI). He was instrumental in setting up our SFI office and the AE training facility in Pune. From 2018-to 2022, Rajendra was also CEO of the Indo-Swiss Centre of Excellence there.  He previously worked for more than three decades at Syngenta and its legacy companies. His leadership positions there included Head of Engineering & Projects APAC, Head of Supply Chain South Asia, and Head of Toll Manufacturing Asia-Pacific. From 1995-to 97, Rajendra worked at a German manufacturing facility near the company headquarters in Switzerland. He holds an Engineering degree in Instrumentation & Control Systems and is an alumnus of the two-year Supply Chain Management course at Warwick University, UK. As country Director (Syngenta Foundation India), Rajendra is now responsible for leading the Foundation team to scale up of Agri Entrepreneur program across various states to help millions of smallholder farmers significantly increase their income while creating sustainable livelihoods for tens of thousands of unemployed rural youth.",
           },
           {
             id: crypto.randomUUID(),

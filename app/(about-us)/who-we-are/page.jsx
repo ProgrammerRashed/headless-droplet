@@ -18,7 +18,7 @@ function whoWeArePage() {
         description="The Sustainable Agriculture Foundation (SAF) transforms smallholder agriculture in Asia and Africa by improving farmer incomes, food security, and climate resilience. Building on the legacy of the Syngenta Foundation, SAF fosters innovation, empowers agri-entrepreneurs, and bridges gaps in research, technology, and market access. Through partnerships, SAF promotes inclusive growth and sustainable practices, creating thriving communities where agriculture, people, and nature coexist."
         videoDetails={{
           videoLink:
-            "https://www.youtube.com/embed/lxioAOhKmew?autoplay=1&controls=1",
+            "https://www.youtube.com/embed/wn4W2KKn69w?autoplay=1&controls=1",
           videoThumbNail: "/video-thumbnails/happy-farmer.jpg",
         }}
       />

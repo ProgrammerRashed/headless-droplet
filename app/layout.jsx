@@ -4,6 +4,7 @@ import FooterSection from "@/components/footer/FooterSection";
 import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
 import AOSWrapper from "@/utils/AOSWrapper";
 import { ReactLenis } from "@/utils/lenis";
+import DonationButton from "@/components/shared/donationButton/DonationButton";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -68,7 +69,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Donors and Partners",
+                      title: "Donors & Partners",
                       link: "/",
                     },
                   ],
@@ -103,7 +104,7 @@ export default function RootLayout({ children }) {
                 {
                   id: crypto.randomUUID(),
                   groupName: "Our Impact",
-                  bannerImage: "/nav-images/nav-4.jpg",
+                  bannerImage: "/nav-images/nav-4.png",
                   childNavigations: [
                     {
                       id: crypto.randomUUID(),
@@ -117,7 +118,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Blogs and article | media",
+                      title: "Blogs & article | media",
                       link: "/",
                     },
                     {
@@ -170,6 +171,8 @@ export default function RootLayout({ children }) {
                 youtube: "https://www.youtube.com/@Susagfoundation",
               }}
             />
+            <DonationButton />
+
             {children}
             <FooterSection
               socialLinks={{
@@ -228,7 +231,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Donors and Partners",
+                      title: "Donors & Partners",
                       link: "/",
                     },
                   ],
@@ -275,7 +278,7 @@ export default function RootLayout({ children }) {
                     },
                     {
                       id: crypto.randomUUID(),
-                      title: "Blogs and article | media",
+                      title: "Blogs & article | media",
                       link: "/",
                     },
                     {

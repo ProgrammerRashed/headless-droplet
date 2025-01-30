@@ -84,7 +84,7 @@ function OurHistoryPage() {
             title: "Policy and R&D Integration",
             description:
               "Policy integration and research & development become central to SFSA’s strategic approach, enhancing innovation and influence.",
-            imageLink: "/timeline/2008-2009.jpg",
+            imageLink: "/timeline/2008-9.jpg",
           },
           {
             id: crypto.randomUUID(),

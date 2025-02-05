@@ -11,9 +11,9 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
     >
       <div className="no-scrollbar h-[0px] w-full flex-grow flex-col overflow-y-auto overflow-x-hidden">
         <Accordion type="single" collapsible>
-          {navigations.map((navigation) => (
+          {navigations?.map((navigation, index) => (
             <MobileNavLinkItem
-              key={navigation.id}
+              key={index}
               navigation={navigation}
               setIsMobileNavOpen={setIsMobileNavOpen}
             />
@@ -21,10 +21,10 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
         </Accordion>
       </div>
       <PrimaryButton
-        href={buttonDetails.link}
+        href={buttonDetails[0]?.link}
         className="mt-4 w-full justify-center border-0 bg-green-800 stroke-white text-white hover:bg-green-900"
       >
-        {buttonDetails.title}
+        {buttonDetails[0]?.title}
       </PrimaryButton>
     </div>
   );

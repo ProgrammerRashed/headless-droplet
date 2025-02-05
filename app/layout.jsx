@@ -5,6 +5,7 @@ import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
 import AOSWrapper from "@/utils/AOSWrapper";
 import { ReactLenis } from "@/utils/lenis";
 import DonationButton from "@/components/shared/donationButton/DonationButton";
+import { getMainMenuData } from "@/graphql/Components";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,7 +19,10 @@ export const metadata = {
     "A world where smallholders, communities, and nature thrive together",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const menuData = await getMainMenuData()
+
+  
   return (
     <html lang="en">
       <ReactLenis root>
@@ -26,151 +30,7 @@ export default function RootLayout({ children }) {
           className={`${poppins.variable} relative font-poppins antialiased`}
         >
           <AOSWrapper>
-            <HeaderSection
-              logoLink="/saf-logo.svg"
-              buttonDetails={{ title: "Contact Us", link: "/contact-us" }}
-              navigations={[
-                {
-                  id: crypto.randomUUID(),
-                  groupName: "About Us",
-                  bannerImage: "/nav-images/nav-1.jpg",
-                  childNavigations: [
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Who we are",
-                      link: "/who-we-are",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Our leadership",
-                      link: "/our-leadership",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Our history",
-                      link: "/our-history",
-                    },
-                  ],
-                },
-                {
-                  id: crypto.randomUUID(),
-                  groupName: "Our Work",
-                  bannerImage: "/nav-images/nav-2.jpg",
-                  childNavigations: [
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Thematic Areas",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Projects & Programs",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Donors & Partners",
-                      link: "/",
-                    },
-                  ],
-                },
-                {
-                  id: crypto.randomUUID(),
-                  groupName: "Global Presence",
-                  bannerImage: "/nav-images/nav-3.jpg",
-                  childNavigations: [
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Switzerland (HQ)",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Bangladesh",
-                      link: "/bangladesh",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "India",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Kenya",
-                      link: "/",
-                    },
-                  ],
-                },
-                {
-                  id: crypto.randomUUID(),
-                  groupName: "Our Impact",
-                  bannerImage: "/nav-images/nav-4.png",
-                  childNavigations: [
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Reports & Publications",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Impact Stories",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Blogs & article | media",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Photo Gallery",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Video Gallery",
-                      link: "/",
-                    },
-                  ],
-                },
-                {
-                  id: crypto.randomUUID(),
-                  groupName: "Get Involved",
-                  bannerImage: "/nav-images/nav-5.jpg",
-                  childNavigations: [
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Our Culture",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Career",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Consultancy & EOI",
-                      link: "/",
-                    },
-                    {
-                      id: crypto.randomUUID(),
-                      title: "Contact Us",
-                      link: "/",
-                    },
-                  ],
-                },
-              ]}
-              socialLinks={{
-                facebook:
-                  "https://www.facebook.com/p/Sustainable-Agriculture-Foundation-61568073779734",
-                linkedIn:
-                  "https://in.linkedin.com/company/sustainable-agriculture-foundation-saf",
-                twitter: "https://x.com/Susagfoundation?",
-                twitter: "https://x.com/Susagfoundation?",
-                youtube: "https://www.youtube.com/@Susagfoundation",
-              }}
-            />
+            <HeaderSection data={menuData} />
             <DonationButton />
 
             {children}

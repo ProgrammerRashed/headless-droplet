@@ -10,6 +10,7 @@ function MainHeader({
   isMobileNavOpen,
   setIsMobileNavOpen,
 }) {
+
   return (
     <div className="flex items-center justify-between gap-3 py-[10px] 0.5xl:py-0 3xl:gap-5">
       <Link href="/" onClick={() => setIsMobileNavOpen(false)}>
@@ -24,10 +25,10 @@ function MainHeader({
       <div className="flex items-center justify-between gap-4 3xl:gap-[35px]">
         <MainNavigationLinks navigations={navigations} />
         <PrimaryButton
-          href={buttonDetails.link}
+          href={buttonDetails[0]?.btn_link}
           className="hidden border-none bg-[#236C5A] stroke-white text-white hover:bg-[#236C5A]/80 md:px-6 md:py-3 0.5xl:flex"
         >
-          {buttonDetails.title}
+          {buttonDetails[0]?.label}
         </PrimaryButton>
         <button
           onClick={() => setIsMobileNavOpen((prev) => !prev)}

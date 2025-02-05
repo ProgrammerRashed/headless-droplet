@@ -6,7 +6,7 @@ function HeaderTopSocial({ socialLinks }) {
     <div className="flex flex-row items-center justify-end gap-[6px]">
       <div className="mr-[6px] h-3 w-[1px] bg-gray-50"></div>
       <Link
-        href={socialLinks.facebook}
+        href={socialLinks[0].link}
         target="_blank"
         className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
@@ -31,7 +31,7 @@ function HeaderTopSocial({ socialLinks }) {
         </svg>
       </Link>
       <Link
-        href={socialLinks.linkedIn}
+        href={socialLinks[1].link}
         target="_blank"
         className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
@@ -56,7 +56,7 @@ function HeaderTopSocial({ socialLinks }) {
         </svg>
       </Link>
       <Link
-        href={socialLinks.twitter}
+        href={socialLinks[2].link}
         target="_blank"
         className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >
@@ -94,7 +94,7 @@ function HeaderTopSocial({ socialLinks }) {
         </svg>
       </Link>
       <Link
-        href={socialLinks.youtube}
+        href={socialLinks[3].link}
         target="_blank"
         className="flex h-[34px] w-[34px] shrink-0 grow-0 items-center justify-center rounded-full bg-[#3FC4A4] transition-all duration-300 hover:bg-[#3FC4A4]/80"
       >

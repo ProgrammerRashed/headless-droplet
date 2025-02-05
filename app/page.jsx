@@ -18,41 +18,6 @@ export default async function HomePage() {
 }
 
 
-// <>
-// <HeroSection
-//   sectionHeading="Our 40 years legacy as a Swiss-based Foundation"
-//   sectionSubHeading="Recent transition is from Syngenta Foundation for Sustainable Agriculture"
-//   bgCoverVideo="/videos/hero-banner.mp4"
-// />
-// <GlobalPresence
-//   sectionHeadline="Our Global Presence"
-//   countries={[
-//     {
-//       id: crypto.randomUUID(),
-//       countryName: "Switzerland (HQ)",
-//       flagIcon: "/global-presence/country-flag/switzerland.svg",
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       countryName: "Bangladesh",
-//       flagIcon: "/global-presence/country-flag/bangladesh.svg",
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       countryName: "India",
-//       flagIcon: "/global-presence/country-flag/india.svg",
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       countryName: "Kenya",
-//       flagIcon: "/global-presence/country-flag/kenya.svg",
-//     },
-//   ]}
-//   labels={{
-//     first: "Current Countries",
-//     second: "Previously Covered Countries",
-//   }}
-// />
 // <OurWorkSection
 //   sectionHeading="Our work"
 //   bgCoverImage="/our-work/bacground-cover.jpg"

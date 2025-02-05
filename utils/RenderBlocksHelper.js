@@ -1,10 +1,10 @@
 import blockComponentsMapping from "@/components/index";
 
-
 const RenderBlocksHelper = ({ blocks }) => {
   if (!blocks || blocks.length === 0) {
     return <p>Page is empty</p>;
   }
+
 
   return (
     <div>
@@ -12,6 +12,7 @@ const RenderBlocksHelper = ({ blocks }) => {
         const BlockComponent = blockComponentsMapping[block.name];
 
         if (!BlockComponent) {
+          console.error(`Block with name "${block.name}" is not found in Block Mapping`);
           return <p key={index}>Unknown block: {block.name}</p>;
         }
 

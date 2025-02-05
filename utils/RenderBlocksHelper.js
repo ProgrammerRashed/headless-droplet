@@ -15,7 +15,7 @@ const RenderBlocksHelper = ({ blocks }) => {
           return <p key={index}>Unknown block: {block.name}</p>;
         }
 
-        return <BlockComponent key={index} {...block.attributes} />;
+        return <BlockComponent key={index} data={JSON.parse(block.attributesJSON)} />;
       })}
     </div>
   );

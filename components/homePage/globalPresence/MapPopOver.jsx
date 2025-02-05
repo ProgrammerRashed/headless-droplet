@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function MapPopOver({ styles }) {
+function MapPopOver({ styles, country }) {
   return (
     <div
       style={styles}
@@ -14,8 +14,8 @@ function MapPopOver({ styles }) {
     >
       <div className="flex w-full flex-col p-[15px]">
         <Image
-          src="/blogs-and-insights/blog-2.jpg"
-          alt=""
+          src={country?.country_image}
+          alt={country?.title}
           width={220}
           height={140}
           className="mb-4 aspect-[22/14] w-full rounded-[4px] object-cover"
@@ -38,16 +38,15 @@ function MapPopOver({ styles }) {
             />
           </svg>
           <h4 className="text-lg font-semibold uppercase leading-[28px] text-gray-800">
-            Kenya
+            {country?.title}
           </h4>
         </div>
         <p className="mb-4 text-sm font-normal leading-[22px] text-gray-600">
-          Female beneficiaries rose to 45%, up from 29%, advancing our 2025
-          parity goal.
+        {country?.details}
         </p>
       </div>
       <Link
-        href=""
+        href={country?.link}
         className="flex items-center justify-between border-t border-gray-50 px-6 py-3 text-base font-semibold leading-[24px] text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white"
       >
         <span>Learn More</span>

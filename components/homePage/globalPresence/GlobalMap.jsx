@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import MapPopOver from "./MapPopOver";
 
-function GlobalMap() {
+function GlobalMap({mapData}) {
+
   const [popover, setPopover] = useState({
     isOpen: false,
     styles: {},
@@ -28,11 +29,14 @@ function GlobalMap() {
     const parentRect = event.target.getBoundingClientRect();
     const clickX = event.clientX - parentRect.left;
     const clickY = event.clientY - parentRect.top;
+    const country = event.currentTarget.getAttribute("data-country"); 
+    const selectedCountry = mapData.find(item => item.title === country);
 
-    console.log(clickX, clickY);
+    if (!selectedCountry) return;
 
     setPopover({
       isOpen: true,
+      country: selectedCountry,
       styles: {
         top: `${clickY * 10}px`,
         left: `${clickX * 10}px`,
@@ -42,7 +46,7 @@ function GlobalMap() {
 
   return (
     <div data-aos="fade-up" className="relative z-40">
-      {popover.isOpen && <MapPopOver styles={popover.styles} />}
+      {popover.isOpen && <MapPopOver styles={popover.styles} country={popover.country}/>}
       <svg
         className="h-auto w-full max-w-[690px]"
         width={691}
@@ -2002,6 +2006,7 @@ function GlobalMap() {
           className="cursor-pointer"
           onClick={(event) => handlePopOver(event)}
           filter="url(#filter0_d_2257_76071)"
+          data-country="India"
         >
           <rect
             x={407}
@@ -2035,6 +2040,7 @@ function GlobalMap() {
             className="cursor-pointer"
             onClick={(event) => handlePopOver(event)}
             clipPath="url(#clip1_2257_76071)"
+              data-country="Bangladesh"
           >
             <path
               d="M487.58 188.79C487.58 189.694 487.424 190.566 487.144 191.376C486.115 194.29 483.42 196.409 480.195 196.564C480.07 196.564 479.93 196.58 479.79 196.58C479.65 196.58 479.525 196.58 479.385 196.564C476.16 196.409 473.465 194.29 472.436 191.376C472.156 190.566 472 189.694 472 188.79C472 187.886 472.156 187.014 472.436 186.204C473.465 183.29 476.16 181.171 479.385 181.016C479.525 181 479.65 181 479.79 181C479.93 181 480.055 181 480.195 181.016C483.42 181.171 486.115 183.29 487.144 186.204C487.424 187.014 487.58 187.886 487.58 188.79Z"
@@ -2051,6 +2057,7 @@ function GlobalMap() {
           className="cursor-pointer"
           onClick={(event) => handlePopOver(event)}
           filter="url(#filter2_d_2257_76071)"
+            data-country="Kenya"
         >
           <rect
             x={250}
@@ -2162,6 +2169,7 @@ function GlobalMap() {
           className="cursor-pointer"
           onClick={(event) => handlePopOver(event)}
           filter="url(#filter7_d_2257_76071)"
+          data-country="Switzerland"
         >
           <rect
             x={121}

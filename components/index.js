@@ -1,9 +1,10 @@
 import Hello from "./Hello";
+import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 
 
 
 const blockComponentsMapping = {
-  'carbon-fields/hero': Hello,
+  'carbon-fields/global-presence': GlobalPresence,
   "carbon-fields/about-us": Hello,
   "carbon-fields/statistics": Hello,
   "carbon-fields/video": Hello,

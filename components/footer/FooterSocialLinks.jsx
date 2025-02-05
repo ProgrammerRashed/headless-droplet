@@ -4,7 +4,7 @@ import Link from "next/link";
 function FooterSocialLinks({ socialLinks }) {
   return (
     <div className="flex items-center justify-normal gap-1">
-      <Link href={socialLinks.facebook} target="_blank">
+      <Link href={socialLinks[0].link} target="_blank">
         <Image
           src="/icons/facebook.svg"
           width={38}
@@ -13,7 +13,7 @@ function FooterSocialLinks({ socialLinks }) {
           className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
-      <Link href={socialLinks.linkedIn} target="_blank">
+      <Link href={socialLinks[1].link} target="_blank">
         <Image
           src="/icons/linkedin.svg"
           width={38}
@@ -22,7 +22,7 @@ function FooterSocialLinks({ socialLinks }) {
           className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
-      <Link href={socialLinks.twitter} target="_blank">
+      <Link href={socialLinks[2].link} target="_blank">
         <Image
           src="/icons/x.svg"
           width={38}
@@ -31,7 +31,7 @@ function FooterSocialLinks({ socialLinks }) {
           className="h-[38px] w-[38px] rounded-full bg-transparent object-contain transition-all duration-300 hover:bg-[#FFFFFF1A]"
         />
       </Link>
-      <Link href={socialLinks.youtube} target="_blank">
+      <Link href={socialLinks[3].link} target="_blank">
         <Image
           src="/icons/youtube.svg"
           width={38}

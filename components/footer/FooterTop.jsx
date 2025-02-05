@@ -20,10 +20,10 @@ function FooterTop({ footerLogo, footerDonation, socialLinks }) {
       </div>
       <div className="flex flex-col gap-[10px] md:items-end">
         <p className="text-base font-normal leading-[26px] tracking-[3%] text-white md:font-medium">
-          {footerDonation.label}
+          {footerDonation?.label}
         </p>
-        <PrimaryButton className="hover:bg-red-900 border-none bg-red-600 stroke-white text-white">
-          {footerDonation?.btnDetails?.title}
+        <PrimaryButton href={footerDonation?.btn_link} className="hover:bg-red-900 border-none bg-red-600 stroke-white text-white">
+          {footerDonation?.btn_text}
         </PrimaryButton>
       </div>
     </div>

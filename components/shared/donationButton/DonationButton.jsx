@@ -1,9 +1,10 @@
 import Link from "next/link";
 
-function DonationButton() {
+function DonationButton({data}) {
+ const {btn_link, btn_text} = data
   return (
     <Link
-      href="/donation"
+      href={btn_link || "/donate"}
       className="fixed bottom-[100px] right-0 z-[10000000] flex flex-row items-center justify-center rounded-l-full bg-[#FFD600] px-5 py-[14px] text-base font-semibold leading-[26px] transition-all duration-500 xl:-mr-20 xl:gap-5 xl:hover:mr-0 xl:hover:gap-2"
     >
       <svg
@@ -41,7 +42,7 @@ function DonationButton() {
           </clipPath>
         </defs>
       </svg>
-      <span className="hidden xl:inline-block">Donate</span>
+      <span className="hidden xl:inline-block">{btn_text || "Donate"}</span>
     </Link>
   );
 }

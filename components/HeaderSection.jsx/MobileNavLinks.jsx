@@ -14,6 +14,7 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
           {navigations?.map((navigation, index) => (
             <MobileNavLinkItem
               key={index}
+              index={index}
               navigation={navigation}
               setIsMobileNavOpen={setIsMobileNavOpen}
             />

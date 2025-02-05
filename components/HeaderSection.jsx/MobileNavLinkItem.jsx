@@ -5,11 +5,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-function MobileNavLinkItem({ navigation, setIsMobileNavOpen }) {
-  console.log("navigation",navigation)
+function MobileNavLinkItem({ navigation, setIsMobileNavOpen, index }) {
+  console.log("index inside", index)
   return (
     <AccordionItem
-
+      value={index  + 1}
       className="border-b border-gray-50 !py-0"
     >
       <AccordionTrigger
@@ -20,8 +20,7 @@ function MobileNavLinkItem({ navigation, setIsMobileNavOpen }) {
       </AccordionTrigger>
       <AccordionContent className="py-0">
         <div className="mb-[10px] flex w-full flex-col gap-3 rounded-[8px] bg-surface p-[15px] text-base font-medium leading-[22px] text-gray-600">
-          Hello Hello
-          {/* {navigation?.child_navigations?.map((navItem, index) => (
+          {navigation?.child_navigations?.map((navItem, index) => (
             <Link
               onClick={() => setIsMobileNavOpen(false)}
               key={index}
@@ -30,7 +29,7 @@ function MobileNavLinkItem({ navigation, setIsMobileNavOpen }) {
             >
               {navItem?.title}
             </Link>
-          ))} */}
+          ))}
         </div>
       </AccordionContent>
     </AccordionItem>

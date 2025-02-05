@@ -5,7 +5,7 @@ import MainHeader from "./MainHeader";
 import { useEffect, useState } from "react";
 import MobileNavLinks from "./MobileNavLinks";
 
-function HeaderSection({data}) {
+function HeaderSection({ data }) {
   const logo = data?.customNavigationBy?.logo
   const socialLinks = data?.customNavigationBy?.socialLinks
   const navigations = data?.customNavigationBy?.navigations;

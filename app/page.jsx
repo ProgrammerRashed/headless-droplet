@@ -15,50 +15,6 @@ export default async function HomePage() {
 }
 
 
-// <CounterSection
-//   counters={[
-//     {
-//       id: crypto.randomUUID(),
-//       counterNumber: 3.1,
-//       suffix: "M",
-//       counterDetails: "Smallholders supported (Up from 2.7 M in 2022)",
-//       decimal: 1,
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       counterNumber: "45",
-//       suffix: "%",
-//       counterDetails:
-//         "of supported farmers are women (Up from 29% in 2022)",
-//       decimal: 0,
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       counterNumber: "73",
-//       suffix: "%",
-//       counterDetails:
-//         "of farmers reporting at least 20% increased revenues",
-//       decimal: 0,
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       counterNumber: "57",
-//       suffix: "%",
-//       counterDetails: "of entrepreneurs are women (Up from 36% in 2022)",
-//       decimal: 0,
-//     },
-//   ]}
-// />
-// <DirectorsSaySection
-//   directorDetails={{
-//     directorName: "Simon Winter",
-//     directorRole:
-//       "Executive Director – Sustainable Agriculture Foundations International Association",
-//     directorImage: "/directors-say/directors-avatar.png",
-//     directorQuote:
-//       "Our Foundation network is accelerating support for first-mile entrepreneurs, helping under-served, pre-commercial smallholders access needed innovations and fully engage in market systems. We place a strong emphasis on empowering women as both entrepreneurs and farmers. Looking ahead, we aim to expand the range of climate-smart innovations and the scale at which they can enhance smallholders’ diversification, productivity, and resilience.",
-//   }}
-// />
 // <VideosSection
 //   sectionHeading="How Sustainable Farming Transforms"
 //   videos={[

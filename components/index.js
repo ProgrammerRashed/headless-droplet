@@ -4,6 +4,7 @@ import CounterSection from "./homePage/counterSection/CounterSection";
 import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 import MissionVissionSection from "./homePage/missionVission/MissionVissionSection";
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
+import DirectorsSaySection from "./shared/directorSay/DirectorsSaySection";
 
 
 
@@ -14,6 +15,7 @@ const blockComponentsMapping = {
   'carbon-fields/about-saf-section': AboutSAFSection,
   'carbon-fields/mission-vision-section': MissionVissionSection,
   'carbon-fields/counter-section': CounterSection,
+  'carbon-fields/directors-say-section': DirectorsSaySection,
  
 };
 

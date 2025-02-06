@@ -2,24 +2,25 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import SectionHeading from "../../sectionHeader/SectionHeading";
 
-function DirectorsSaySection({ directorDetails, sectionTitle, sectionClass }) {
+function DirectorsSaySection({data}) {
+  const { section_title, section_classname, director_name, director_role, director_image, director_quote } = data?.data
   return (
-    <section className={cn("bg-surface py-[50px] md:py-20", sectionClass)}>
+    <section className={cn("bg-surface py-[50px] md:py-20", section_classname)}>
       <div className="container">
-        {sectionTitle && (
+        {section_title && (
           <div data-aos="fade-up">
             <SectionHeading className="mb-[30px] sm:mb-20 lg:mb-[100px]">
-              {sectionTitle}
+              {section_title}
             </SectionHeading>
           </div>
         )}
         <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-[60px] xl:items-start">
           <Image
             data-aos="fade-up"
-            src={directorDetails.directorImage}
+            src={director_image}
             width={260}
             height={260}
-            alt={directorDetails.directorName}
+            alt={director_name}
             className="aspect-square h-[200px] w-[200px] rounded-full object-cover xl:h-[260px] xl:w-[260px]"
           />
           <div
@@ -63,14 +64,14 @@ function DirectorsSaySection({ directorDetails, sectionTitle, sectionClass }) {
               </defs>
             </svg>
             <p className="pb-[30px] text-lg font-normal italic leading-[28px] text-gray-800 lg:text-[22px] lg:leading-[32px]">
-              {directorDetails.directorQuote}
+              {director_quote}
             </p>
             <div className="flex flex-col gap-0.5">
               <h6 className="text-xl font-semibold leading-[32px] text-gray-400 lg:text-2xl lg:leading-[36px]">
-                {directorDetails.directorName}
+                {director_name}
               </h6>
               <p className="text-sm font-normal leading-[22px] text-gray-400">
-                {directorDetails.directorRole}
+                {director_role}
               </p>
             </div>
           </div>

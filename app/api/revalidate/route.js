@@ -4,7 +4,7 @@ export async function POST(request) {
   try {
     const url = new URL(request.url);
     const secretToken = url.searchParams.get('secret');
-
+    console.log(secretToken)
     // Use an environment variable for the secret token
     if (secretToken !== process.env.REVALIDATE_SECRET) {
       return new Response(JSON.stringify({ error: 'Invalid secret token' }), {

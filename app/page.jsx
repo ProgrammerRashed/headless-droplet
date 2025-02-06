@@ -22,17 +22,7 @@ export default async function HomePage() {
 //   sectionHeading="Our work"
 //   bgCoverImage="/our-work/bacground-cover.jpg"
 //   cards={[
-//     {
-//       id: crypto.randomUUID(),
-//       heading: "Climate Smart Agriculture",
-//       bgImage: "/our-work/our-work-1.png",
-//       details:
-//         "SAF promotes climate-smart solutions like precision agriculture, water-efficient technologies, and renewable energy to help smallholders adapt to climate change while reducing agriculture's carbon footprint.",
-//       buttonDetails: {
-//         title: "Learn more",
-//         link: "/",
-//       },
-//     },
+
 //     {
 //       id: crypto.randomUUID(),
 //       heading: "Agri-Entrepreneurship",

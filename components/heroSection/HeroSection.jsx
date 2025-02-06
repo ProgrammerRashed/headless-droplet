@@ -1,6 +1,5 @@
 function HeroSection({data }) {
  const {section_heading, section_subheading, bg_cover_video} = data?.data
-  console.log(data)
   return (
     <section className="relative flex h-screen items-center overflow-hidden">
       <video

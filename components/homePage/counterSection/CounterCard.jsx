@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import CountUp from "react-countup";
 
 function CounterCard({ counter }) {
   const [isInView, setIsInView] = useState(false);
@@ -38,28 +37,13 @@ function CounterCard({ counter }) {
           ref={countUpRef}
           className="scroll-smooth text-[38px] font-semibold leading-[50px] text-gray-800 sm:text-[58px] sm:leading-[70px] md:text-[38px] md:leading-normal xl:text-[58px] xl:leading-[70px]"
         >
-          {/* {isInView && (
-            <CountUp
-              end={counter.counterNumber}
-              duration={4}
-              decimals={counter.decimal}
-              decimal="."
-              separator=" "
-              suffix={counter.suffix}
-            >
-              {({ countUpRef, start }) => (
-                <div>
-                  <span ref={countUpRef} />
-                </div>
-              )}
-            </CountUp>
-          )} */}
-          {counter.counterNumber}
+        
+          {counter.counter_number}
           {counter.suffix}
         </h4>
       </div>
       <p className="text-base font-normal leading-[26px] text-gray-600">
-        {counter.counterDetails}
+        {counter.counter_details}
       </p>
     </div>
   );

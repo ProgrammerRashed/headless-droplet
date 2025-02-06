@@ -17,69 +17,6 @@ export default async function HomePage() {
   return (<RenderBlocksHelper blocks={pageData}/>);
 }
 
-
-// <OurWorkSection
-//   sectionHeading="Our work"
-//   bgCoverImage="/our-work/bacground-cover.jpg"
-//   cards={[
-
-//     {
-//       id: crypto.randomUUID(),
-//       heading: "Agri-Entrepreneurship",
-//       bgImage: "/our-work/our-work-2.png",
-//       details:
-//         "Through Farmers’ Hubs, SAF connects smallholders to inputs, machinery, markets, info and advisory, improving productivity, incomes, and access to quality services.",
-//       buttonDetails: {
-//         title: "Learn more",
-//         link: "/",
-//       },
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       heading: "Insurance & Risk Mitigation",
-//       bgImage: "/our-work/our-work-3.png",
-//       details:
-//         "SAF facilitates the tailored agricultural insurance and its market development to protect smallholders from climate risks, enabling them to invest confidently and secure their livelihoods.",
-//       buttonDetails: {
-//         title: "Learn more",
-//         link: "/",
-//       },
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       heading: "Food & Nutrition",
-//       bgImage: "/our-work/our-work-4.png",
-//       details:
-//         "SAF strengthens urban food systems by promoting agroecological practices, nutrition-sensitive value chains, and behavioral change for improved health and food security.",
-//       buttonDetails: {
-//         title: "Learn more",
-//         link: "/",
-//       },
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       heading: "Carbon Credit",
-//       bgImage: "/our-work/our-work-5.png",
-//       details:
-//         "SAF helps farmers adopt sustainable practices in agroforestry and field crops, linking them to carbon credit markets to increase income and combat climate change.",
-//       buttonDetails: {
-//         title: "Learn more",
-//         link: "/",
-//       },
-//     },
-//     {
-//       id: crypto.randomUUID(),
-//       heading: "Seed Systems",
-//       bgImage: "/our-work/our-work-6.png",
-//       details:
-//         "Through the Seeds program, SAF improves smallholders’ access to high-quality seeds, enhancing productivity and food security.",
-//       buttonDetails: {
-//         title: "Learn more",
-//         link: "/",
-//       },
-//     },
-//   ]}
-// />
 // <AboutSAFSection
 //   sectionHeading="About SAF"
 //   sectionSubHeading="The Sustainable Agriculture Foundation (SAF), formerly known as the Syngenta Foundation for Sustainable Agriculture (SFSA), boasts a remarkable 40-year legacy as a Swiss-based not-for-profit organization. SAF delivers demand-led innovations in agriculture, ensuring sustainable market access. It spearheaded groundbreaking projects across agriculture, climate change, risk mitigation, carbon offset, nutrition, and rural economic development. These initiatives have positively impacted over millions of smallholder farmers through strategic collaborations with local, regional, and international partners.

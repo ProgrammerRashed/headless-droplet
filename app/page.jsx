@@ -1,9 +1,6 @@
-import AboutSAFSection from "@/components/homePage/aboutSAF/AboutSAFSection";
 import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
 import CounterSection from "@/components/homePage/counterSection/CounterSection";
 import DirectorsSaySection from "@/components/shared/directorSay/DirectorsSaySection";
-import GlobalPresence from "@/components/homePage/globalPresence/GlobalPresence";
-import HeroSection from "@/components/heroSection/HeroSection";
 import MissionVissionSection from "@/components/homePage/missionVission/MissionVissionSection";
 import OurPartnersSections from "@/components/shared/ourPartnersSection/OurPartnersSections";
 import OurWorkSection from "@/components/homePage/ourWork/OurWorkSection";
@@ -17,27 +14,7 @@ export default async function HomePage() {
   return (<RenderBlocksHelper blocks={pageData}/>);
 }
 
-// <AboutSAFSection
-//   sectionHeading="About SAF"
-//   sectionSubHeading="The Sustainable Agriculture Foundation (SAF), formerly known as the Syngenta Foundation for Sustainable Agriculture (SFSA), boasts a remarkable 40-year legacy as a Swiss-based not-for-profit organization. SAF delivers demand-led innovations in agriculture, ensuring sustainable market access. It spearheaded groundbreaking projects across agriculture, climate change, risk mitigation, carbon offset, nutrition, and rural economic development. These initiatives have positively impacted over millions of smallholder farmers through strategic collaborations with local, regional, and international partners.
-// "
-//   buttonDetails={{ title: "Learn More About SAF", link: "/" }}
-// />
-// <MissionVissionSection
-//   coverImage="/mission-vision/mission-vision-banner.jpeg"
-//   missionVisionDetails={{
-//     mission: {
-//       title: "Our Mission",
-//       details:
-//         "Scaling up collective action on markets and innovations so that farming can better serve smallholder families, rural communities, and nature",
-//     },
-//     vision: {
-//       title: "Our vision",
-//       details:
-//         "A world where smallholders, communities, and nature thrive together",
-//     },
-//   }}
-// />
+
 // <CounterSection
 //   counters={[
 //     {

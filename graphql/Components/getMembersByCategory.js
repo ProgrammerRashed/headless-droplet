@@ -6,5 +6,5 @@ export const getMembersByCategory = async (categoryName) => {
     throw new Error("categoryName is required but was not provided.");
   }
   const membersData = await getGqlData(membersQuery, { categoryName });
-  return membersData?.members?.nodes;
+  return membersData?.members?.edges;
 };

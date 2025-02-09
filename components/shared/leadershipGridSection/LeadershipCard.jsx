@@ -16,6 +16,8 @@ function LeadershipCard({
   cardDetailsClass,
   people,
 }) {
+const image = people?.node?.featuredImage?.node?.mediaItemUrl
+const title = people?.node?.title
   return (
     <Dialog>
       <DialogTrigger>
@@ -27,10 +29,10 @@ function LeadershipCard({
           )}
         >
           <Image
-            src={people.imageLink}
+            src={image}
             width={410}
             height={340}
-            alt={people.leaderName}
+            alt={title}
             className={cn(
               "aspect-square w-full object-cover md:aspect-[41/34]",
               cardImageSize,
@@ -43,10 +45,10 @@ function LeadershipCard({
             )}
           >
             <h4 className="mb-[10px] text-[22px] font-medium leading-[32px] text-gray-800">
-              {people.leaderName}
+              {title}
             </h4>
             <p className="max-w-[220px] text-xs font-normal leading-[18px] text-gray-600">
-              {people.role}
+              {people.node?.position}
             </p>
           </div>
         </div>
@@ -59,8 +61,8 @@ function LeadershipCard({
           <div className="flex h-full w-full flex-col overflow-hidden md:flex-row md:gap-10 md:p-[30px] md:pt-20 lg:gap-[60px]">
             <div className="mb-5 h-[330px] w-full sm:h-[500px] md:mb-0 md:h-auto md:max-w-[470px]">
               <Image
-                src={people.imageLink}
-                alt={people.leaderName}
+                src={image}
+                alt={title}
                 width={400}
                 height={440}
                 className="h-full w-full rounded-t-[8px] object-cover md:rounded-[8px]"
@@ -69,14 +71,14 @@ function LeadershipCard({
             <div className="scrollbar-thin flex w-full flex-col overflow-y-scroll px-[15px] pb-[30px] pt-0 text-left md:flex-grow md:px-0 md:pb-0 md:pr-4">
               <DialogHeader className="mb-[10px] text-left lg:mb-5 lg:border-b lg:border-b-gray-50 lg:pb-5">
                 <DialogTitle className="gray-800 mb-0.5 text-xl font-semibold leading-[32px] lg:mb-1 lg:text-[28px] lg:leading-[38px]">
-                  {people.leaderName}
+                  {title}
                 </DialogTitle>
                 <DialogDescription className="text-left text-sm font-normal leading-[22px] text-gray-400">
-                  {people.role}
+                  {people.node?.position}
                 </DialogDescription>
               </DialogHeader>
               <p className="text-base font-normal leading-[26px] text-gray-600">
-                {people.details}
+                {people.node?.content}
               </p>
             </div>
           </div>

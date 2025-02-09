@@ -1,5 +1,3 @@
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
-import LeadershipGridSection from "@/components/shared/leadershipGridSection/LeadershipGridSection";
 import { getPageData } from "@/graphql/Components";
 import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 

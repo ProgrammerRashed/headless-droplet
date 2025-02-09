@@ -23,7 +23,7 @@ export default async function HomePage() {
 //       videoLink:
 //         "https://www.youtube.com/embed/f3H1KPn9v_0?autoplay=1&controls=1",
 //       videoThumbNail:
-//         "/videos/farming-transform/thumbnails/video-thumbnail-1.png",
+//         "video-thumbnail-1.png",
 //       videoTitle: "Bangladesh: An Experience of Crop Insurance",
 //     },
 //     {
@@ -31,7 +31,7 @@ export default async function HomePage() {
 //       videoLink:
 //         "https://www.youtube.com/embed/EeVX0HChQio?autoplay=1&controls=1",
 //       videoThumbNail:
-//         "/videos/farming-transform/thumbnails/video-thumbnail-2.jpg",
+//         "video-thumbnail-2.jpg",
 //       videoTitle: "Bangladesh: The Magic Wand - (2022)",
 //     },
 //     {

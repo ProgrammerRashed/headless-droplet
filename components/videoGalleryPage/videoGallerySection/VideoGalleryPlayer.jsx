@@ -19,8 +19,8 @@ function VideoGalleryPlayer({ video, isPlaying, onPlay }) {
           className="block h-full border-none object-cover"
           width="100%"
           height="100%"
-          src={video?.videoLink}
-          title={video?.videoTitle}
+          src={video?.video_link}
+          title={video?.video_title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
@@ -33,16 +33,16 @@ function VideoGalleryPlayer({ video, isPlaying, onPlay }) {
           <Image
             width={850}
             height={482}
-            src={video?.videoThumbNail}
+            src={video?.video_thumbnail}
             alt="Farming transforms video thumbnail"
             className="absolute inset-0 h-full w-full rounded-[8px] object-cover"
           />
           <div
-            className={`absolute inset-0 flex w-full items-end ${video?.videoTitle ? "bg-gradient-to-b from-black/10 to-black/70" : ""}`}
+            className={`absolute inset-0 flex w-full items-end ${video?.video_title ? "bg-gradient-to-b from-black/10 to-black/70" : ""}`}
           >
-            {video?.videoTitle && (
+            {video?.video_title && (
               <p className="m-5 line-clamp-1 w-full text-lg font-medium leading-normal text-white md:text-2xl md:font-semibold md:leading-[36px]">
-                {video?.videoTitle}
+                {video?.video_title}
               </p>
             )}
           </div>

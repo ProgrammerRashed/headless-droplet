@@ -9,7 +9,7 @@ function VideoList({ videos, onSelectedVideo }) {
     >
       {videos.map((video) => (
         <VideoListCard
-          key={video.id}
+          key={video._id}
           video={video}
           onSelectedVideo={onSelectedVideo}
         />

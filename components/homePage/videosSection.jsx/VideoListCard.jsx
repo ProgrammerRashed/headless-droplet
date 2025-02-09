@@ -9,8 +9,8 @@ function VideoListCard({ video, onSelectedVideo }) {
       <div className="hover:border-red-800 flex flex-row items-center gap-5 rounded-[4px] border-2 border-transparent p-2 transition-all duration-300 hover:bg-surface">
         <div className="relative md:h-[80px] md:min-w-[120px] lg:h-[99px] lg:min-w-[160px]">
           <Image
-            src={video.videoThumbNail}
-            alt={video.videoTitle}
+            src={video?.video_thumbnail || "http://saf.local/wp-content/uploads/2025/02/video-thumbnail-1.png" }
+            alt={video?.video_title}
             width={160}
             height={99}
             className="relative h-full w-full rounded-[4px] object-cover"
@@ -33,7 +33,7 @@ function VideoListCard({ video, onSelectedVideo }) {
           </div>
         </div>
         <p className="line-clamp-2 font-medium text-gray-800 md:text-lg md:leading-normal lg:text-[22px] lg:leading-[32px]">
-          {video.videoTitle}
+          {video.video_title}
         </p>
       </div>
     </div>

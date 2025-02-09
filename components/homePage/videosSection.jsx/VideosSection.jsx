@@ -7,7 +7,8 @@ import VideoList from "./VideoList";
 import VideoPlayer from "../../shared/VideoPlayer";
 import VideoSlider from "./VideoSlider";
 
-function VideosSection({ sectionHeading, videos }) {
+function VideosSection({data}) {
+  const { section_heading, videos } = data.data
   const [selectedVideo, setSelectedVideo] = useState(videos[0]);
 
   const handleSelectedVideo = (video) => {
@@ -19,11 +20,11 @@ function VideosSection({ sectionHeading, videos }) {
       <div className="container">
         <div data-aos="fade-up">
           <SectionHeading className="text-center">
-            {sectionHeading}
+            {section_heading}
           </SectionHeading>
         </div>
         <div className="mt-[50px] hidden h-[482px] w-full justify-between md:flex md:h-auto md:flex-col md:gap-10 lg:h-[482px] lg:flex-row lg:gap-5 xl:flex-row xl:gap-[30px]">
-          <VideoPlayer key={selectedVideo.id} video={selectedVideo} />
+          <VideoPlayer key={selectedVideo._id} video={selectedVideo} />
           <VideoList onSelectedVideo={handleSelectedVideo} videos={videos} />
         </div>
         <VideoSlider videos={videos} />

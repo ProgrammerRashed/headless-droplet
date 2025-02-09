@@ -38,12 +38,12 @@ function VideoSlider({ videos }) {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
           {videos.map((video) => (
-            <SwiperSlide key={video.id}>
+            <SwiperSlide key={video._id}>
               <VideoGalleryPlayer
-                key={video.id}
+                key={video._id}
                 video={video}
-                isPlaying={currentlyPlaying === video.id}
-                onPlay={() => handlePlay(video.id)}
+                isPlaying={currentlyPlaying === video._id}
+                onPlay={() => handlePlay(video._id)}
               />
             </SwiperSlide>
           ))}

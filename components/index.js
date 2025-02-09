@@ -6,6 +6,7 @@ import MissionVissionSection from "./homePage/missionVission/MissionVissionSecti
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
 import DirectorsSaySection from "./shared/directorSay/DirectorsSaySection";
+import SDGSContributionSection from "./shared/sdgsContributionSection/SDGSContributionSection";
 
 
 
@@ -18,6 +19,7 @@ const blockComponentsMapping = {
   'carbon-fields/counter-section': CounterSection,
   'carbon-fields/directors-say-section': DirectorsSaySection,
   'carbon-fields/home-videos-section': VideosSection,
+  'carbon-fields/sdgs-contribution-section': SDGSContributionSection,
  
 };
 

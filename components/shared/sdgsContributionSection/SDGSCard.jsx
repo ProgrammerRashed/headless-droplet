@@ -16,7 +16,7 @@ function SDGSCard({ card }) {
         className={cn(
           "z-10 flex min-h-full w-full flex-col items-center p-[10px] transition-all duration-500 md:p-5 md:group-hover:items-start md:group-hover:bg-opacity-90",
           `${isClicked ? "bg-opacity-90" : "bg-opacity-100"}`,
-          card.bgColorClass,
+          card.bg_color_class,
         )}
       >
         <button
@@ -111,7 +111,7 @@ function SDGSCard({ card }) {
         </button>
       </div>
       <Image
-        src={card.bgImg}
+        src={card.bg_img}
         alt={card.title}
         width={158}
         height={192}

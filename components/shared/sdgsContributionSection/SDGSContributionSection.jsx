@@ -3,24 +3,27 @@ import SectionHeading from "../../sectionHeader/SectionHeading";
 
 import SDGSCard from "./SDGSCard";
 
-function SDGSContributionSection({
-  sectionHeading,
-  cardDetails,
-  sectionClassName,
-}) {
+function SDGSContributionSection({data}) {
+  const {
+    section_heading,
+    card_details,
+    section_classnames,
+  } = data.data;
+
+  console.log(card_details);
   return (
     <section
-      className={cn("bg-surface py-[50px] md:py-[100px]", sectionClassName)}
+      className={cn("bg-surface py-[50px] md:py-[100px]", section_classnames)}
     >
       <div className="container lg:px-[95px]">
         <div data-aos="fade-up">
           <SectionHeading className="text-center normal-case">
-            {sectionHeading}
+            {section_heading}
           </SectionHeading>
         </div>
         <div className="mt-10 grid w-full grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5">
-          {cardDetails.map((card) => (
-            <SDGSCard key={card.id} card={card} />
+          {card_details.map((card) => (
+            <SDGSCard key={card._id} card={card} />
           ))}
         </div>
       </div>

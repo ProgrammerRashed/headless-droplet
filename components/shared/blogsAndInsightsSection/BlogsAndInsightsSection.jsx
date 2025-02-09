@@ -12,8 +12,8 @@ import BlogsCard from "./BlogsCard";
 import { useRef } from "react";
 import SlidersButton from "../buttons/SlidersButton";
 
-function BlogsAndInsightsSection({ data }) {
-  const { sectionHeading, btnDetails, largeScreenCardView = 3, blogs } = data;
+function BlogsAndInsightsSection({ data, blogs }) {
+  const { section_heading, btn_details, largeScreenCardView = 3 } = data.data;
   const swiperRef = useRef(null);
 
   return (
@@ -21,15 +21,15 @@ function BlogsAndInsightsSection({ data }) {
       <div className="container">
         <div className="flex w-full flex-row items-center justify-between">
           <div data-aos="fade-up">
-            <SectionHeading>{sectionHeading}</SectionHeading>
+            <SectionHeading>{section_heading}</SectionHeading>
           </div>
           <div
             data-aos="fade-up"
             className="flex w-[65%] justify-end sm:w-auto"
           >
-            {btnDetails && (
-              <PrimaryButton className="capitalize">
-                {btnDetails.title}
+            {btn_details && (
+              <PrimaryButton href={btn_details[0].link} className="capitalize">
+                {btn_details[0].title}
               </PrimaryButton>
             )}
           </div>
@@ -63,8 +63,8 @@ function BlogsAndInsightsSection({ data }) {
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {blogs.map((blog) => (
-              <SwiperSlide key={blog.id}>
+            {blogs.map((blog, index) => (
+              <SwiperSlide key={index}>
                 <BlogsCard
                   blog={blog}
                   imageHeightClassName={

@@ -10,7 +10,6 @@ function SDGSContributionSection({data}) {
     section_classnames,
   } = data.data;
 
-  console.log(card_details);
   return (
     <section
       className={cn("bg-surface py-[50px] md:py-[100px]", section_classnames)}

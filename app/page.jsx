@@ -227,7 +227,7 @@ export default async function HomePage() {
 //   }}
 // />
 // <BlogsAndInsightsSection
-//   data={{
+
 //     sectionHeading: "Blogs & Insights",
 //     btnDetails: {
 //       title: "View all",

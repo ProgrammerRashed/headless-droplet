@@ -5,7 +5,9 @@ import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 import MissionVissionSection from "./homePage/missionVission/MissionVissionSection";
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
+import MainBlogsSection from "./shared/blogsAndInsightsSection/MainBlogsSection";
 import DirectorsSaySection from "./shared/directorSay/DirectorsSaySection";
+import OurPartnersSections from "./shared/ourPartnersSection/OurPartnersSections";
 import SDGSContributionSection from "./shared/sdgsContributionSection/SDGSContributionSection";
 
 
@@ -20,6 +22,8 @@ const blockComponentsMapping = {
   'carbon-fields/directors-say-section': DirectorsSaySection,
   'carbon-fields/home-videos-section': VideosSection,
   'carbon-fields/sdgs-contribution-section': SDGSContributionSection,
+  'carbon-fields/our-partners-section': OurPartnersSections,
+  'carbon-fields/blogs-section': MainBlogsSection,
  
 };
 

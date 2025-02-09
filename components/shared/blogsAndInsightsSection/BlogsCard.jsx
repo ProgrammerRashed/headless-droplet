@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-function BlogsCard({ blog, imageHeightClassName }) {
+function BlogsCard({ blog }) {
+  const featuredImage = blog.featuredImage?.node.mediaItemUrl;
+  const imageHeightClassName = blog?.imageHeight || null
   return (
     <div
       data-aos="fade-up"
@@ -9,7 +11,7 @@ function BlogsCard({ blog, imageHeightClassName }) {
     >
       <div className="mb-5 w-full overflow-hidden rounded-[8px] shadow-md group-hover:shadow-lg">
         <Image
-          src={blog.coverImage}
+          src={featuredImage}
           alt={blog.title}
           width={410}
           height={240}
@@ -20,9 +22,9 @@ function BlogsCard({ blog, imageHeightClassName }) {
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">
-        <p className="line-clamp-2 text-green-700">{blog.category}</p>
+        <p className="line-clamp-2 text-green-700">{blog?.customCategory}</p>
         <div className="h-[5px] w-[5px] rounded-full bg-gray-50"></div>
-        <p className="text-gray-400">{blog.publishedDate}</p>
+        <p className="text-gray-400">{blog.date}</p>
       </div>
       <h4 className="text-dark line-clamp-2 text-lg font-medium leading-[28px] transition-all duration-300 hover:underline sm:text-[22px] sm:leading-[32px]">
         {blog.title}

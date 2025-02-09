@@ -8,7 +8,7 @@ const MainBlogsSection = async ({data}) => {
     if(enable_slider){
         return <BlogsAndInsightsSection data={data} blogs={blogs}/>
     }else{
-        return <div>MainBlogsSection</div>
+        return null
     }
 
 

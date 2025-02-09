@@ -12,7 +12,7 @@ const RenderBlocksHelper = ({ blocks }) => {
         const BlockComponent = blockComponentsMapping[block.name];
 
         if (!BlockComponent) {
-          console.error(`Block with name "${block.name}" is not found in Block Mapping`);
+          console.log(`Block with name "${block.name}" is not found in Block Mapping`);
           return <p key={index}>Unknown block: {block.name}</p>;
         }
 

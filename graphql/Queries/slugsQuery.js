@@ -1,4 +1,6 @@
-export const slugsQuery = `
+import { gql } from "@apollo/client";
+
+export const slugsQuery = gql`
 query GetAllSlugs {
   menuItems {
     nodes {

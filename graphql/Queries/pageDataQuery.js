@@ -1,4 +1,6 @@
-export const pageDataQuery = `
+import { gql } from "@apollo/client";
+
+export const pageDataQuery = gql`
   query PageDataQuery($uri: String!) {
     nodeByUri(uri: $uri) {
       ... on Page {

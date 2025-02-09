@@ -1,4 +1,6 @@
-export const mainMenuQuery = `query NewQuery {
+import { gql } from "@apollo/client";
+
+export const mainMenuQuery = gql`query NewQuery {
   customNavigationBy(slug: "main-menu") {
     id
     logo

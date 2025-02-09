@@ -1,10 +1,11 @@
 import Image from "next/image";
 
-function AboutCountrySection({ bannerImage, primaryText, secondaryText }) {
+function AboutCountrySection({data}) {
+  const { banner_image, primary_text, secondary_text } = data.data
   return (
     <section>
       <Image
-        src={bannerImage}
+        src={banner_image}
         width={1440}
         height={622}
         alt="Bangladesh"
@@ -17,14 +18,14 @@ function AboutCountrySection({ bannerImage, primaryText, secondaryText }) {
               data-aos="fade-up"
               className="mr-auto max-w-[960px] text-lg font-medium leading-[28px] text-gray-800 md:text-2xl md:font-semibold md:leading-[36px]"
             >
-              {primaryText}
+              {primary_text}
             </h4>
           </div>
           <p
             data-aos="fade-up"
             className="max-w-[850px] text-left text-base font-normal leading-[26px] text-gray-600 md:ml-auto"
           >
-            {secondaryText}
+            {secondary_text}
           </p>
         </div>
       </div>

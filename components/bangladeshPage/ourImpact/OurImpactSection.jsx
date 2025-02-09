@@ -3,10 +3,10 @@ import { cn } from "@/lib/utils";
 import OurImpactCard from "./OurImpactCard";
 
 function OurImpactSection({ data }) {
-  const { counters, sectionHeading } = data;
+  const { counters, section_heading } = data.data;
   return (
     <section className="bg-surface py-[50] md:py-[100px]">
-      <SectionHeading className="text-center">{sectionHeading}</SectionHeading>
+      <SectionHeading className="text-center">{section_heading}</SectionHeading>
       <div className="container">
         <div
           className={cn(
@@ -14,7 +14,7 @@ function OurImpactSection({ data }) {
           )}
         >
           {counters.map((counter) => (
-            <OurImpactCard key={counter.id} counter={counter} />
+            <OurImpactCard key={counter._id} counter={counter} />
           ))}
         </div>
       </div>

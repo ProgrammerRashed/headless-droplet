@@ -1,6 +1,7 @@
 import AboutCountrySection from "./bangladeshPage/aboutCountrysection/AboutCountrySection";
 import LocalMapSection from "./bangladeshPage/localMapSection/LocalMapSection";
 import OurImpactSection from "./bangladeshPage/ourImpact/OurImpactSection";
+import ProjectSectionWrapper from "./bangladeshPage/projectsSection/ProjectSectionWrapper";
 import HeroSection from "./heroSection/HeroSection";
 import SecondaryBanner from "./heroSection/SecondaryBanner";
 import AboutSAFSection from "./homePage/aboutSAF/AboutSAFSection";
@@ -9,6 +10,7 @@ import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 import MissionVissionSection from "./homePage/missionVission/MissionVissionSection";
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
+import DirectorsDetailsSection from "./ourLeadershipPage/directorsDetailsSection/DirectorsDetailsSection";
 import MainBlogsSection from "./shared/blogsAndInsightsSection/MainBlogsSection";
 import CtaSection from "./shared/ctaSection/CtaSection";
 import DirectorsSaySection from "./shared/directorSay/DirectorsSaySection";
@@ -38,6 +40,8 @@ const blockComponentsMapping = {
   'carbon-fields/our-values-section': OurValuesSection,
   'carbon-fields/local-map-section': LocalMapSection,
   'carbon-fields/team-grid-section': TeamGridSection,
+  'carbon-fields/director-details-section': DirectorsDetailsSection,
+  'carbon-fields/projects-programs-section': ProjectSectionWrapper,
   
  
 };

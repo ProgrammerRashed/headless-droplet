@@ -11,7 +11,6 @@ function HeaderSection({ data }) {
   const navigations = data?.customNavigationBy?.navigations;
   const buttonDetails = data?.customNavigationBy?.buttonDetails;
 
-
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);

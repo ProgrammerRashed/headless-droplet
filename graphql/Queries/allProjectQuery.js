@@ -1,32 +1,34 @@
 import { gql } from "@apollo/client";
 
-export const allProjectQuery = gql`query AllProjectQuery {
-  projects {
-    nodes {
-      content
-      donor
-      featuredImage {
-        node {
-          mediaItemUrl
+export const allProjectQuery = gql`
+  query AllProjectQuery($ids: [ID!]) {
+    projects(where: { in: $ids }) {
+      nodes {
+        content
+        donor
+        featuredImage {
+          node {
+            mediaItemUrl
+          }
         }
-      }
-      categories {
-        nodes {
-          slug
-          name
+        categories {
+          nodes {
+            slug
+            name
+          }
         }
+        projectStatus {
+          label
+          value
+        }
+        slug
+        tenure {
+          end_date
+          start_date
+        }
+        smallDescription
+        title
       }
-      projectStatus {
-        label
-        value
-      }
-      slug
-      tenure {
-        end_date
-        start_date
-      }
-      smallDescription
-       title
     }
   }
-}`;
+`;

@@ -6,18 +6,22 @@ import { useState } from "react";
 
 function SDGSCard({ card }) {
   const [isClicked, setIsClicked] = useState(false);
-
   return (
     <div
       data-aos="fade-up"
       className="contribution-card group relative flex min-h-[193px] flex-col items-center overflow-hidden rounded-[4px] text-white shadow-lg transition-all duration-500 hover:shadow-xl md:min-h-[250px] md:cursor-pointer md:rounded-[8px]"
     >
+
+      
       <div
-        className={cn(
-          "z-10 flex min-h-full w-full flex-col items-center p-[10px] transition-all duration-500 md:p-5 md:group-hover:items-start md:group-hover:bg-opacity-90",
-          `${isClicked ? "bg-opacity-90" : "bg-opacity-100"}`,
-          card.bg_color_class,
-        )}
+    style={{
+      backgroundColor: card.bg_color_class,
+      opacity: isClicked ? 0.9 : 1, 
+      transition: "all 0.5s ease",
+
+    }}
+        className={
+          `z-10 flex min-h-full w-full flex-col items-center p-[10px] transition-all duration-500 md:p-5 md:group-hover:items-start md:group-hover:bg-opacity-90    ${isClicked ? "bg-opacity-90" : "bg-opacity-100"}`}
       >
         <button
           onClick={() => setIsClicked(false)}

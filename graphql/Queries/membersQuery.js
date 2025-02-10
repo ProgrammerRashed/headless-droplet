@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const membersQuery = gql`
-  query membersQuery($categoryName: String!) {
-    members(where: { categoryName: $categoryName }) {
+  query AllMembersQuery($ids: [ID!]) {
+    members(where: { in: $ids }) {
       edges {
         node {
           id

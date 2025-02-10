@@ -23,12 +23,12 @@ function LeadershipGridSection({
             sectionGridClass,
           )}
         >
-          {leaders?.map((leader) => (
+          {leaders?.map((leader, index) => (
             <LeadershipCard
               cardBackgroundSection={cardBackgroundSection}
               cardImageSize={cardImageSize}
               cardDetailsClass={cardDetailsClass}
-              key={leader._id}
+              key={index}
               people={leader}
             />
           ))}

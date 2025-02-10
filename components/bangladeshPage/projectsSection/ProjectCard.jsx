@@ -4,7 +4,7 @@ import formatDate from "@/utils/formatDate";
 import Image from "next/image";
 import Link from "next/link";
 
-function ProjectCard({ project }) {
+function ProjectCard( {project} ) {
   return (
     <div data-aos="fade-up" className="flex flex-col">
       <Image

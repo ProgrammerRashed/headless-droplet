@@ -9,7 +9,6 @@ function SDGSContributionSection({data}) {
     card_details,
     section_classnames,
   } = data.data;
-
   return (
     <section
       className={cn("bg-surface py-[50px] md:py-[100px]", section_classnames)}
@@ -21,8 +20,8 @@ function SDGSContributionSection({data}) {
           </SectionHeading>
         </div>
         <div className="mt-10 grid w-full grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5">
-          {card_details.map((card) => (
-            <SDGSCard key={card._id} card={card} />
+          {card_details.map((card, index) => (
+            <SDGSCard key={index} card={card} />
           ))}
         </div>
       </div>

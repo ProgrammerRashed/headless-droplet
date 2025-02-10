@@ -11,14 +11,12 @@ import ProjectCard from "./ProjectCard";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import { cn } from "@/lib/utils";
 
-function ProjectSection({ data }) {
-  const {
-    SectionTitle,
-    titlePositionClassName,
-    projects,
-    viewAllBtnDetails,
-    duplicatedProjects,
-  } = data;
+function ProjectSection({
+  SectionTitle,
+  titlePositionClassName,
+  projects,
+  viewAllBtnDetails,
+}) {
 
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
@@ -50,8 +48,8 @@ function ProjectSection({ data }) {
             speed={600}
             loop={true}
           >
-            {duplicatedProjects.map((project) => (
-              <SwiperSlide key={project.id}>
+            {projects.map((project, index) => (
+              <SwiperSlide key={index}>
                 <ProjectCard project={project} />
               </SwiperSlide>
             ))}
@@ -60,8 +58,8 @@ function ProjectSection({ data }) {
       </div>
       <div className="container">
         <div className="mb-[30px] mt-[60px] hidden grid-cols-2 gap-5 border-gray-50 pb-[60px] sm:grid sm:border-b md:gap-[30px]">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
         <div data-aos="fade-up">

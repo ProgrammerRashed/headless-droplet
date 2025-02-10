@@ -1,17 +1,15 @@
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 import DownloadBooksSection from "@/components/ourHistoryPage/downloadBooksSection/DownloadBooksSection";
 import SideBySideSection from "@/components/ourHistoryPage/sideBySideSection/SideBySideSection";
 import TimelineSection from "@/components/ourHistoryPage/timelineSection/TimelineSection";
+import { getPageData } from "@/graphql/Components";
+import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
-function OurHistoryPage() {
+async function OurHistoryPage() {
+    const pageData = await getPageData("/our-history");
+  
   return (
     <>
-      <SecondaryBanner
-        data={{
-          sectionHeading: "Our History",
-          bannerCover: "/hero-banners/who-we-are.jpg",
-        }}
-      />
+        <RenderBlocksHelper blocks={pageData}/>
       <SideBySideSection
         heading="Our History"
         secondaryHeading="The Sustainable Agriculture Foundation (SAF) has its roots in a 40-year legacy of agricultural innovation and corporate philanthropy."

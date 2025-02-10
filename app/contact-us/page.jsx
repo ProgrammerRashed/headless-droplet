@@ -1,16 +1,14 @@
 import ContactFromSection from "@/components/contactUsPage/contactFromSection/ContactFromSection";
 import FindLocationCardSection from "@/components/contactUsPage/findLocationCardSection/FindLocationCardSection";
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+import { getPageData } from "@/graphql/Components";
+import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
-function ContactUsPage() {
+async function ContactUsPage() {
+  const pageData = await getPageData("/main-contact-us");
+
   return (
     <>
-      <SecondaryBanner
-        data={{
-          sectionHeading: "Contact Us",
-          bannerCover: "/hero-banners/who-we-are.jpg",
-        }}
-      />
+      <RenderBlocksHelper blocks={pageData}/>
       <FindLocationCardSection
         data={{
           sectionHeading: "Find our Locations",

@@ -1,10 +1,11 @@
-
 import { getPageData } from "@/graphql/Components";
 import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
-async function BangladeshPage() {
-  const pageData = await getPageData("/bangladesh-page");
+async function LeadershipTeamPage() {
+  const pageData = await getPageData("/kenya-leadership-team");
   return (<RenderBlocksHelper blocks={pageData}/>);
+  
 }
 
-export default BangladeshPage;
+export default LeadershipTeamPage;
+

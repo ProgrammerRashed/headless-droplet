@@ -26,6 +26,7 @@ export const allProjectQuery = gql`query AllProjectQuery {
         start_date
       }
       smallDescription
+       title
     }
   }
 }`;

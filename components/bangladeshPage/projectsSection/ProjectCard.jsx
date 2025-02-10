@@ -1,5 +1,6 @@
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import { cn } from "@/lib/utils";
+import formatDate from "@/utils/formatDate";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +8,7 @@ function ProjectCard({ project }) {
   return (
     <div data-aos="fade-up" className="flex flex-col">
       <Image
-        src={project.imageLink}
+        src={project?.featuredImage.node?.mediaItemUrl}
         width={630}
         height={240}
         alt="Project Thumnail"
@@ -27,15 +28,15 @@ function ProjectCard({ project }) {
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Tenure</span>
           <span>:</span>
-          <span className="font-medium">{project.tenure}</span>
+          <span className="font-medium">{formatDate(project.tenure[0].start_date)} - {formatDate(project.tenure[0].end_date)}</span>
         </div>
       </div>
       <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">
-        {project.details}
+        {project.smallDescription}
       </p>
       <div data-aos="fade-up">
         <Link
-          href={project.pdfLink}
+          href={project.pdfFile || "/"}
           target="_blank"
           className={cn(
             "flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 stroke-red-600 px-6 py-[13px] text-sm font-semibold leading-[22px] text-red-600 transition-all duration-300 hover:bg-red-900 hover:stroke-white hover:text-white md:px-6 md:py-[15px] md:text-base md:leading-[24px]",

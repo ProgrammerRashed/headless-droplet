@@ -1,12 +1,13 @@
-import { Label } from "@/components/ui/label";
+"use client"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
-function SelectFrom() {
+function SelectFrom({ setCurrentStatus }) {
   return (
     <form data-aos="fade-up" className="mt-[25px] max-w-[490px] md:mt-[30px]">
       <RadioGroup
         defaultValue="ongoing"
         className="flex w-full flex-row items-center justify-center"
+        onValueChange={(value) => setCurrentStatus(value)} 
       >
         <label
           htmlFor="ongoing"

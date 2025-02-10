@@ -1,7 +1,8 @@
 import { gql } from "@apollo/client";
 
-export const blogQuery = gql`query BlogQuery {
-    posts(where: {categoryName: "latest_news"}) {
+export const blogQuery = gql`
+  query BlogQuery($categoryName: String!) {
+    posts(where: { categoryName: $categoryName }) {
       nodes {
         id
         slug
@@ -16,4 +17,5 @@ export const blogQuery = gql`query BlogQuery {
         }
       }
     }
-  }`
+  }
+`;

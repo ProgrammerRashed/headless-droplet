@@ -1,30 +1,66 @@
+"use client";
+import { useState, useEffect } from "react";
 import ProjectCard from "../../bangladeshPage/projectsSection/ProjectCard";
 import PaginationCustom from "../../shared/paginationCustom/PaginationCustom";
 import SelectFrom from "../selectForm/SelectFrom";
 import TabItems from "../tabItems/TabItems";
 
-function ProjectsAndProgramsSection({ data }) {
-  const { projects } = data;
+function ProjectsAndProgramsSection({ projects }) {
+  const [currentCountry, setCurrentCountry] = useState("all");
+  const [currentStatus, setCurrentStatus] = useState("ongoing"); // New state for status
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
+  useEffect(() => {
+    let filtered = projects;
+
+    // Filter by country
+    if (currentCountry !== "all") {
+      filtered = filtered.filter((project) =>
+        project.categories.nodes.some((category) => category.slug === currentCountry)
+      );
+    }
+
+    // Filter by project status
+    filtered = filtered.filter((project) => project.projectStatus.value === currentStatus);
+
+    setFilteredProjects(filtered);
+    setCurrentPage(1); // Reset to first page when filters change
+  }, [currentCountry, currentStatus, projects]);
+
+  // Pagination logic
+  const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsPerPage);
+
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
         <TabItems
+          setCurrentCountry={setCurrentCountry}
           items={[
-            { id: crypto.randomUUID(), country: "All" },
-            { id: crypto.randomUUID(), country: "Switzerland (HQ)" },
-            { id: crypto.randomUUID(), country: "Bangladesh" },
-            { id: crypto.randomUUID(), country: "India" },
-            { id: crypto.randomUUID(), country: "Kenya" },
+            { slug: "all", country: "All" },
+            { slug: "switzerland", country: "Switzerland (HQ)" },
+            { slug: "bangladesh", country: "Bangladesh" },
+            { slug: "india", country: "India" },
+            { slug: "kenya", country: "Kenya" },
           ]}
         />
         <div className="flex w-full flex-col gap-5">
-          <SelectFrom />
+          <SelectFrom setCurrentStatus={setCurrentStatus} />
           <div className="grid w-full grid-cols-1 gap-[30px] md:grid-cols-2 md:gap-x-[20px] md:gap-y-[60px] lg:gap-x-[30px]">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+            {paginatedProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
-          <PaginationCustom />
+          {filteredProjects.length > itemsPerPage && (
+            <PaginationCustom 
+              currentPage={currentPage} 
+              totalPages={totalPages} 
+              setCurrentPage={setCurrentPage} 
+            />
+          )}
         </div>
       </div>
     </section>

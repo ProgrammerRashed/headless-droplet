@@ -10,7 +10,7 @@ function OurMissionVisionCard({ card, reverse }) {
       )}
     >
       <Image
-        src={card.bannerImg}
+        src={card.bannerImg || "/thumbnail.png"}
         width={410}
         height={456}
         alt={card.title}

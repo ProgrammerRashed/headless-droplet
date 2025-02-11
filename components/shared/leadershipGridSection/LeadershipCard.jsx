@@ -29,7 +29,7 @@ const title = people?.node?.title
           )}
         >
           <Image
-            src={image}
+            src={image || "/thumbnail.png"}
             width={410}
             height={340}
             alt={title}
@@ -61,7 +61,7 @@ const title = people?.node?.title
           <div className="flex h-full w-full flex-col overflow-hidden md:flex-row md:gap-10 md:p-[30px] md:pt-20 lg:gap-[60px]">
             <div className="mb-5 h-[330px] w-full sm:h-[500px] md:mb-0 md:h-auto md:max-w-[470px]">
               <Image
-                src={image}
+                src={image || "/thumbnail.png"}
                 alt={title}
                 width={400}
                 height={440}

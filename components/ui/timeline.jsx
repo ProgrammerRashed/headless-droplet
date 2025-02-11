@@ -63,7 +63,7 @@ export const Timeline = ({ data }) => {
                   </p>
                 </div>
                 <Image
-                  src={item.imageLink}
+                  src={item.imageLink || "/thumbnail.png"}
                   width={435}
                   height={400}
                   alt=""

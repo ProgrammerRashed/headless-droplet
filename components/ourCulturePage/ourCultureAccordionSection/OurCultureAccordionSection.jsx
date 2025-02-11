@@ -10,7 +10,7 @@ function OurCultureAccordionSection({ data }) {
       <div className="container">
         <div className="flex flex-col gap-[60px] 0.5xl:flex-row 0.5xl:items-center">
           <Image
-            src={imageUrl}
+            src={imageUrl || "/thumbnail.png"}
             alt={sectionTitle}
             width={625}
             height={625}

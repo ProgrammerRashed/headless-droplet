@@ -9,7 +9,7 @@ function DonationSection({ data }) {
     <section>
       <div className="relative">
         <Image
-          src={bannerImage}
+          src={bannerImage || "/thumbnail.png"}
           width={1440}
           height={622}
           alt="Bangladesh"

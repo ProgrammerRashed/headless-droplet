@@ -10,7 +10,7 @@ function DirectorsDetailsSection({data}) {
           className="flex flex-col overflow-hidden rounded-[8px] bg-surface 0.5xl:flex-row"
         >
           <Image
-            src={image_link}
+            src={image_link || "/thumbnail.png"}
             width={560}
             height={650}
             alt={director_name}

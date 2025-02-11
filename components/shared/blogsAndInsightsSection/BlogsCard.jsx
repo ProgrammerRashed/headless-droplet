@@ -11,7 +11,7 @@ function BlogsCard({ blog }) {
     >
       <div className="mb-5 w-full overflow-hidden rounded-[8px] shadow-md group-hover:shadow-lg">
         <Image
-          src={featuredImage}
+          src={featuredImage || "/thumbnail.png"}
           alt={blog.title}
           width={410}
           height={240}

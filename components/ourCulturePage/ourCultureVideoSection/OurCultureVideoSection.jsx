@@ -36,7 +36,7 @@ function OurCultureVideoSection({ data }) {
             <Image
               width={850}
               height={482}
-              src={video?.videoThumbNail}
+              src={video?.videoThumbNail || "/thumbnail.png"}
               alt="Farming transforms video thumbnail"
               className="absolute inset-0 h-full w-full object-cover"
             />

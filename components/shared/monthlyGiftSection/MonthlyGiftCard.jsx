@@ -6,7 +6,7 @@ function MonthlyGiftCard({ card }) {
     <div data-aos="fade-up" className="group flex flex-col gap-[15px] md:gap-5">
       <div className="relative overflow-hidden rounded-[8px]">
         <Image
-          src={card.imageLink}
+          src={card.imageLink || "/thumbnail.png"}
           alt={card.title}
           width={410}
           height={238}

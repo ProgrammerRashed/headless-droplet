@@ -25,7 +25,7 @@ function SideBySideSection({ heading, secondaryHeading, details, bannerImg }) {
           </div>
           <Image
             data-aos="fade-up"
-            src={bannerImg}
+            src={bannerImg || "/thumbnail.png"}
             width={625}
             height={625}
             alt=""

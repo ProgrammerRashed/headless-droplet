@@ -7,7 +7,7 @@ function ProjectCard( {project} ) {
   return (
     <div data-aos="fade-up" className="flex flex-col">
       <Image
-        src={project?.featuredImage?.node?.mediaItemUrl}
+        src={project?.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
         width={630}
         height={240}
         alt="Project Thumnail"

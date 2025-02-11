@@ -8,7 +8,7 @@ function DownloadBooksCard({ book }) {
       className="flex flex-row gap-[15px] overflow-hidden rounded-[8px] border border-gray-50 bg-white shadow-sm md:gap-[30px]"
     >
       <Image
-        src={book.image}
+        src={book.image || "/thumbnail.png"}
         width={200}
         height={200}
         alt={book.title}

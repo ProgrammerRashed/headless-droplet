@@ -10,7 +10,7 @@ function PhotoGalleryTrigger({ gallery }) {
             className="w-full overflow-hidden rounded-[8px] first-of-type:row-span-2"
           >
             <Image
-              src={image.imageUrl}
+              src={image.imageUrl || "/thumbnail.png"}
               height={240}
               width={200}
               alt={image.caption}

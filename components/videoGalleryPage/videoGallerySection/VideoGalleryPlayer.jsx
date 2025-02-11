@@ -33,7 +33,7 @@ function VideoGalleryPlayer({ video, isPlaying, onPlay }) {
           <Image
             width={850}
             height={482}
-            src={video?.video_thumbnail}
+            src={video?.video_thumbnail || "/thumbnail.png"}
             alt="Farming transforms video thumbnail"
             className="absolute inset-0 h-full w-full rounded-[8px] object-cover"
           />

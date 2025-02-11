@@ -17,7 +17,7 @@ function DirectorsSaySection({data}) {
         <div className="md: mx-auto flex w-full flex-col items-center gap-[30px] md:flex-row md:justify-center md:gap-[60px] xl:items-start">
           <Image
             data-aos="fade-up"
-            src={director_image}
+            src={director_image || "/thumbnail.png"}
             width={260}
             height={260}
             alt={director_name}

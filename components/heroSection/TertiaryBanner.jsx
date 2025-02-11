@@ -19,7 +19,7 @@ function TertiaryBanner({ data }) {
       </div>
       {bannerCover && (
         <Image
-          src={bannerCover}
+          src={bannerCover || "/thumbnail.png"}
           width={1440}
           height={441}
           alt="Primary banner"

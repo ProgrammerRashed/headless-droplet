@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 function ProjectDetailsBanner({ data }) {
-  const { sectionHeading, donor, tenure, linkDetails, bannerImgLink } = data;
+  const { sectionHeading, donor, tenure, linkDetails, bannerImageLink } = data;
   return (
     <section>
       <div
@@ -47,7 +47,7 @@ function ProjectDetailsBanner({ data }) {
         </div>
       </div>
       <Image
-        src={bannerImgLink}
+        src={bannerImageLink || "/thumbnail.png"}
         width={1440}
         height={508}
         alt=""

@@ -49,7 +49,7 @@ function SideBySideBulletPoints({ data }) {
           </div>
           <Image
             data-aos="fade-up"
-            src={bannerImage}
+            src={bannerImage  || "/thumbnail.png"}
             width={625}
             height={625}
             alt=""

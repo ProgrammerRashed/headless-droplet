@@ -15,7 +15,7 @@ function MainHeader({
     <div className="flex items-center justify-between gap-3 py-[10px] 0.5xl:py-0 3xl:gap-5">
       <Link href="/" onClick={() => setIsMobileNavOpen(false)}>
         <Image
-          src={logoLink}
+          src={logoLink || "/thumbnail.png"}
           width={253}
           height={55}
           alt="SAF logo"

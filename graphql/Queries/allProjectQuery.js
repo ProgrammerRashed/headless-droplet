@@ -1,8 +1,13 @@
 import { gql } from "@apollo/client";
 
 export const allProjectQuery = gql`
-  query AllProjectQuery($ids: [ID!]) {
-    projects(where: { in: $ids }) {
+  query AllProjectQuery($ids: [ID!], $category: String) {
+    projects(
+      where: {
+        in: $ids
+        categoryName: $category
+      }
+    ) {
       nodes {
         content
         donor

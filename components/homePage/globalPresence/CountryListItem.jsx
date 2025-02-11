@@ -4,7 +4,7 @@ function CountryListItem({ country }) {
   return (
     <div className="flex items-center justify-center gap-1 rounded-[4px] bg-white p-2 shadow-lg lg:w-full lg:justify-start">
       <Image
-        src={country?.flag_icon}
+        src={country?.flag_icon || "/thumbnail.png"}
         width={15}
         height={15}
         alt={country?.country_name}

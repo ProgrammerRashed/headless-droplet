@@ -13,7 +13,7 @@ function OurStrategySection({
       <div className="container">
         <div className="flex flex-col gap-[30px] md:gap-10 0.5xl:flex-row-reverse 0.5xl:justify-between">
           <Image
-            src={bannerImg}
+            src={bannerImg || "/thumbnail.png"}
             alt=""
             width={625}
             height={625}

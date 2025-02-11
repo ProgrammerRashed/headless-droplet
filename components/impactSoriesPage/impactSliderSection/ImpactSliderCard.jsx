@@ -6,7 +6,7 @@ function ImpactSliderCard({ card }) {
     <div className="flex flex-col items-stretch lg:flex-row lg:justify-between lg:gap-10 xl:gap-[60px]">
       <div className="relative overflow-hidden rounded-[8px] lg:flex-grow">
         <Image
-          src={card.bannerImage}
+          src={card.bannerImage || "/thumbnail.png"}
           width={615}
           height={338}
           alt=""

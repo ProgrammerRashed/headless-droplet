@@ -8,7 +8,7 @@ function FooterTop({ footerLogo, footerDonation, socialLinks }) {
     <div className="flex flex-col border-b border-white/10 pb-5 md:flex-row md:items-center md:justify-between md:pb-[25px]">
       <Link href="/">
         <Image
-          src={footerLogo}
+          src={footerLogo || "/thumbnail.png"}
           width={283}
           height={60}
           alt="SAF logo"

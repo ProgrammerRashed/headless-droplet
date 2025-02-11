@@ -36,7 +36,7 @@ function SecondaryBanner({ data }) {
       </div>
       {is_banner_cover && (
         <Image
-          src={cover_image}
+          src={cover_image || "/thumbnail.png"}
           width={1440}
           height={441}
           alt="Primary banner"

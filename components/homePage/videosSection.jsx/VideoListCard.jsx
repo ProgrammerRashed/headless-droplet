@@ -9,7 +9,7 @@ function VideoListCard({ video, onSelectedVideo }) {
       <div className="hover:border-red-800 flex flex-row items-center gap-5 rounded-[4px] border-2 border-transparent p-2 transition-all duration-300 hover:bg-surface">
         <div className="relative md:h-[80px] md:min-w-[120px] lg:h-[99px] lg:min-w-[160px]">
           <Image
-            src={video?.video_thumbnail || "http://saf.local/wp-content/uploads/2025/02/video-thumbnail-1.png" }
+            src={video?.video_thumbnail || "/thumbnail.png" }
             alt={video?.video_title}
             width={160}
             height={99}

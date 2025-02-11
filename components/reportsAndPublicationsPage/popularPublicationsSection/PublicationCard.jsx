@@ -8,7 +8,7 @@ function PublicationCard({ card }) {
       <div className="relative flex items-center justify-center rounded-t-[8px] bg-gray-50 p-[10px] lg:p-4">
         <div className="w-full overflow-hidden rounded-[4px]">
           <Image
-            src={card.bannerImage}
+            src={card.bannerImage || "/thumbnail.png"}
             height={372}
             width={467}
             className="aspect-[280/317] w-full object-cover transition-all duration-300 group-hover:scale-105 lg:aspect-[372/467]"

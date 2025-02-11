@@ -5,7 +5,7 @@ function AboutCountrySection({data}) {
   return (
     <section>
       <Image
-        src={banner_image}
+        src={banner_image || "/thumbnail.png"}
         width={1440}
         height={622}
         alt="Bangladesh"

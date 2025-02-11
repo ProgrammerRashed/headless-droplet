@@ -8,7 +8,7 @@ function AnnualReportCard({ card }) {
     >
       <div className="overflow-hidden rounded-[4px]">
         <Image
-          src={card.bannerImage}
+          src={card.bannerImage || "/thumbnail.png"}
           width={72}
           height={72}
           alt=""

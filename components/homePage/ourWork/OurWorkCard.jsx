@@ -10,7 +10,7 @@ function OurWorkCard({ card }) {
     >
       <div className="inset-0 overflow-hidden rounded-[8px]">
         <Image
-          src={bg_image}
+          src={bg_image || "/thumbnail.png"}
           width={410}
           height={380}
           alt={heading}

@@ -52,7 +52,7 @@ function PhotoGalleryContent({ gallery }) {
             {gallery?.gallery?.map((image) => (
               <SwiperSlide key={image.id}>
                 <Image
-                  src={image.imageUrl}
+                  src={image.imageUrl || "/thumbnail.png"}
                   height={750}
                   width={1290}
                   alt={image.caption}

@@ -25,7 +25,7 @@ function OurWorkSection({ data }) {
         </div>
       </div>
       <Image
-        src={bg_cover_image}
+        src={bg_cover_image || "/thumbnail.png"}
         width={1440}
         height={1098}
         alt="Our work cover"

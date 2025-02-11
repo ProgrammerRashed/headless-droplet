@@ -69,7 +69,7 @@ function SDGSCard({ card }) {
           {card.title}
         </p>
         <Image
-          src={card.icon}
+          src={card.icon || "/thumbnail.png"}
           alt="No provery icon"
           width={100}
           height={100}
@@ -115,7 +115,7 @@ function SDGSCard({ card }) {
         </button>
       </div>
       <Image
-        src={card.bg_img}
+        src={card.bg_img || "/thumbnail.png"}
         alt={card.title}
         width={158}
         height={192}

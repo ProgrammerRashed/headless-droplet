@@ -34,7 +34,7 @@ function NavigationMenuSingleItem({ navigation }) {
         </div>
         <div className="h-full w-auto overflow-hidden border-l border-gray-600/10 p-5">
           <Image
-            src={navigation?.banner_image}
+            src={navigation?.banner_image || "/thumbnail.png"}
             width={374}
             height={360}
             alt="About us"

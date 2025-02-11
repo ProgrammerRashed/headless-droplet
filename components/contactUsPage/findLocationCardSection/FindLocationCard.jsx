@@ -9,7 +9,7 @@ function FindLocationCard({ country }) {
     >
       <div className="overflow-hidden rounded-t-[4px]">
         <Image
-          src={country.imageLink}
+          src={country.imageLink || "/thumbnail.png"}
           width={630}
           height={220}
           alt=""

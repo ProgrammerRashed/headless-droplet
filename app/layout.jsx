@@ -1,12 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import FooterSection from "@/components/footer/FooterSection";
-import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
 import AOSWrapper from "@/utils/AOSWrapper";
 import { ReactLenis } from "@/utils/lenis";
-import DonationButton from "@/components/shared/donationButton/DonationButton";
-import getMenuDataHelper from "@/utils/getMenuDataHelper";
-
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "900"],
@@ -20,11 +15,6 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const menuData = await getMenuDataHelper()
-
-  
-  const donationDetails = menuData?.customNavigationBy?.donationDetails[0];
-
   return (
     <html lang="en">
       <ReactLenis root>
@@ -32,10 +22,7 @@ export default async function RootLayout({ children }) {
           className={`${poppins.variable} relative font-poppins antialiased`}
         >
           <AOSWrapper>
-            <HeaderSection data={menuData}/>
-            <DonationButton data={donationDetails}/>
             {children}
-            <FooterSection data={menuData}/>
           </AOSWrapper>
         </body>
       </ReactLenis>

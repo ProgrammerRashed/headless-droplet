@@ -1,9 +1,11 @@
+import CountryContactUsSection from "./bangladeshContactUsPage/bangladeshContactUsSection/CountryContactUsSection";
 import AboutCountrySection from "./bangladeshPage/aboutCountrysection/AboutCountrySection";
 import LocalMapSection from "./bangladeshPage/localMapSection/LocalMapSection";
 import OurImpactSection from "./bangladeshPage/ourImpact/OurImpactSection";
 import ProjectSectionWrapper from "./bangladeshPage/projectsSection/ProjectSectionWrapper";
 import HeroSection from "./heroSection/HeroSection";
 import SecondaryBanner from "./heroSection/SecondaryBanner";
+import TertiaryBanner from "./heroSection/TertiaryBanner";
 import AboutSAFSection from "./homePage/aboutSAF/AboutSAFSection";
 import CounterSection from "./homePage/counterSection/CounterSection";
 import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
@@ -44,6 +46,8 @@ const blockComponentsMapping = {
   'carbon-fields/director-details-section': DirectorsDetailsSection,
   'carbon-fields/projects-programs-section': ProjectSectionWrapper,
   'carbon-fields/project-and-programs-page': ProjectAndProgramsWrapper,
+  'carbon-fields/contact-us-banner': TertiaryBanner,
+  'carbon-fields/country-contact-us-section': CountryContactUsSection,
   
  
 };

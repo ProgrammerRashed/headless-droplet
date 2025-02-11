@@ -4,7 +4,7 @@ import BreadCrumb from "../shared/BreadCrumb";
 import { cn } from "@/lib/utils";
 
 function TertiaryBanner({ data }) {
-  const { bannerCover } = data;
+  const { banner_cover } = data?.data;
   return (
     <section className="relative h-[254px] w-full md:h-[441px]">
       <div className={cn("z-0 flex h-full w-full pt-[68px] xl:pt-[141px]")}>
@@ -17,9 +17,9 @@ function TertiaryBanner({ data }) {
           </div>
         </div>
       </div>
-      {bannerCover && (
+      {banner_cover && (
         <Image
-          src={bannerCover || "/thumbnail.png"}
+          src={banner_cover || "/thumbnail.png"}
           width={1440}
           height={441}
           alt="Primary banner"

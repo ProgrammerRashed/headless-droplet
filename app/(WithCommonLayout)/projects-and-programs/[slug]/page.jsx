@@ -1,6 +1,7 @@
 import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
 import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
 import ProjectDetailsBanner from "@/components/donationPage/projectDetailsBanner/ProjectDetailsBanner";
+import { getProjectsByCategory } from "@/graphql/Components/getProjectsByCategory";
 import { getSingleProject } from "@/graphql/Components/getSingleProject";
 import formatDate from "@/utils/formatDate";
 
@@ -16,20 +17,17 @@ async function ProjectDetailsPage({params}) {
   }
   const sectionHeading = singleProjectData?.title
   const content = singleProjectData?.content
-  const category = singleProjectData?.categories?.nodes?.map(cat => cat.slug)?.filter(slug => slug !== 'all-projects');
-  console.log(category)
+  const category = singleProjectData?.categories?.nodes?.map(cat => cat.slug)?.filter(slug => slug !== 'all-projects')[0];
+  const specificProjects = await getProjectsByCategory(category);
 
-  //DATA FOR RELATED PROJECT SECTION
-    // const projectsArray = data.data.projects;
-    //   const idsArray = projectsArray.map(project => project.id);
-    //   const specificProjects = await getAllProjects(idsArray);
-    //   const SectionTitle = data.data.sectionTitle;
-    //   const viewAllBtnDetails = {
-    //       title: data.data.view_all_btn_details[0].title,
-    //       link: data.data.view_all_btn_details[0].link
-    //   }
-    //   const projects = specificProjects
-    //   const titlePositionClassName = data.data.project_title_classname
+  // DATA FOR RELATED PROJECT SECTION
+      const SectionTitle = "Related Projects & Programs";
+      const viewAllBtnDetails = {
+          title: "View All",
+          link:"/projects-and-programs"
+      }
+      const projects = specificProjects.slice(0, 2)
+      const titlePositionClassName =  "text-left"
   return (
     <>
       <ProjectDetailsBanner
@@ -48,7 +46,7 @@ async function ProjectDetailsPage({params}) {
           content: content,
         }}
       />
-     {/* <ProjectSection SectionTitle={SectionTitle}  viewAllBtnDetails={viewAllBtnDetails} projects={projects} titlePositionClassName={titlePositionClassName}/> */}
+     <ProjectSection SectionTitle={SectionTitle}  viewAllBtnDetails={viewAllBtnDetails} projects={projects} titlePositionClassName={titlePositionClassName}/>
     </>
   );
 }

@@ -25,7 +25,7 @@ function MobileNavLinks({ navigations, buttonDetails, setIsMobileNavOpen }) {
         href={buttonDetails[0]?.link}
         className="mt-4 w-full justify-center border-0 bg-green-800 stroke-white text-white hover:bg-green-900"
       >
-        {buttonDetails[0]?.title}
+        {buttonDetails[0]?.title || "Contact Us"}
       </PrimaryButton>
     </div>
   );

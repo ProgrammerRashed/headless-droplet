@@ -6,7 +6,10 @@ import Link from "next/link";
 function ProjectCard( {project} ) {
   return (
     <div data-aos="fade-up" className="flex flex-col">
-      <Image
+     <Link 
+     href={  `/projects-and-programs/${project.slug}` || "/"}
+     >
+     <Image
         src={project?.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
         width={630}
         height={240}
@@ -16,6 +19,7 @@ function ProjectCard( {project} ) {
       <h3 className="mb-[10px] line-clamp-2 min-h-[56px] text-[22px] font-semibold leading-[28px] text-gray-800 0.5xl:min-h-[84px] 0.5xl:text-[32px] 0.5xl:font-bold 0.5xl:leading-[42px]">
         {project.title}
       </h3>
+     </Link>
       <div className="mb-[10px] flex w-full flex-col gap-2 text-base font-normal leading-[26px] text-gray-800 0.5xl:mb-[30px] 0.5xl:text-[22px] 0.5xl:leading-[32px]">
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Donor</span>

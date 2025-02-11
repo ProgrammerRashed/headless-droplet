@@ -1,9 +1,11 @@
 import { cn } from "@/lib/utils";
+import formatDate from "@/utils/formatDate";
 import Image from "next/image";
 
 function BlogsCard({ blog }) {
   const featuredImage = blog.featuredImage?.node.mediaItemUrl;
   const imageHeightClassName = blog?.imageHeight || null
+  const fromatedDate = formatDate(blog.date);
   return (
     <div
       data-aos="fade-up"
@@ -22,9 +24,9 @@ function BlogsCard({ blog }) {
         />
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">
-        <p className="line-clamp-2 text-green-700">{blog?.customCategory}</p>
+        <p className="line-clamp-2 text-green-700">{blog?.customCategory || "Category"}</p>
         <div className="h-[5px] w-[5px] rounded-full bg-gray-50"></div>
-        <p className="text-gray-400">{blog.date}</p>
+        <p className="text-gray-400">{fromatedDate }</p>
       </div>
       <h4 className="text-dark line-clamp-2 text-lg font-medium leading-[28px] transition-all duration-300 hover:underline sm:text-[22px] sm:leading-[32px]">
         {blog.title}

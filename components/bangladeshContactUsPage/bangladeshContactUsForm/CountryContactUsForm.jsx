@@ -10,15 +10,15 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
-function BangladeshContactUsForm() {
+function CountryContactUsForm({section_heading, section_description}) {
   return (
     <div className="flex w-full flex-grow flex-col gap-10 border-b border-gray-50 pb-[30px] 0.5xl:max-w-[740px] 0.5xl:border-b-0 0.5xl:border-r 0.5xl:pb-0 0.5xl:pr-[30px]">
       <div className="flex flex-col gap-[10px]">
         <h3 className="text-[30px] font-bold leading-[40px] tracking-[1%] text-gray-800 md:text-[32px] md:font-bold md:leading-[42px]">
-          Contact Us
+          {section_heading}
         </h3>
         <p className="text-base font-normal leading-[26px] text-gray-600">
-          We are here to help you with any questions you may have.
+        {section_description}
         </p>
       </div>
       <form className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
@@ -215,4 +215,4 @@ function BangladeshContactUsForm() {
   );
 }
 
-export default BangladeshContactUsForm;
+export default CountryContactUsForm;

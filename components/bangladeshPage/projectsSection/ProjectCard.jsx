@@ -1,4 +1,3 @@
-import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import { cn } from "@/lib/utils";
 import formatDate from "@/utils/formatDate";
 import Image from "next/image";
@@ -8,7 +7,7 @@ function ProjectCard( {project} ) {
   return (
     <div data-aos="fade-up" className="flex flex-col">
       <Image
-        src={project?.featuredImage.node?.mediaItemUrl}
+        src={project?.featuredImage?.node?.mediaItemUrl}
         width={630}
         height={240}
         alt="Project Thumnail"
@@ -28,7 +27,7 @@ function ProjectCard( {project} ) {
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
           <span className="text-gray-600">Tenure</span>
           <span>:</span>
-          <span className="font-medium">{formatDate(project.tenure[0].start_date)} - {formatDate(project.tenure[0].end_date)}</span>
+          <span className="font-medium">{formatDate(project?.tenure[0]?.start_date) || "No Date Found" } - {formatDate(project?.tenure[0]?.end_date) || "No Date Found"}</span>
         </div>
       </div>
       <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">

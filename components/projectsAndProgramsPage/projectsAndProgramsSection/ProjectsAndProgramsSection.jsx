@@ -62,6 +62,11 @@ function ProjectsAndProgramsSection({ projects, category }) {
         <div className="flex w-full flex-col gap-5">
           <SelectFrom setCurrentStatus={setCurrentStatus} />
           <div className="grid w-full grid-cols-1 gap-[30px] md:grid-cols-2 md:gap-x-[20px] md:gap-y-[60px] lg:gap-x-[30px]">
+            {
+              filteredProjects?.length < 1 && (<div className="min-h-[50vh] flex justify-center items-center col-span-2">
+                <p className="lg:text-3xl lg:max-w-[700px] text-center max-w-[300px] text-lg">There are currently no projects to display. Stay tuned for exciting updates coming soon!</p>
+              </div>)
+            }
             {paginatedProjects?.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}

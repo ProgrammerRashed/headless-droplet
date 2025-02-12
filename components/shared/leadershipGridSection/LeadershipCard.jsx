@@ -78,7 +78,7 @@ const title = people?.node?.title
                 </DialogDescription>
               </DialogHeader>
               <p className="text-base font-normal leading-[26px] text-gray-600">
-                {people.node?.content.replace(/<\/?[^>]+(>|$)/g, '')}
+                {people.node?.content?.replace(/<\/?[^>]+(>|$)/g, '')}
               </p>
             </div>
           </div>

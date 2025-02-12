@@ -6,7 +6,7 @@ function ImpactSliderCard({ card }) {
     <div className="flex flex-col items-stretch lg:flex-row lg:justify-between lg:gap-10 xl:gap-[60px]">
       <div className="relative overflow-hidden rounded-[8px] lg:flex-grow">
         <Image
-          src={card.bannerImage || "/thumbnail.png"}
+          src={card.bannerImage || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
           width={615}
           height={338}
           alt=""

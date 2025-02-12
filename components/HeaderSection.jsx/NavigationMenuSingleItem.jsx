@@ -34,7 +34,7 @@ function NavigationMenuSingleItem({ navigation }) {
         </div>
         <div className="h-full w-auto overflow-hidden border-l border-gray-600/10 p-5">
           <Image
-            src={navigation?.banner_image || "/thumbnail.png"}
+            src={navigation?.banner_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             width={374}
             height={360}
             alt="About us"

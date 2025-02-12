@@ -14,7 +14,7 @@ function LocalMapSection({ data }) {
         <div className="mt-10 flex items-center justify-center px-5 md:mt-20">
           <Image
             data-aos="fade-up"
-            src={map_image || "/thumbnail.png"}
+            src={map_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             alt="Map Image"
             width={700}
             height={700}

@@ -10,7 +10,7 @@ function PhotoGalleryTrigger({ gallery }) {
             className="w-full overflow-hidden rounded-[8px] first-of-type:row-span-2"
           >
             <Image
-              src={image.imageUrl || "/thumbnail.png"}
+              src={image.imageUrl || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
               height={240}
               width={200}
               alt={image.caption}

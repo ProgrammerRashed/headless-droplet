@@ -15,7 +15,7 @@ function OurStrategySection({data}) {
       <div className="container">
         <div className="flex flex-col gap-[30px] md:gap-10 0.5xl:flex-row-reverse 0.5xl:justify-between">
           <Image
-            src={banner_img || "/thumbnail.png"}
+            src={banner_img || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             alt={section_title || "" }
             width={625}
             height={625}

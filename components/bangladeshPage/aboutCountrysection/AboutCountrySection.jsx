@@ -5,7 +5,7 @@ function AboutCountrySection({data}) {
   return (
     <section>
       <Image
-        src={banner_image || "/thumbnail.png"}
+        src={banner_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
         width={1440}
         height={622}
         alt="Bangladesh"

@@ -18,7 +18,7 @@ function MissionVissionSection({ data }) {
       <div data-aos="fade-up" className="container">
         <div className="flex w-full flex-col gap-[30px] rounded-[16px] bg-surface p-[10px] sm:p-5 md:gap-10 md:p-10 xl:flex-row-reverse xl:items-center xl:gap-[60px] xl:p-0 xl:pl-[30px]">
           <Image
-            src={cover_image || "/thumbnail.png"}
+            src={cover_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             width={587}
             height={456}
             alt="Mission vission banner"

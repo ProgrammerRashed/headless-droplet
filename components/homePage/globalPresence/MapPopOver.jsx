@@ -14,7 +14,7 @@ function MapPopOver({ styles, country }) {
     >
       <div className="flex w-full flex-col p-[15px]">
         <Image
-          src={country?.country_image || "/thumbnail.png"}
+          src={country?.country_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
           alt={country?.title}
           width={220}
           height={140}

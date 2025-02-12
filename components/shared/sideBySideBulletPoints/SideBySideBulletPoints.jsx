@@ -49,7 +49,7 @@ function SideBySideBulletPoints({ data }) {
           </div>
           <Image
             data-aos="fade-up"
-            src={bannerImage  || "/thumbnail.png"}
+            src={bannerImage  || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             width={625}
             height={625}
             alt=""

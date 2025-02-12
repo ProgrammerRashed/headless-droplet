@@ -8,7 +8,7 @@ function AnnualReportCard({ card }) {
     >
       <div className="overflow-hidden rounded-[4px]">
         <Image
-          src={card.bannerImage || "/thumbnail.png"}
+          src={card.bannerImage || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
           width={72}
           height={72}
           alt=""

@@ -10,7 +10,7 @@ function ProjectCard( {project} ) {
      href={  `/projects-and-programs/${project.slug}` || "/"}
      >
      <Image
-        src={project?.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
+        src={project?.featuredImage?.node?.mediaItemUrl || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
         width={630}
         height={240}
         alt="Project Thumnail"

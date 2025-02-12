@@ -47,7 +47,7 @@ function ProjectDetailsBanner({ data }) {
         </div>
       </div>
       <Image
-        src={bannerImageLink || "/thumbnail.png"}
+        src={bannerImageLink || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
         width={1440}
         height={508}
         alt=""

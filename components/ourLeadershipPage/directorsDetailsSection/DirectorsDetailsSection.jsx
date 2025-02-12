@@ -10,7 +10,7 @@ function DirectorsDetailsSection({data}) {
           className="flex flex-col overflow-hidden rounded-[8px] bg-surface 0.5xl:flex-row"
         >
           <Image
-            src={image_link || "/thumbnail.png"}
+            src={image_link || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             width={560}
             height={650}
             alt={director_name}

@@ -19,7 +19,7 @@ function TertiaryBanner({ data }) {
       </div>
       {banner_cover && (
         <Image
-          src={banner_cover || "/thumbnail.png"}
+          src={banner_cover || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
           width={1440}
           height={441}
           alt="Primary banner"

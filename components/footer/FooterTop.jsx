@@ -8,7 +8,7 @@ function FooterTop({ footerLogo, footerDonation, socialLinks }) {
     <div className="flex flex-col border-b border-white/10 pb-5 md:flex-row md:items-center md:justify-between md:pb-[25px]">
       <Link href="/">
         <Image
-          src={footerLogo || "/thumbnail.png"}
+          src={footerLogo || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
           width={283}
           height={60}
           alt="SAF logo"

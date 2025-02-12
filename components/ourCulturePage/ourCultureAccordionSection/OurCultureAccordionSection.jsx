@@ -10,7 +10,7 @@ function OurCultureAccordionSection({ data }) {
       <div className="container">
         <div className="flex flex-col gap-[60px] 0.5xl:flex-row 0.5xl:items-center">
           <Image
-            src={imageUrl || "/thumbnail.png"}
+            src={imageUrl || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
             alt={sectionTitle}
             width={625}
             height={625}

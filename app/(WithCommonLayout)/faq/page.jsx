@@ -1,10 +1,10 @@
-import FAQSection from "@/components/donationPage/faqSection/FAQSection";
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import FAQSection from "@/components/donationPage/faqSection/FAQSection";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 
 function FAQPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "FAQ",
           bannerCover: "/hero-banners/donors-and-partners.jpg",
@@ -64,7 +64,7 @@ function FAQPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

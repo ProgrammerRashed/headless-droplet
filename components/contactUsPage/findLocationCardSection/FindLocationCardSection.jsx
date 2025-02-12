@@ -3,7 +3,6 @@ import FindLocationCard from "./FindLocationCard";
 
 function FindLocationCardSection({ data }) {
   const { section_heading, countries } = data?.data;
-  console.log(countries)
   return (
     <section className="bg-surface py-[50px] md:py-20">
       <div className="container">

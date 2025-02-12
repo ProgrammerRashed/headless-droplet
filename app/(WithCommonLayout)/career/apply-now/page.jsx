@@ -1,9 +1,9 @@
-import ApplyNowSection from "@/components/applyNowPage/applyNowSection/ApplyNowSection";
+// import ApplyNowSection from "@/components/applyNowPage/applyNowSection/ApplyNowSection";
 
 function ApplyNowPage() {
   return (
     <>
-      <ApplyNowSection />
+      {/* <ApplyNowSection /> */}
     </>
   );
 }

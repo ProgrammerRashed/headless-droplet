@@ -1,15 +1,15 @@
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 import VideoGallerySection from "@/components/videoGalleryPage/videoGallerySection/VideoGallerySection";
 
 function VideoGalleryPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "Video Gallery",
           bannerCover: "/hero-banners/video-gallery.jpg",
         }}
-      />
+      /> */}
       <VideoGallerySection
         data={{
           videos: [

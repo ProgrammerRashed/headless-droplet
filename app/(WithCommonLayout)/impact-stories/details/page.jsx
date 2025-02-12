@@ -1,11 +1,11 @@
-import DetailsBannerSection from "@/components/detailsPage/detailsBannerSection/DetailsBannerSection";
-import RealatedStoriesSliderSection from "@/components/detailsPage/realatedStoriesSliderSection/RealatedStoriesSliderSection";
-import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
+// import DetailsBannerSection from "@/components/detailsPage/detailsBannerSection/DetailsBannerSection";
+// import RealatedStoriesSliderSection from "@/components/detailsPage/realatedStoriesSliderSection/RealatedStoriesSliderSection";
+// import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
 
 function DetailsPage() {
   return (
     <>
-      <DetailsBannerSection
+      {/* <DetailsBannerSection
         data={{
           sectionTitle:
             "Magic Herbs to not miss in Your Garden Medicinal plants",
@@ -165,7 +165,7 @@ function DetailsPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

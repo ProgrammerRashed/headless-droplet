@@ -1,14 +1,15 @@
-import CardSliderSection from "@/components/donationPage/cardSliderSection/CardSliderSection";
-import DonationSection from "@/components/donationPage/donationSection/DonationSection";
-import FAQSection from "@/components/donationPage/faqSection/FAQSection";
-import MonthlyGiftSection from "@/components/donationPage/monthlyGiftSection/MonthlyGiftSection";
-import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
-import HeroWithLink from "@/components/heroSection/HeroWithLink";
+// import CardSliderSection from "@/components/donationPage/cardSliderSection/CardSliderSection";
+// import DonationSection from "@/components/donationPage/donationSection/DonationSection";
+// import FAQSection from "@/components/donationPage/faqSection/FAQSection";
+// import MonthlyGiftSection from "@/components/donationPage/monthlyGiftSection/MonthlyGiftSection";
+// import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
+// import HeroWithLink from "@/components/heroSection/HeroWithLink";
 
 function DonationPage() {
   return (
     <>
-      <HeroWithLink
+    <p>Upcomming</p>
+      {/* <HeroWithLink
         data={{
           sectionHeading: "A small Act, a big Impact.",
           linkDetails: { title: "Contact Us to Donate", link: "/" },
@@ -195,7 +196,7 @@ function DonationPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

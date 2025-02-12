@@ -1,10 +1,10 @@
-import JobDetailsHeroSection from "@/components/detailsPage/jobDetailsHeroSection/JobDetailsHeroSection";
-import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
+// import JobDetailsHeroSection from "@/components/detailsPage/jobDetailsHeroSection/JobDetailsHeroSection";
+// import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
 
 function JobDetailsPage() {
   return (
     <>
-      <JobDetailsHeroSection
+      {/* <JobDetailsHeroSection
         data={{
           sectionHeading: "Program Officer Emergency",
           linkDetails: { title: "Apply Now", link: "/" },
@@ -114,7 +114,7 @@ function JobDetailsPage() {
             <p>SAF is committed to fostering a diverse, inclusive, and equitable workplace where every individual, regardless of gender identity, is given equal opportunities to thrive. We encourage applications from candidates of all genders and prioritize creating a work environment that supports gender equality at all levels.</p>
     `,
         }}
-      />
+      /> */}
     </>
   );
 }

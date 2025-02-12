@@ -1,11 +1,11 @@
-import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
-import OurPartnersSections from "@/components/shared/ourPartnersSection/OurPartnersSections";
+// import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import OurPartnersSections from "@/components/shared/ourPartnersSection/OurPartnersSections";
 
 function DonorsAndPartnersPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "Donors and Partners",
           bannerCover: "/hero-banners/donors-and-partners.jpg",
@@ -139,7 +139,7 @@ function DonorsAndPartnersPage() {
             "Lorem ipsum dolor sit amet consectetur. Turpis malesuada tincidunt fames bibendum id vitae. Pretium laoreet arcu urna mattis mattis lectus massa viverra ut. Vitae in sed arcu augue porta viverra tristique eu. Porta in arcu neque metus sem sed. Pulvinar vulputate tortor et et porttitor at cras. Arcu in parturient a integer nulla. Eget maecenas mi pretium posuere proin ut massa morbi amet. Netus tellus aliquet id eleifend. Fermentum enim quis cursus lacus.",
           buttonPrimaryDetails: { title: "Join Now", link: "/" },
         }}
-      />
+      /> */}
     </>
   );
 }

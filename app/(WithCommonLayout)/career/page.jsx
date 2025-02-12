@@ -1,13 +1,13 @@
-import CurrentOpeningSection from "@/components/careerPage/currentOpeningSection.jsx/CurrentOpeningSection";
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
-import OurCultureAccordionSection from "@/components/ourCulturePage/ourCultureAccordionSection/OurCultureAccordionSection";
-import OurValuesSection from "@/components/shared/ourValuesSection/OurValuesSection";
-import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
+// import CurrentOpeningSection from "@/components/careerPage/currentOpeningSection.jsx/CurrentOpeningSection";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import OurCultureAccordionSection from "@/components/ourCulturePage/ourCultureAccordionSection/OurCultureAccordionSection";
+// import OurValuesSection from "@/components/shared/ourValuesSection/OurValuesSection";
+// import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
 
 function CareerPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "Career",
           bannerCover: "/hero-banners/donors-and-partners.jpg",
@@ -134,7 +134,7 @@ function CareerPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

@@ -1,11 +1,11 @@
-import EoiSection from "@/components/eoiAndTenderPage/eoiSection/EoiSection";
-import TenderSection from "@/components/eoiAndTenderPage/tenderSection/TenderSection";
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import EoiSection from "@/components/eoiAndTenderPage/eoiSection/EoiSection";
+// import TenderSection from "@/components/eoiAndTenderPage/tenderSection/TenderSection";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 
 function EIOAndInvolvedPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "EOI & Tender",
           bannerCover: "/hero-banners/eoi-and-involved.jpg",
@@ -160,7 +160,7 @@ function EIOAndInvolvedPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

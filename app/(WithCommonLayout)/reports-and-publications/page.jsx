@@ -1,4 +1,4 @@
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
 import AnnualReportSection from "@/components/reportsAndPublicationsPage/annualReportsSection/AnnualReportSection";
 import FeaturedPublicationsSection from "@/components/reportsAndPublicationsPage/featuredPublicationsSection/FeaturedPublicationsSection";
 import PopularPublicationsSection from "@/components/reportsAndPublicationsPage/popularPublicationsSection/PopularPublicationsSection";
@@ -6,12 +6,12 @@ import PopularPublicationsSection from "@/components/reportsAndPublicationsPage/
 function ReportsAndPublicationsPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "Reports & Publications",
           bannerCover: "/hero-banners/reports-and-publications.jpg",
         }}
-      />
+      /> */}
       <FeaturedPublicationsSection
         data={{
           sectionTitle: "Featured Publications",

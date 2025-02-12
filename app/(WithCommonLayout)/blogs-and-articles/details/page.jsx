@@ -1,11 +1,9 @@
-import DetailsBannerSection from "@/components/detailsPage/detailsBannerSection/DetailsBannerSection";
-import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
-import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
+
 
 function DetailsPage() {
   return (
     <>
-      <DetailsBannerSection
+      {/* <DetailsBannerSection
         data={{
           sectionTitle:
             "Magic Herbs to not miss in Your Garden Medicinal plants",
@@ -136,7 +134,7 @@ function DetailsPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

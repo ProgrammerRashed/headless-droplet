@@ -1,11 +1,11 @@
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
-import ImpactSliderSection from "@/components/impactSoriesPage/impactSliderSection/ImpactSliderSection";
-import ImpactSoriesGridSection from "@/components/impactSoriesPage/impactSoriesGridSection/ImpactSoriesGridSection";
+// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+// import ImpactSliderSection from "@/components/impactSoriesPage/impactSliderSection/ImpactSliderSection";
+// import ImpactSoriesGridSection from "@/components/impactSoriesPage/impactSoriesGridSection/ImpactSoriesGridSection";
 
 function ImpactStoriesPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "Impact Stories",
           bannerCover: "/hero-banners/reports-and-publications.jpg",
@@ -130,7 +130,7 @@ function ImpactStoriesPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

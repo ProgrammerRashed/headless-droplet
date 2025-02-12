@@ -1,11 +1,9 @@
-import DiscoverMoreBlogsSection from "@/components/blogsAndArticlesPage/discoverMoreBlogsSection/DiscoverMoreBlogsSection";
-import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
-import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
+
 
 function BlogsAndArticlesPage() {
   return (
     <>
-      <SecondaryBanner
+      {/* <SecondaryBanner
         data={{
           sectionHeading: "Blogs & Articles | Media",
           bannerCover: "/hero-banners/blogs-and-articles.jpg",
@@ -119,7 +117,7 @@ function BlogsAndArticlesPage() {
             },
           ],
         }}
-      />
+      /> */}
     </>
   );
 }

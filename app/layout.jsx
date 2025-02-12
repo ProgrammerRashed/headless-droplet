@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import AOSWrapper from "@/utils/AOSWrapper";
 import { ReactLenis } from "@/utils/lenis";
+import { MaintainanceModal } from "@/components/shared/MaintainanceModal";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "900"],
@@ -24,6 +25,7 @@ export default async function RootLayout({ children }) {
           <AOSWrapper>
             {children}
           </AOSWrapper>
+          <MaintainanceModal/>
         </body>
       </ReactLenis>
     </html>

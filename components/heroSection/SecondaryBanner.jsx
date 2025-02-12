@@ -36,7 +36,7 @@ function SecondaryBanner({ data }) {
       </div>
       {is_banner_cover && (
         <Image
-          src={cover_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={cover_image || "/thumbnail.png"}
           width={1440}
           height={441}
           alt="Primary banner"

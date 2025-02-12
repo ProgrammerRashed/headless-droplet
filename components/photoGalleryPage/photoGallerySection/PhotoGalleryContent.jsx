@@ -52,7 +52,7 @@ function PhotoGalleryContent({ gallery }) {
             {gallery?.gallery?.map((image) => (
               <SwiperSlide key={image.id}>
                 <Image
-                  src={image.imageUrl || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+                  src={image.imageUrl || "/thumbnail.png"}
                   height={750}
                   width={1290}
                   alt={image.caption}

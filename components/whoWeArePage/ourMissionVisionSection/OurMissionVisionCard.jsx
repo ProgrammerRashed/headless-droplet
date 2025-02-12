@@ -10,7 +10,7 @@ function OurMissionVisionCard({ card, reverse }) {
       )}
     >
       <Image
-        src={card.banner_img || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+        src={card.banner_img || "/thumbnail.png"}
         width={410}
         height={456}
         alt={card.title}

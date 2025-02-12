@@ -31,7 +31,7 @@ function CtaSection({ data }) {
       </div>
       {cta_banner && (
         <Image
-          src={cta_banner || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={cta_banner || "/thumbnail.png"}
           width={1440}
           height={378}
           alt="Cta Banner"

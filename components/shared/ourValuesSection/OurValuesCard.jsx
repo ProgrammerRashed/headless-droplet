@@ -13,7 +13,7 @@ function OurValuesCard({ card, index }) {
         {card?.details}
       </p>
       <Image
-        src={card?.icon_link || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+        src={card?.icon_link || "/thumbnail.png"}
         alt={card?.title}
         width={80}
         height={80}

@@ -9,7 +9,7 @@ function HeroSection({data }) {
         playsInline
         className="absolute left-1/2 top-1/2 -z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 object-cover"
       >
-        <source src={bg_cover_video || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"} type="video/mp4" />
+        <source src={bg_cover_video || "/thumbnail.png"} type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex items-end bg-hero-gradient pb-10 lg:pb-[134px]">
         <div className="mx-[15px] flex w-full flex-col justify-center gap-[10px] text-white sm:mx-[30px] md:mx-[45px] md:gap-5 lg:mx-[90px]">

@@ -13,7 +13,7 @@ function BlogsCard({ blog }) {
     >
       <div className="mb-5 w-full overflow-hidden rounded-[8px] shadow-md group-hover:shadow-lg">
         <Image
-          src={featuredImage || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={featuredImage || "/thumbnail.png"}
           alt={blog.title}
           width={410}
           height={240}

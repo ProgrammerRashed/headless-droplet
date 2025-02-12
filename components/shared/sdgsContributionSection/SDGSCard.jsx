@@ -69,7 +69,7 @@ function SDGSCard({ card }) {
           {card.title}
         </p>
         <Image
-          src={card.icon || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={card.icon || "/thumbnail.png"}
           alt="No provery icon"
           width={100}
           height={100}
@@ -115,7 +115,7 @@ function SDGSCard({ card }) {
         </button>
       </div>
       <Image
-        src={card.bg_img || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+        src={card.bg_img || "/thumbnail.png"}
         alt={card.title}
         width={158}
         height={192}

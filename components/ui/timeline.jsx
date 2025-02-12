@@ -63,7 +63,7 @@ export const Timeline = ({ data }) => {
                   </p>
                 </div>
                 <Image
-                  src={item.imageLink || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+                  src={item.imageLink || "/thumbnail.png"}
                   width={435}
                   height={400}
                   alt=""

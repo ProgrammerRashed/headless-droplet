@@ -8,7 +8,7 @@ function DownloadBooksCard({ book }) {
       className="flex flex-row gap-[15px] overflow-hidden rounded-[8px] border border-gray-50 bg-white shadow-sm md:gap-[30px]"
     >
       <Image
-        src={book.image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+        src={book.image || "/thumbnail.png"}
         width={200}
         height={200}
         alt={book.title}

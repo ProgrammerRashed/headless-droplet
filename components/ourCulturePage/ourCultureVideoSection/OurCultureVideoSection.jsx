@@ -36,7 +36,7 @@ function OurCultureVideoSection({ data }) {
             <Image
               width={850}
               height={482}
-              src={video?.videoThumbNail || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+              src={video?.videoThumbNail || "/thumbnail.png"}
               alt="Farming transforms video thumbnail"
               className="absolute inset-0 h-full w-full object-cover"
             />

@@ -9,7 +9,7 @@ function FindLocationCard({ country }) {
     >
       <div className="overflow-hidden rounded-t-[4px]">
         <Image
-          src={country.image_link || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={country.image_link || "/thumbnail.png"}
           width={630}
           height={220}
           alt=""

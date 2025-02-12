@@ -25,7 +25,7 @@ function SideBySideSection({ heading, secondaryHeading, details, bannerImg }) {
           </div>
           <Image
             data-aos="fade-up"
-            src={bannerImg || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+            src={bannerImg || "/thumbnail.png"}
             width={625}
             height={625}
             alt=""

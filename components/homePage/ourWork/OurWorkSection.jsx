@@ -25,7 +25,7 @@ function OurWorkSection({ data }) {
         </div>
       </div>
       <Image
-        src={bg_cover_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+        src={bg_cover_image || "/thumbnail.png"}
         width={1440}
         height={1098}
         alt="Our work cover"

@@ -10,7 +10,7 @@ function OurWorkCard({ card }) {
     >
       <div className="inset-0 overflow-hidden rounded-[8px]">
         <Image
-          src={bg_image || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={bg_image || "/thumbnail.png"}
           width={410}
           height={380}
           alt={heading}

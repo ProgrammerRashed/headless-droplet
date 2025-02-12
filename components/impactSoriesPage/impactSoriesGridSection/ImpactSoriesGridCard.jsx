@@ -6,7 +6,7 @@ function ImpactSoriesGridCard({ card }) {
     <div data-aos="fade-up" className="group flex flex-col bg-white">
       <div className="relative mb-[15px] overflow-hidden rounded-[8px]">
         <Image
-          src={card.bannerImage || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={card.bannerImage || "/thumbnail.png"}
           height={238}
           width={410}
           alt={card.title}

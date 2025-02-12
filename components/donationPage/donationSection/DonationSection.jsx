@@ -9,7 +9,7 @@ function DonationSection({ data }) {
     <section>
       <div className="relative">
         <Image
-          src={bannerImage || "https://staging.notionhive.com/wordpress/saf/wp-content/uploads/2025/02/Blog-Thrumbnai-2.png"}
+          src={bannerImage || "/thumbnail.png"}
           width={1440}
           height={622}
           alt="Bangladesh"

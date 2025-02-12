@@ -1,7 +1,14 @@
 import VideoPlayer from "@/components/shared/VideoPlayer";
+import extractYouTubeEmbedURL from "@/utils/extractYouTubeEmbedURL";
 import React from "react";
 
-function AboutUsSection({ title, description, videoDetails }) {
+function AboutUsSection({ data }) {
+const {title, description} =data?.data
+  const videoDetails = {
+    video_link: extractYouTubeEmbedURL(data?.data?.video_link)
+    , video_title:"" ,
+    video_thumbnail: data?.data?.video_thumbnail
+  }
   return (
     <section className="my-[50px] md:my-[100px]">
       <div className="container !max-w-[1000px]">

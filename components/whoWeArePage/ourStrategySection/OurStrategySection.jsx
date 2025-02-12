@@ -2,19 +2,21 @@ import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import Image from "next/image";
 import Link from "next/link";
 
-function OurStrategySection({
-  sectionTitle,
-  sectionDetails,
-  bannerImg,
-  downloadFile,
-}) {
+function OurStrategySection({data}) {
+  const {section_details, banner_img, download_file} = data?.data;
+  const section_title = data?.data?.section_title || "";
+  const downloadFile = {
+    fileName: "SAF's Strategy",
+    link: download_file,
+  }
+
   return (
     <section className="my-[50px] md:my-[100px]">
       <div className="container">
         <div className="flex flex-col gap-[30px] md:gap-10 0.5xl:flex-row-reverse 0.5xl:justify-between">
           <Image
-            src={bannerImg || "/thumbnail.png"}
-            alt=""
+            src={banner_img || "/thumbnail.png"}
+            alt={section_title || "" }
             width={625}
             height={625}
             data-aos="fade-up"
@@ -24,14 +26,14 @@ function OurStrategySection({
             <div className="flex flex-col">
               <div data-aos="fade-up">
                 <SectionHeading className="mb-5 capitalize">
-                  {sectionTitle}
+                  {section_title || "" }
                 </SectionHeading>
               </div>
               <p
                 data-aos="fade-up"
                 className="mb-[30px] text-base font-normal leading-[26px] text-gray-600"
               >
-                {sectionDetails}
+                {section_details}
               </p>
             </div>
             <div className="flex flex-col">
@@ -93,7 +95,7 @@ function OurStrategySection({
                     {downloadFile.fileName}
                   </p>
                 </div>
-                <Link href={downloadFile.link} className="p-2">
+                <Link download target="_blank" rel="noopener noreferrer" href={downloadFile.link} className="p-2">
                   <svg
                     width={24}
                     height={25}

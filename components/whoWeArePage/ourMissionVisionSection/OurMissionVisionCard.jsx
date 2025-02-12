@@ -10,7 +10,7 @@ function OurMissionVisionCard({ card, reverse }) {
       )}
     >
       <Image
-        src={card.bannerImg || "/thumbnail.png"}
+        src={card.banner_img || "/thumbnail.png"}
         width={410}
         height={456}
         alt={card.title}
@@ -28,7 +28,7 @@ function OurMissionVisionCard({ card, reverse }) {
           data-aos="fade-up"
           className="text-base font-normal leading-[26px] text-gray-600"
         >
-          {card.subTitle}
+          {card.sub_title}
         </p>
       </div>
     </div>

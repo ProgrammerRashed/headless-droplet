@@ -21,6 +21,9 @@ import TeamGridSection from "./shared/leadershipGridSection/TeamGridSection";
 import OurPartnersSections from "./shared/ourPartnersSection/OurPartnersSections";
 import OurValuesSection from "./shared/ourValuesSection/OurValuesSection";
 import SDGSContributionSection from "./shared/sdgsContributionSection/SDGSContributionSection";
+import AboutUsSection from "./whoWeArePage/aboutUsSection/AboutUsSection";
+import OurMissionVisionSection from "./whoWeArePage/ourMissionVisionSection/OurMissionVisionSection";
+import OurStrategySection from "./whoWeArePage/ourStrategySection/OurStrategySection";
 
 
 
@@ -48,6 +51,9 @@ const blockComponentsMapping = {
   'carbon-fields/project-and-programs-page': ProjectAndProgramsWrapper,
   'carbon-fields/contact-us-banner': TertiaryBanner,
   'carbon-fields/country-contact-us-section': CountryContactUsSection,
+  'carbon-fields/about-us-section': AboutUsSection,
+  'carbon-fields/our-mission-vision-section': OurMissionVisionSection,
+  'carbon-fields/our-strategy-section': OurStrategySection,
   
  
 };

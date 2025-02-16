@@ -4,7 +4,9 @@
 // import OurValuesSection from "@/components/shared/ourValuesSection/OurValuesSection";
 // import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
 
-function CareerPage() {
+async function CareerPage() {
+    const pageData = await getPageData("/");
+  return (<RenderBlocksHelper blocks={pageData}/>);
   return (
     <>
       {/* <SecondaryBanner

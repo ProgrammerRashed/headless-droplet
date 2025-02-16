@@ -13,7 +13,8 @@ import { useRef } from "react";
 import SlidersButton from "../buttons/SlidersButton";
 
 function BlogsAndInsightsSection({ data, blogs }) {
-  const { section_heading, btn_details, largeScreenCardView = 3 } = data.data;
+  const { section_heading, btn_details } = data.data;
+  const largeScreenCardView = data?.data?.card_in_view || 3
   const swiperRef = useRef(null);
 
   return (
@@ -23,16 +24,16 @@ function BlogsAndInsightsSection({ data, blogs }) {
           <div data-aos="fade-up">
             <SectionHeading>{section_heading}</SectionHeading>
           </div>
-          <div
+          { btn_details[0] && ( <div
             data-aos="fade-up"
             className="flex w-[65%] justify-end sm:w-auto"
           >
-            {btn_details && (
-              <PrimaryButton href={btn_details[0].link} className="capitalize">
-                {btn_details[0].title}
+        
+              <PrimaryButton href={btn_details[0]?.link} className="capitalize">
+                {btn_details[0]?.title}
               </PrimaryButton>
-            )}
           </div>
+            )}
         </div>
       </div>
       <div className="slider-container">

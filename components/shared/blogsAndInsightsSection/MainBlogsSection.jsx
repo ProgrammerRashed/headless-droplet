@@ -1,5 +1,6 @@
 import { getBlogsByCategory } from "@/graphql/Components/getBlogsByCategory";
 import BlogsAndInsightsSection from "./BlogsAndInsightsSection";
+import DiscoverMoreBlogsSection from "@/components/blogsAndArticlesPage/discoverMoreBlogsSection/DiscoverMoreBlogsSection";
 
 const MainBlogsSection = async ({data}) => {
     const {enable_slider, category} = data.data;
@@ -7,7 +8,7 @@ const MainBlogsSection = async ({data}) => {
     if(enable_slider){
         return <BlogsAndInsightsSection data={data} blogs={blogs}/>
     }else{
-        return null
+        return <DiscoverMoreBlogsSection blogs={blogs} data={data} />
     }
 
 

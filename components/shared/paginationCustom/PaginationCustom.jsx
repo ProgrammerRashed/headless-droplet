@@ -23,7 +23,7 @@ function PaginationCustom({ currentPage, totalPages, setCurrentPage }) {
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious 
-            href="#" 
+          
             onClick={() => handlePageChange(currentPage - 1)} 
             disabled={currentPage === 1} 
           />
@@ -32,7 +32,7 @@ function PaginationCustom({ currentPage, totalPages, setCurrentPage }) {
         {[...Array(totalPages)].map((_, index) => (
           <PaginationItem key={index}>
             <PaginationLink 
-              href="#" 
+         
               onClick={() => handlePageChange(index + 1)} 
               className={currentPage === index + 1 ? "font-bold" : ""}
             >
@@ -43,7 +43,7 @@ function PaginationCustom({ currentPage, totalPages, setCurrentPage }) {
 
         <PaginationItem>
           <PaginationNext 
-            href="#" 
+    
             onClick={() => handlePageChange(currentPage + 1)} 
             disabled={currentPage === totalPages} 
           />

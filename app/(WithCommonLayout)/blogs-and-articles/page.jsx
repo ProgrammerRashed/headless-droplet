@@ -1,9 +1,12 @@
+import { getPageData } from "@/graphql/Components";
+import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
 
-function BlogsAndArticlesPage() {
-  
+async function BlogsAndArticlesPage() {
+    const pageData = await getPageData("/blogs-and-articles-2");
   return (
     <>
+    <RenderBlocksHelper blocks={pageData}/>
       {/* <SecondaryBanner
         data={{
           sectionHeading: "Blogs & Articles | Media",

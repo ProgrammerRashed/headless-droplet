@@ -3,7 +3,7 @@
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useRef, useState } from "react";
 
-function TabItems({ setCurrentCountry, items }) {
+function TabItems({ setItemsCategory, setCurrentCountry, items }) {
   const tabsListRef = useRef(null);
   const tabRefs = useRef([]);
 
@@ -38,7 +38,14 @@ function TabItems({ setCurrentCountry, items }) {
   const handleTabClick = (e, index, slug) => {
     e.preventDefault();
     const tab = tabRefs.current[index];
-    setCurrentCountry(slug);
+    if(setCurrentCountry){
+      setCurrentCountry(slug);
+
+    }
+    if(setItemsCategory){
+      setItemsCategory(slug);
+
+    }
     if (tabsListRef.current && tab) {
       tab.scrollIntoView({
         behavior: "smooth",
@@ -65,9 +72,9 @@ function TabItems({ setCurrentCountry, items }) {
       >
         {items.map((item, index) => (
           <TabsTrigger
-            key={item.slug}
+            key={ item.country || item.slug}
             className="flex h-auto rounded-none border-0 border-b-2 border-transparent bg-transparent px-8 py-[22px] text-center text-lg font-medium leading-[28px] text-gray-600 transition-all duration-300 data-[state=active]:border-red-600 data-[state=active]:bg-inherit data-[state=active]:text-red-600 data-[state=active]:shadow-none md:text-[22px] md:leading-[32px]"
-            value={item.country}
+            value={item.slug}
             onClick={(e) => handleTabClick(e, index, item.slug)}
             ref={(el) => (tabRefs.current[index] = el)}
           >

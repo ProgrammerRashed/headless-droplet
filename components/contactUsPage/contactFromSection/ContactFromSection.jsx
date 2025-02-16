@@ -42,8 +42,22 @@ function ContactFromSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-       await sendMail(formData)
-    console.log("Form Data Submitted:", formData);
+
+
+       try {
+        await sendMail(formData);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          country: "",
+          inquiryType: "",
+          message: "",
+      });
+      } catch (err) {
+        console.error("Mail send error:", err);
+      }
   };
 
 
@@ -222,9 +236,10 @@ function ContactFromSection() {
           <button
             type="submit"
             data-aos="fade-up"
+            disabled={loading}
             className="-mt-1 flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 bg-red-600 stroke-white px-6 py-[13px] text-sm font-semibold capitalize leading-[22px] text-white transition-all duration-300 hover:bg-red-900 md:col-span-2 md:px-6 md:py-[15px] md:text-base md:leading-[24px]"
           >
-            <span>{loading ? "Submitting..." : "Send Email"}</span>
+            <span>{loading ? "Sending..." : "Send Email"}</span>
             <svg
               width={20}
               height={20}

@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/accordion";
 
 function MobileNavLinkItem({ navigation, setIsMobileNavOpen, index }) {
-  console.log("index inside", index)
   return (
     <AccordionItem
       value={index  + 1}

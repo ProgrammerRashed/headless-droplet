@@ -15,6 +15,7 @@ import { useState } from "react";
 
 function ContactFromSection() {
   const { sendMail, loading, message, error, setMessage, setError } = useSendMail();
+  const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -31,6 +32,7 @@ function ContactFromSection() {
       ...prev,
       [id]: value,
     }));
+    setErrors({});
   };
 
   const handleSelectChange = (id, value) => {
@@ -38,23 +40,42 @@ function ContactFromSection() {
       ...prev,
       [id]: value,
     }));
+    setErrors({});
   };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.firstName) newErrors.firstName = 'First Name is required';
+    if (!formData.lastName) newErrors.lastName = 'Last Name is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.phone) newErrors.phone = 'Phone is required';
+    if (!formData.country) newErrors.country = 'Contry is required';
+    if (!formData.inquiryType) newErrors.inquiryType = 'Inquiry Type is required';
+    if (!formData.message) newErrors.message = 'Message is required';
+    return newErrors;
+  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
+  
        try {
-        await sendMail(formData);
-        setFormData({
-          firstName: "",
-          lastName: "",
-          phone: "",
-          email: "",
-          country: "",
-          inquiryType: "",
-          message: "",
-      });
+        const formErrors = validateForm();
+        if (Object.keys(formErrors).length === 0) {
+          await sendMail(formData);
+          setFormData({
+            firstName: "",
+            lastName: "",
+            phone: "",
+            email: "",
+            country: "",
+            inquiryType: "",
+            message: "",
+        });
+        } else {
+          setErrors(formErrors);
+        }
       } catch (err) {
         console.error("Mail send error:", err);
       }
@@ -92,6 +113,7 @@ function ContactFromSection() {
               value={formData.firstName}
               onChange={handleChange}
             />
+             {errors.firstName && <span className="text-red-400">{errors.firstName}</span>}
           </div>
           <div data-aos="fade-up" className="w-full flex-col gap-1">
             <Label
@@ -108,6 +130,7 @@ function ContactFromSection() {
               value={formData.lastName}
               onChange={handleChange}
             />
+              {errors.lastName && <span className="text-red-400">{errors.lastName}</span>}
           </div>
           <div data-aos="fade-up" className="w-full flex-col gap-1">
             <Label
@@ -124,6 +147,7 @@ function ContactFromSection() {
               value={formData.phone}
               onChange={handleChange}
             />
+                {errors.phone && <span className="text-red-400">{errors.phone}</span>}
           </div>
           <div data-aos="fade-up" className="w-full flex-col gap-1">
             <Label
@@ -140,6 +164,8 @@ function ContactFromSection() {
               value={formData.email}
               onChange={handleChange}
             />
+                {errors.email && <span className="text-red-400">{errors.email}</span>}
+
           </div>
           <div data-aos="fade-up" className="w-full flex-col gap-1">
             <Label
@@ -184,6 +210,8 @@ function ContactFromSection() {
                 </SelectGroup>
               </SelectContent>
             </Select>
+            {errors.country && <span className="text-red-400">{errors.country}</span>}
+
           </div>
           <div data-aos="fade-up" className="w-full flex-col gap-1">
             <Label
@@ -214,6 +242,8 @@ function ContactFromSection() {
                 </SelectGroup>
               </SelectContent>
             </Select>
+            {errors.inquiryType && <span className="text-red-400">{errors.inquiryType}</span>}
+
           </div>
           <div
             data-aos="fade-up"
@@ -232,6 +262,8 @@ function ContactFromSection() {
               value={formData.message}
               onChange={handleChange}
             />
+            {errors.message && <span className="text-red-400">{errors.message}</span>}
+
           </div>
           <button
             type="submit"

@@ -5,4 +5,5 @@ import {    blogQuery} from "./blogQuery";
 import {    membersQuery} from "./membersQuery";
 import {    allProjectQuery} from "./allProjectQuery";
 import {    singleProjectQuery} from "./singleProjectQuery";
-export {mainMenuQuery, pageDataQuery, slugsQuery, blogQuery, membersQuery, allProjectQuery, kenyaMenuQuery, bangldeshMenuQuery, singleProjectQuery};
+import {    singleBlogQuery} from "./singleBlogQuery";
+export {mainMenuQuery, pageDataQuery, slugsQuery, blogQuery, membersQuery, allProjectQuery, kenyaMenuQuery, bangldeshMenuQuery, singleProjectQuery, singleBlogQuery};

@@ -4,6 +4,7 @@ import LocalMapSection from "./bangladeshPage/localMapSection/LocalMapSection";
 import OurImpactSection from "./bangladeshPage/ourImpact/OurImpactSection";
 import ProjectSectionWrapper from "./bangladeshPage/projectsSection/ProjectSectionWrapper";
 import FindLocationCardSection from "./contactUsPage/findLocationCardSection/FindLocationCardSection";
+import FAQSection from "./donationPage/faqSection/FAQSection";
 import HeroSection from "./heroSection/HeroSection";
 import SecondaryBanner from "./heroSection/SecondaryBanner";
 import TertiaryBanner from "./heroSection/TertiaryBanner";
@@ -58,6 +59,7 @@ const blockComponentsMapping = {
   'carbon-fields/our-strategy-section': OurStrategySection,
   'carbon-fields/location-card-section': FindLocationCardSection,
   'carbon-fields/report-and-publication-section': PublicationPageWrpper,
+  'carbon-fields/faq-section': FAQSection,
   
  
 };

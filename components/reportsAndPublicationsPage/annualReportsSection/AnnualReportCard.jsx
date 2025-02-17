@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 function AnnualReportCard({ card }) {
+  const cardData = card?.node;
   return (
     <div
       data-aos="fade-up"
@@ -8,15 +9,15 @@ function AnnualReportCard({ card }) {
     >
       <div className="overflow-hidden rounded-[4px]">
         <Image
-          src={card.bannerImage || "/thumbnail.png"}
+         src={cardData?.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
           width={72}
           height={72}
-          alt=""
+          alt={cardData?.title}
           className="aspect-square w-[72px] object-contain transition-all duration-300 group-hover:scale-105"
         />
       </div>
       <h4 className="text-[22px] font-medium leading-[32px] text-gray-800">
-        {card.title}
+      {cardData?.title}
       </h4>
       <svg
         className="ml-auto"

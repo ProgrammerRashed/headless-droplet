@@ -6,7 +6,7 @@ import BlogsCard from "@/components/shared/blogsAndInsightsSection/BlogsCard";
 import PaginationCustom from "@/components/shared/paginationCustom/PaginationCustom";
 
 function DiscoverMoreBlogsSection({ data, blogs }) {
-  const [itemsCategory, setItemsCategory] = useState("all-blogs");
+  const [tabItems, setTabItems] = useState("all-blogs");
   const [filteredBlogs, setFilteredBlogs] = useState(blogs);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6; // Number of blogs per page
@@ -25,9 +25,9 @@ function DiscoverMoreBlogsSection({ data, blogs }) {
 
   // Update filtered blogs whenever itemsCategory changes
   useEffect(() => {
-    setFilteredBlogs(filterPostsByCategory(blogs, itemsCategory));
+    setFilteredBlogs(filterPostsByCategory(blogs, tabItems));
     setCurrentPage(1); // Reset to first page on category change
-  }, [itemsCategory, blogs]);
+  }, [tabItems, blogs]);
 
   // Pagination Logic
   const totalPages = Math.ceil(filteredBlogs.length / itemsPerPage);
@@ -40,11 +40,12 @@ function DiscoverMoreBlogsSection({ data, blogs }) {
         <SectionHeading>{section_heading}</SectionHeading>
         <div className="my-5 md:my-10">
           <TabItems
-            setItemsCategory={setItemsCategory}
+            setTabItems={setTabItems}
+            tabItems={tabItems}
             items={[
-              { slug: "all-blogs", country: "Blogs & Articles" },
-              { slug: "press-release", country: "Press Release" },
-              { slug: "news", country: "Media & News" },
+              { slug: "all-blogs", value: "Blogs & Articles" },
+              { slug: "press-release", value: "Press Release" },
+              { slug: "news", value: "Media & News" },
             ]}
           />
         </div>

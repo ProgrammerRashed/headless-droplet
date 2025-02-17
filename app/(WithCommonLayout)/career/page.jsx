@@ -5,10 +5,11 @@
 // import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
 
 async function CareerPage() {
-    const pageData = await getPageData("/");
-  return (<RenderBlocksHelper blocks={pageData}/>);
+  //   const pageData = await getPageData("/");
+  // return (<RenderBlocksHelper blocks={pageData}/>);
   return (
     <>
+    upcomming
       {/* <SecondaryBanner
         data={{
           sectionHeading: "Career",

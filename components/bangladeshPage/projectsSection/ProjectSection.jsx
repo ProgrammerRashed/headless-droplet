@@ -63,8 +63,8 @@ function ProjectSection({
           ))}
         </div>
         <div data-aos="fade-up">
-          <PrimaryButton href={viewAllBtnDetails.link} className="mx-auto hidden sm:flex">
-            {viewAllBtnDetails.title}
+          <PrimaryButton href={viewAllBtnDetails?.link} className="mx-auto hidden sm:flex">
+            {viewAllBtnDetails?.title}
           </PrimaryButton>
         </div>
       </div>

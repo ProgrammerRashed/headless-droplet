@@ -1,9 +1,3 @@
-// import CardSliderSection from "@/components/donationPage/cardSliderSection/CardSliderSection";
-// import DonationSection from "@/components/donationPage/donationSection/DonationSection";
-// import FAQSection from "@/components/donationPage/faqSection/FAQSection";
-// import MonthlyGiftSection from "@/components/donationPage/monthlyGiftSection/MonthlyGiftSection";
-// import SideBySideBulletPoints from "@/components/shared/sideBySideBulletPoints/SideBySideBulletPoints";
-// import HeroWithLink from "@/components/heroSection/HeroWithLink";
 
 import { getPageData } from "@/graphql/Components";
 import RenderBlocksHelper from "@/utils/RenderBlocksHelper";

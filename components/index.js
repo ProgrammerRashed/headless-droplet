@@ -65,7 +65,7 @@ const blockComponentsMapping = {
   'carbon-fields/faq-section': FAQSection,
   'carbon-fields/side-by-side-section':SideBySideBulletPoints,
   'carbon-fields/download-books-section':DownloadBooksSection,
-  'carbon-fields/timeline-section':TimelineSection
+  'carbon-fields/timeline-section':TimelineSection,
   
  
 };

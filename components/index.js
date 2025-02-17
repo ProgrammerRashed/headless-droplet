@@ -6,6 +6,7 @@ import ProjectSectionWrapper from "./bangladeshPage/projectsSection/ProjectSecti
 import FindLocationCardSection from "./contactUsPage/findLocationCardSection/FindLocationCardSection";
 import FAQSection from "./donationPage/faqSection/FAQSection";
 import HeroSection from "./heroSection/HeroSection";
+import HeroWithLink from "./heroSection/HeroWithLink";
 import SecondaryBanner from "./heroSection/SecondaryBanner";
 import TertiaryBanner from "./heroSection/TertiaryBanner";
 import AboutSAFSection from "./homePage/aboutSAF/AboutSAFSection";
@@ -66,6 +67,7 @@ const blockComponentsMapping = {
   'carbon-fields/side-by-side-section':SideBySideBulletPoints,
   'carbon-fields/download-books-section':DownloadBooksSection,
   'carbon-fields/timeline-section':TimelineSection,
+  'carbon-fields/hero-with-link':HeroWithLink,
   
  
 };

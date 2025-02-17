@@ -4,7 +4,9 @@ import { cn } from "@/lib/utils";
 import PrimaryButton from "../shared/buttons/PrimaryButton";
 
 function HeroWithLink({ data }) {
-  const { sectionHeading, linkDetails } = data;
+  const  sectionHeading = data?.data?.section_heading
+  const  linkDetails = data?.data?.link_details[0]
+  console.log(linkDetails)
   return (
     <section className="relative h-[334px] w-full md:h-[467px]">
       <div
@@ -30,8 +32,8 @@ function HeroWithLink({ data }) {
               {sectionHeading}
             </h1>
             <div data-aos="fade-up">
-              <PrimaryButton className="mx-auto mt-[30px] bg-red-600 stroke-white text-white hover:bg-red-900 md:mt-10">
-                {linkDetails.title}
+              <PrimaryButton href={linkDetails?.link} className="mx-auto mt-[30px] bg-red-600 stroke-white text-white hover:bg-red-900 md:mt-10">
+                {linkDetails?.title}
               </PrimaryButton>
             </div>
           </div>

@@ -2,7 +2,9 @@ import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
 
-function TimelineSection({ sectionHeading, cards }) {
+function TimelineSection({ data }) {
+  const cards = data?.data?.cards;
+  const sectionHeading = data?.data?.section_heading;
   return (
     <section className="my-[50px] md:my-[100px]">
       <div className="container !max-w-[1295px]">

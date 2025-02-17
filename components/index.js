@@ -14,6 +14,8 @@ import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 import MissionVissionSection from "./homePage/missionVission/MissionVissionSection";
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
+import DownloadBooksSection from "./ourHistoryPage/downloadBooksSection/DownloadBooksSection";
+import TimelineSection from "./ourHistoryPage/timelineSection/TimelineSection";
 import DirectorsDetailsSection from "./ourLeadershipPage/directorsDetailsSection/DirectorsDetailsSection";
 import ProjectAndProgramsWrapper from "./projectsAndProgramsPage/projectsAndProgramsSection/ProjectAndProgramsWrapper";
 import PublicationPageWrpper from "./reportsAndPublicationsPage/PublicationPageWrpper";
@@ -61,7 +63,9 @@ const blockComponentsMapping = {
   'carbon-fields/location-card-section': FindLocationCardSection,
   'carbon-fields/report-and-publication-section': PublicationPageWrpper,
   'carbon-fields/faq-section': FAQSection,
-  'carbon-fields/side-by-side-secton':SideBySideBulletPoints
+  'carbon-fields/side-by-side-section':SideBySideBulletPoints,
+  'carbon-fields/download-books-section':DownloadBooksSection,
+  'carbon-fields/timeline-section':TimelineSection
   
  
 };

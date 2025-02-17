@@ -32,26 +32,25 @@ export const Timeline = ({ data }) => {
   // Transformations based on updated height
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-
   return (
     <div data-aos="fade-up" className="w-full" ref={containerRef}>
       <div className="relative mx-auto mt-[70px] md:mt-[100px]">
-        {data.map((item, index) => (
+        {data?.map((item, index) => (
           <div
-            key={item.id}
+            key={index}
             className="flex justify-start pt-16 first-of-type:pt-0 lg:pt-20"
           >
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row xl:max-w-fit">
               <div className="absolute left-0 flex h-9 w-9 items-center justify-center rounded-full border-[6px] border-surface bg-green-600"></div>
 
               <h3 className="ml-24 hidden text-2xl font-semibold leading-[36px] text-gray-800 md:block">
-                {item.timeLine}
+                {item?.timeline}
               </h3>
             </div>
 
             <div className="relative mt-1.5 w-full pl-[54px] md:mt-0 lg:pl-20">
               <h3 className="mb-[15px] block text-left text-base font-medium leading-[26px] text-gray-800 md:hidden md:text-lg md:leading-[38px]">
-                {item.timeLine}
+                {item.timeline}
               </h3>
               <div className="flex flex-col pr-[10px] xl:flex-row xl:items-start xl:justify-between xl:gap-[60px] xl:pr-0">
                 <div className="flex flex-col">
@@ -63,7 +62,7 @@ export const Timeline = ({ data }) => {
                   </p>
                 </div>
                 <Image
-                  src={item.imageLink || "/thumbnail.png"}
+                  src={item.image_link || "/thumbnail.png"}
                   width={435}
                   height={400}
                   alt=""

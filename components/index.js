@@ -15,6 +15,7 @@ import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
 import DirectorsDetailsSection from "./ourLeadershipPage/directorsDetailsSection/DirectorsDetailsSection";
 import ProjectAndProgramsWrapper from "./projectsAndProgramsPage/projectsAndProgramsSection/ProjectAndProgramsWrapper";
+import PublicationPageWrpper from "./reportsAndPublicationsPage/PublicationPageWrpper";
 import MainBlogsSection from "./shared/blogsAndInsightsSection/MainBlogsSection";
 import CtaSection from "./shared/ctaSection/CtaSection";
 import DirectorsSaySection from "./shared/directorSay/DirectorsSaySection";
@@ -56,6 +57,7 @@ const blockComponentsMapping = {
   'carbon-fields/our-mission-vision-section': OurMissionVisionSection,
   'carbon-fields/our-strategy-section': OurStrategySection,
   'carbon-fields/location-card-section': FindLocationCardSection,
+  'carbon-fields/report-and-publication-section': PublicationPageWrpper,
   
  
 };

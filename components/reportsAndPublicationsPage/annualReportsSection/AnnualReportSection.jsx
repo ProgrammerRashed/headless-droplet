@@ -3,11 +3,12 @@ import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import Link from "next/link";
 import AnnualReportCard from "./AnnualReportCard";
 
-function AnnualReportSection({ data }) {
-  const { sectionTitle, reports } = data;
+function AnnualReportSection() {
+
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
-      <div className="container">
+      AnnualReportSection
+      {/* <div className="container">
         <div data-aos="fade-up">
           <SectionHeading>{sectionTitle}</SectionHeading>
         </div>
@@ -31,7 +32,7 @@ function AnnualReportSection({ data }) {
             <AnnualReportCard key={report.id} card={report} />
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

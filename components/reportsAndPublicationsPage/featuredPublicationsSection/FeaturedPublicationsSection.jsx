@@ -9,13 +9,13 @@ import "swiper/css/navigation";
 import SectionHeading from "@/components/sectionHeader/SectionHeading";
 import FeaturedCard from "./FeaturedCard";
 
-function FeaturedPublicationsSection({ data }) {
-  const { sectiionTitle, featuredCards } = data;
+function FeaturedPublicationsSection({data, publications}) {
+  const {section_title} = data
   return (
     <section className="bg-surface py-[50px] lg:py-20">
       <div className="container">
         <div data-aos="fade-up">
-          <SectionHeading>Featured Publications</SectionHeading>
+          <SectionHeading>{section_title}</SectionHeading>
         </div>
       </div>
       <div className="slider-full-container 0.5xl:hidden">
@@ -40,8 +40,8 @@ function FeaturedPublicationsSection({ data }) {
             speed={600}
             loop={true}
           >
-            {featuredCards.map((featuredCard) => (
-              <SwiperSlide key={featuredCard.id}>
+            {publications.map((featuredCard, index) => (
+              <SwiperSlide key={index}>
                 <FeaturedCard card={featuredCard} />
               </SwiperSlide>
             ))}
@@ -50,8 +50,8 @@ function FeaturedPublicationsSection({ data }) {
       </div>
       <div className="container hidden 0.5xl:block">
         <div className="mt-5 grid grid-cols-3 gap-[15px] border-t border-gray-50 pt-5 xl:gap-[30px]">
-          {featuredCards.map((featuredCard) => (
-            <FeaturedCard key={featuredCard.id} card={featuredCard} />
+          {publications.map((featuredCard, index) => (
+            <FeaturedCard key={index} card={featuredCard} />
           ))}
         </div>
       </div>

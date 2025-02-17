@@ -15,7 +15,7 @@ async function DetailsPage({params}) {
   .filter(cat => cat.node.slug !== "all-blogs")[0] || null;
 
   const blogs = await getBlogsByCategory(firstCategory?.node?.slug)
-
+const featureImage = blog?.featuredImage?.node?.mediaItemUrl
 const data = {
   data: {
     section_heading: "Related Blogs",
@@ -37,6 +37,8 @@ const data = {
           sectionTitle:blog?.title ,
           publishedDate: fromatedDate,
           category: customCategory,
+          featureImage: featureImage,
+          
         }}
       />
 

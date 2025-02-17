@@ -6,7 +6,6 @@ import PrimaryButton from "../shared/buttons/PrimaryButton";
 function HeroWithLink({ data }) {
   const  sectionHeading = data?.data?.section_heading
   const  linkDetails = data?.data?.link_details[0]
-  console.log(linkDetails)
   return (
     <section className="relative h-[334px] w-full md:h-[467px]">
       <div

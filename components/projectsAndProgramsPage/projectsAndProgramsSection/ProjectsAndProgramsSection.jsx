@@ -57,7 +57,7 @@ function ProjectsAndProgramsSection({ projects, category }) {
               { slug: "switzerland", value: "Switzerland (HQ)" },
               { slug: "bangladesh", value: "Bangladesh" },
               { slug: "india", value: "India" },
-              { slug: "kenya", value: "Kenya" },
+              { slug: "africas-project", value: "Africa" },
             ]}
           />
         )}

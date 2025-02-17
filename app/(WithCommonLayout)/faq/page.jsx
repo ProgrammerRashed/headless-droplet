@@ -1,7 +1,9 @@
-// import FAQSection from "@/components/donationPage/faqSection/FAQSection";
-// import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+import { getPageData } from "@/graphql/Components";
+import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
-function FAQPage() {
+async function FAQPage() {
+  const pageData = await getPageData("/faq-page");
+  return (<RenderBlocksHelper blocks={pageData}/>);
   return (
     <>
       {/* <SecondaryBanner
@@ -11,8 +13,7 @@ function FAQPage() {
         }}
       />
       <FAQSection
-        data={{
-          sectionTitle: "Frequently Asked Questions (FAQ)",
+        sectionTitle: "Frequently Asked Questions (FAQ)",
           faqs: [
             {
               id: crypto.randomUUID(),

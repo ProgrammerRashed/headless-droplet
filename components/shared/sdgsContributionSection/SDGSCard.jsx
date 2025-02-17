@@ -6,8 +6,11 @@ import { useState } from "react";
 
 function SDGSCard({ card }) {
   const [isClicked, setIsClicked] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
       data-aos="fade-up"
       className="contribution-card group relative flex min-h-[193px] flex-col items-center overflow-hidden rounded-[4px] text-white shadow-lg transition-all duration-500 hover:shadow-xl md:min-h-[250px] md:cursor-pointer md:rounded-[8px]"
     >
@@ -16,7 +19,7 @@ function SDGSCard({ card }) {
       <div
     style={{
       backgroundColor: card.bg_color_class,
-      opacity: isClicked ? 0.9 : 1, 
+      opacity: isHovered ? 0.9 : 1, 
       transition: "all 0.5s ease",
 
     }}

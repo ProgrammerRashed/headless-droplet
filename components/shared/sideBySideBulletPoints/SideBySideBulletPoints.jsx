@@ -3,15 +3,24 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 function SideBySideBulletPoints({ data }) {
-  const {
-    sectionClassName,
+  const title = data?.data.title
+  const description = data?.data.description
+  const sectionClassName = data?.data.section_class_name;
+  const buttonPrimaryDetails = data?.data.button_primary_details[0]
+  const buttonSecondaryDetails = data?.data.button_secondary_details[0]
+  const points = data?.data.points
+  const bannerImage = data?.data.banner_image
+
+  console.log( sectionClassName,
     bannerImage,
     title,
     description,
     points,
     buttonPrimaryDetails,
-    buttonSecondaryDetails,
-  } = data;
+    buttonSecondaryDetails,)
+  
+   
+  
 
   return (
     <section
@@ -28,8 +37,8 @@ function SideBySideBulletPoints({ data }) {
             </p>
             {points && (
               <ul className="md:mb-30 mb-[20px] flex list-disc flex-col gap-[10px] pl-6 text-base font-normal leading-[26px] text-gray-600">
-                {points.map((point) => (
-                  <li key={point.id}>{point.point}</li>
+                {points?.map((point) => (
+                  <li key={point?._id}>{point?.point}</li>
                 ))}
               </ul>
             )}
@@ -39,11 +48,11 @@ function SideBySideBulletPoints({ data }) {
             >
               {buttonPrimaryDetails && (
                 <PrimaryButton className="bg-red-600 stroke-white text-white hover:bg-red-900">
-                  {buttonPrimaryDetails.title}
+                  {buttonPrimaryDetails?.title}
                 </PrimaryButton>
               )}
               {buttonSecondaryDetails && (
-                <PrimaryButton>{buttonSecondaryDetails.title}</PrimaryButton>
+                <PrimaryButton>{buttonSecondaryDetails?.title}</PrimaryButton>
               )}
             </div>
           </div>

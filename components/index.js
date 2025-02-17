@@ -24,6 +24,7 @@ import TeamGridSection from "./shared/leadershipGridSection/TeamGridSection";
 import OurPartnersSections from "./shared/ourPartnersSection/OurPartnersSections";
 import OurValuesSection from "./shared/ourValuesSection/OurValuesSection";
 import SDGSContributionSection from "./shared/sdgsContributionSection/SDGSContributionSection";
+import SideBySideBulletPoints from "./shared/sideBySideBulletPoints/SideBySideBulletPoints";
 import AboutUsSection from "./whoWeArePage/aboutUsSection/AboutUsSection";
 import OurMissionVisionSection from "./whoWeArePage/ourMissionVisionSection/OurMissionVisionSection";
 import OurStrategySection from "./whoWeArePage/ourStrategySection/OurStrategySection";
@@ -60,6 +61,7 @@ const blockComponentsMapping = {
   'carbon-fields/location-card-section': FindLocationCardSection,
   'carbon-fields/report-and-publication-section': PublicationPageWrpper,
   'carbon-fields/faq-section': FAQSection,
+  'carbon-fields/side-by-side-secton':SideBySideBulletPoints
   
  
 };

@@ -19,7 +19,7 @@ function DonationSection({ data }) {
       </div>
       <div className="py-[50px] md:py-[100px]">
         <div className="container">
-          <div className="flex flex-col gap-10 md:gap-[50px] 0.5xl:flex-row">
+          <div id="donaton-from"  className="flex flex-col gap-10 md:gap-[50px] 0.5xl:flex-row">
             <DonationHeading donation_title={donation_title} donation_sub_title={donation_sub_title} />
             <DonationForm country={country} donation_options={donation_options} />
           </div>

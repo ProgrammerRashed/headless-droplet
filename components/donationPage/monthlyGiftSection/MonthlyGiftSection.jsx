@@ -49,8 +49,8 @@ function MonthlyGiftSection({ data }) {
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {cardItems.map((card) => (
-              <SwiperSlide key={card.id}>
+            {cardItems?.map((card, index) => (
+              <SwiperSlide key={index}>
                 <MonthlyGiftCard card={card} />
               </SwiperSlide>
             ))}
@@ -58,8 +58,8 @@ function MonthlyGiftSection({ data }) {
         </div>
       </div>
       <div data-aos="fade-up">
-        <PrimaryButton className="mx-auto mt-10 bg-red-600 stroke-white text-white hover:bg-red-900">
-          {buttonDetails.title}
+        <PrimaryButton href={buttonDetails?.link} className="mx-auto mt-10 bg-red-600 stroke-white text-white hover:bg-red-900">
+          {buttonDetails?.title}
         </PrimaryButton>
       </div>
     </section>

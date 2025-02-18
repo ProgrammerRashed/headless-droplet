@@ -6,28 +6,28 @@ function MonthlyGiftCard({ card }) {
     <div data-aos="fade-up" className="group flex flex-col gap-[15px] md:gap-5">
       <div className="relative overflow-hidden rounded-[8px]">
         <Image
-          src={card.imageLink || "/thumbnail.png"}
-          alt={card.title}
+          src={card?.featuredImage.node?.mediaItemUrl || "/thumbnail.png"}
+          alt={card?.title}
           width={410}
           height={238}
           className="aspect-[300/207] w-full object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[410/238]"
         />
-        <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] text-gray-800 md:px-4 md:py-2 md:text-sm md:leading-[22px]">
-          {card.category}
-        </div>
+        {/* <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] text-gray-800 md:px-4 md:py-2 md:text-sm md:leading-[22px]">
+          {card?.category}
+        </div> */}
       </div>
       <div className="flex flex-col">
         <h5 className="mb-[10px] text-[22px] font-semibold leading-[28px] text-gray-800 md:line-clamp-2 md:text-2xl md:leading-[36px]">
-          {card.title}
+          {card?.title}
         </h5>
         <p className="mb-[30px] line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">
-          {card.details}
+          {card?.smallDescription}
         </p>
         <Link
-          href="/"
+          href={`/projects-and-programs${card?.slug}`}
           className="flex w-fit flex-row items-center gap-2 border-b-2 border-red-600 stroke-red-600 pb-[10px] text-base font-semibold leading-[26px] text-red-600 transition-all duration-300 hover:border-red-800 hover:stroke-red-800 hover:text-red-800"
         >
-          <span>{card.buttonDetails.title}</span>
+          <span>{card?.buttonDetails?.title || "Read More"}</span>
           <svg
             width={20}
             height={20}

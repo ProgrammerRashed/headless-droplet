@@ -13,7 +13,7 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import SliderButtonTop from "@/components/shared/buttons/SliderButtonTop";
 
 function CardSliderSection({ data }) {
-  const { sectionTitle, testimonials, buttonDetails } = data;
+  const { section_title, testimonials, button_details } = data.data;
 
   const swiperRef = useRef(null);
 
@@ -23,7 +23,7 @@ function CardSliderSection({ data }) {
         <div className="flex flex-row items-end justify-between">
           <div data-aos="fade-up">
             <SectionHeading className="max-w-[740px]">
-              {sectionTitle}
+              {section_title}
             </SectionHeading>
           </div>
           <div data-aos="fade-up" className="hidden 0.5xl:block">
@@ -61,7 +61,7 @@ function CardSliderSection({ data }) {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
+              <SwiperSlide key={testimonial._id}>
                 <SliderCard card={testimonial} />
               </SwiperSlide>
             ))}
@@ -69,8 +69,8 @@ function CardSliderSection({ data }) {
         </div>
       </div>
       <div data-aos="fade-up">
-        <PrimaryButton className="mx-auto mt-10 bg-red-600 stroke-white text-white hover:bg-red-900">
-          {buttonDetails.title}
+        <PrimaryButton href={button_details[0].link} className="mx-auto mt-10 bg-red-600 stroke-white text-white hover:bg-red-900">
+          {button_details[0].title}
         </PrimaryButton>
       </div>
     </section>

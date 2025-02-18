@@ -18,6 +18,7 @@ import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 import MissionVissionSection from "./homePage/missionVission/MissionVissionSection";
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
+import OurCultureAccordionSection from "./ourCulturePage/ourCultureAccordionSection/OurCultureAccordionSection";
 import DownloadBooksSection from "./ourHistoryPage/downloadBooksSection/DownloadBooksSection";
 import TimelineSection from "./ourHistoryPage/timelineSection/TimelineSection";
 import DirectorsDetailsSection from "./ourLeadershipPage/directorsDetailsSection/DirectorsDetailsSection";
@@ -73,7 +74,8 @@ const blockComponentsMapping = {
   'carbon-fields/hero-with-link':HeroWithLink,
   'carbon-fields/donation-section': DonationSection,
   'carbon-fields/card-slider-section': CardSliderSection,
-  'carbon-fields/monthly-gift-section': MonthlyGiftWrapper
+  'carbon-fields/monthly-gift-section': MonthlyGiftWrapper,
+  'carbon-fields/our-culture-accordion-section': OurCultureAccordionSection
   
  
 };

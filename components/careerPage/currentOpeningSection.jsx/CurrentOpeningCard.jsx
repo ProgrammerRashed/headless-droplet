@@ -1,6 +1,8 @@
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import formatDate from "@/utils/formatDate";
 
 function CurrentOpeningCard({ card }) {
+  const cardData = card?.node;
   return (
     <div
       data-aos="fade-up"
@@ -8,7 +10,7 @@ function CurrentOpeningCard({ card }) {
     >
       <div className="flex flex-col">
         <h4 className="mb-[5px] max-w-md text-lg font-medium leading-[28px] text-gray-800 md:mb-[10px] md:text-[22px] md:leading-[32px] lg:max-w-[600px] xl:max-w-[700px]">
-          {card.title}
+          {cardData?.title}
         </h4>
         <div className="mb-[30px] flex flex-col gap-[10px] lg:mb-0 lg:flex-row lg:gap-5">
           <div className="flex flex-row items-center gap-2">
@@ -35,7 +37,7 @@ function CurrentOpeningCard({ card }) {
               />
             </svg>
             <p className="text-base font-normal leading-[26px] text-gray-600">
-              {card.location}
+              {cardData?.location?.label}
             </p>
           </div>
           <div className="flex flex-row items-center gap-2">
@@ -79,12 +81,12 @@ function CurrentOpeningCard({ card }) {
               <circle cx="13.3338" cy="13.3338" r="1.11111" fill="#39B295" />
             </svg>
             <p className="text-base font-normal leading-[26px] text-gray-600">
-              Deadline: {card.deadline}
+              Deadline: {formatDate(cardData?.deadline)}
             </p>
           </div>
         </div>
       </div>
-      <PrimaryButton>{card?.buttonDetails?.title}</PrimaryButton>
+      <PrimaryButton href={`/career/${cardData?.slug}`}>{card?.buttonDetails?.title || "Apply Now"}</PrimaryButton>
     </div>
   );
 }

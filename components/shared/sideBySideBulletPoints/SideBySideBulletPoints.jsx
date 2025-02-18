@@ -43,12 +43,12 @@ function SideBySideBulletPoints({ data }) {
               data-aos="fade-up"
               className="mt-[10px] flex flex-col-reverse gap-5 sm:flex-row"
             >
-              {buttonPrimaryDetails && (
+              {buttonPrimaryDetails?.link && (
                 <PrimaryButton href={buttonPrimaryDetails?.link} className="bg-red-600 stroke-white text-white hover:bg-red-900">
                   {buttonPrimaryDetails?.title}
                 </PrimaryButton>
               )}
-              {buttonSecondaryDetails && (
+              {buttonSecondaryDetails?.link && (
                 <PrimaryButton href={buttonSecondaryDetails?.link}>{buttonSecondaryDetails?.title}</PrimaryButton>
               )}
             </div>

@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/select";
 import { useEffect } from "react";
 
-function CurrentOpeningFilter() {
+function CurrentOpeningFilter({departments, country}) {
   useEffect(() => {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
@@ -35,30 +35,17 @@ function CurrentOpeningFilter() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              <SelectItem
-                value="switzerland"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                Switzerland
-              </SelectItem>
-              <SelectItem
-                value="bangladesh"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                Bangladesh
-              </SelectItem>
-              <SelectItem
-                value="india"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                India
-              </SelectItem>
-              <SelectItem
-                value="kenya"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                Kenya
-              </SelectItem>
+              {
+                country?.map((item) => (
+                  <SelectItem
+                  key={item?.value}
+                  value={item?.value}
+                  className="text-gray-700 hover:bg-surface focus:bg-surface"
+                >
+                 {item?.label}
+                </SelectItem>
+                ) )
+              }
             </SelectGroup>
           </SelectContent>
         </Select>
@@ -73,30 +60,18 @@ function CurrentOpeningFilter() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              <SelectItem
-                value="switzerland"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                Switzerland
-              </SelectItem>
-              <SelectItem
-                value="bangladesh"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                Bangladesh
-              </SelectItem>
-              <SelectItem
-                value="india"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                India
-              </SelectItem>
-              <SelectItem
-                value="kenya"
-                className="text-gray-700 hover:bg-surface focus:bg-surface"
-              >
-                Kenya
-              </SelectItem>
+            {
+                departments?.map((item) => (
+                  <SelectItem
+                  key={item?.value}
+                  value={item?.value}
+                      className="text-gray-700 hover:bg-surface focus:bg-surface"
+                >
+                 {item?.label}
+                </SelectItem>
+                ) )
+              }
+           
             </SelectGroup>
           </SelectContent>
         </Select>

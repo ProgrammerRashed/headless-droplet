@@ -14,7 +14,7 @@ import useSendMail from "@/utils/useSendEmail";
 import { useState } from "react";
 
 function ContactFromSection() {
-  const { sendMail, loading, message, error, setMessage, setError } = useSendMail();
+  const { sendMail, loading, message, error, setMessage, setError } = useSendMail("cfrom");
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     firstName: "",

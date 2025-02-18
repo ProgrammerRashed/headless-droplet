@@ -10,15 +10,35 @@ async function DonationPage() {
 
 export default DonationPage;
 
-  {/* <HeroWithLink
-    data={{
-      sectionHeading: "A small Act, a big Impact.",
-      linkDetails: { title: "Contact Us to Donate", link: "/" },
-    }}
-  />
+  {/* 
   <DonationSection
     data={{
+      donationTitle: "Donation Page",
       bannerImage: "/donation-page/donation-about-banner.jpg",
+      donationSubTitle: "Join us in making tomorrow better",
+      country: [
+        {
+        value: "Bangladesh",
+        "slug": "bangladesh",
+        },
+         {
+        value: "Kenay",
+        "slug": "kenya",
+        }
+        {
+        value: switz Switzerland",
+        }
+      ]
+      donationOptions: [
+        {
+          value: "Monthly Gift",
+          "slug": "monthly-gift",
+        },
+        {
+          value: "Donation",
+          "slug": "donation",
+        },
+
     }}
   />
   <SideBySideBulletPoints

@@ -1,3 +1,4 @@
+"use client"
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -9,38 +10,114 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import useSendMail from "@/utils/useSendEmail";
+import { useState } from "react";
 
-function DonationForm() {
+function DonationForm({country, donation_options}) {
+  const { sendMail, loading, message, error, setMessage, setError } = useSendMail("donation");
+  const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    country: "",
+    donationType: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+    setErrors({});
+  };
+
+  const handleSelectChange = (id, value) => {
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+    setErrors({});
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.firstName) newErrors.firstName = 'First Name is required';
+    if (!formData.lastName) newErrors.lastName = 'Last Name is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.phone) newErrors.phone = 'Phone is required';
+    if (!formData.country) newErrors.country = 'Contry is required';
+    if (!formData.donationType) newErrors.donationType = 'Donation Type is required';
+    if (!formData.message) newErrors.message = 'Message is required';
+    return newErrors;
+  };
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+  
+       try {
+        const formErrors = validateForm();
+        if (Object.keys(formErrors).length === 0) {
+          await sendMail(formData);
+          setFormData({
+            firstName: "",
+            lastName: "",
+            phone: "",
+            email: "",
+            country: "",
+            donationType: "",
+            message: "",
+        });
+        } else {
+          setErrors(formErrors);
+        }
+      } catch (err) {
+        console.error("Mail send error:", err);
+      }
+  };
+
+
   return (
     <div className="flex w-full flex-grow flex-col gap-10 border-b border-gray-50 pb-[30px] 0.5xl:max-w-[740px] 0.5xl:border-b-0 0.5xl:border-l 0.5xl:pb-0 0.5xl:pl-[30px] 0.5xl:pt-[30px]">
-      <form className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
+      <form onSubmit={handleSubmit}  className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
         <div data-aos="fade-up" className="w-full flex-col gap-1">
           <Label
-            htmlFor="first-name"
+            htmlFor="firstName"
             className="text-base font-normal capitalize leading-[26px] text-gray-800"
           >
             First name <span className="text-red-500">*</span>
           </Label>
           <Input
             type="text"
-            id="first-name"
+            id="firstName"
             placeholder="First name"
             className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            value={formData.firstName}
+            onChange={handleChange}
           />
+            {errors.firstName && <span className="text-red-400">{errors.firstName}</span>}
         </div>
         <div data-aos="fade-up" className="w-full flex-col gap-1">
           <Label
-            htmlFor="last-name"
+            htmlFor="lastName"
             className="text-base font-normal capitalize leading-[26px] text-gray-800"
           >
             Last name <span className="text-red-500">*</span>
           </Label>
           <Input
             type="text"
-            id="last-name"
+            id="lastName"
             placeholder="Last name"
             className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            value={formData.lastName}
+            onChange={handleChange}
           />
+            {errors.lastName && <span className="text-red-400">{errors.lastName}</span>}
         </div>
         <div data-aos="fade-up" className="w-full flex-col gap-1">
           <Label
@@ -54,7 +131,10 @@ function DonationForm() {
             id="phone"
             placeholder="Phone number"
             className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            value={formData.phone}
+            onChange={handleChange}
           />
+              {errors.phone && <span className="text-red-400">{errors.phone}</span>}
         </div>
         <div data-aos="fade-up" className="w-full flex-col gap-1">
           <Label
@@ -68,7 +148,10 @@ function DonationForm() {
             id="email"
             placeholder="Email"
             className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            value={formData.email}
+            onChange={handleChange}
           />
+              {errors.email && <span className="text-red-400">{errors.email}</span>}
         </div>
         <div data-aos="fade-up" className="w-full flex-col gap-1">
           <Label
@@ -77,7 +160,7 @@ function DonationForm() {
           >
             Country <span className="text-red-500">*</span>
           </Label>
-          <Select className="w-full">
+          <Select onValueChange={(value) => handleSelectChange("country", value)} className="w-full">
             <SelectTrigger
               id="country"
               className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
@@ -86,33 +169,22 @@ function DonationForm() {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem
-                  value="switzerland"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Switzerland
-                </SelectItem>
-                <SelectItem
-                  value="bangladesh"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Bangladesh
-                </SelectItem>
-                <SelectItem
-                  value="india"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  India
-                </SelectItem>
-                <SelectItem
-                  value="kenya"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Kenya
-                </SelectItem>
+                {
+                    country?.map((item, index) => (
+                      <SelectItem
+                      key={index}
+                        value={item?.slug}
+                        className="text-gray-700 hover:bg-surface focus:bg-surface"
+                      >
+                        {item?.data}
+                      </SelectItem>
+                    ))
+                }
+             
               </SelectGroup>
             </SelectContent>
           </Select>
+          {errors.country && <span className="text-red-400">{errors.country}</span>}
         </div>
         <div data-aos="fade-up" className="w-full flex-col gap-1">
           <Label
@@ -121,42 +193,33 @@ function DonationForm() {
           >
             I want to support <span className="text-red-500">*</span>
           </Label>
-          <Select className="w-full">
+          <Select  onValueChange={(value) => handleSelectChange("donationType", value)} className="w-full">
             <SelectTrigger
-              id="inquiry-type"
+              id="donationType"
               className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
             >
               <SelectValue placeholder="Select donation type" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem
-                  value="type-1"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Type placeholder
-                </SelectItem>
-                <SelectItem
-                  value="type-2"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Type placeholder
-                </SelectItem>
-                <SelectItem
-                  value="type-3"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Type placeholder
-                </SelectItem>
-                <SelectItem
-                  value="type-4"
-                  className="text-gray-700 hover:bg-surface focus:bg-surface"
-                >
-                  Type placeholder
-                </SelectItem>
+
+              {
+                    donation_options?.map((item, index) => (
+                      <SelectItem
+                      key={index}
+                        value={item?.slug}
+                       className="text-gray-700 hover:bg-surface focus:bg-surface"
+                      >
+                        {item?.data}
+                      </SelectItem>
+                    ))
+                }
+             
+              
               </SelectGroup>
             </SelectContent>
           </Select>
+          {errors.donationType && <span className="text-red-400">{errors.donationType}</span>}
         </div>
         <div
           data-aos="fade-up"
@@ -172,13 +235,18 @@ function DonationForm() {
             placeholder="Write here..."
             id="message"
             className="scrollbar-thin m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            value={formData.message}
+            onChange={handleChange}
           />
+          {errors.message && <span className="text-red-400">{errors.message}</span>}
         </div>
         <button
+         type="submit"
+           disabled={loading}
           data-aos="fade-up"
           className="-mt-1 flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 bg-red-600 stroke-white px-6 py-[13px] text-sm font-semibold leading-[22px] text-white transition-all duration-300 hover:bg-red-900 md:col-span-2 md:px-6 md:py-[15px] md:text-base md:leading-[24px]"
         >
-          <span>Submit now</span>
+           <span>{loading ? "Sending..." : "Send Email"}</span>
           <svg
             width={20}
             height={20}
@@ -202,6 +270,14 @@ function DonationForm() {
             </defs>
           </svg>
         </button>
+
+          {
+            message && (
+              <div className="mt-5 text-base font-normal text-gray-800">
+                {message}
+              </div>
+            )
+          }
       </form>
     </div>
   );

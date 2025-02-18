@@ -4,6 +4,7 @@ import LocalMapSection from "./bangladeshPage/localMapSection/LocalMapSection";
 import OurImpactSection from "./bangladeshPage/ourImpact/OurImpactSection";
 import ProjectSectionWrapper from "./bangladeshPage/projectsSection/ProjectSectionWrapper";
 import FindLocationCardSection from "./contactUsPage/findLocationCardSection/FindLocationCardSection";
+import DonationSection from "./donationPage/donationSection/DonationSection";
 import FAQSection from "./donationPage/faqSection/FAQSection";
 import HeroSection from "./heroSection/HeroSection";
 import HeroWithLink from "./heroSection/HeroWithLink";
@@ -68,6 +69,7 @@ const blockComponentsMapping = {
   'carbon-fields/download-books-section':DownloadBooksSection,
   'carbon-fields/timeline-section':TimelineSection,
   'carbon-fields/hero-with-link':HeroWithLink,
+  'carbon-fields/donation-section': DonationSection
   
  
 };

@@ -3,13 +3,13 @@ import DonationHeading from "./DonationHeading";
 import DonationForm from "./DonationForm";
 
 function DonationSection({ data }) {
-  const { bannerImage } = data;
+  const { donation_title, banner_image, donation_sub_title, country, donation_options } = data.data;
 
   return (
     <section>
       <div className="relative">
         <Image
-          src={bannerImage || "/thumbnail.png"}
+          src={banner_image || "/thumbnail.png"}
           width={1440}
           height={622}
           alt="Bangladesh"
@@ -20,8 +20,8 @@ function DonationSection({ data }) {
       <div className="py-[50px] md:py-[100px]">
         <div className="container">
           <div className="flex flex-col gap-10 md:gap-[50px] 0.5xl:flex-row">
-            <DonationHeading />
-            <DonationForm />
+            <DonationHeading donation_title={donation_title} donation_sub_title={donation_sub_title} />
+            <DonationForm country={country} donation_options={donation_options} />
           </div>
         </div>
       </div>

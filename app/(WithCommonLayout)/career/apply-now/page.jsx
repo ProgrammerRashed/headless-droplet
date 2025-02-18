@@ -3,6 +3,7 @@
 function ApplyNowPage() {
   return (
     <>
+    Apply Now Page
       {/* <ApplyNowSection /> */}
     </>
   );

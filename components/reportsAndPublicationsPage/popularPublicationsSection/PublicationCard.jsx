@@ -17,7 +17,7 @@ function PublicationCard({ card }) {
           />
         </div>
         <span className="absolute left-[22px] top-[22px] rounded-[80px] bg-white px-[10px] py-[7px] text-xs font-normal leading-[18px] text-gray-800 md:rounded-[90px] lg:left-[30px] lg:top-[30px] lg:px-4 lg:py-2 lg:text-sm lg:leading-[22px]">
-          {cardData?.customCategory?.value || "Category"}
+          {cardData?.customCategory?.value || cardData?.customCategory || "Category"}
         </span>
       </div>
       <div className="flex flex-col p-5 lg:p-0 lg:pt-5">

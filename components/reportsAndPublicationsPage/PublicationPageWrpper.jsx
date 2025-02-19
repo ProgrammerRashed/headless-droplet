@@ -7,7 +7,7 @@ const PublicationPageWrpper = async ({data}) => {
     const resources = await getAllResource()
     const {publication_type} = data.data
     const idArray = data?.data?.resources.map((item) => item.id)
-    const featuredPublication =  await getAllResource(idArray)
+    const featuredPublication =  resources.filter((item) => item?.node?.publicationType?.value == "feature") ||  await getAllResource(idArray) || []
     const popularPublications = resources.filter((item) => item?.node?.publicationType?.value == "popular")
     const annualPublications = resources.filter((item) => item?.node?.publicationType?.value == "annual")
 

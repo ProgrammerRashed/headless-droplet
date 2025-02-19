@@ -6,22 +6,26 @@ function MonthlyGiftCard({ card }) {
     <div data-aos="fade-up" className="group flex flex-col gap-[15px] md:gap-5">
       <div className="relative overflow-hidden rounded-[8px]">
         <Image
-          src={card?.featuredImage.node?.mediaItemUrl || "/thumbnail.png"}
+          src={card?.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
           alt={card?.title}
           width={410}
           height={238}
           className="aspect-[300/207] w-full object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[410/238]"
         />
-        {/* <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] text-gray-800 md:px-4 md:py-2 md:text-sm md:leading-[22px]">
-          {card?.category}
-        </div> */}
+
+        {
+          card?.customCategory?.value && (  <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] text-gray-800 md:px-4 md:py-2 md:text-sm md:leading-[22px]">
+            {card?.customCategory?.value}
+          </div>)
+        }
+       
       </div>
       <div className="flex flex-col">
         <h5 className="mb-[10px] text-[22px] font-semibold leading-[28px] text-gray-800 md:line-clamp-2 md:text-2xl md:leading-[36px]">
           {card?.title}
         </h5>
         <p className="mb-[30px] line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">
-          {card?.smallDescription}
+          {card?.smallDescription ||card?.content?.replace(/<\/?[^>]+(>|$)/g, "")?.slice(0, 100) + "..."}
         </p>
         <Link
           href={`/projects-and-programs${card?.slug}`}

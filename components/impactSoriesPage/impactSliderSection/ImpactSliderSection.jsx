@@ -11,9 +11,7 @@ import ImpactSliderCard from "./ImpactSliderCard";
 import SlidersButton from "@/components/shared/buttons/SlidersButton";
 
 function ImpactSliderSection({ data }) {
-  const { impacts } = data;
   const swiperRef = useRef(null);
-
   return (
     <section className="group bg-surface py-[50px] md:py-[100px]">
       <div className="container">
@@ -31,8 +29,8 @@ function ImpactSliderSection({ data }) {
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {impacts.map((impact) => (
-              <SwiperSlide key={impact.id}>
+            {data?.map((impact, index) => (
+              <SwiperSlide key={index}>
                 <ImpactSliderCard card={impact} />
               </SwiperSlide>
             ))}

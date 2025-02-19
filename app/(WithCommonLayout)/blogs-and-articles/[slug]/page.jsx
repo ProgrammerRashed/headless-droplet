@@ -10,7 +10,7 @@ async function DetailsPage({params}) {
   const blogSlug = (await params).slug
   const blog = await getSingleBlog(blogSlug)
   const fromatedDate = formatDate( blog?.customPostDate || blog.date);
-  const customCategory = blog?.customCategory || "Category";
+  const customCategory = blog?.customCategory?.value || "Category";
   const firstCategory = blog?.categories.edges
   .filter(cat => cat.node.slug !== "all-blogs")[0] || null;
 
@@ -40,7 +40,7 @@ const data = {
           featureImage: featureImage,
           
         }}
-      />
+      /> 
 
       <RichContentAreaSection
         data={{
@@ -48,7 +48,7 @@ const data = {
           shareButtons: true,
           content: blog?.content,
         }}
-      />
+      /> 
 
   
       <BlogsAndInsightsSection data={data} blogs={blogs} />

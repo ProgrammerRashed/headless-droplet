@@ -1,6 +1,6 @@
 import JobDetailsHeroSection from "@/components/detailsPage/jobDetailsHeroSection/JobDetailsHeroSection";
 import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
-import { getSingleJob } from "@/graphql/Components/getSingleBlog copy";
+import { getSingleJob } from "@/graphql/Components/getSingleJob";
 
 async function JobDetailsPage({params}) {
   const JobSlug = (await params).slug

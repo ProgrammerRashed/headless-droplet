@@ -55,14 +55,12 @@ function ApplyNowForm({ title, details, position }) {
   
     try {
       await sendMail(formDataToSend);
-      console.log(formData);  // Debugging: Check the form data being sent
     } catch (err) {
       setError("Failed to send email. Please try again.");
       console.error("Mail send error:", err);
     }
   };
   
-  console.log(position)
   
   return (
     <div

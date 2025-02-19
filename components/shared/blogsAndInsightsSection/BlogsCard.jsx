@@ -7,7 +7,7 @@ function BlogsCard({ blog }) {
   const featuredImage = blog.featuredImage?.node.mediaItemUrl;
   const imageHeightClassName = blog?.imageHeight || null
   const fromatedDate = formatDate( blog?.customPostDate || blog.date);
-  const customCategory = blog?.customCategory || "Category";
+  const customCategory = blog?.customCategory?.value || "Category";
   return (
     <div
       data-aos="fade-up"

@@ -9,7 +9,7 @@ import { blogQuery } from "../Queries";
     }
     const blogsData = await getGqlData(blogQuery, { categoryName });
 
-    return blogsData.posts.nodes
+    return blogsData?.posts?.nodes
     
   };
   

@@ -1,6 +1,6 @@
 import ApplyNowSection from "@/components/applyNowPage/applyNowSection/ApplyNowSection";
 
-import { getSingleJob } from "@/graphql/Components/getSingleBlog copy";
+import { getSingleJob } from "@/graphql/Components/getSingleJob";
 
 async function ApplyNowPage({params}) {
     const JobSlug = (await params).slug

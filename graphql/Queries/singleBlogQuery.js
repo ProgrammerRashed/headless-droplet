@@ -9,7 +9,10 @@ export const singleBlogQuery = gql`
       date
       content
       customPostDate
-      customCategory
+      customCategory{
+      value
+      label
+      }
       categories {
         edges {
           node {

@@ -28,7 +28,7 @@ function BlogsCard({ blog }) {
        </Link>
       </div>
       <div className="mb-[10px] flex flex-row items-center justify-normal gap-[10px] text-sm font-normal leading-[22px]">
-        <p className="line-clamp-2 text-green-700">{customCategory}</p>
+        <p className="line-clamp-2 text-green-700">{customCategory?.replace("&amp;", "&")}</p>
         <div className="h-[5px] w-[5px] rounded-full bg-gray-50"></div>
         <p className="text-gray-400">{fromatedDate}</p>
       </div>

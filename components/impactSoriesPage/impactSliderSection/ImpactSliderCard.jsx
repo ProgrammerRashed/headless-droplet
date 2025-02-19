@@ -9,11 +9,11 @@ function ImpactSliderCard({ card }) {
           src={card.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
           width={615}
           height={338}
-          alt=""
+          alt={card?.title}
           className="aspect-[330/207] w-full object-cover transition-all duration-300 group-hover:scale-105 lg:h-full lg:w-full"
         />
         <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] md:px-4 md:py-2 md:text-sm md:leading-[22px]">
-          {card?.customCategory?.value}
+          {card?.customCategory?.label?.replace("&amp;", "&")}
         </div>
       </div>
       <div className="flex flex-grow flex-col pt-[15px] lg:w-1/2 lg:max-w-[615px] lg:py-0">
@@ -24,7 +24,7 @@ function ImpactSliderCard({ card }) {
           {card.content?.replace(/<\/?[^>]+(>|$)/g, '')?.slice(0, 400) + "..." }
         </p>
         <Link
-          href="/"
+          href={`/impact-stories/${card?.slug}`}
           className="mt-auto flex w-fit flex-row items-center gap-2 border-b-2 border-red-600 stroke-red-600 pb-[10px] text-base font-semibold leading-[26px] text-red-600 transition-all duration-300 hover:border-red-800 hover:stroke-red-800 hover:text-red-800"
         >
           <span>Read More</span>

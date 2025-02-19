@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function MonthlyGiftCard({ card }) {
+function ImpactStoryCard({ card }) {
   return (
     <div data-aos="fade-up" className="group flex flex-col gap-[15px] md:gap-5">
       <div className="relative overflow-hidden rounded-[8px]">
@@ -15,7 +15,8 @@ function MonthlyGiftCard({ card }) {
 
         {
           card?.customCategory?.label && (  <div className="absolute left-[10px] top-[10px] z-10 rounded-[80px] bg-white px-[10px] py-2 text-xs leading-[18px] text-gray-800 md:px-4 md:py-2 md:text-sm md:leading-[22px]">
-            {card?.customCategory?.label.replace("&amp;", "&")}
+          {card?.customCategory?.label?.replace("&amp;", "&")}
+
           </div>)
         }
        
@@ -28,7 +29,7 @@ function MonthlyGiftCard({ card }) {
           {card?.smallDescription ||card?.content?.replace(/<\/?[^>]+(>|$)/g, "")?.slice(0, 100) + "..."}
         </p>
         <Link
-          href={`/projects-and-programs/${card?.slug}`}
+          href={`/impact-stories/${card?.slug}`}
           className="flex w-fit flex-row items-center gap-2 border-b-2 border-red-600 stroke-red-600 pb-[10px] text-base font-semibold leading-[26px] text-red-600 transition-all duration-300 hover:border-red-800 hover:stroke-red-800 hover:text-red-800"
         >
           <span>{card?.buttonDetails?.title || "Read More"}</span>
@@ -60,4 +61,4 @@ function MonthlyGiftCard({ card }) {
   );
 }
 
-export default MonthlyGiftCard;
+export default ImpactStoryCard;

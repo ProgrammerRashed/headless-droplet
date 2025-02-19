@@ -1,6 +1,6 @@
 import DetailsBannerSection from "@/components/detailsPage/detailsBannerSection/DetailsBannerSection";
+import RealatedStoriesSliderSection from "@/components/detailsPage/realatedStoriesSliderSection/RealatedStoriesSliderSection";
 import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
-import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
 import { getSingleBlog } from "@/graphql/Components";
 import { getBlogsByCategory } from "@/graphql/Components/getBlogsByCategory";
 import formatDate from "@/utils/formatDate";
@@ -18,10 +18,10 @@ async function DetailsPage({params}) {
 const featureImage = blog?.featuredImage?.node?.mediaItemUrl
 const data = {
   data: {
-    section_heading: "Related Blogs",
+    section_heading: "Related  Stories",
     btn_details: [
       {
-        link: "/blogs-and-articles",
+        link: "/impact-stories",
         title: "View All",
       },
     ],
@@ -51,7 +51,7 @@ const data = {
       /> 
 
   
-      <BlogsAndInsightsSection data={data} blogs={blogs} />
+      <RealatedStoriesSliderSection data={data} blogs={blogs} />
     </>
   );
 }

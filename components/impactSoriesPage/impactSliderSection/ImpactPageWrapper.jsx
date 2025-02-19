@@ -3,7 +3,7 @@ import ImpactSliderSection from "./ImpactSliderSection";
 import ImpactSoriesGridSection from "../impactSoriesGridSection/ImpactSoriesGridSection";
 import { getBlogsByCategory } from "@/graphql/Components/getBlogsByCategory";
 
-const ImpactSliderWrapper = async ({data}) => {
+const ImpactPageWrapper = async ({data}) => {
   const enableSlider = data?.data?.enable_slider;
 
 
@@ -16,4 +16,4 @@ const ImpactSliderWrapper = async ({data}) => {
    
 }
 
-export default ImpactSliderWrapper
+export default ImpactPageWrapper;

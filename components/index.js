@@ -18,7 +18,7 @@ import GlobalPresence from "./homePage/globalPresence/GlobalPresence";
 import MissionVissionSection from "./homePage/missionVission/MissionVissionSection";
 import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
-import ImpactSliderWrapper from "./impactSoriesPage/impactSliderSection/ImpactSliderWrapper";
+import ImpactPageWrapper from "./impactSoriesPage/impactSliderSection/ImpactPageWrapper";
 import OurCultureAccordionSection from "./ourCulturePage/ourCultureAccordionSection/OurCultureAccordionSection";
 import DownloadBooksSection from "./ourHistoryPage/downloadBooksSection/DownloadBooksSection";
 import TimelineSection from "./ourHistoryPage/timelineSection/TimelineSection";
@@ -77,7 +77,7 @@ const blockComponentsMapping = {
   'carbon-fields/card-slider-section': CardSliderSection,
   'carbon-fields/monthly-gift-section': MonthlyGiftWrapper,
   'carbon-fields/our-culture-accordion-section': OurCultureAccordionSection,
-  'carbon-fields/impact-posts-section': ImpactSliderWrapper,
+  'carbon-fields/impact-posts-section': ImpactPageWrapper,
   
  
 };

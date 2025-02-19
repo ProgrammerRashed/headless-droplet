@@ -75,7 +75,7 @@ function TabItems({tabItems, setTabItems, items }) {
             onClick={(e) => handleTabClick(e, index, item.slug)}
             ref={(el) => (tabRefs.current[index] = el)}
           >
-            {item.value}
+            {item?.value?.replace("&amp;", "&")}
           </TabsTrigger>
         ))}
       </TabsList>

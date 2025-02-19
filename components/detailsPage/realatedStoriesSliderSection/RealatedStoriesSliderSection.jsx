@@ -12,11 +12,12 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import SlidersButton from "@/components/shared/buttons/SlidersButton";
 import BlogsCard from "@/components/shared/blogsAndInsightsSection/BlogsCard";
 import MonthlyGiftCard from "@/components/shared/monthlyGiftSection/MonthlyGiftCard";
+import ImpactStoryCard from "@/components/shared/monthlyGiftSection/ImpactStoryCard";
 
-function RealatedStoriesSliderSection({ data }) {
-  const { sectionHeading, btnDetails, largeScreenCardView = 3, blogs } = data;
+function RealatedStoriesSliderSection({ data, blogs }) {
+  const { sectionHeading, btnDetails, largeScreenCardView = 3 } = data;
   const swiperRef = useRef(null);
-
+  
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div className="container">
@@ -64,9 +65,9 @@ function RealatedStoriesSliderSection({ data }) {
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {blogs.map((blog) => (
+            {blogs?.map((blog) => (
               <SwiperSlide key={blog.id}>
-                <MonthlyGiftCard key={blog.id} card={blog} />
+                <ImpactStoryCard key={blog.id} card={blog} />
               </SwiperSlide>
             ))}
           </Swiper>

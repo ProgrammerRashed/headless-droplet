@@ -14,9 +14,9 @@ const RenderHtmlHelper = ({ htmlContent }) => {
   }, [htmlContent]);
 
   return (
-    <div>
+    <>
       {cleanHTML && parse(cleanHTML)}
-    </div>
+    </>
   );
 };
 

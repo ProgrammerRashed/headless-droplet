@@ -27,9 +27,7 @@ function NavigationMenuSingleItem({ navigation }) {
       <NavigationMenuContent className="flex h-[400px] !w-[714px] flex-row justify-between bg-surface shadow-2xl backdrop-blur-md">
         <div className="flex flex-grow flex-col p-5">
           {navigation?.child_navigations.map((navItem, index) => {
-            console.log(navItem?.nested_child_navigations.length); // Move console.log here
-
-            return !navItem?.nested_child_navigations.length ? (
+            return !navItem?.nested_child_navigations?.length ? (
               <Link
                 key={index}
                 href={navItem?.link}
@@ -39,16 +37,11 @@ function NavigationMenuSingleItem({ navigation }) {
                 <ChevronRight size="18" />
               </Link>
             ) : (
-              <Accordion
-                key={index}
-                type="single"
-                collapsible
-                className="border-b-0"
-              >
-                <AccordionItem value="item-1">
+              <Accordion key={index} type="single" collapsible>
+                <AccordionItem value="item-1" className="border-b-0">
                   <AccordionTrigger
-                    className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white hover:no-underline data-[state=open]:bg-white"
-                    iconClassName="w-[18px] h-[18px] -rotate-90 p-0"
+                    className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white hover:no-underline data-[state=open]:bg-white data-[state=open]:text-red-600 [&[data-state=open]>svg]:text-red-600"
+                    iconClassName="w-[18px] text-[#0B1411]  h-[18px] bg-transparent  -rotate-90 p-0"
                   >
                     <span>{navItem?.title}</span>
                   </AccordionTrigger>
@@ -56,7 +49,11 @@ function NavigationMenuSingleItem({ navigation }) {
                     <div className="flex flex-col gap-4">
                       {navItem?.nested_child_navigations.map(
                         (childnav, index) => (
-                          <Link key={index} href={childnav?.link || "/"}>
+                          <Link
+                            key={index}
+                            href={childnav?.link || "/"}
+                            className="transition-all duration-300 hover:text-red-600 hover:underline"
+                          >
                             {childnav?.title || "Unnamed"}
                           </Link>
                         ),

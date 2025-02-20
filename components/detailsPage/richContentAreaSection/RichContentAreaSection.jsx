@@ -9,10 +9,12 @@ function RichContentAreaSection({ data }) {
       <div className={cn("container", sectionClassName)}>
         <div
           className="rich-content-container"
-          dangerouslySetInnerHTML={{ __html: content }}
+          dangerouslySetInnerHTML={{
+            __html: typeof content === "string" ? content : "",
+          }}
         />
         {buttonDetails && (
-          <PrimaryButton className="mt-[30px] border-none bg-red-600 stroke-white text-white hover:bg-red-900 md:mt-[50px]">
+          <PrimaryButton href={buttonDetails?.link} className="mt-[30px] border-none bg-red-600 stroke-white text-white hover:bg-red-900 md:mt-[50px]">
             Apply Now
           </PrimaryButton>
         )}

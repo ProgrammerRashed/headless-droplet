@@ -115,7 +115,7 @@ function JobDetailsHeroSection({ data }) {
               </div>
             </div>
             <div data-aos="fade-up">
-              <PrimaryButton className="mx-auto mt-[30px] bg-red-600 stroke-white text-white hover:bg-red-900">
+              <PrimaryButton href={linkDetails?.link} className="mx-auto mt-[30px] bg-red-600 stroke-white text-white hover:bg-red-900">
                 {linkDetails.title}
               </PrimaryButton>
             </div>

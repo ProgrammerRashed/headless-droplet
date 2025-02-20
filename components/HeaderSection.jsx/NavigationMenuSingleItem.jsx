@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 import {
   NavigationMenuContent,
@@ -8,9 +8,14 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import Image from "next/image";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
 
 function NavigationMenuSingleItem({ navigation }) {
-
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger
@@ -21,16 +26,47 @@ function NavigationMenuSingleItem({ navigation }) {
       </NavigationMenuTrigger>
       <NavigationMenuContent className="flex h-[400px] !w-[714px] flex-row justify-between bg-surface shadow-2xl backdrop-blur-md">
         <div className="flex flex-grow flex-col p-5">
-          {navigation?.child_navigations.map((navItem, index) => (
-            <Link
-              key={index}
-              href={navItem?.link}
-              className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white"
-            >
-              <span>{navItem?.title}</span>
-              <ChevronRight size="18" />
-            </Link>
-          ))}
+          {navigation?.child_navigations.map((navItem, index) => {
+            console.log(navItem?.nested_child_navigations.length); // Move console.log here
+
+            return !navItem?.nested_child_navigations.length ? (
+              <Link
+                key={index}
+                href={navItem?.link}
+                className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white"
+              >
+                <span>{navItem?.title}</span>
+                <ChevronRight size="18" />
+              </Link>
+            ) : (
+              <Accordion
+                key={index}
+                type="single"
+                collapsible
+                className="border-b-0"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger
+                    className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white hover:no-underline data-[state=open]:bg-white"
+                    iconClassName="w-[18px] h-[18px] -rotate-90 p-0"
+                  >
+                    <span>{navItem?.title}</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="bg-white p-3">
+                    <div className="flex flex-col gap-4">
+                      {navItem?.nested_child_navigations.map(
+                        (childnav, index) => (
+                          <Link key={index} href={childnav?.link || "/"}>
+                            {childnav?.title || "Unnamed"}
+                          </Link>
+                        ),
+                      )}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            );
+          })}
         </div>
         <div className="h-full w-auto overflow-hidden border-l border-gray-600/10 p-5">
           <Image

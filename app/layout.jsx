@@ -3,6 +3,9 @@ import "./globals.css";
 import AOSWrapper from "@/utils/AOSWrapper";
 import { ReactLenis } from "@/utils/lenis";
 import { MaintainanceModal } from "@/components/shared/MaintainanceModal";
+import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
+import FooterSection from "@/components/footer/FooterSection";
+import { getMainMenuData } from "@/graphql/Components";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "900"],
@@ -16,6 +19,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
+  const menuData = await getMainMenuData();
   return (
     <html lang="en">
       <ReactLenis root>
@@ -23,9 +27,11 @@ export default async function RootLayout({ children }) {
           className={`${poppins.variable} relative font-poppins antialiased`}
         >
           <AOSWrapper>
+            <HeaderSection data={menuData} />
             {children}
+            <FooterSection data={menuData} />
           </AOSWrapper>
-          <MaintainanceModal/>
+          <MaintainanceModal />
         </body>
       </ReactLenis>
     </html>

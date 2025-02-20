@@ -12,7 +12,7 @@ function FooterLinkGroup({ navigation, index }) {
       <h6 className="text-base font-semibold capitalize leading-[24px] tracking-[3%]">
         {navigation?.group_name}
       </h6>
-      <div className="flex flex-col gap-3 text-sm font-normal leading-[22px] text-white/80">
+      <div className="flex flex-col gap-4 text-sm font-normal leading-[22px] text-white/80">
         {navigation?.child_navigations?.map((navItem, index) => {
           return !navItem?.nested_child_navigations?.length ? (
             <Link
@@ -26,12 +26,12 @@ function FooterLinkGroup({ navigation, index }) {
             <Accordion key={index} type="single" collapsible>
               <AccordionItem value="item-1" className="border-b-0">
                 <AccordionTrigger
-                  className="capitalize hover:no-underline"
+                  className="py-0 text-sm font-normal capitalize leading-[22px] hover:no-underline"
                   iconClassName="w-[18px] text-white h-[18px] bg-transparent p-0"
                 >
                   <span>{navItem?.title}</span>
                 </AccordionTrigger>
-                <AccordionContent className="rounded-sm bg-surface/5 px-2 py-3">
+                <AccordionContent className="mt-3 rounded-sm bg-surface/5 px-2 py-3">
                   <div className="flex flex-col gap-4">
                     {navItem?.nested_child_navigations.map(
                       (childnav, index) => (

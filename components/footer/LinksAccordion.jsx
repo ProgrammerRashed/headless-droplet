@@ -16,7 +16,7 @@ function LinksAccordion({ navigation, index }) {
       >
         {navigation?.group_name}
       </AccordionTrigger>
-      <AccordionContent className="text-w mb-[30px] mt-[15px] flex flex-col gap-3 py-0 text-sm font-normal leading-[22px] text-white/80">
+      <AccordionContent className="mb-[30px] mt-[15px] flex flex-col gap-3 py-0 text-sm font-normal leading-[22px] text-white text-white/80">
         {navigation.child_navigations?.map((navItem, index) => {
           return !navItem?.nested_child_navigations?.length ? (
             <Link href={navItem?.link} key={index} className="hover:underline">
@@ -24,14 +24,14 @@ function LinksAccordion({ navigation, index }) {
             </Link>
           ) : (
             <Accordion key={index} type="single" collapsible>
-              <AccordionItem value="item-1" className="border-b-0">
+              <AccordionItem value="item-1" className="gap-3 border-b-0">
                 <AccordionTrigger
-                  className="hover:no-underline"
-                  iconClassName="bg-white/5 h-9 w-9 text-white p-2 rounded-full hover:bg-white/10"
+                  className="py-0 pr-2.5 text-sm font-normal leading-[22px] hover:no-underline"
+                  iconClassName="w-[18px] text-white h-[18px] bg-transparent p-0 "
                 >
                   <span>{navItem?.title}</span>
                 </AccordionTrigger>
-                <AccordionContent className="rounded-sm bg-surface/5 px-3 py-3">
+                <AccordionContent className="mt-4 rounded-sm bg-surface/5 px-3 py-3">
                   <div className="flex flex-col gap-4">
                     {navItem?.nested_child_navigations.map(
                       (childnav, index) => (

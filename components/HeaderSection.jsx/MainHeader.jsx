@@ -1,26 +1,22 @@
-import Image from "next/image";
 import PrimaryButton from "../shared/buttons/PrimaryButton";
 import MainNavigationLinks from "./MainNavigationLinks";
 import Link from "next/link";
+import NavLogo from "./NavLogo";
 
 function MainHeader({
   navigations,
   buttonDetails,
-  logoLink,
+  logos,
   isMobileNavOpen,
   setIsMobileNavOpen,
 }) {
 
+
+  
   return (
     <div className="flex items-center justify-between gap-3 py-[10px] 0.5xl:py-0 3xl:gap-5">
       <Link href="/" onClick={() => setIsMobileNavOpen(false)}>
-        <Image
-          src={logoLink || "/thumbnail.png"}
-          width={253}
-          height={55}
-          alt="SAF logo"
-          className="h-auto w-[147px] object-contain lg:w-[200px] 0.5xl:w-[253px]"
-        />
+        <NavLogo logos={logos}/>
       </Link>
       <div className="flex items-center justify-between gap-4 3xl:gap-[35px]">
         <MainNavigationLinks navigations={navigations} />

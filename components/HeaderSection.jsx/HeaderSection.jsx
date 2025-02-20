@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import MobileNavLinks from "./MobileNavLinks";
 
 function HeaderSection({ data }) {
-  const logo = data?.customNavigationBy?.logo
+  const logos = data?.customNavigationBy?.logo
   const socialLinks = data?.customNavigationBy?.socialLinks
   const navigations = data?.customNavigationBy?.navigations;
   const buttonDetails = data?.customNavigationBy?.buttonDetails;
@@ -58,7 +58,7 @@ function HeaderSection({ data }) {
           setIsMobileNavOpen={setIsMobileNavOpen}
           navigations={navigations}
           buttonDetails={buttonDetails}
-          logoLink={logo}
+          logos={logos}
         />
         {isMobileNavOpen && (
           <MobileNavLinks

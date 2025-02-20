@@ -10,14 +10,14 @@ async function JobDetailsPage({params}) {
      <JobDetailsHeroSection
         data={{
           sectionHeading: singleJob?.title,
-          linkDetails: { title: "Apply Now", link: "/career/apply-now" },
+          linkDetails: { title: "Apply Now", link: `/career/${JobSlug}/apply-now` },
         }}
       /> 
       <RichContentAreaSection
         data={{
           sectionClassName: "!max-w-[1108px]",
           shareButtons: false,
-          buttonDetails: { title: "Apply Now", link: "/career/apply-now" },
+          buttonDetails: { title: "Apply Now", link: `/career/${JobSlug}/apply-now` },
           content:singleJob?.content ,
         }}
       /> 

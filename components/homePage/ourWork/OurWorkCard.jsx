@@ -25,9 +25,7 @@ function OurWorkCard({ card }) {
           <p className="mb-[24px] hidden text-base font-normal leading-[26px] lg:block">
             {details}
           </p>
-          <PrimaryButton href={button_details[0]?.link} className="bg-tranparent hidden rounded-none border-0 border-b-2 border-b-white stroke-white !px-0 !pb-[10px] !pt-0 text-base font-semibold leading-[24px] text-white hover:bg-transparent lg:flex">
-            {button_details[0]?.title}
-          </PrimaryButton>
+         
         </div>
       </div>
     </div>

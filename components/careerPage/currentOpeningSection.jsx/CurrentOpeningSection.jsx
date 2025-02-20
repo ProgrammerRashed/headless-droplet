@@ -7,7 +7,7 @@ import CurrentOpeningCard from "./CurrentOpeningCard";
 import ApplyNowForm from "@/components/applyNowPage/applyNowSection/ApplyNowForm";
 
 function CurrentOpeningSection({ jobs }) {
-  const sectionTitle = "Current openings";
+  let sectionTitle = "Current openings";
 
   // Get current date and time
   const currentDate = new Date();
@@ -83,9 +83,9 @@ function CurrentOpeningSection({ jobs }) {
         <div className="container">
           <div className="mb-5 flex flex-col items-center justify-center gap-[10px] md:mb-10">
             <div data-aos="fade-up">
-              <SectionHeading>{sectionTitle}</SectionHeading>
+              <SectionHeading>{filteredJobs.length < 1 ? "No Vacancy" : sectionTitle}</SectionHeading>
             </div>
-            <p data-aos="fade-up" className="text-center text-base font-normal leading-[26px] text-gray-600">
+            <p data-aos="fade-up" className="text-center text-base font-normal leading-[26px] text-gray-600 max-w-[700px]">
               We currently don’t have any job openings at the moment. However, if you don’t see a
               suitable position available, feel free to send us your updated resume—we’d love to
               keep it on file for future opportunities!

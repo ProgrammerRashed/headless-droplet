@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
+import RenderHtmlHelper from "../RenderHtmlHelper";
 
 function LeadershipCard({
   cardBackgroundSection,
@@ -78,7 +79,7 @@ const title = people?.node?.title
                 </DialogDescription>
               </DialogHeader>
               <p className="text-base font-normal leading-[26px] text-gray-600">
-                {people.node?.content?.replace(/<\/?[^>]+(>|$)/g, '')}
+                <RenderHtmlHelper htmlContent={people.node?.content}/>
               </p>
             </div>
           </div>

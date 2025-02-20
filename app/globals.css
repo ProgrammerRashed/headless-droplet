@@ -299,3 +299,41 @@ html.lenis body {
 .rich-content-container feagure figcaption {
   @apply mt-[10px] text-xs font-normal leading-[18px] text-gray-400;
 }
+
+
+/* ------------------------------------- */
+/* Custom Table */
+/* ------------------------------------- */
+.wp-block-table table {
+  box-shadow: 5px 10px 23px 0px #565C731F;
+  border: 1px solid #EBEAEA;
+  border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  margin-top: -150px;
+  margin-bottom: 80px;
+}
+
+/* Make the table rows display correctly */
+.wp-block-table table tbody {
+  display: table-row-group;
+}
+
+/* Style each row */
+.wp-block-table table tbody tr {
+  border-bottom: 1px solid #E5E7EB;
+}
+
+/* Style table cells */
+.wp-block-table table tbody tr td {
+  border-left: 1px solid #E5E7EB;
+  padding: 12px 16px;
+}
+
+/* Style first column (labels) */
+.wp-block-table table tbody tr td:first-child {
+  width: 20%;
+}

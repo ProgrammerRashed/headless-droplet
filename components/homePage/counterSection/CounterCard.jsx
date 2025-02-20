@@ -37,7 +37,6 @@ function CounterCard({ counter }) {
           ref={countUpRef}
           className="scroll-smooth text-[38px] font-semibold leading-[50px] text-gray-800 sm:text-[58px] sm:leading-[70px] md:text-[38px] md:leading-normal xl:text-[58px] xl:leading-[70px]"
         >
-        
           {counter.counter_number}
           {counter.suffix}
         </h4>

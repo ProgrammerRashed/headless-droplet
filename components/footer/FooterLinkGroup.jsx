@@ -1,4 +1,10 @@
 import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
 
 function FooterLinkGroup({ navigation, index }) {
   return (
@@ -7,15 +13,43 @@ function FooterLinkGroup({ navigation, index }) {
         {navigation?.group_name}
       </h6>
       <div className="flex flex-col gap-3 text-sm font-normal leading-[22px] text-white/80">
-        {navigation?.child_navigations?.map((navitem, index) => (
-          <Link
-            href={navitem?.link}
-            key={index}
-            className="capitalize hover:underline"
-          >
-            {navitem?.title}
-          </Link>
-        ))}
+        {navigation?.child_navigations?.map((navItem, index) => {
+          return !navItem?.nested_child_navigations?.length ? (
+            <Link
+              href={navItem?.link}
+              key={index}
+              className="capitalize hover:underline"
+            >
+              {navItem?.title}
+            </Link>
+          ) : (
+            <Accordion key={index} type="single" collapsible>
+              <AccordionItem value="item-1" className="border-b-0">
+                <AccordionTrigger
+                  className="capitalize hover:no-underline"
+                  iconClassName="w-[18px] text-white h-[18px] bg-transparent p-0"
+                >
+                  <span>{navItem?.title}</span>
+                </AccordionTrigger>
+                <AccordionContent className="rounded-sm bg-surface/5 px-2 py-3">
+                  <div className="flex flex-col gap-4">
+                    {navItem?.nested_child_navigations.map(
+                      (childnav, index) => (
+                        <Link
+                          key={index}
+                          href={childnav?.link || "/"}
+                          className="text-sm transition-all duration-300 hover:underline"
+                        >
+                          {childnav?.title || "Unnamed"}
+                        </Link>
+                      ),
+                    )}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          );
+        })}
       </div>
     </div>
   );

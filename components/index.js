@@ -78,8 +78,7 @@ const blockComponentsMapping = {
   'carbon-fields/monthly-gift-section': MonthlyGiftWrapper,
   'carbon-fields/our-culture-accordion-section': OurCultureAccordionSection,
   'carbon-fields/impact-posts-section': ImpactPageWrapper,
-  
- 
+
 };
 
 export default blockComponentsMapping;

@@ -4,7 +4,12 @@ export const mainMenuQuery = gql`
   query NewQuery {
     customNavigationBy(slug: "main-menu") {
       id
-      logo
+      logo{
+        logo_link
+          logo_country{
+			    value
+        }
+      }
       socialLinks {
         link
       }

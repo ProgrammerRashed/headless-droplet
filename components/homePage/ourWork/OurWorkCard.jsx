@@ -1,8 +1,7 @@
 import Image from "next/image";
-import PrimaryButton from "../../shared/buttons/PrimaryButton";
 
 function OurWorkCard({ card }) {
-  const { heading, bg_image, details, button_details } = card;
+  const { heading, bg_image, details } = card;
   return (
     <div
       data-aos="fade-up"

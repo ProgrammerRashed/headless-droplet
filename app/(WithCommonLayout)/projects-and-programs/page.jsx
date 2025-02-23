@@ -5,7 +5,11 @@ async function ProjectsAndProgramsPage() {
 
   const pageData = await getPageData("/project-and-programs");
 
-  return (<RenderBlocksHelper blocks={pageData} />);
+  return (<div>
+
+    <RenderBlocksHelper blocks={pageData} />
+  </div>
+  );
 
 }
 

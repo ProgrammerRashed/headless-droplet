@@ -1,4 +1,3 @@
-import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 
 function TenderCard({ card }) {
   return (
@@ -8,16 +7,18 @@ function TenderCard({ card }) {
     >
       <div className="flex flex-col">
         <h4 className="mb-[10px] line-clamp-4 text-[22px] font-medium leading-[32px] md:line-clamp-2 lg:line-clamp-1">
-          {card.title}
+          {card?.title}
         </h4>
         <p className="mb-1 text-xs font-semibold leading-[18px] text-gray-800">
-          Date of Issue: <span className="font-normal">{card.issueDate}</span>
+          Date of Issue: <span className="font-normal">{card?.issue_date}</span>
         </p>
         <p className="text-xs font-semibold leading-[18px] text-gray-800">
-          Closing Date: <span className="font-normal">{card.closingDate}</span>
+          Closing Date: <span className="font-normal">{card?.closing_date}</span>
         </p>
       </div>
-      <button className="flex w-fit flex-shrink-0 flex-row items-center gap-2 rounded-full border border-red-600 stroke-red-600 px-6 py-[13px] text-sm font-semibold leading-[22px] text-red-600 transition-all duration-300 hover:bg-red-900 hover:stroke-white hover:text-white md:px-6 md:py-[15px] md:text-base md:leading-[24px]">
+      <a  href={card?.download_pdf_link} 
+        target="_blank"
+        rel="noopener noreferrer" className="flex w-fit flex-shrink-0 flex-row items-center gap-2 rounded-full border border-red-600 stroke-red-600 px-6 py-[13px] text-sm font-semibold leading-[22px] text-red-600 transition-all duration-300 hover:bg-red-900 hover:stroke-white hover:text-white md:px-6 md:py-[15px] md:text-base md:leading-[24px]">
         <span>Download Tender</span>
         <svg
           width={20}
@@ -51,7 +52,7 @@ function TenderCard({ card }) {
             strokeLinejoin="round"
           />
         </svg>
-      </button>
+      </a>
     </div>
   );
 }

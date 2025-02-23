@@ -1,8 +1,8 @@
 function Loading() {
   return (
-    <section className="flex h-screen flex-col items-center justify-center bg-surface">
+    <section className="flex h-screen flex-col items-center justify-center bg-surface-dark">
       <svg
-        className="h-auto w-[120px] md:w-[157px]"
+        className="h-auto w-[120px] animate-pulse md:w-[157px]"
         width={157}
         height={60}
         viewBox="0 0 157 60"

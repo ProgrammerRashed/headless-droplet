@@ -32,7 +32,7 @@ function PhotoGalleryContent({ gallery }) {
       <div className="flex w-full flex-col items-start px-[15px] sm:px-[90px] md:px-[190px] lg:px-[300px] xl:px-[400px]">
         <DialogHeader className="mb-5 flex flex-col items-start lg:gap-[10px]">
           <DialogTitle className="text-lg font-medium leading-[42px] text-white md:font-semibold xl:text-[32px] xl:font-bold xl:leading-[42px]">
-            {gallery.caption}
+            {gallery?.caption}
           </DialogTitle>
 
           <DialogDescription className="m-0 p-0 text-base font-normal leading-normal text-white">
@@ -49,17 +49,17 @@ function PhotoGalleryContent({ gallery }) {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex + 1)}
           >
-            {gallery?.gallery?.map((image) => (
-              <SwiperSlide key={image.id}>
+            {gallery?.gallery?.map((image, index) => (
+              <SwiperSlide key={index}>
                 <Image
-                  src={image.imageUrl || "/thumbnail.png"}
+                  src={image?.image_url || "/thumbnail.png"}
                   height={750}
                   width={1290}
-                  alt={image.caption}
+                  alt={image?.caption}
                   className="aspect-video w-full object-cover"
                 />
                 <div className="absolute bottom-[10px] left-[10px] rounded-[80px] bg-gray-800/60 px-4 py-[7px] text-base font-normal leading-[26px] text-white md:bottom-6 md:left-6">
-                  {image.caption}
+                  {image?.caption}
                 </div>
               </SwiperSlide>
             ))}

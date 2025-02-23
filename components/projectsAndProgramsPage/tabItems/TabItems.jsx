@@ -53,7 +53,7 @@ function TabItems({tabItems, setTabItems, items }) {
   };
 
   return (
-    <Tabs defaultValue={tabItems || "all"} className="w-full">
+    <Tabs defaultValue={tabItems || items[0].slug || "all"} className="w-full">
       <TabsList
         data-aos="fade-up"
         ref={tabsListRef}

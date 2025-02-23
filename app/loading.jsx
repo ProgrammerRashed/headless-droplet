@@ -1,6 +1,6 @@
 function Loading() {
   return (
-    <section className="flex h-screen flex-col items-center justify-center bg-surface-dark">
+    <section className="fixed inset-0 z-[20000000] flex h-screen w-full flex-col items-center justify-center bg-surface-dark">
       <svg
         className="h-auto w-[120px] animate-pulse md:w-[157px]"
         width={157}

@@ -31,15 +31,17 @@ function EoiCard({ card }) {
         </svg>
       </div>
       <h4 className="mb-[10px] text-[22px] font-medium leading-[32px] text-gray-800">
-        {card.title}
+        {card?.title}
       </h4>
       <p className="mb-1 text-xs font-semibold leading-[18px] text-gray-800">
-        Date of Issue: <span className="font-normal">{card.issueDate}</span>
+        Date of Issue: <span className="font-normal">{card?.issueDate}</span>
       </p>
       <p className="text-xs font-semibold leading-[18px] text-gray-800">
-        Closing Date: <span className="font-normal">{card.closingDate}</span>
+        Closing Date: <span className="font-normal">{card?.closingDate}</span>
       </p>
-      <button className="mt-[30px] flex w-full items-center gap-[10px] border-t border-gray-50 pt-3 text-base font-semibold leading-[24px] text-gray-800 transition-all duration-300 hover:text-red-600">
+      <a  href={card?.download_pdf_link} 
+        target="_blank"
+        rel="noopener noreferrer" className="mt-[30px] flex w-full items-center gap-[10px] border-t border-gray-50 pt-3 text-base font-semibold leading-[24px] text-gray-800 transition-all duration-300 hover:text-red-600">
         <svg
           width={32}
           height={32}
@@ -73,7 +75,7 @@ function EoiCard({ card }) {
           />
         </svg>
         <span>Download</span>
-      </button>
+      </a>
     </div>
   );
 }

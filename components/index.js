@@ -8,6 +8,7 @@ import CardSliderSection from "./donationPage/cardSliderSection/CardSliderSectio
 import DonationSection from "./donationPage/donationSection/DonationSection";
 import FAQSection from "./donationPage/faqSection/FAQSection";
 import MonthlyGiftWrapper from "./donationPage/monthlyGiftSection/MonthlyGiftWrapper";
+import EOIAndTenderPageWrapper from "./eoiAndTenderPage/EOIAndTenderPageWrapper";
 import HeroSection from "./heroSection/HeroSection";
 import HeroWithLink from "./heroSection/HeroWithLink";
 import SecondaryBanner from "./heroSection/SecondaryBanner";
@@ -82,6 +83,7 @@ const blockComponentsMapping = {
   'carbon-fields/impact-posts-section': ImpactPageWrapper,
   'carbon-fields/photo-gallery-section': PhotoGallerySection,
   'carbon-fields/video-gallery-section': VideoGallerySection,
+  'carbon-fields/eoi-and-tender-section': EOIAndTenderPageWrapper,
 
 };
 

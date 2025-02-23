@@ -1,37 +1,48 @@
+"use client"
 import TabItems from "@/components/projectsAndProgramsPage/tabItems/TabItems";
 import SectionHeading from "@/components/sectionHeader/SectionHeading";
-import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import EoiCard from "./EoiCard";
+import { useState } from "react";
 
 function EoiSection({ data }) {
-  const { sectionTitle, eoiItems, buttonDetails } = data;
+  const { section_title, items } = data;
+  const [selectedCountry, setSelectedCountry] = useState("all");
+
+  // Create unique array of countries
+  const countries = [
+    { slug: "all", value: "All" },
+    ...[...new Set(items.map(item => item.country?.toLowerCase()))]
+      .filter(Boolean) 
+      .sort() 
+      .map(country => ({
+        slug: country.trim().toLowerCase(),
+        value: country.trim().charAt(0).toUpperCase() + country.trim().slice(1)
+      }))
+  ];
+
+  // Filter items based on selected country
+  const filteredItems = items?.filter(item => 
+    selectedCountry === "all" || 
+    item.country?.toLowerCase().trim() === selectedCountry
+  );
+
   return (
     <section className="py-10 md:py-20">
       <div className="container">
         <div data-aos="fade-up">
-          <SectionHeading>{sectionTitle}</SectionHeading>
+          <SectionHeading>{section_title}</SectionHeading>
         </div>
         <div className="mt-[30px] md:mt-10">
-          <TabItems
-            items={[
-              { id: crypto.randomUUID(), country: "All" },
-              { id: crypto.randomUUID(), country: "Switzerland (HQ)" },
-              { id: crypto.randomUUID(), country: "Bangladesh" },
-              { id: crypto.randomUUID(), country: "India" },
-              { id: crypto.randomUUID(), country: "Kenya" },
-            ]}
+          <TabItems 
+            items={countries} 
+            tabItems={selectedCountry}
+            setTabItems={setSelectedCountry}
           />
         </div>
         <div className="mt-[30px] grid grid-cols-1 gap-[30px] md:mt-10 md:grid-cols-2 lg:grid-cols-3">
-          {eoiItems.map((card) => (
-            <EoiCard key={card.id} card={card} />
+          {filteredItems?.map((card) => (
+            <EoiCard key={card._id} card={card} />
           ))}
-        </div>
-        <div
-          data-aos="fade-up"
-          className="mt-[30px] flex justify-center md:mt-10"
-        >
-          <PrimaryButton>{buttonDetails.title}</PrimaryButton>
         </div>
       </div>
     </section>

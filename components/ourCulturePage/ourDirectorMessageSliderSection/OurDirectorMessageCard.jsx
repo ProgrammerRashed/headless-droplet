@@ -24,21 +24,21 @@ function OurDirectorMessageCard({ card }) {
         />
       </svg>
       <h3 className="flex-grow text-center text-[22px] font-medium leading-[32px] text-gray-800">
-        {card.message}
+        {card?.message}
       </h3>
       <div className="mt-[60px] flex w-full flex-col items-center justify-center border-t border-gray-50 pt-5">
         <Image
-          src="/our-culture-page/director-1.png"
+          src={card?.image_link || card?.image_link}
           width={60}
           height={60}
-          alt={card.name}
+          alt={card?.name}
           className="mb-2 aspect-square rounded-full"
         />
         <h4 className="mb-[6px] text-center text-base font-medium leading-[26px] text-gray-800">
-          {card.name}
+          {card?.name}
         </h4>
         <p className="text-center text-xs leading-[18px] text-gray-400">
-          {card.position}
+          {card?.position}
         </p>
       </div>
     </div>

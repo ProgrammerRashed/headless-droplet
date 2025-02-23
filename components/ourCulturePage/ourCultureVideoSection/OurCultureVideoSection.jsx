@@ -1,13 +1,10 @@
 "use client";
-
-import VideoPlayer from "@/components/shared/VideoPlayer";
-
+import extractYouTubeEmbedURL from "@/utils/extractYouTubeEmbedURL";
 import Image from "next/image";
 import { useState } from "react";
 
 function OurCultureVideoSection({ data }) {
-  const { video } = data;
-
+const video = data?.data?.video[0]
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayClick = () => {
@@ -22,8 +19,8 @@ function OurCultureVideoSection({ data }) {
             className="block h-full border-none object-cover"
             width="100%"
             height="100%"
-            src={video?.videoLink}
-            title={video?.videoTitle}
+            src={extractYouTubeEmbedURL(video?.video_link)}
+            title={video?.video_title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
@@ -36,19 +33,19 @@ function OurCultureVideoSection({ data }) {
             <Image
               width={850}
               height={482}
-              src={video?.videoThumbNail || "/thumbnail.png"}
+              src={video?.video_thumbnail || "/thumbnail.png"}
               alt="Farming transforms video thumbnail"
               className="absolute inset-0 h-full w-full object-cover"
             />
             <div
-              className={`absolute inset-0 flex w-full items-end ${video?.videoTitle ? "bg-gradient-to-b from-black/10 to-black/70" : ""}`}
+              className={`absolute inset-0 flex w-full items-end ${video?.video_title ? "bg-gradient-to-b from-black/10 to-black/70" : ""}`}
             >
-              {video?.videoTitle && (
+              {video?.video_title && (
                 <p
                   data-aos="fade-up"
                   className="w-full p-4 text-left text-base font-bold leading-normal tracking-[1%] text-white sm:p-8 sm:text-center sm:text-2xl lg:p-10 lg:text-5xl lg:font-bold lg:leading-[60px]"
                 >
-                  {video?.videoTitle}
+                  {video?.video_title}
                 </p>
               )}
             </div>

@@ -1,5 +1,5 @@
 import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
-import RichContentAreaSection from "@/components/shared/PlainRichTextContainer";
+import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
 import ProjectDetailsBanner from "@/components/donationPage/projectDetailsBanner/ProjectDetailsBanner";
 import { getProjectsByCategory } from "@/graphql/Components/getProjectsByCategory";
 import { getSingleProject } from "@/graphql/Components/getSingleProject";

@@ -21,6 +21,9 @@ import OurWorkSection from "./homePage/ourWork/OurWorkSection";
 import VideosSection from "./homePage/videosSection.jsx/VideosSection";
 import ImpactPageWrapper from "./impactSoriesPage/impactSliderSection/ImpactPageWrapper";
 import OurCultureAccordionSection from "./ourCulturePage/ourCultureAccordionSection/OurCultureAccordionSection";
+import OurCultureGallerySection from "./ourCulturePage/ourCultureGallerySection/OurCultureGallerySection";
+import OurCultureVideoSection from "./ourCulturePage/ourCultureVideoSection/OurCultureVideoSection";
+import OurDirectorMessageSliderSection from "./ourCulturePage/ourDirectorMessageSliderSection/OurDirectorMessageSliderSection";
 import DownloadBooksSection from "./ourHistoryPage/downloadBooksSection/DownloadBooksSection";
 import TimelineSection from "./ourHistoryPage/timelineSection/TimelineSection";
 import DirectorsDetailsSection from "./ourLeadershipPage/directorsDetailsSection/DirectorsDetailsSection";
@@ -88,6 +91,9 @@ const blockComponentsMapping = {
   'carbon-fields/eoi-and-tender-section': EOIAndTenderPageWrapper,
   'carbon-fields/full-width-slider': FullWidthSlider,
   'carbon-fields/rich-text-content-section': PlainRichTextContainer,
+  'carbon-fields/our-culture-gallery-section': OurCultureGallerySection,
+  'carbon-fields/our-culture-video-section': OurCultureVideoSection,
+  'carbon-fields/our-director-message-slider-section': OurDirectorMessageSliderSection,
   
 
 };

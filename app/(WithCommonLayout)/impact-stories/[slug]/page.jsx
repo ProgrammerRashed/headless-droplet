@@ -1,6 +1,6 @@
 import DetailsBannerSection from "@/components/detailsPage/detailsBannerSection/DetailsBannerSection";
 import RealatedStoriesSliderSection from "@/components/detailsPage/realatedStoriesSliderSection/RealatedStoriesSliderSection";
-import RichContentAreaSection from "@/components/shared/PlainRichTextContainer";
+import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
 import { getSingleBlog } from "@/graphql/Components";
 import { getBlogsByCategory } from "@/graphql/Components/getBlogsByCategory";
 import formatDate from "@/utils/formatDate";

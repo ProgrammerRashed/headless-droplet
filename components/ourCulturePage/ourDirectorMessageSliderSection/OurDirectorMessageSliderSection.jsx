@@ -14,8 +14,7 @@ import Image from "next/image";
 import OurDirectorMessageCard from "./OurDirectorMessageCard";
 
 function OurDirectorMessageSliderSection({ data }) {
-  const { sectionTitle, messages } = data;
-
+  const { section_title, messages } = data?.data;
   const swiperRef = useRef(null);
 
   return (
@@ -24,7 +23,7 @@ function OurDirectorMessageSliderSection({ data }) {
         <div className="flex flex-row items-end justify-between">
           <div data-aos="fade-up">
             <SectionHeading className="max-w-[800px]">
-              {sectionTitle}
+              {section_title}
             </SectionHeading>
           </div>
           <div data-aos="fade-up" className="hidden 0.5xl:block">
@@ -60,8 +59,8 @@ function OurDirectorMessageSliderSection({ data }) {
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {messages.map((message) => (
-              <SwiperSlide key={message.id}>
+            {messages?.map((message) => (
+              <SwiperSlide key={message._id}>
                 <OurDirectorMessageCard card={message} />
               </SwiperSlide>
             ))}

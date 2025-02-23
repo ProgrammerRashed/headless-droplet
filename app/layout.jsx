@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import AOSWrapper from "@/utils/AOSWrapper";
@@ -6,6 +8,7 @@ import { MaintainanceModal } from "@/components/shared/MaintainanceModal";
 import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
 import FooterSection from "@/components/footer/FooterSection";
 import { getMainMenuData } from "@/graphql/Components";
+import Loading from "./loading";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "900"],
@@ -26,12 +29,14 @@ export default async function RootLayout({ children }) {
         <body
           className={`${poppins.variable} relative font-poppins antialiased`}
         >
-          <AOSWrapper>
-            <HeaderSection data={menuData} />
-            {children}
-            <FooterSection data={menuData} />
-          </AOSWrapper>
-          <MaintainanceModal />
+          <Suspense fallback={<Loading />}>
+            <AOSWrapper>
+              <HeaderSection data={menuData} />
+              {children}
+              <FooterSection data={menuData} />
+            </AOSWrapper>
+            <MaintainanceModal />
+          </Suspense>
         </body>
       </ReactLenis>
     </html>

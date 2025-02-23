@@ -348,3 +348,20 @@ html.lenis body {
 .wp-block-table table tbody tr td:first-child {
   width: 20%;
 }
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+  100% {
+    stroke-dasharray: 100, 0;
+  }
+}
+
+.loading-path {
+  fill: none;
+  stroke: #46d39a;
+  stroke-width: 3;
+  stroke-dasharray: 0, 100;
+  animation: draw 2s ease-in-out infinite;
+}

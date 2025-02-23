@@ -247,6 +247,18 @@ html.lenis body {
   }
 }
 
+.swiper-pagination {
+  @apply !bottom-2 !h-auto !leading-[0px] md:!bottom-5 !important;
+}
+
+.swiper-pagination-bullet {
+  @apply !mx-[5px] !my-[4px] !h-[4px] !w-10 !rounded-[20px] !bg-white !opacity-40 !transition-opacity !duration-300 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white !opacity-100 !important;
+}
+
 /* ------------------------------------- */
 /* Select item open body  scroll hide  */
 /* ------------------------------------- */
@@ -300,13 +312,12 @@ html.lenis body {
   @apply mt-[10px] text-xs font-normal leading-[18px] text-gray-400;
 }
 
-
 /* ------------------------------------- */
 /* Custom Table */
 /* ------------------------------------- */
 .wp-block-table table {
-  box-shadow: 5px 10px 23px 0px #565C731F;
-  border: 1px solid #EBEAEA;
+  box-shadow: 5px 10px 23px 0px #565c731f;
+  border: 1px solid #ebeaea;
   border-radius: 8px;
   width: 100%;
   border-collapse: collapse;
@@ -324,12 +335,12 @@ html.lenis body {
 
 /* Style each row */
 .wp-block-table table tbody tr {
-  border-bottom: 1px solid #E5E7EB;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 /* Style table cells */
 .wp-block-table table tbody tr td {
-  border-left: 1px solid #E5E7EB;
+  border-left: 1px solid #e5e7eb;
   padding: 12px 16px;
 }
 

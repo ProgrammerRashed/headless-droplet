@@ -1,30 +1,23 @@
-import ProjectSection from "@/components/bangladeshPage/projectsSection/ProjectSection";
-import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
-import ProjectDetailsBanner from "@/components/donationPage/projectDetailsBanner/ProjectDetailsBanner";
+import SecondaryBanner from "@/components/heroSection/SecondaryBanner";
+import FullWidthSlider from "@/components/shared/FullWidthSlider";
 
 async function ThematicAreaPage() {
-
   return (
     <>
-     {/* <ProjectDetailsBanner
+      <SecondaryBanner
         data={{
-          sectionHeading,
-          donor,
-          tenure,
-          linkDetails,
-          bannerImageLink,
+          data: {
+            section_heading: "Thematic Areas",
+          },
         }}
       />
-     
-      <RichContentAreaSection
-        data={{
-          sectionClassName: "!max-w-[1000px]",
-          shareButtons: false,
-          content: content,
-        }}
+      <FullWidthSlider
+        images={[
+          "/about-country/bangladesh-banner.jpg",
+          "/about-country/bangladesh-banner.jpg",
+          "/about-country/bangladesh-banner.jpg",
+        ]}
       />
-      
-     {/* <ProjectSection SectionTitle={SectionTitle}  viewAllBtnDetails={viewAllBtnDetails} projects={projects} titlePositionClassName={titlePositionClassName}/> */}
     </>
   );
 }

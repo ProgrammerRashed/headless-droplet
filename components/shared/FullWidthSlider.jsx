@@ -7,9 +7,8 @@ import { Pagination } from "swiper/modules";
 import { useRef } from "react";
 import Image from "next/image";
 
-function FullWidthSlider({ images }) {
+function FullWidthSlider({ data }) {
   const swiperRef = useRef(null);
-
   return (
     <section className="relative w-full overflow-hidden">
       <Swiper
@@ -21,13 +20,13 @@ function FullWidthSlider({ images }) {
         modules={[Pagination]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
-        {images.map((image, index) => (
+        {data?.data?.images?.map((image, index) => (
           <SwiperSlide key={index} className="bg-transparent">
             <div className="relative w-full">
               <Image
                 width={1440}
                 height={662}
-                src={image}
+                src={image?.image_url}
                 alt={`Slide ${index}`}
                 className="aspect-video h-auto w-full object-cover md:aspect-[1440/662]"
                 priority

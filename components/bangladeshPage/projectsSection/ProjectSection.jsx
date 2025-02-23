@@ -17,7 +17,6 @@ function ProjectSection({
   projects,
   viewAllBtnDetails,
 }) {
-
   return (
     <section className="bg-surface py-[50px] md:py-[100px]">
       <div data-aos="fade-up" className="container">
@@ -48,7 +47,7 @@ function ProjectSection({
             speed={600}
             loop={true}
           >
-            {projects.map((project, index) => (
+            {projects?.map((project, index) => (
               <SwiperSlide key={index}>
                 <ProjectCard project={project} />
               </SwiperSlide>
@@ -58,15 +57,18 @@ function ProjectSection({
       </div>
       <div className="container">
         <div className="mb-[30px] mt-[60px] hidden grid-cols-2 gap-5 border-gray-50 pb-[60px] sm:grid sm:border-b md:gap-[30px]">
-          {projects.map((project, index) => (
+          {projects?.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
-        <div data-aos="fade-up">
+        {
+          viewAllBtnDetails?.link &&  <div data-aos="fade-up">
           <PrimaryButton href={viewAllBtnDetails?.link} className="mx-auto hidden sm:flex">
             {viewAllBtnDetails?.title}
           </PrimaryButton>
         </div>
+        }
+       
       </div>
     </section>
   );

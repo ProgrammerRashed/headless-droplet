@@ -30,9 +30,11 @@ import PublicationPageWrpper from "./reportsAndPublicationsPage/PublicationPageW
 import MainBlogsSection from "./shared/blogsAndInsightsSection/MainBlogsSection";
 import CtaSection from "./shared/ctaSection/CtaSection";
 import DirectorsSaySection from "./shared/directorSay/DirectorsSaySection";
+import FullWidthSlider from "./shared/FullWidthSlider";
 import TeamGridSection from "./shared/leadershipGridSection/TeamGridSection";
 import OurPartnersSections from "./shared/ourPartnersSection/OurPartnersSections";
 import OurValuesSection from "./shared/ourValuesSection/OurValuesSection";
+import PlainRichTextContainer from "./shared/PlainRichTextContainer";
 import SDGSContributionSection from "./shared/sdgsContributionSection/SDGSContributionSection";
 import SideBySideBulletPoints from "./shared/sideBySideBulletPoints/SideBySideBulletPoints";
 import VideoGallerySection from "./videoGalleryPage/videoGallerySection/VideoGallerySection";
@@ -84,6 +86,9 @@ const blockComponentsMapping = {
   'carbon-fields/photo-gallery-section': PhotoGallerySection,
   'carbon-fields/video-gallery-section': VideoGallerySection,
   'carbon-fields/eoi-and-tender-section': EOIAndTenderPageWrapper,
+  'carbon-fields/full-width-slider': FullWidthSlider,
+  'carbon-fields/rich-text-content-section': PlainRichTextContainer,
+  
 
 };
 

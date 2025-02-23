@@ -4,6 +4,7 @@ export const allProjectQuery = gql`
   query AllProjectQuery($ids: [ID!]) {
     projects(where: { in: $ids }, first: 100) {
       nodes {
+        id
         content
         donor
         featuredImage {

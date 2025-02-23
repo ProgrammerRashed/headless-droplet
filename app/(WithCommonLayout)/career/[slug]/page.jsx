@@ -1,5 +1,5 @@
 import JobDetailsHeroSection from "@/components/detailsPage/jobDetailsHeroSection/JobDetailsHeroSection";
-import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
+import RichContentAreaSection from "@/components/shared/PlainRichTextContainer";
 import { getSingleJob } from "@/graphql/Components/getSingleJob";
 
 async function JobDetailsPage({params}) {

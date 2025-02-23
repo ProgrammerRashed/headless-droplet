@@ -1,5 +1,5 @@
 import DetailsBannerSection from "@/components/detailsPage/detailsBannerSection/DetailsBannerSection";
-import RichContentAreaSection from "@/components/detailsPage/richContentAreaSection/RichContentAreaSection";
+import RichContentAreaSection from "@/components/shared/PlainRichTextContainer";
 import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection/BlogsAndInsightsSection";
 import { getSingleBlog } from "@/graphql/Components";
 import { getBlogsByCategory } from "@/graphql/Components/getBlogsByCategory";

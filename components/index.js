@@ -23,6 +23,7 @@ import OurCultureAccordionSection from "./ourCulturePage/ourCultureAccordionSect
 import DownloadBooksSection from "./ourHistoryPage/downloadBooksSection/DownloadBooksSection";
 import TimelineSection from "./ourHistoryPage/timelineSection/TimelineSection";
 import DirectorsDetailsSection from "./ourLeadershipPage/directorsDetailsSection/DirectorsDetailsSection";
+import PhotoGallerySection from "./photoGalleryPage/photoGallerySection/PhotoGallerySection";
 import ProjectAndProgramsWrapper from "./projectsAndProgramsPage/projectsAndProgramsSection/ProjectAndProgramsWrapper";
 import PublicationPageWrpper from "./reportsAndPublicationsPage/PublicationPageWrpper";
 import MainBlogsSection from "./shared/blogsAndInsightsSection/MainBlogsSection";
@@ -33,6 +34,7 @@ import OurPartnersSections from "./shared/ourPartnersSection/OurPartnersSections
 import OurValuesSection from "./shared/ourValuesSection/OurValuesSection";
 import SDGSContributionSection from "./shared/sdgsContributionSection/SDGSContributionSection";
 import SideBySideBulletPoints from "./shared/sideBySideBulletPoints/SideBySideBulletPoints";
+import VideoGallerySection from "./videoGalleryPage/videoGallerySection/VideoGallerySection";
 import AboutUsSection from "./whoWeArePage/aboutUsSection/AboutUsSection";
 import OurMissionVisionSection from "./whoWeArePage/ourMissionVisionSection/OurMissionVisionSection";
 import OurStrategySection from "./whoWeArePage/ourStrategySection/OurStrategySection";
@@ -78,6 +80,8 @@ const blockComponentsMapping = {
   'carbon-fields/monthly-gift-section': MonthlyGiftWrapper,
   'carbon-fields/our-culture-accordion-section': OurCultureAccordionSection,
   'carbon-fields/impact-posts-section': ImpactPageWrapper,
+  'carbon-fields/photo-gallery-section': PhotoGallerySection,
+  'carbon-fields/video-gallery-section': VideoGallerySection,
 
 };
 

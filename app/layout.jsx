@@ -22,7 +22,13 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const menuData = await getMainMenuData();
+  let menuData;
+  try {
+    menuData = await getMainMenuData();
+  } catch (error) {
+    console.error("Error fetching menu data:", error);
+  }
+
   return (
     <html lang="en">
       <ReactLenis root>
@@ -35,7 +41,6 @@ export default async function RootLayout({ children }) {
               {children}
               <FooterSection data={menuData} />
             </AOSWrapper>
-            <MaintainanceModal />
           </Suspense>
         </body>
       </ReactLenis>

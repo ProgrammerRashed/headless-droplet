@@ -8,6 +8,7 @@ import HeaderSection from "@/components/HeaderSection.jsx/HeaderSection";
 import FooterSection from "@/components/footer/FooterSection";
 import { getMainMenuData } from "@/graphql/Components";
 import Loading from "./loading";
+import DonationButton from "@/components/shared/donationButton/DonationButton";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,11 +41,13 @@ export default async function RootLayout({ children }) {
               <HeaderSection data={menuData} />
               {children}
               <FooterSection data={menuData} />
+              <DonationButton
+                data={{ btn_link: "/donation", btn_text: "Donate" }}
+              />
             </Suspense>
           </AOSWrapper>
         </body>
       </ReactLenis>
-
     </html>
   );
 }

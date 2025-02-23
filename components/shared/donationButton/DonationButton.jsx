@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-function DonationButton({data}) {
- const {btn_link, btn_text} = data
+function DonationButton({ data }) {
+  const { btn_link = "/", btn_text = "Donate" } = data;
   return (
     <Link
       href={btn_link || "/donate"}

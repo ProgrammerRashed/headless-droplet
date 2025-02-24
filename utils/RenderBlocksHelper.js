@@ -13,7 +13,7 @@ const RenderBlocksHelper = ({ blocks }) => {
 
         if (!BlockComponent) {
           console.log(`Block with name "${block.name}" is not found in Block Mapping`);
-          return <p key={index}>Unknown block: {block.name}</p>;
+          return null;
         }
 
         return <BlockComponent key={index} data={JSON.parse(block.attributesJSON)} />;

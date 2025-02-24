@@ -1,13 +1,13 @@
 import { gql } from "@apollo/client";
 
-export const allProjectQuery = gql`
+export const allProjectQueryByIDS = gql`
   query AllProjectQuery($ids: [ID!]) {
     projects(where: { in: $ids }, first: 100) {
       nodes {
         id
         content
         donor
-         databaseId
+        databaseId
         featuredImage {
           node {
             mediaItemUrl

@@ -7,11 +7,22 @@ import TabItems from "../tabItems/TabItems";
 
 function ProjectsAndProgramsSection({ projects, category }) {
   const [tabItems, setTabItems] = useState(category || "all");
-  const [currentStatus, setCurrentStatus] = useState("ongoing");
+  const [currentStatus, setCurrentStatus] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [innerPage, setInnerPage] = useState(category !== "all-projects");
   const itemsPerPage = 6;
+  // Create unique categories array from projects
+  const uniqueCategories = [
+    { value: "All", slug: "all" },
+    ...new Set(projects?.flatMap(project => 
+      project.categories?.nodes
+        ?.filter(category => category.slug !== 'all-projects')
+        ?.map(category => 
+          JSON.stringify({ value: category.name, slug: category.slug })
+        )
+    ))
+  ].map(cat => typeof cat === 'string' ? JSON.parse(cat) : cat);
 
   useEffect(() => {
     let filtered = projects;
@@ -33,13 +44,15 @@ function ProjectsAndProgramsSection({ projects, category }) {
         );
       }
 
-      // Filter by project status
-      filtered = filtered.filter((project) => project.projectStatus.value === currentStatus);
+      // Filter by project status only if not "all"
+      if (currentStatus !== "all") {
+        filtered = filtered.filter((project) => project.projectStatus.value === currentStatus);
+      }
 
       return filtered;
     });
 
-    setCurrentPage(1); // Reset pagination when filters change
+    setCurrentPage(1);
   }, [tabItems, currentStatus, projects, category]);
 
   // Pagination logic
@@ -52,13 +65,7 @@ function ProjectsAndProgramsSection({ projects, category }) {
         {!innerPage && (
           <TabItems
           setTabItems={(slug) => setTabItems(() => slug)}
-            items={[
-              { slug: "all", value: "All" },
-              { slug: "switzerland", value: "Switzerland (HQ)" },
-              { slug: "bangladesh", value: "Bangladesh" },
-              { slug: "india", value: "India" },
-              { slug: "africas-project", value: "Africa" },
-            ]}
+            items={uniqueCategories}
           />
         )}
         <div className="flex w-full flex-col gap-5">

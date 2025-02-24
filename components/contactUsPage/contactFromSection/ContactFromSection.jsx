@@ -14,7 +14,7 @@ import useSendMail from "@/utils/useSendEmail";
 import { useState } from "react";
 
 function ContactFromSection() {
-  const { sendMail, loading, message, error, setMessage, setError } = useSendMail("cfrom");
+  const { sendMail, loading, message, error, setMessage, setError } = useSendMail("cform");
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     firstName: "",
@@ -49,7 +49,7 @@ function ContactFromSection() {
     if (!formData.lastName) newErrors.lastName = 'Last Name is required';
     if (!formData.email) newErrors.email = 'Email is required';
     if (!formData.phone) newErrors.phone = 'Phone is required';
-    if (!formData.country) newErrors.country = 'Contry is required';
+    if (!formData.country) newErrors.country = 'Country is required';
     if (!formData.inquiryType) newErrors.inquiryType = 'Inquiry Type is required';
     if (!formData.message) newErrors.message = 'Message is required';
     return newErrors;

@@ -30,6 +30,7 @@ export const allProjectQuery = gql`
         }
         smallDescription
         title
+         pdfFile
       }
     }
   }

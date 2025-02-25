@@ -13,7 +13,7 @@ function ProjectCard( {project} ) {
         src={project?.featuredImage?.node?.mediaItemUrl || "/thumbnail.png"}
         width={630}
         height={240}
-        alt="Project Thumnail"
+        alt="Project Thumbnail"
         className="mb-[15px] aspect-[300/207] w-full rounded-[8px] object-cover md:mb-5 md:aspect-[63/42]"
       />
       <h3 className="mb-[10px] line-clamp-2 min-h-[56px] text-[22px] font-semibold leading-[28px] text-gray-800 0.5xl:min-h-[84px] 0.5xl:text-[32px] 0.5xl:font-bold 0.5xl:leading-[42px]">
@@ -35,11 +35,11 @@ function ProjectCard( {project} ) {
         </div>
       </div>
       <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">
-        {project.smallDescription}
+        {project?.smallDescription}
       </p>
       <div data-aos="fade-up">
         <Link
-          href={project.pdfFile || "/"}
+          href={project?.pdfFile || "/"}
           target="_blank"
           className={cn(
             "flex w-fit flex-row items-center gap-2 rounded-full border border-red-600 stroke-red-600 px-6 py-[13px] text-sm font-semibold leading-[22px] text-red-600 transition-all duration-300 hover:bg-red-900 hover:stroke-white hover:text-white md:px-6 md:py-[15px] md:text-base md:leading-[24px]",

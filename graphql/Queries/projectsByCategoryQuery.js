@@ -28,6 +28,7 @@ export const projectsByCategoryQuery = gql`
         }
         smallDescription
         title
+        pdfFile
       }
     }
   }

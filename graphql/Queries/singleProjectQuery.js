@@ -21,6 +21,7 @@ export const singleProjectQuery = gql`
         start_date
       }
       title
+      pdfFile
       content
       categories {
       nodes {

@@ -5,6 +5,7 @@ import Image from "next/image";
 
 function ProjectDetailsBanner({ data }) {
   const { sectionHeading, donor, tenure, linkDetails, bannerImageLink } = data;
+
   return (
     <section>
       <div
@@ -39,7 +40,7 @@ function ProjectDetailsBanner({ data }) {
                   </span>
                 </p>
               </div>
-              <PrimaryButton className="mx-auto mt-[30px]">
+              <PrimaryButton   target="_blank" href={linkDetails?.link} className="mx-auto mt-[30px]">
                 {linkDetails.title}
               </PrimaryButton>
             </div>

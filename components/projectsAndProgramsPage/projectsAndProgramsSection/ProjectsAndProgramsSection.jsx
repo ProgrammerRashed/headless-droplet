@@ -5,12 +5,11 @@ import PaginationCustom from "../../shared/paginationCustom/PaginationCustom";
 import SelectFrom from "../selectForm/SelectFrom";
 import TabItems from "../tabItems/TabItems";
 
-function ProjectsAndProgramsSection({ projects, category }) {
-  const [tabItems, setTabItems] = useState(category || "all");
+function ProjectsAndProgramsSection({ projects, innerPage }) {
+  const [tabItems, setTabItems] = useState("all");
   const [currentStatus, setCurrentStatus] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [innerPage, setInnerPage] = useState(category !== "all-projects");
   const itemsPerPage = 6;
   // Create unique categories array from projects
   const uniqueCategories = [
@@ -25,14 +24,6 @@ function ProjectsAndProgramsSection({ projects, category }) {
   ].map(cat => typeof cat === 'string' ? JSON.parse(cat) : cat);
 
   useEffect(() => {
-    let filtered = projects;
-
-    if (category !== "all-projects") {
-      setInnerPage(true);
-      setTabItems(category);
-    } else {
-      setInnerPage(false);
-    }
 
     setFilteredProjects(() => {
       let filtered = projects;
@@ -53,7 +44,7 @@ function ProjectsAndProgramsSection({ projects, category }) {
     });
 
     setCurrentPage(1);
-  }, [tabItems, currentStatus, projects, category]);
+  }, [tabItems, currentStatus, projects]);
 
   // Pagination logic
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);

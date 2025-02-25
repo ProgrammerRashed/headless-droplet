@@ -26,10 +26,10 @@ function PhotoGalleryContent({ gallery }) {
   return (
     <DialogContent
       data-lenis-prevent
-      closeBtnClassName="right-[15px] top-[15px] md:right-[190px] md:top-[18px] lg:right-[300px] xl:right-[400px]"
+      closeBtnClassName="right-[15px] top-[15px] md:right-[190px] md:top-[18px] lg:right-[300px] xl:right-[25vw] 2xl:right-[30vw]"
       className="md: flex h-full w-full max-w-full items-center border-0 bg-transparent p-0 md:h-fit"
     >
-      <div className="flex w-full flex-col items-start px-[15px] sm:px-[90px] md:px-[190px] lg:px-[300px] xl:px-[400px]">
+        <div className="flex w-full flex-col items-start px-[15px] sm:px-[90px] md:px-[190px] lg:px-[300px] xl:px-[25vw] 2xl:px-[30vw]">
         <DialogHeader className="mb-5 flex flex-col items-start lg:gap-[10px]">
           <DialogTitle className="text-lg font-medium leading-[42px] text-white md:font-semibold xl:text-[32px] xl:font-bold xl:leading-[42px]">
             {gallery?.caption}

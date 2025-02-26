@@ -9,6 +9,7 @@ import FooterSection from "@/components/footer/FooterSection";
 import { getMainMenuData } from "@/graphql/Components";
 import Loading from "./loading";
 import DonationButton from "@/components/shared/donationButton/DonationButton";
+import { getSeoData } from "@/graphql/Components/getSeoData";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,11 +17,17 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata = {
-  title: "SAF - Sustainable Agricultural Foundation",
-  description:
-    "A world where smallholders, communities, and nature thrive together",
-};
+export async function generateMetadata() {
+  const data = (await getSeoData("/")) || {};
+  const seo = data || {};
+  return {
+    title: seo.title,
+    description: seo.metaDesc,
+    metaDesc: seo.metaDesc,
+    metaKeywords: seo.metaKeywords,
+    canonical: seo.canonical,
+  };
+}
 
 export default async function RootLayout({ children }) {
   let menuData;

@@ -1,5 +1,6 @@
 import CurrentOpeningWrapper from "@/components/careerPage/currentOpeningSection.jsx/CurrentOpeningWrapper";
 import { getPageData } from "@/graphql/Components";
+import { getSeoData } from "@/graphql/Components/getSeoData";
 import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
 

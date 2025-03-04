@@ -2,6 +2,19 @@ import CurrentOpeningWrapper from "@/components/careerPage/currentOpeningSection
 import { getPageData } from "@/graphql/Components";
 import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
+
+export async function generateMetadata() {
+  const seo = await getSeoData("career-page");
+  
+  return {
+    title:seo?.title || "Career - Sustainable Agriculture Foundation",
+    description:seo?.metaDesc,
+    keywords:seo?.metaKeywords,
+    canonical:seo?.canonical,
+  };
+}
+
+
 async function CareerPage() {
   const pageData = await getPageData("career-page");
   return (<div>

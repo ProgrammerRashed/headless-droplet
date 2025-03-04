@@ -4,7 +4,17 @@ import BlogsAndInsightsSection from "@/components/shared/blogsAndInsightsSection
 import { getSingleBlog } from "@/graphql/Components";
 import { getBlogsByCategory } from "@/graphql/Components/getBlogsByCategory";
 import formatDate from "@/utils/formatDate";
-
+// export async function generateMetadata({params}) {
+//   const blogSlug = (await params).slug
+//   const seo = await getSeoData(blogSlug);
+  
+//   return {
+//     title:seo?.title || "Blogs and Articles - SAF",
+//     description:seo?.metaDesc,
+//     keywords:seo?.metaKeywords,
+//     canonical:seo?.canonical,
+//   };
+// }
 
 async function DetailsPage({params}) {
   const blogSlug = (await params).slug

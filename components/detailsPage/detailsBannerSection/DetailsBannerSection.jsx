@@ -4,6 +4,8 @@ import Image from "next/image";
 
 function DetailsBannerSection({ data }) {
     const { sectionTitle, publishedDate, category, featureImage  } = data;
+      // Decode HTML entities in category
+      const decodedCategory = category?.replace(/&amp;/g, '&');
   return (
     <section className="mt-[78px] 0.5xl:mt-[151px]">
       <div className="container">
@@ -24,7 +26,7 @@ function DetailsBannerSection({ data }) {
               >
                 <p>{publishedDate}</p>
                 <div className="h-[5px] w-[5px] rounded-full bg-gray-50/60"></div>
-                <p>{category}</p>
+                <p>{decodedCategory}</p>
               </div>
             </div>
           </div>

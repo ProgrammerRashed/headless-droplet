@@ -3,7 +3,7 @@ import Link from "next/link";
 function FooterBottom({
   navigations = [
     { title: "Privacy Policy", link: "/" },
-    { title: "Tearms & Condition", link: "/" },
+    { title: "Terms & Condition", link: "/" },
   ],
 }) {
   return (

@@ -191,7 +191,7 @@ function DonationForm({country, donation_options}) {
             htmlFor="donation-type"
             className="text-base font-normal capitalize leading-[26px] text-gray-800"
           >
-           Donation Typecarbon-fields/our-partners-section <span className="text-red-500">*</span>
+           Donation Type<span className="text-red-500">*</span>
           </Label>
           <Select  onValueChange={(value) => handleSelectChange("donationType", value)} className="w-full">
             <SelectTrigger

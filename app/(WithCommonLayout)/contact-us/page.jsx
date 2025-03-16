@@ -1,5 +1,6 @@
 import ContactFromSection from "@/components/contactUsPage/contactFromSection/ContactFromSection";
 import { getPageData } from "@/graphql/Components";
+import { getSeoData } from "@/graphql/Components/getSeoData";
 import RenderBlocksHelper from "@/utils/RenderBlocksHelper";
 
 export async function generateMetadata() {

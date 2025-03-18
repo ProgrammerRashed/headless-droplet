@@ -109,7 +109,7 @@ function ContactFromSection() {
               type="text"
               id="firstName"
               placeholder="First name"
-              className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+              className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
               value={formData.firstName}
               onChange={handleChange}
             />
@@ -126,7 +126,7 @@ function ContactFromSection() {
               type="text"
               id="lastName"
               placeholder="Last name"
-              className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+              className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
               value={formData.lastName}
               onChange={handleChange}
             />
@@ -143,7 +143,7 @@ function ContactFromSection() {
               type="text"
               id="phone"
               placeholder="Phone number"
-              className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+              className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
               value={formData.phone}
               onChange={handleChange}
             />
@@ -160,7 +160,7 @@ function ContactFromSection() {
               type="email"
               id="email"
               placeholder="Email"
-              className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+              className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
               value={formData.email}
               onChange={handleChange}
             />
@@ -177,7 +177,7 @@ function ContactFromSection() {
             <Select onValueChange={(value) => handleSelectChange("country", value)} className="w-full">
               <SelectTrigger
                 id="country"
-                className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
+                className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
               >
                 <SelectValue placeholder="Select country" />
               </SelectTrigger>
@@ -223,7 +223,7 @@ function ContactFromSection() {
             <Select onValueChange={(value) => handleSelectChange("inquiryType", value)} className="w-full">
               <SelectTrigger
                 id="inquiry-type"
-                className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
+                className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
               >
                 <SelectValue placeholder="Select inquiry type" />
               </SelectTrigger>

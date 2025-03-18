@@ -112,7 +112,7 @@ function CountryContactUsForm({section_heading, section_description}) {
             placeholder="First name"
             value={formData.firstName}
             onChange={handleChange}
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
           />
           {errors.firstName && <span className="text-red-400">{errors.firstName}</span>}
         </div>
@@ -128,7 +128,7 @@ function CountryContactUsForm({section_heading, section_description}) {
             placeholder="Last name"
             value={formData.lastName}
             onChange={handleChange}
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
           />
           {errors.lastName && <span className="text-red-400">{errors.lastName}</span>}
         </div>
@@ -144,7 +144,7 @@ function CountryContactUsForm({section_heading, section_description}) {
             placeholder="Phone number"
             value={formData.phone}
             onChange={handleChange}
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
           />
           {errors.phone && <span className="text-red-400">{errors.phone}</span>}
         </div>
@@ -160,7 +160,7 @@ function CountryContactUsForm({section_heading, section_description}) {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
           />
           {errors.email && <span className="text-red-400">{errors.email}</span>}
         </div>
@@ -173,7 +173,7 @@ function CountryContactUsForm({section_heading, section_description}) {
           <Select onValueChange={(value) => handleSelectChange("country", value)} className="w-full">
             <SelectTrigger
               id="country"
-              className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
+              className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
             >
               <SelectValue placeholder="Select country" />
             </SelectTrigger>
@@ -205,7 +205,7 @@ function CountryContactUsForm({section_heading, section_description}) {
           <Select onValueChange={(value) => handleSelectChange("inquiryType", value)} className="w-full">
             <SelectTrigger
               id="inquiry-type"
-              className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
+              className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus:ring-green-500"
             >
               <SelectValue placeholder="Select inquiry type" />
             </SelectTrigger>

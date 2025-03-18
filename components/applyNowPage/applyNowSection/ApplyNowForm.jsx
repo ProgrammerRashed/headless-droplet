@@ -107,7 +107,7 @@ function ApplyNowForm({ title, details, position }) {
             id="firstName"
             name="firstName"
             placeholder="First name"
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
             value={formData.firstName}
             onChange={handleChange}
             required
@@ -125,7 +125,7 @@ function ApplyNowForm({ title, details, position }) {
             id="lastName"
             name="lastName"
             placeholder="Last name"
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
             value={formData.lastName}
             onChange={handleChange}
             required
@@ -143,7 +143,7 @@ function ApplyNowForm({ title, details, position }) {
             id="phone"
             name="phone"
             placeholder="Phone number"
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
             value={formData.phone}
             onChange={handleChange}
             required
@@ -161,7 +161,7 @@ function ApplyNowForm({ title, details, position }) {
             id="email"
             name="email"
             placeholder="Email"
-            className="m-0 h-auto w-full rounded-[40px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
+            className="m-0 h-auto w-full rounded-[10px] border border-gray-50 bg-surface px-4 py-3 text-sm leading-[22px] text-gray-700 shadow-none placeholder:text-gray-400 focus-visible:ring-green-500"
             value={formData.email}
             onChange={handleChange}
             required

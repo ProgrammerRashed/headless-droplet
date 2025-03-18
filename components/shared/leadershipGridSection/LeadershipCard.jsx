@@ -45,10 +45,10 @@ const title = people?.node?.title
               cardDetailsClass,
             )}
           >
-            <h4 className="mb-[10px] text-[22px] font-medium leading-[32px] text-gray-800">
+            <h4 className="mb-0.5 text-xl font-semibold leading-[32px] text-gray-800 md:text-2xl md:leading-[36px]">
               {title}
             </h4>
-            <p className="max-w-[220px] text-xs font-normal leading-[18px] text-gray-600">
+            <p className="text-sm font-normal leading-[22px] text-gray-400">
               {people.node?.position}
             </p>
           </div>

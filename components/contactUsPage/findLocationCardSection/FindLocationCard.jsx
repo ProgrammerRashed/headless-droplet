@@ -21,7 +21,12 @@ function FindLocationCard({ country }) {
           {country.country}
         </h4>
         <p className="break-words text-base font-normal leading-[26px] text-gray-600 md:min-h-[78px] lg:min-h-[52px]">
-          {country.address}
+          {country.address.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
         </p>
         <p className="break-words text-base font-normal leading-[26px] text-gray-600">
           {country.phone}

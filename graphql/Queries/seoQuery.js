@@ -9,7 +9,16 @@ export const seoQuery = gql`
         title
         canonical
         metaKeywords
+        opengraphImage {
+        mediaItemUrl
       }
+      }
+        featuredImage {
+      node {
+        id
+        mediaItemUrl
+      }
+    }
     }
   }
 `;

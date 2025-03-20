@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import AOSWrapper from "@/utils/AOSWrapper";
@@ -43,6 +43,7 @@ export default async function RootLayout({ children }) {
         <body
           className={`${poppins.variable} relative font-poppins antialiased`}
         >
+           <GoogleAnalytics gaId="G-GWTY8FL5CL" />
           <AOSWrapper>
             <Suspense fallback={<Loading />}>
               <HeaderSection data={menuData} />

@@ -16,11 +16,6 @@ const RenderBlocksHelper = ({ blocks }) => {
           }
           return null;
         }
-
-        if (process.env.NODE_ENV === 'development') {
-          console.log(`Rendering block: ${block.name}`);
-        }
-
         return <BlockComponent key={index} data={JSON.parse(block.attributesJSON)} />;
       })}
     </div>

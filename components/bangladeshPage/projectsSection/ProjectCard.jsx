@@ -20,18 +20,18 @@ function ProjectCard( {project} ) {
         {project.title}
       </h3>
      </Link>
-      <div className="mb-[10px] flex w-full flex-col gap-2 text-base font-normal leading-[26px] text-gray-800 0.5xl:mb-[30px] 0.5xl:text-[22px] 0.5xl:leading-[32px]">
+      <div className="mb-[10px] flex w-full flex-col gap-2 text-base font-normal leading-[26px] text-gray-800 0.5xl:mb-[30px] 0.5xl:text-[22px] 0.5xl:leading-[32px] !line-clamp-1">
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
-          <span className="text-gray-600">Donor</span>
-          <span>:</span>
-          <span className="line-clamp-2 min-h-[56px] font-medium md:line-clamp-2 md:min-h-[56px] 0.5xl:min-h-[64px]">
-            {project.donor}
-          </span>
+          <span className="text-gray-600 text-base font-normal leading-[26px]">Donor</span>
+          <span className="text-base font-normal leading-[26px]">:</span>
+          <p className="text-base leading-[26px] font-medium line-clamp-1">
+            {`${project.donor}`}
+          </p>
         </div>
         <div className="grid grid-cols-[55px_4px_auto] items-start gap-[10px] md:grid-cols-[76px_4px_auto]">
-          <span className="text-gray-600">Tenure</span>
-          <span>:</span>
-          <span className="font-medium">{formatDate(project?.tenure[0]?.start_date) || "No Date Found" } - {formatDate(project?.tenure[0]?.end_date) || "No Date Found"}</span>
+          <span className="text-gray-600 text-base font-normal leading-[26px]">Duration</span>
+          <span className="text-base font-normal leading-[26px]">:</span>
+          <span className="font-medium text-base leading-[26px]">{formatDate(project?.tenure[0]?.start_date) || "No Date Found" } - {formatDate(project?.tenure[0]?.end_date) || "No Date Found"}</span>
         </div>
       </div>
       <p className="mb-5 line-clamp-3 text-base font-normal leading-[26px] text-gray-600 md:mb-10">

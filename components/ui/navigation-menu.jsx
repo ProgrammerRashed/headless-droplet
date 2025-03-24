@@ -50,7 +50,7 @@ const NavigationMenuTrigger = React.forwardRef(
       {children}
       <ChevronDown
         className={cn(
-          "relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180",
+          "relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]",
           cheveonClassName,
         )}
         aria-hidden="true"

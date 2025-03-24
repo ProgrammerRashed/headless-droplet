@@ -36,6 +36,7 @@ function NavigationMenuSingleItem({ navigation }) {
                   className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white"
                 >
                   <span>{navItem?.title}</span>
+                  {/* Arrow Key for Single Items  */}
                   <ChevronRight size="18" />
                 </Link>
               );
@@ -50,7 +51,7 @@ function NavigationMenuSingleItem({ navigation }) {
                   <AccordionItem key={index} value={`item-${index}`} className="border-b-0">
                     <AccordionTrigger
                       className="flex flex-row items-center justify-between rounded-sm p-3 text-base font-medium capitalize leading-[26px] transition-all duration-300 hover:bg-white hover:no-underline data-[state=open]:bg-white data-[state=open]:text-red-600 [&[data-state=open]>svg]:text-red-600"
-                      icon={<ChevronDown className="w-[18px] h-[18px] text-[#0B1411] transition-transform" />}
+                      iconClassName="w-[18px] text-[#0B1411]  h-[18px] bg-transparent  -rotate-90 p-0"
                     >
                       <span>{navItem?.title}</span>
                     </AccordionTrigger>

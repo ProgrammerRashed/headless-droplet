@@ -25,7 +25,7 @@ const title = people?.node?.title
         <div
           data-aos="fade-up"
           className={cn(
-            "flex flex-col overflow-hidden rounded-[4px] bg-surface",
+            "flex flex-col overflow-hidden rounded-[4px] bg-surface h-full justify-start",
             cardBackgroundSection,
           )}
         >
@@ -35,13 +35,13 @@ const title = people?.node?.title
             height={340}
             alt={title}
             className={cn(
-              "aspect-square w-full object-cover md:aspect-[41/34]",
+              "aspect-square w-full object-cover md:aspect-[41/34] h-auto",
               cardImageSize,
             )}
           />
           <div
             className={cn(
-              "flex flex-col items-center justify-center px-2 py-5 text-center md:py-[30px]",
+              "flex flex-col items-center justify-center px-2 py-5 text-center md:py-[30px] h-auto",
               cardDetailsClass,
             )}
           >

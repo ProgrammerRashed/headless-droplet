@@ -4,7 +4,7 @@ function OurPartnersCard({ partner }) {
   return (
     <div
       data-aos="fade-up"
-      className="group flex h-[62px] w-full items-center justify-center rounded-[6px] border border-gray-50 px-[18px] py-[10px] transition-all duration-300 hover:shadow-sm sm:h-[108px] sm:px-8 sm:py-[22px]"
+      className="group flex h-[62px] w-full items-center justify-center rounded-[6px] border border-gray-300 px-[18px] py-[10px] transition-all duration-300 hover:shadow-sm sm:h-[108px] sm:px-8 sm:py-[22px]"
     >
       <Image
         src={partner.logo_link || "/thumbnail.png"}

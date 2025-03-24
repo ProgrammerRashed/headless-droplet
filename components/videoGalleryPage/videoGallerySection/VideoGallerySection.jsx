@@ -42,6 +42,7 @@ function VideoGallerySection({ data }) {
             setTabItems={setSelectedYear}
           />
         </div>
+        <p    data-aos="fade-up" className="mb-5 italic">All images, videos, and assets are the property of SAF. Usage requires proper attribution to SAF. </p>
         <div className="grid grid-cols-1 gap-[30px] md:grid-cols-2">
           {filteredVideos.map((video) => (
             <VideoGalleryPlayer

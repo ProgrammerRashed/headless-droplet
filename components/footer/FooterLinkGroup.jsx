@@ -14,6 +14,16 @@ function FooterLinkGroup({ navigation, index }) {
       </h6>
       <div className="flex flex-col gap-4 text-sm font-normal leading-[22px] text-white/80">
         {navigation?.child_navigations?.map((navItem, index) => {
+
+          if (navItem.title?.toLowerCase().includes('download')) return  (<Link
+              href={navItem?.link}
+              key={index}
+              className="capitalize hover:underline"
+              download={true}
+              target="_blank"
+            >
+              {navItem?.title}
+            </Link>);
           return !navItem?.nested_child_navigations?.length ? (
             <Link
               href={navItem?.link}

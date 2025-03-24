@@ -27,6 +27,7 @@ function NavigationMenuSingleItem({ navigation }) {
         <div className="flex flex-grow flex-col p-5">
           {/* Render non-accordion items (Links) first */}
           {navigation?.child_navigations.map((navItem, index) => {
+            if (navItem.title?.toLowerCase().includes('download')) return null;
             if (!navItem?.nested_child_navigations?.length) {
               return (
                 <Link

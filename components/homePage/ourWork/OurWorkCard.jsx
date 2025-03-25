@@ -1,7 +1,14 @@
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import Image from "next/image";
 
 function OurWorkCard({ card }) {
-  const { heading, bg_image, details } = card;
+  const { heading, bg_image, details, button_details } = card;
+  const rawButtonLink = button_details[0]?.links
+  const pathParts = rawButtonLink.split('/').filter(part => part); 
+  const pathPart = pathParts.pop();
+  // Construct the final button link
+  const finalButtonLink = `https://susagfoundation.org/thematic-areas/${pathPart}`;
+
   return (
     <div
       data-aos="fade-up"
@@ -24,7 +31,9 @@ function OurWorkCard({ card }) {
           <p className="mb-[24px] hidden text-base font-normal leading-[26px] lg:block">
             {details}
           </p>
-         
+          <PrimaryButton href={finalButtonLink} className="bg-tranparent hidden rounded-none border-0 border-b-2 border-b-white stroke-white !px-0 !pb-[10px] !pt-0 text-base font-semibold leading-[24px] text-white hover:bg-transparent lg:flex">
+           {button_details[0].title}
+          </PrimaryButton>
         </div>
       </div>
     </div>

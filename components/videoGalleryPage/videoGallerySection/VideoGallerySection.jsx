@@ -56,9 +56,10 @@ function VideoGallerySection({ data }) {
               onPlay={() => handlePlay(video._id)}
             />
           ))}
-        <p    data-aos="fade-up" className="mt-10 italic">All images, videos, and assets are the property of SAF. Usage requires proper attribution to SAF. </p>
 
         </div>
+        <p    data-aos="fade-up" className="mt-10 italic text-right">All images, videos, and assets are the property of SAF. Usage requires proper attribution to SAF. </p>
+
       </div>
     </section>
   );

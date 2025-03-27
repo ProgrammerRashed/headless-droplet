@@ -11,7 +11,7 @@ function PhotoGallerySection({ data }) {
             <PhotoGalleryCard key={gallery._id} gallery={gallery} />
           ))}
         </div>
-        <p className="mt-10 italic">All images, videos, and assets are the property of SAF. Usage requires proper attribution to SAF. </p>
+        <p className="mt-10 italic text-right">All images, videos, and assets are the property of SAF. Usage requires proper attribution to SAF. </p>
       </div>
     </section>
   );

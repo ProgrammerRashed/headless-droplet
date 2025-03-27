@@ -15,6 +15,7 @@ const cleanSlug = (slug) => {
     .replace(/-\d+$/, '')  // Remove "-number" at the end
     .replace(/^main-/, '')  // Remove "main-" at the start
     .replace(/^bangladesh-/, 'bangladesh/')  // Replace "bangladesh-" with "bangladesh/"
+    .replace(/^switzerland-/, 'switzerland/')  // Replace "switzerland-" with "switzerland/"
     .replace(/^kenya-/, 'kenya/') // Replace "kenya-" with "kenya/"
     .replace(/^home/, '') // Replace "home" with ""
     .replace(/^main/, '') // Replace "main" with ""

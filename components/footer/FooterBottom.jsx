@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function FooterBottom({
   navigations = [
-    { title: "Privacy Policy", link: "/" },
-    { title: "Terms & Condition", link: "/" },
+    { title: "Privacy Policy", link: "/privacy-policy" },
+    { title: "Terms & Condition", link: "/terms-and-condition" },
   ],
 }) {
   return (

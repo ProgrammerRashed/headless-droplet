@@ -10,11 +10,8 @@ async function DetailsPage({params}) {
   const blogSlug = (await params).slug
   const blog = await getSingleBlog(blogSlug)
   const fromatedDate = formatDate( blog?.customPostDate || blog.date);
-  const customCategory = blog?.customCategory?.label || "Category";
-  const firstCategory = blog?.categories.edges
-  .filter(cat => cat.node.slug !== "all-blogs")[0] || null;
 
-  const blogs = await getBlogsByCategory(firstCategory?.node?.slug)
+
 const featureImage = blog?.featuredImage?.node?.mediaItemUrl
 const data = {
   data: {
@@ -36,7 +33,7 @@ const data = {
         data={{
           sectionTitle:blog?.title ,
           publishedDate: fromatedDate,
-          category: customCategory,
+    
           featureImage: featureImage,
           
         }}
@@ -51,7 +48,6 @@ const data = {
       /> 
 
   
-      <RealatedStoriesSliderSection data={data} blogs={blogs} />
     </>
   );
 }

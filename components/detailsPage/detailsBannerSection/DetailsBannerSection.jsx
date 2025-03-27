@@ -20,14 +20,7 @@ function DetailsBannerSection({ data }) {
                   {sectionTitle}
                 </SectionHeading>
               </div>
-              <div
-                data-aos="fade-up"
-                className="flex flex-row items-center gap-[10px] text-xs font-normal leading-[18px] md:text-base md:leading-[26px]"
-              >
-                <p>{publishedDate}</p>
-                <div className="h-[5px] w-[5px] rounded-full bg-gray-50/60"></div>
-                <p>{decodedCategory}</p>
-              </div>
+
             </div>
           </div>
           <Image

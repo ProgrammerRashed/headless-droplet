@@ -5,6 +5,7 @@ export default async function sitemap() {
   const rootUrl = process.env.NEXT_PUBLIC_FRONTEND_URL;
   const projectUrl = `${process.env.NEXT_PUBLIC_FRONTEND_URL}/projects-and-programs`;
   const blogUrl = `${process.env.NEXT_PUBLIC_FRONTEND_URL}/blogs-and-articles`;
+  const themeticUrl = `${process.env.NEXT_PUBLIC_FRONTEND_URL}/thematic-areas`;
   const impactStoryUrl = `${process.env.NEXT_PUBLIC_FRONTEND_URL}/impact-stories`;
 
   // Function to clean the slugs for pages only
@@ -49,6 +50,10 @@ const cleanSlug = (slug) => {
     const hasImpactStoryCategory = edge.node.categories.edges.some(category =>
       category.node.slug === "impact-stories"
     );
+    // Check if "Impact Stories" category exists
+    const hasThemeticArea = edge.node.categories.edges.some(category =>
+      category.node.slug === "themetic-area-page"
+    );
 
     const postUrl = `${rootUrl}/${edge.node.slug}`;
     const postData = {
@@ -61,13 +66,20 @@ const cleanSlug = (slug) => {
         ...postData,
         url: `${impactStoryUrl}/${edge.node.slug}`,
       };
-    } else {
+    } else if(hasThemeticArea){
+      return {
+        ...postData,
+        url: `${themeticUrl}/${edge.node.slug}`,
+      };
+    }else{
       return {
         ...postData,
         url: `${blogUrl}/${edge.node.slug}`,
       };
     }
   });
+  
+
 
   return [
     ...pages,

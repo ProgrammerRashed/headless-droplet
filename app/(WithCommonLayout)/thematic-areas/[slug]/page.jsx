@@ -27,7 +27,7 @@ const data = {
 
 
   return (
-    <>
+    <div className="themetic-page">
 
       <DetailsBannerSection
         data={{
@@ -48,7 +48,7 @@ const data = {
       /> 
 
   
-    </>
+    </div>
   );
 }
 

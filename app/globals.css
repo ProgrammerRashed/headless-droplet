@@ -315,6 +315,9 @@ html.lenis body {
 /* ------------------------------------- */
 /* Custom Table */
 /* ------------------------------------- */
+.themetic-page .wp-block-table table{
+  margin-top: 0;
+}
 .wp-block-table table {
   box-shadow: 5px 10px 23px 0px #565c731f;
   border: 1px solid #ebeaea;
